@@ -9,7 +9,6 @@ import java.time.LocalDate;
 @Entity
 @Data
 @Table(
-        name = "review-reaction",
         uniqueConstraints = {
                 @UniqueConstraint(columnNames = {"user_id", "content_id"})
         }
