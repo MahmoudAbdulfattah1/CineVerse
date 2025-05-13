@@ -1,0 +1,36 @@
+package com.cineverse.cineverse.domain.entity;
+
+import com.cineverse.cineverse.domain.enums.ReactionType;
+import jakarta.persistence.*;
+import lombok.Data;
+
+import java.time.LocalDate;
+
+@Entity
+@Data
+@Table(
+        name = "review-reaction",
+        uniqueConstraints = {
+                @UniqueConstraint(columnNames = {"user_id", "content_id"})
+        }
+)
+public class ReviewReaction {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
+    @ManyToOne
+    @JoinColumn(name = "review_id")
+    private Review review;
+    @Enumerated(EnumType.STRING)
+    @Column(name = "reaction_type")
+    private ReactionType reactionType;
+    @Column(name = "created_at")
+    private LocalDate createdAt;
+    @Column(name = "updated_at")
+    private LocalDate updatedAt;
+
+
+}
