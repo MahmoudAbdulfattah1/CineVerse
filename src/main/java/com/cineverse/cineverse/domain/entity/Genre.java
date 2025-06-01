@@ -1,12 +1,14 @@
 package com.cineverse.cineverse.domain.entity;
 
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.*;
 
 import java.util.Set;
 
 @Entity
-@Data
+@Getter
+@Setter
+@NoArgsConstructor
 public class Genre {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -14,7 +16,10 @@ public class Genre {
     @Column(name = "tmdb_id")
     private int tmdbId;
     private String name;
-    @OneToMany(mappedBy = "genre")
+    @OneToMany(mappedBy = "genre", fetch = FetchType.LAZY)
     private Set<ContentGenre> genres;
-
+    public Genre(int tmdbId, String name) {
+        this.tmdbId = tmdbId;
+        this.name = name;
+    }
 }

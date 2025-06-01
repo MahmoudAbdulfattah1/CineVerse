@@ -2,13 +2,17 @@ package com.cineverse.cineverse.domain.entity;
 
 import com.cineverse.cineverse.domain.enums.ContentType;
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.*;
+import lombok.experimental.SuperBuilder;
 
 import java.time.LocalDate;
 import java.util.Set;
 
 @Entity
-@Data
+@Getter
+@Setter
+@NoArgsConstructor
+@SuperBuilder
 @Inheritance(strategy = InheritanceType.JOINED)
 public class Content {
     @Id
@@ -26,19 +30,29 @@ public class Content {
     private String language;
     @Column(name = "imdb_rate")
     private float imdbRate;
-
     @Enumerated(EnumType.STRING)
     private ContentType contentType;
-    @OneToMany(mappedBy = "content")
+    @OneToMany(mappedBy = "content", fetch = FetchType.LAZY)
+    @OrderBy("id ASC")
     private Set<ContentCast> contentCasts;
-    @OneToMany(mappedBy = "content")
+    @OneToMany(mappedBy = "content", fetch = FetchType.LAZY)
     private Set<ContentProvider> providers;
-    @OneToMany(mappedBy = "content")
+    @OneToMany(mappedBy = "content", fetch = FetchType.LAZY)
     private Set<ContentGenre> genres;
-    @OneToMany(mappedBy = "content")
+    @OneToMany(mappedBy = "content", fetch = FetchType.LAZY)
     private Set<Review> reviews;
-    @OneToMany(mappedBy = "content")
+    @OneToMany(mappedBy = "content", fetch = FetchType.LAZY)
     private Set<Watchlist> watchlists;
 
 
+    public Content(int tmdbId, String title, String overview, LocalDate releaseDate, String posterPath, String language, float imdbRate, ContentType contentType) {
+        this.tmdbId = tmdbId;
+        this.title = title;
+        this.overview = overview;
+        this.releaseDate = releaseDate;
+        this.posterPath = posterPath;
+        this.language = language;
+        this.imdbRate = imdbRate;
+        this.contentType = contentType;
+    }
 }

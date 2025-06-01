@@ -1,13 +1,15 @@
 package com.cineverse.cineverse.domain.entity;
 
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.*;
 
 import java.util.Set;
 
 @Entity
-@Data
-public class Person {
+@Getter
+@Setter
+@NoArgsConstructor
+public class CrewMember {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
@@ -16,11 +18,16 @@ public class Person {
     private String name;
     @Column(name = "profile_path")
     private String profilePath;
-    @OneToMany(mappedBy = "cast")
+    @OneToMany(mappedBy = "cast", fetch = FetchType.LAZY)
     private Set<ContentCast> contentCasts;
-    @OneToMany(mappedBy = "director")
+    @OneToMany(mappedBy = "director", fetch = FetchType.LAZY)
     private Set<Series> series;
-    @OneToMany(mappedBy = "director")
+    @OneToMany(mappedBy = "director", fetch = FetchType.LAZY)
     private Set<Movie> movies;
 
+    public CrewMember(int tmdbId, String name, String profilePath) {
+        this.tmdbId = tmdbId;
+        this.name = name;
+        this.profilePath = profilePath;
+    }
 }

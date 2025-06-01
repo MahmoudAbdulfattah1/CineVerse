@@ -2,12 +2,14 @@ package com.cineverse.cineverse.domain.entity;
 
 import com.cineverse.cineverse.domain.enums.ReactionType;
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.*;
 
 import java.time.LocalDate;
 
 @Entity
-@Data
+@Getter
+@Setter
+@NoArgsConstructor
 @Table(
         uniqueConstraints = {
                 @UniqueConstraint(columnNames = {"user_id", "content_id"})
@@ -31,5 +33,11 @@ public class ReviewReaction {
     @Column(name = "updated_at")
     private LocalDate updatedAt;
 
-
+    public ReviewReaction(User user, Review review, ReactionType reactionType) {
+        this.user = user;
+        this.review = review;
+        this.reactionType = reactionType;
+        this.createdAt = LocalDate.now();
+        this.updatedAt = LocalDate.now();
+    }
 }
