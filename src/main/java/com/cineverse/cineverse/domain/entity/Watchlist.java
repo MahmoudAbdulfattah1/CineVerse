@@ -2,12 +2,14 @@ package com.cineverse.cineverse.domain.entity;
 
 import com.cineverse.cineverse.domain.enums.WatchingStatus;
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.*;
 
 import java.time.LocalDate;
 
 @Entity
-@Data
+@Getter
+@Setter
+@NoArgsConstructor
 @Table(
         name = "watchlist",
         uniqueConstraints = {
@@ -32,4 +34,11 @@ public class Watchlist {
     @Column(name = "updated_at")
     private LocalDate updatedAt;
 
+    public Watchlist(User user, Content content) {
+        this.user = user;
+        this.content = content;
+        this.watchingStatus = WatchingStatus.TO_WATCH;
+        this.createdAt = LocalDate.now();
+        this.updatedAt = LocalDate.now();
+    }
 }

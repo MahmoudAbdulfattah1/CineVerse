@@ -1,11 +1,13 @@
 package com.cineverse.cineverse.domain.entity;
 
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.*;
 
 @Entity
 @Table(name = "content_provider")
-@Data
+@Getter
+@Setter
+@NoArgsConstructor
 public class ContentProvider {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -16,4 +18,9 @@ public class ContentProvider {
     @ManyToOne
     @JoinColumn(name = "content_id")
     private Content content;
+
+    public ContentProvider(Provider provider, Content content) {
+        this.provider = provider;
+        this.content = content;
+    }
 }
