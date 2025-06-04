@@ -1,0 +1,25 @@
+app = 'cineverse'
+primary_region = 'cdg'
+
+[build]
+
+[http_service]
+internal_port = 8080
+force_https = true
+auto_stop_machines = 'stop'
+auto_start_machines = true
+min_machines_running = 0
+processes = ['app']
+
+# Add these health check settings
+[[http_service.checks]]
+grace_period = "60s"
+interval = "30s"
+method = "GET"
+timeout = "10s"
+path = "/actuator/health"
+
+[[vm]]
+memory = '1gb'
+cpu_kind = 'shared'
+cpus = 1
