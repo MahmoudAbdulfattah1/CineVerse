@@ -13,6 +13,7 @@ public class MovieDto implements ContentDetailsDto {
     private String title;
     private String overview;
     private String posterPath;
+    private String backdropPath;
     private LocalDate releaseDate;
     private int runtime;
     private String language;
@@ -21,11 +22,12 @@ public class MovieDto implements ContentDetailsDto {
     private float platformRate;
     private List<String> genres;
 
-    public MovieDto(int id, String title, String overview, String posterPath, LocalDate releaseDate, int runtime, String language, String productionCountry, float imdbRate, float platformRate, List<String> genres) {
+    public MovieDto(int id, String title, String overview, String posterPath, String backdropPath, LocalDate releaseDate, int runtime, String language, String productionCountry, float imdbRate, float platformRate, List<String> genres) {
         this.id = id;
         this.title = title;
         this.overview = overview;
         this.posterPath = posterPath;
+        this.backdropPath = backdropPath;
         this.releaseDate = releaseDate;
         this.runtime = runtime;
         this.language = language;

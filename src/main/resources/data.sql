@@ -239,6 +239,14 @@ insert into crew_member(id, name, profile_path, tmdb_id)
 values (119, 'Álvaro Morte', '/2TGPhdpRC5wjdFEJqnLYiN5kbwg.jpg', 1340020);
 insert into crew_member(id, name, profile_path, tmdb_id)
 values (120, 'Pedro Alonso', '/38HeVKeOBztVYrLJOWzAtEZiB02.jpg', 1109836);
+insert into crew_member(id, name, profile_path, tmdb_id)
+values (121, 'Tate Donovan', '/uYgYbd842mtRY66Ehw441aKkOC5.jpg', 15455);
+insert into crew_member(id, name, profile_path, tmdb_id)
+values (122, 'Danny DeVito', '/6kO4IN7ndoIGw2JhyhAQN3SFmdx.jpg', 518);
+insert into crew_member(id, name, profile_path, tmdb_id)
+values (123, 'Nour Al Nabawy', '/sxpNjNiVdTvHNbmHzIOVSJRxF7k.jpg', 3542989);
+insert into crew_member(id, name, profile_path, tmdb_id)
+values (124, 'Ahmed Ghozzi', '/8pCh6auBMJAJSD8tJtuhYWk5rEZ.jpg', 3548017);
 
 
 insert into genre(id, name, tmdb_id) values (1, 'Action', 28);
@@ -284,169 +292,176 @@ values (5, 'Fandango At Home', '/19fkcOz0xeUgCVW8tO85uOYnYK9.jpg',7);
 -- Adding Content
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (1, 'اللمبي', 'El-Limby lives in a decrepit neighborhood with his mother Faransa and he develops feelings for his neighbor.','ar', '/xrCgrBgAeOS24sxToCPN1HW7eOL.jpg', '2002-10-06', 6.8, 42315, 'MOVIE');
-insert into movie(id, run_time, production_country, director_id, slug)
-values (1, 100, 'Egypt', 5, 'اللمبي');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (1, '/7kf3pJIuzyLPAFQCnGGUVNbBTJL.jpg', 100, 'Egypt', 5, 'اللمبي');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (9, 'آسف على الإزعاج', 'A young man receives a phone call from a famous TV presenter who asks him to appear on her show. But someone stole his ID card, which he needs to get into the TV building.', 'ar', '/h16EVoqi5aG4P7g1J2LZSCtWryk.jpg', '2008-12-03', 7.3, 60700, 'MOVIE');
-insert into movie(id, run_time, production_country, director_id, slug)
-values (9, 120, 'Egypt', 29, 'آسف-على-الإزعاج');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (9, '/8ocnkM8n1VxgQ1wMVFnSZvpYrCt.jpg', 120, 'Egypt', 29, 'آسف-على-الإزعاج');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (10, 'The Godfather', 'The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.', 'en', '/3bhkrj58Vtu7enYsRolD1fZdja1.jpg', '1972-03-14', 9.2, 238, 'MOVIE');
-insert into movie(id, run_time, production_country, director_id, slug)
-values (10, 175, 'United States', 44, 'the-godfather');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (10, '/tmU7GeKVybMWFButWEGl2M4GeiP.jpg', 175, 'United States', 44, 'the-godfather');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (11, 'The Shawshank Redemption', 'Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.', 'en', '/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg', '1994-09-23', 9.3, 278, 'MOVIE');
-insert into movie(id, run_time, production_country, director_id, slug)
-values (11, 142, 'United States', 48, 'the-shawshank-redemption');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (11, '/kXfqcdQKsToO0OUXHcrrNCHDBzO.jpg', 142, 'United States', 48, 'the-shawshank-redemption');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (12, 'Fight Club', 'An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.', 'en', '/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg', '1999-10-15', 8.8, 550, 'MOVIE');
-insert into movie(id, run_time, production_country, director_id, slug)
-values (12, 139, 'United States', 51, 'fight-club');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (12, '/xRyINp9KfMLVjRiO5nCsoRDdvvF.jpg', 139, 'United States', 51, 'fight-club');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (13, 'Kill Bill: Vol. 1', 'After awakening from a four-year coma, a former assassin wreaks vengeance on the team of assassins who betrayed her.', 'en', '/v7TaX8kXMXs5yFFGR41guUDNcnB.jpg', '2003-10-10', 8.1, 24, 'MOVIE');
-insert into movie(id, run_time, production_country, director_id, slug)
-values (13, 111, 'United States', 23, 'kill-bill-vol-1');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (13, '/p3WiF8qYS7Qp17YRYgrFh7gf9P9.jpg', 111, 'United States', 23, 'kill-bill-vol-1');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (14, 'Gladiator', 'A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.', 'en', '/ty8TGRuvJLPUmAR1H1nRIsgwvim.jpg', '2000-05-05', 8.5, 98, 'MOVIE');
-insert into movie(id, run_time, production_country, director_id, slug)
-values (14, 155, 'United States', 53, 'gladiator');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (14, '/Ar7QuJ7sJEiC0oP3I8fKBKIQD9u.jpg', 155, 'United States', 53, 'gladiator');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (15, 'Titanic', 'A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.', 'en', '/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg', '1997-12-19', 7.9, 597, 'MOVIE');
-insert into movie(id, run_time, production_country, director_id, slug)
-values (15, 194, 'United States', 14, 'titanic');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (15, '/sCzcYW9h55WcesOqA12cgEr9Exw.jpg', 194, 'United States', 14, 'titanic');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (16, 'The Matrix', 'A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.', 'en', '/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg', '1999-03-31', 8.7, 603, 'MOVIE');
-insert into movie(id, run_time, production_country, director_id, slug)
-values (16, 136, 'United States', 19, 'the-matrix');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (16, '/icmmSD4vTTDKOq2vvdulafOGw93.jpg', 136, 'United States', 19, 'the-matrix');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (17, 'Pulp Fiction', 'The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.', 'en', '/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg', '1994-10-14', 8.9, 680, 'MOVIE');
-insert into movie(id, run_time, production_country, director_id, slug)
-values (17, 154, 'United States', 23, 'pulp-fiction');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (17, '/suaEOtk1N1sgg2MTM7oZd2cfVp3.jpg', 154, 'United States', 23, 'pulp-fiction');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (18, 'The Dark Knight', 'When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.', 'en', '/qJ2tW6WMUDux911r6m7haRef0WH.jpg', '2008-07-18', 9.0, 155, 'MOVIE');
-insert into movie(id, run_time, production_country, director_id, slug)
-values (18, 152, 'United States', 24, 'the-dark-knight');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (18, '/enNubozHn9pXi0ycTVYUWfpHZm.jpg', 152, 'United States', 24, 'the-dark-knight');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
-values (19, 'سيكو سيكو', 'Two cousins, both from a middle-class background, finally see their dream come true when their inheritance is rightfully returned to them following their uncle’s death.', 'ar', '/rlNIIPi3pm7kY5MgiN3gDHESEkk.jpg', '2025-03-30', 8.1, 608718, 'MOVIE');
-insert into movie(id, run_time, production_country, director_id, slug)
-values (19, 105, 'Egypt', 63, 'سيكو-سيكو');
+values (19, 'سيكو سيكو', 'Two cousins, both from a middle-class background, finally see their dream come true when their inheritance is rightfully returned to them following their uncle''s death.', 'ar', '/rlNIIPi3pm7kY5MgiN3gDHESEkk.jpg', '2025-03-30', 8.1, 608718, 'MOVIE');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (19, '/5uEkwwarjGu7fU0vQ9t7EFYwhzO.jpg', 105, 'Egypt', 63, 'سيكو-سيكو');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (20, 'Forrest Gump', 'The presidencies of Kennedy and Johnson, the events of Vietnam, Watergate, and other historical events unfold through the perspective of an Alabama man with an IQ of 75, whose only desire is to be reunited with his childhood sweetheart.', 'en', '/saHP97rTPS5eLmrLQEcANmKrsFl.jpg', '1994-07-06', 8.8, 13, 'MOVIE');
-insert into movie(id, run_time, production_country, director_id, slug)
-values (20, 142, 'United States', 16 ,'forrest-gump');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (20, '/tlEFuIlaxRPXIYVHXbOSAMCfWqk.jpg', 142, 'United States', 16, 'forrest-gump');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (21, 'Inception', 'A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.', 'en', '/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg', '2010-07-16', 8.8, 27205, 'MOVIE');
-insert into movie(id, run_time, production_country, director_id, slug)
-values (21, 148, 'United States', 24, 'inception');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (21, '/8ZTVqvKDQ8emSGUEMjsS4yHAwrp.jpg', 148, 'United States', 24, 'inception');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (22, 'The Lord of the Rings: The Fellowship of the Ring', 'A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.', 'en', '/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg', '2001-12-19', 8.8, 120, 'MOVIE');
-insert into movie(id, run_time, production_country, director_id, slug)
-values (22, 178, 'New Zealand', 55, 'the-lord-of-the-rings-the-fellowship-of-the-ring');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (22, '/x2RS3uTcsJJ9IfjNPcgDmukoEcQ.jpg', 178, 'New Zealand', 55, 'the-lord-of-the-rings-the-fellowship-of-the-ring');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
-values (23, 'Star Wars: Episode IV - A New Hope', 'Princess Leia is captured and held hostage by the evil Imperial forces in their effort to take over the galactic Empire. Venturesome Luke Skywalker and dashing captain Han Solo team together with the lovable robot duo R2-D2 and C-3PO to rescue her ', 'en', '/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg', '2001-12-19', 8.8, 11, 'MOVIE');
-insert into movie(id, run_time, production_country, director_id, slug)
-values (23, 121, 'United States', 59, 'star-wars-episode-iv-a-new-hope');
+values (23, 'Star Wars: Episode IV - A New Hope', 'Princess Leia is captured and held hostage by the evil Imperial forces in their effort to take over the galactic Empire. Venturesome Luke Skywalker and dashing captain Han Solo team together with the lovable robot duo R2-D2 and C-3PO to rescue her ', 'en', '/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg', '1977-05-25', 8.8, 11, 'MOVIE');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (23, '/2w4xG178RpB4MDAIfTkqAuSJzec.jpg', 121, 'United States', 59, 'star-wars-episode-iv-a-new-hope');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (24, 'الكيت كات', 'A blind man who works at a public bath house develops a bond with his son, who reads to him from paperbacks about criminal heists.', 'ar', '/u58To5A37XPHY6O5O4T6NGb1zqp.jpg', '1991-12-16', 8.0, 76492, 'MOVIE');
-insert into movie(id, run_time, production_country, director_id, slug)
-values (24, 135, 'Egypt', 36, 'الكيت-كات');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (24, '/rcJWnb2ziCW0Jwplui7amMkm4XW.jpg', 135, 'Egypt', 36, 'الكيت-كات');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (25, 'Goodfellas', 'The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill and his mob partners Jimmy Conway and Tommy DeVito in the Italian-American crime syndicate.', 'en', '/aKuFiU82s5ISJpGZp7YkIr3kCUd.jpg', '1990-09-12', 8.7, 769, 'MOVIE');
-insert into movie(id, run_time, production_country, director_id, slug)
-values (25, 146, 'United States', 41, 'goodfellas');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (25, '/7TF4p86ZafnxFuNqWdhpHXFO244.jpg', 146, 'United States', 41, 'goodfellas');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (26, 'Saving Private Ryan', 'As U.S. troops storm the beaches of Normandy, three brothers lie dead on the battlefield, with a fourth trapped behind enemy lines. Ranger captain John Miller and seven men are tasked with penetrating German-held territory and bringing the boy home.', 'en', '/1wY4psJ5NVEhCuOYROwLH2XExM2.jpg', '1998-07-24', 8.6, 857, 'MOVIE');
-insert into movie(id, run_time, production_country, director_id, slug)
-values (26, 169, 'United States', 39, 'saving-private-ryan');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (26, '/rW2xRFlJRbTnBJlQTSjQmjevIwb.jpg', 169, 'United States', 39, 'saving-private-ryan');
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (27, 'الحريفة ', 'Circumstances force Majed to leave his comfortable life and move from his private school to a public school.', 'ar', '/bdZRCfHUMZm6FNJfudvQg6surNK.jpg', '2024-01-04', 7.3, 1197989, 'MOVIE');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (27, '/oGfAMzYsRbTlSBZFCiVNVzQ5YrC.jpg', 117, 'United States', 39, 'الحريفة');
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (28, 'Hercules ', 'Bestowed with superhuman strength, a young mortal named Hercules sets out to prove himself a hero in the eyes of his father, the great god Zeus.', 'en', '/dK9rNoC97tgX3xXg5zdxFisdfcp.jpg', '1997-06-13', 7.3, 11970, 'MOVIE');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (28, '/oG9dcGSSu13fjFp1Uly15ZXjRKV.jpg', 117, 'United States', 39, 'hercules');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (2, 'Prison Break', 'Dangerous threats keep Michael and Lincoln fighting to protect Sara and Mike. Meanwhile, Poseidon continues to try and outsmart Michael and the rest of the gang, which leads them to the ultimate showdown, and not everyone makes it out alive.','en', '/5E1BhkCgjLBlqx557Z5yzcN0i88.jpg', '2005-08-29', 8.078, 2288,'SERIES');
-insert into series(id, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
-values (2, 'Ended', 5, 88, 'US', 11, 'prison-break');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (2, '/7w165QdHmJuTHSQwEyJDBDpuDT7.jpg', 'Ended', 5, 88, 'US', 11, 'prison-break');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (29, 'Breaking Bad', 'When Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live, he becomes filled with a sense of fearlessness and an unrelenting desire to secure his familys.', 'en', '/ggFHVNu6YYI5L9pCfOacjizRGt.jpg', '2008-01-20', 9.5, 1396, 'SERIES');
-insert into series(id, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
-values (29, 'Ended', 5, 62, 'US', 66, 'breaking-bad');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (29, '/9faGSFi5jam6pDWGNd0p8JcJgXQ.jpg', 'Ended', 5, 62, 'US', 66, 'breaking-bad');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (30, 'Game of Thrones', 'Seven noble families fight for control of the mythical land of Westeros. Friction between the houses leads to full-scale war. All while a very ancient evil awakens in the farthest north.', 'en', '/u3bZgnGQ9T01sWNhyveQz0wH0Hl.jpg', '2011-04-17', 9.3, 1399, 'SERIES');
-insert into series(id, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
-values (30, 'Ended', 8, 73, 'US', 70, 'game-of-thrones');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (30, '/zZqpAXxVSBtxV9qPBcscfXBcL2w.jpg', 'Ended', 8, 73, 'US', 70, 'game-of-thrones');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (31, 'The Sopranos', 'The story of New Jersey-based Italian-American mobster Tony Soprano and the difficulties he faces as he tries to balance the conflicting requirements of his home life and the criminal organization he heads.', 'en', '/rTc7ZXdroqjkKivFPvCPX0Ru7uw.jpg', '1999-01-10', 9.2, 1398, 'SERIES');
-insert into series(id, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
-values (31, 'Ended', 6, 86, 'US', 73, 'the-sopranos');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (31, '/lNpkvX2s8LGB0mjGODMT4o6Up7j.jpg', 'Ended', 6, 86, 'US', 73, 'the-sopranos');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (32, 'Stranger Things', 'When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.', 'en', '/49WJfeN0moxb9IPfGn8AIqMGskD.jpg', '2016-07-15', 8.7, 66732, 'SERIES');
-insert into series(id, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
-values (32, 'Ended', 4, 42, 'US', 77, 'stranger-things');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (32, '/56v2KjBlU4XaOv9rVYEQypROD7P.jpg', 'Ended', 4, 42, 'US', 77, 'stranger-things');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (33, 'The Wire', 'Told from the points of view of both the Baltimore homicide and narcotics detectives and their targets.', 'en', '/4lbclFySvugI51fwsyxBTOm4DqK.jpg', '2002-06-02', 9.3, 1438, 'SERIES');
-insert into series(id, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
-values (33, 'Ended', 5, 60, 'US', 80, 'the-wire');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (33, '/layPSOJGckJv3PXZDIVluMq69mn.jpg', 'Ended', 5, 60, 'US', 80, 'the-wire');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (34, 'Better Call Saul', 'Six years before Saul Goodman meets Walter White. We meet him when the man who will become Saul Goodman is known as Jimmy McGill, a small-time lawyer searching for his destiny, and, more immediately, hustling to make ends meet.', 'en', '/zjg4jpK1Wp2kiRvtt5ND0kznako.jpg', '2015-02-08', 8.8, 60059, 'SERIES');
-insert into series(id, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
-values (34, 'Ended', 6, 63, 'US', 83, 'better-call-saul');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (34, '/hPea3Qy5Gd6z4kJLUruBbwAH8Rm.jpg', 'Ended', 6, 63, 'US', 83, 'better-call-saul');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (35, 'The Office', 'The everyday lives of office employees in the Scranton, Pennsylvania branch of the fictional Dunder Mifflin Paper Company.', 'en', '/7DJKHzAi83BmQrWLrYYOqcoKfhR.jpg', '2005-03-24', 8.8, 2316, 'SERIES');
-insert into series(id, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
-values (35, 'Ended', 9, 201, 'US', 86, 'the-office');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (35, '/mLyW3UTgi2lsMdtueYODcfAB9Ku.jpg', 'Ended', 9, 201, 'US', 86, 'the-office');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (36, 'Friends', 'The misadventures of a group of friends as they navigate the pitfalls of work, life and love in Manhattan.', 'en', '/2koX1xLkpTQM4IZebYvKysFW1Nh.jpg', '1994-09-22', 8.9, 1668, 'SERIES');
-insert into series(id, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
-values (36, 'Ended', 10, 236, 'US', 90, 'friends');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (36, '/l0qVZIpXtIo7km9u5Yqh0nKPOr5.jpg', 'Ended', 10, 236, 'US', 90, 'friends');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (37, 'Sherlock', 'A modern update finds the famous sleuth and his doctor partner solving crime in 21st century London.', 'en', '/7WTsnHkbA0FaG6R9twfFde0I9hl.jpg', '2010-07-25', 9.1, 19885, 'SERIES');
-insert into series(id, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
-values (37, 'Ended', 4, 15, 'GB', 93, 'sherlock');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (37, '/hmLTIRtVyTHShJl2Wb8LHmvUgJm.jpg', 'Ended', 4, 15, 'GB', 93, 'sherlock');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (38, 'True Detective', 'An American anthology crime drama television series created and written by Nic Pizzolatto. The series, broadcast by the premium cable network HBO, premiered on January 12, 2014.', 'en', '/cuV2O5ZyDLHSOWzg3nLVljp1ubw.jpg', '2014-01-12', 8.9, 46648, 'SERIES');
-insert into series(id, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
-values (38, 'Ended', 4, 30, 'US', 96, 'true-detective');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (38, '/siA2d4PNn4JVFZAwfIYx4pnKCaK.jpg', 'Ended', 4, 30, 'US', 96, 'true-detective');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (39, 'رأفت الهجان', 'Epic spy drama based on true events, following Egyptian intelligence officer Raafat Al-Haggan who infiltrated Israeli society for 17 years. One of the most acclaimed Arabic series ever made and patriotism during critical periods in Middle Eastern history.', 'ar', '/xWasNqXzlYom9Ghn3ykO3QrMF4P.jpg', '1988-01-01', 9.1, 90674, 'SERIES');
-insert into series(id, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
-values (39, 'Ended', 1, 31, 'EG', 97, 'رأفت-الهجان');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (39, '/XjSFUYhBAYgV6TMslETzhxoiXo.jpg', 'Ended', 1, 31, 'EG', 97, 'رأفت-الهجان');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (40, 'ارابيسك', 'Groundbreaking Egyptian drama series that tackled controversial social issues in Egyptian society. Each episode explored different themes including corruption, making it one of the most influential series in Arabic television history.', 'ar', '/3VzNab3jrVqDcei4LexoRINXjfV.jpg', '1994-01-01', 8.9, 90994, 'SERIES');
-insert into series(id, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
-values (40, 'Ended', 4, 120, 'EG', 98, 'اربايسك');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (40, '/3gQnEfzcxBvHOhm8EV18dCyno29.jpg', 'Ended', 4, 120, 'EG', 98, 'ارابيسك');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (41, 'الميزان', 'A legal drama following the life of a principled lawyer who fights for justice in a corrupt system.', 'ar', '/wk8XF95KdXTNFVl7nIRuLuLO8dm.jpg', '2018-05-16', 8.7, 88015, 'SERIES');
-insert into series(id, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
-values (41, 'Ended', 1, 30, 'EG', 99, 'الميزان');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (41, '/uje9ZX7L9IrWo0xvXFvLFhFH5L5.jpg', 'Ended', 1, 30, 'EG', 99, 'الميزان');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (42, 'يوميات ونيس', 'Wanees and Maysa are proud parents who want what''s best for their four children.', 'ar', '/jz6NCOJ6wYvw2yhGXZ502FiyjKK.jpg', '1999-12-06', 8.8, 55991, 'SERIES');
-insert into series(id, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
-values (42, 'Ended', 6, 100, 'EG', 100, 'wanis-wa-jamaloh');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (42, null, 'Ended', 6, 100, 'EG', 100, 'يوميات-ونيس');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (43, 'العار', 'The series revolves around the family of Haji Abdul Sattar, who is a drug dealer and is assisted by his eldest son without the knowledge of his family.', 'ar', '/hXtqGeIczLjfrlrvoYBXeBWQctb.jpg', '2011-09-13', 8.6, 96822, 'SERIES');
-insert into series(id, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
-values (43, 'Ended', 1, 30, 'EG', 101, 'العار');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (43, '/zd8aQaHeVFBHIshetWMM6z34x61.jpg', 'Ended', 1, 30, 'EG', 101, 'العار');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (44, 'ليالي الحلمية', 'Epic historical drama set in Cairo during the 1940s-1950s, following multiple families through major historical events including World War II, the Palestine conflict, and the Egyptian revolution.', 'ar', '/ri5YHgzMyFptkO4qfeeoe9zaUiG.jpg', '1987-09-01', 9.0, 52560, 'SERIES');
-insert into series(id, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
-values (44, 'Ended', 5, 150, 'EG', 102, 'ليالي-الحلمية');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (44, '/aWbZ8VAckvLDsyokfbMXszkYI3o.jpg', 'Ended', 5, 150, 'EG', 102, 'ليالي-الحلمية');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (45, 'حارة اليهود', 'Historical drama set in 1940s Cairo, depicting the coexistence of Egyptian Muslims, Christians, and Jews in the same neighborhood.', 'ar', '/NTF1wrCHVMeiOGqU7gry3vocz3.jpg', '2015-06-18', 5.5, 110473, 'SERIES');
-insert into series(id, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
-values (45, 'Ended', 1, 30, 'EG', 103, 'حارة-اليهود');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (45,  null, 'Ended', 1, 30, 'EG', 103, 'حارة-اليهود');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (46, 'الكبير اوي', 'Al Kabeer seeks to find love again after his wife was gone, unaware that what he is looking for is closer than he imagines.', 'ar', '/oj4XM6wpGRIcx3QoQx1PF1fx5E5.jpg', '2010-08-11', 7.0, 52698, 'SERIES');
-insert into series(id, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
-values (46, 'Ended', 6, 180, 'EG', 104, 'الكبير-اوي');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (46, '/wZsD7yIXU4f7IORXEv2lb5MKao0.jpg', 'Ended', 6, 180, 'EG', 104, 'الكبير-اوي');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (47, 'ام كلثوم', 'Biographical drama chronicling the life of Umm Kulthum, the legendary Egyptian singer known as "The Star of the East.', 'ar', '/7m9b5BDaIiqYhaGzEb8cNolibtj.jpg', '1999-01-01', 8.3, 100887, 'SERIES');
-insert into series(id, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
-values (47, 'Ended', 1, 31, 'EG', 105, 'ام-كلثوم');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (47, '/wsJaraepTMbi0hVppD20fibnOL4.jpg', 'Ended', 1, 31, 'EG', 105, 'ام-كلثوم');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (48, 'جراند اوتيل', 'Egyptian adaptation of the Spanish series, set in 1950s Cairo at a luxury hotel.', 'ar', '/gXKdgR3WhYa6ay9TEaU4fnL6bJq.jpg', '2016-05-27', 7.2, 71688, 'SERIES');
-insert into series(id, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
-values (48, 'Ended', 3, 90, 'EG', 106, 'جراند-اوتيل');
-
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (48, '/ikJpPwOA6I7LDyzaxAvY3PUxzmI.jpg', 'Ended', 3, 90, 'EG', 106, 'جراند-اوتيل');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (49, 'La casa de papel', 'To carry out the biggest heist in history, a mysterious man called The Professor recruits a band of eight robbers who have a single characteristic: none of them has anything to lose.', 'es', '/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg', '2017-05-27', 8.2, 71446, 'SERIES');
-insert into series(id, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
-values (49, 'Ended', 3, 40, 'Spain', null, 'la-casa-de-papel');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (49, '/gFZriCkpJYsApPZEF3jhxL4yLzG.jpg', 'Ended', 3, 40, 'Spain', null, 'la-casa-de-papel');
 
 
 -- Adding Content-Genre
@@ -650,6 +665,14 @@ insert into content_genre(id, content_id, genre_id)
 values (99, 49, 1);
 insert into content_genre(id, content_id, genre_id)
 values (100, 49, 7);
+insert into content_genre(id, content_id, genre_id)
+values (101, 27, 2);
+insert into content_genre(id, content_id, genre_id)
+values (102, 27, 1);
+insert into content_genre(id, content_id, genre_id)
+values (103, 28, 2);
+insert into content_genre(id, content_id, genre_id)
+values (104,28, 3);
 
 -- Adding Content-Provider
 insert into content_provider(id, content_id, provider_id)
@@ -794,6 +817,10 @@ insert into content_provider(id, content_id, provider_id)
 values (70, 49, 2);
 insert into content_provider(id, content_id, provider_id)
 values (71, 49, 3);
+insert into content_provider(id, content_id, provider_id)
+values (72, 27, 2);
+insert into content_provider(id, content_id, provider_id)
+values (73, 28, 1);
 
 
 
@@ -996,6 +1023,14 @@ insert into content_cast(id, crew_member_id, content_id, character_name)
 values (118, 119, 49, 'Profesor');
 insert into content_cast(id, crew_member_id, content_id, character_name)
 values (119, 120, 49, 'Berlín');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (120, 121, 28, 'Hercules (voice)');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (121, 122, 28, 'Philoctetes (voice)');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (122, 123, 27, 'ماجد');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (123, 124, 27, 'ششتاوي');
 
 
 

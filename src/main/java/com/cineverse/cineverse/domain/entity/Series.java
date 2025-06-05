@@ -22,14 +22,16 @@ public class Series extends Content {
     private String productionCountry;
     @Column(unique = true)
     private String slug;
+    private String backdropPath;
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "director_id")
     private CrewMember director;
     @OneToMany(mappedBy = "series", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Set<Season> seasons;
 
-    public Series(int tmdbId, String title, String overview, LocalDate releaseDate, String posterPath, String language, float imdbRate, int numberOfSeasons, int numberOfEpisodes, String status, String productionCountry, CrewMember director) {
+    public Series(int tmdbId, String title, String overview, LocalDate releaseDate, String posterPath, String language, float imdbRate, String backdropPath, int numberOfSeasons, int numberOfEpisodes, String status, String productionCountry, CrewMember director) {
         super(tmdbId, title, overview, releaseDate, posterPath, language, imdbRate, ContentType.SERIES);
+        this.backdropPath = backdropPath;
         this.numberOfSeasons = numberOfSeasons;
         this.numberOfEpisodes = numberOfEpisodes;
         this.status = status;
