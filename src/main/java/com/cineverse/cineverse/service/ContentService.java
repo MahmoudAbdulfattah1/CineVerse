@@ -27,7 +27,8 @@ public class ContentService {
     private final CreditMapper creditMapper;
     private final ProviderMapper providerMapper;
 
-    public List<ContentMetaDataDto> filterContent(List<String> genres, Integer year, Integer rate, ContentType contentType, String language, String sortBy) {
+    public List<ContentMetaDataDto> filterContent(List<String> genres, Integer year, Integer rate,
+                                                  ContentType contentType, String language, String sortBy) {
         return contentRepository.filterContent(genres, year, rate, contentType, language, sortBy);
     }
 
@@ -94,7 +95,10 @@ public class ContentService {
     }
 
     public TrailerDto getContentTrailer(int contentId) {
-        return new TrailerDto(youtubeService.getTrailerUrl(contentRepository.findContentTitleWithId(contentId)));
+        Content content = contentRepository.findContentById(contentId).orElseThrow(
+                () -> new EntityNotFoundException("Content not found"));
+        return new TrailerDto(youtubeService.getTrailerUrl(content.getTitle(), content.getReleaseDate().getYear(),
+                content.getContentType()));
     }
 
     public ContentStatsDto getContentStats(int contentId) {
@@ -112,9 +116,11 @@ public class ContentService {
         ContentType type = contentTypeRepository.findContentTypeById(contentId).orElseThrow(
                 () -> new EntityNotFoundException("Content not found"));
         return type.equals(ContentType.MOVIE) ?
-                new CastAndCrewDto(creditMapper.map(movieRepository.findMovieDirector(contentId)), creditMapper.map(movieRepository.findMovieCasts(contentId))) :
+                new CastAndCrewDto(creditMapper.map(movieRepository.findMovieDirector(contentId)),
+                        creditMapper.map(movieRepository.findMovieCasts(contentId))) :
                 type.equals(ContentType.SERIES) ?
-                        new CastAndCrewDto(creditMapper.map(seriesRepository.findSeriesDirector(contentId)), creditMapper.map(seriesRepository.findSeriesCasts(contentId))) :
+                        new CastAndCrewDto(creditMapper.map(seriesRepository.findSeriesDirector(contentId)),
+                                creditMapper.map(seriesRepository.findSeriesCasts(contentId))) :
                         null;
     }
 

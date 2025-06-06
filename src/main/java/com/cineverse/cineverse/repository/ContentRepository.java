@@ -8,6 +8,7 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 public interface ContentRepository extends JpaRepository<Content, Integer>, ContentRepositoryCustom {
@@ -26,8 +27,8 @@ public interface ContentRepository extends JpaRepository<Content, Integer>, Cont
     @Query("SELECT COALESCE(COUNT(w), 0) FROM Content c JOIN c.watchlists w WHERE c.id = :id")
     int totalWatchlists(@Param("id") int id);
 
-    @Query("SELECT c.title FROM Content c WHERE c.id = :id")
-    String findContentTitleWithId(@Param("id") int id);
+    @Query("SELECT c FROM Content c WHERE c.id = :id")
+    Optional<Content> findContentById(@Param("id") int id);
 
     @Query("""
             SELECT new com.cineverse.cineverse.dto.ProviderDto(p.name, p.logo)
