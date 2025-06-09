@@ -1,4 +1,4 @@
-package com.cineverse.cineverse.service.trailerquery;
+package com.cineverse.cineverse.domain.trailerquery;
 
 public class ArabicMovieQueryBuilder implements TrailerQueryBuilder {
 

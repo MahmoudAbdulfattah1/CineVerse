@@ -2,10 +2,10 @@ package com.cineverse.cineverse.service;
 
 import com.cineverse.cineverse.configuration.YoutubeApiConfiguration;
 import com.cineverse.cineverse.domain.enums.ContentType;
-import com.cineverse.cineverse.service.trailerquery.ArabicMovieQueryBuilder;
-import com.cineverse.cineverse.service.trailerquery.ArabicSeriesQueryBuilder;
-import com.cineverse.cineverse.service.trailerquery.EnglishContentQueryBuilder;
-import com.cineverse.cineverse.service.trailerquery.TrailerQueryBuilder;
+import com.cineverse.cineverse.domain.trailerquery.ArabicMovieQueryBuilder;
+import com.cineverse.cineverse.domain.trailerquery.ArabicSeriesQueryBuilder;
+import com.cineverse.cineverse.domain.trailerquery.EnglishContentQueryBuilder;
+import com.cineverse.cineverse.domain.trailerquery.TrailerQueryBuilder;
 import com.fasterxml.jackson.databind.JsonNode;
 import jakarta.annotation.PostConstruct;
 import org.springframework.http.ResponseEntity;
