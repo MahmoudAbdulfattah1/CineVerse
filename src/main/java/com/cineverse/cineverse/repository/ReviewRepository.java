@@ -11,24 +11,14 @@ import java.util.List;
 
 @Repository
 public interface ReviewRepository extends JpaRepository<Review, Integer> {
+
+
     @Query("""
-            SELECT new com.cineverse.cineverse.dto.ReviewDto(
-                new com.cineverse.cineverse.dto.UserDto(u.id, u.name, u.profilePicture),
-                r.id,
-                r.rate,
-                r.reviewTitle,
-                r.description,
-                SUM(CASE WHEN react.reactionType = com.cineverse.cineverse.domain.enums.ReactionType.LIKE THEN 1 ELSE 0 END),
-                SUM(CASE WHEN react.reactionType = com.cineverse.cineverse.domain.enums.ReactionType.DISLIKE THEN 1 ELSE 0 END),
-                r.spoiler,
-                r.createdAt
-            )
-            FROM Review r
-            JOIN r.user u
-            LEFT JOIN r.reactions react
-            WHERE r.content.id = :id
-            GROUP BY r.id, u.id, u.name, u.profilePicture, r.rate, r.reviewTitle, r.description, r.spoiler, r.createdAt
-            ORDER BY r.createdAt DESC
+                SELECT r FROM Review r
+                JOIN FETCH r.user u
+                LEFT JOIN FETCH r.reactions react
+                WHERE r.content.id = :id
+                ORDER BY r.createdAt DESC
             """)
-    List<ReviewDto> findContentReviews(@Param("id") int id);
+    List<Review> findContentReviews(@Param("id") int id);
 }

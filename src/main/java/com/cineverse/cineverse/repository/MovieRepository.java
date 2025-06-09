@@ -1,16 +1,16 @@
 package com.cineverse.cineverse.repository;
 
+import com.cineverse.cineverse.domain.entity.ContentCast;
+import com.cineverse.cineverse.domain.entity.CrewMember;
 import com.cineverse.cineverse.domain.entity.Movie;
 
-import com.cineverse.cineverse.dto.ContentCastDto;
-import com.cineverse.cineverse.dto.DirectorDto;
+import com.cineverse.cineverse.domain.entity.Provider;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
-import java.util.Optional;
 
 @Repository
 public interface MovieRepository extends JpaRepository<Movie, Integer> {
@@ -28,25 +28,36 @@ public interface MovieRepository extends JpaRepository<Movie, Integer> {
             WHERE m.slug = :slug
             """)
     Movie findMovieWithGenres(@Param("slug") String slug);
+    @Query("""
+            SELECT m FROM Movie m
+            WHERE m.id = :id
+            """)
+    Movie findMovieById(@Param("id") int id);
 
 
     @Query("""
-            SELECT new com.cineverse.cineverse.dto.DirectorDto(d.id, d.name, d.profilePath)
-            FROM Movie m
+            SELECT d FROM Movie m
             JOIN m.director d
             WHERE m.id = :id
             """)
-    DirectorDto findMovieDirector(@Param("id") int id);
+    CrewMember findMovieDirector(@Param("id") int id);
 
     @Query("""
-            SELECT new com.cineverse.cineverse.dto.ContentCastDto(c.id, mc.characterName, c.name, c.profilePath)
-            FROM Movie m
+            SELECT mc FROM Movie m
             JOIN m.contentCasts mc
-            JOIN mc.cast c
+            JOIN FETCH mc.cast c
             WHERE m.id = :id
             ORDER BY mc.id
             """)
-    List<ContentCastDto> findMovieCasts(@Param("id") int id);
+    List<ContentCast> findMovieCast(@Param("id") int id);
+
+    @Query("""
+            SELECT p FROM Movie m
+            JOIN m.providers mp
+            JOIN mp.provider p
+            WHERE m.id = :id
+            """)
+    List<Provider> findMovieProviders(@Param("id") int id);
 
     boolean existsBySlug(String slug);
 
