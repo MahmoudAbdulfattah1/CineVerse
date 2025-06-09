@@ -1,6 +1,7 @@
-package com.cineverse.cineverse.service.mapper;
+package com.cineverse.cineverse.mapper;
 
 import com.cineverse.cineverse.configuration.TMDBApiConfiguration;
+import com.cineverse.cineverse.domain.entity.Provider;
 import com.cineverse.cineverse.dto.ProviderDto;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;
@@ -13,10 +14,11 @@ public class ProviderMapper {
 
     private final TMDBApiConfiguration tmdbApiConfiguration;
 
-    public List<ProviderDto> map(List<ProviderDto> providerDtos) {
-        if (providerDtos == null) return List.of();
-        providerDtos.forEach(c -> c.setLogo(fullPath(c.getLogo())));
-        return providerDtos;
+    public List<ProviderDto> map(List<Provider> providers) {
+        if (providers == null) return List.of();
+        return providers.stream()
+                .map(p -> new ProviderDto(p.getName(), fullPath(p.getLogo())))
+                .toList();
     }
 
     private String fullPath(String path) {
