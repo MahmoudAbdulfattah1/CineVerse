@@ -32,7 +32,7 @@ public class Review {
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "content_id")
     private Content content;
     @OneToMany(mappedBy = "review", fetch = FetchType.EAGER)
