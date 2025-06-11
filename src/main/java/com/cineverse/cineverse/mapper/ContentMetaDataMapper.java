@@ -33,6 +33,7 @@ public class ContentMetaDataMapper {
                     content.getReleaseDate(),
                     content.getImdbRate(),
                     content.getOverview(),
+                    content.getContentType().toString(),
                     content.getGenres().stream().map(genre -> genre.getGenre().getName())
                             .collect(Collectors.toSet())
             );
@@ -53,6 +54,7 @@ public class ContentMetaDataMapper {
                     content.getReleaseDate(),
                     content.getImdbRate(),
                     content.getOverview(),
+                    content.getContentType().toString(),
                     content.getGenres().stream().map(genre -> genre.getGenre().getName())
                             .collect(Collectors.toSet())
             );
