@@ -21,6 +21,7 @@ public class Content {
     @Column(name = "tmdb_id", unique = true)
     private int tmdbId;
     private String title;
+    @Column(length = 2000)
     private String overview;
     @Column(name = "release_date")
     private LocalDate releaseDate;
