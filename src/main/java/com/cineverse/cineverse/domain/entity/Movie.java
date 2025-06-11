@@ -18,12 +18,14 @@ public class Movie extends Content {
     private String productionCountry;
     @Column(unique = true)
     private String slug;
+    private String backdropPath;
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "director_id")
     private CrewMember director;
 
-    public Movie(int tmdbId, String title, String overview, LocalDate releaseDate, String posterPath, String language, float imdbRate, int runtime, String productionCountry, CrewMember director) {
+    public Movie(int tmdbId, String title, String overview, LocalDate releaseDate, String posterPath, String language, float imdbRate, String backdropPath, int runtime, String productionCountry, CrewMember director) {
         super(tmdbId, title, overview, releaseDate, posterPath, language, imdbRate, ContentType.MOVIE);
+        this.backdropPath = backdropPath;
         this.runtime = runtime;
         this.productionCountry = productionCountry;
         this.director = director;

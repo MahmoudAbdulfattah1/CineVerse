@@ -1,5 +1,6 @@
 package com.cineverse.cineverse.domain.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -16,7 +17,7 @@ public class ContentCast {
     @ManyToOne
     @JoinColumn(name = "crew_member_id")
     private CrewMember cast;
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "content_id")
     private Content content;
 

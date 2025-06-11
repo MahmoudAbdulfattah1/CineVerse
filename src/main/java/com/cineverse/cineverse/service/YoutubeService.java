@@ -1,6 +1,11 @@
 package com.cineverse.cineverse.service;
 
 import com.cineverse.cineverse.configuration.YoutubeApiConfiguration;
+import com.cineverse.cineverse.domain.enums.ContentType;
+import com.cineverse.cineverse.domain.trailerquery.ArabicMovieQueryBuilder;
+import com.cineverse.cineverse.domain.trailerquery.ArabicSeriesQueryBuilder;
+import com.cineverse.cineverse.domain.trailerquery.EnglishContentQueryBuilder;
+import com.cineverse.cineverse.domain.trailerquery.TrailerQueryBuilder;
 import com.fasterxml.jackson.databind.JsonNode;
 import jakarta.annotation.PostConstruct;
 import org.springframework.http.ResponseEntity;
@@ -21,19 +26,27 @@ public class YoutubeService {
     @PostConstruct
     public void warmUp() {
         try {
-            getTrailerUrl("Warming up Youtube Service");
+            getTrailerUrl("Warming up Youtube Service", 2023, ContentType.MOVIE);
         } catch (Exception e) {
             System.err.println("YouTube API warm-up failed: " + e.getMessage());
         }
     }
 
-    public String buildTrailerQuery(String title) {
+    public String buildTrailerQuery(String title , int year, ContentType type) {
         boolean isArabic = title.matches(".*[\\u0600-\\u06FF]+.*");
-        return isArabic ? "الاعلان الرسمي " + title : title + " official trailer";
+        TrailerQueryBuilder queryBuilder;
+        if(isArabic){
+            queryBuilder = (type == ContentType.MOVIE) ?
+                new ArabicMovieQueryBuilder() :
+                new ArabicSeriesQueryBuilder();
+        }
+        else
+            queryBuilder = new EnglishContentQueryBuilder();
+        return queryBuilder.build(title, year);
     }
 
-    public String getTrailerUrl(String title) {
-        String query = buildTrailerQuery(title);
+    public String getTrailerUrl(String title, int year, ContentType type) {
+        String query = buildTrailerQuery(title, year, type);
         String apiKey = youtubeApiConfiguration.getApiKey();
 
         String apiUrl = "https://www.googleapis.com/youtube/v3/search"

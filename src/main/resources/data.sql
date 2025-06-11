@@ -1,245 +1,252 @@
 -- Adding Crew (Actors, Directors)
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (1, 'Mohamed Saad', '/zpIK3GYmqDPumneEDf0aqsqxhV1.jpg', 127762);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (2, 'Haala Shiha', '/fXcS9eioNf6X5au9yx3XU4SLm3U.jpg', 1864242);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (3, 'Abla Kamel', '/wVFfL9ZEQx4LZ4AfVvx2K8ab80b.jpg', 127764);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (4, 'Hassan Hosny', '/vMG9Carh5bi18v5unk06aYvvKZw.jpg', 127765);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (5, 'Wael Ehsan', '/gmXqkZdo3squRuQkqb2is8y9T5g.jpg', 127767);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (6, 'Wentworth Miller', '/js09M98qo6rEyyIlTbRMI6XiZJH.jpg', 3972);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (7, 'Dominic Purcell', '/30giDZ53c8f72pPbXCLK9xMSAnw.jpg', 10862);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (8, 'Paul Adelstein', '/9qkGnEWPzGayZg9gaB4xbP8UL4g.jpg', 17342);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (9, 'Robert Knepper', '/lRncjvgCIm1muIkK94zJSH2i3d6.jpg', 17343);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (10, 'Amaury Nolasco', '/djcol6Qn1opxkj5oebTMtOnbOnc.jpg', 17341);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (11, 'Paul T. Scheuring', '/2hNYumD0sMCDezKvTtDwginHP4L.jpg', 54869);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (12, 'Leonardo DiCaprio', '/wo2hJpn04vbtmh0B9utCFdsQhxM.jpg', 6193);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (13, 'Kate Winslet', '/9hJ59ogLxgcZDkvfGcjLHqbBzul.jpg', 204);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (14, 'James Cameron', '/9qNpwAAmqAcid3cXE9b0mYZwV75.jpg', 2710);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (15, 'Tom Hanks', '/xndWFsBlClOJFRdhSt4NBwiPq2o.jpg', 31);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (16, 'Robert Zemeckis', '/lZ9L7GMANAqwN9IxbQcxQq6DqAO.jpg', 570);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (17, 'Keanu Reeves', '/rRdru6REr9i3WIHv2mntpcgxnoY.jpg', 6384);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (18, 'Laurence Fishburne', '/8suOhUmPbfKqDQ17jQ1Gy0mI3P4.jpg', 2975);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (19, 'Lana Wachowski', '/hdBQMmClUnqRXtS0UkrLMzSQ51J.jpg', 9340);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (20, 'Lilly Wachowski', '/k0Cz9VYLhxkZz9Yc0KPm3EhGPJw.jpg', 9341);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (21, 'Samuel L. Jackson', '/nCJJ3NVksYNxIzEHcyC1XziwPVj.jpg', 2231);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (22, 'John Travolta', '/ns8uZHmXDQHJt7kCgpBKqj3JfzU.jpg', 8891);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (23, 'Quentin Tarantino', '/1gjcpAa99FAOWGnrUvHEXXsRs7o.jpg', 138);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (24, 'Christopher Nolan', '/aPZOi8lZKCQ3Uo2g2j8bFMHQQNR.jpg', 525);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (25, 'Christian Bale', '/qCpZn2e3dimwbryLnqxZuI88PTi.jpg', 3894);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (26, 'Heath Ledger', '/5Y9HnYYa9jF4NunY9lSgJGjSe8E.jpg', 1810);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (27, 'Adel Emam', '/45HzGrhVLwZEey4CnmVXFENSOrv.jpg', 4165);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (28, 'Youssra', '/kTn76Yy0C4YudSMqAX3h8YvMbn.jpg', 6452);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (29, 'Sherif Arafa', '/7HjhYYMMZtBVyWRY2dM8WGHAzgN.jpg', 56291);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (30, 'Ahmed Helmy', '/jPteRUeNiQR4TRiYGiMlRYFHkXo.jpg', 1025442);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (31, 'Mona Zaki', '/hOXSCLiLvBJ0jUjURYDUMjjTnUh.jpg', 935235);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (32, 'Ahmed Mekky', '/14jQPpZGchT3T5kTdQBJUlBSxMU.jpg', 1452544);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (33, 'Donia Samir Ghanem', '/xvF3LNwKe80Mr2EQBFmut7IgLXQ.jpg', 1503611);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (34, 'Ahmed El-Sakka', '/s0RmmGbBrCAmZe3OAiAIBgXlbRY.jpg', 935233);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (35, 'Karim Abdel Aziz', '/qCLCEU2HLmXpJoNPQJ5MN2BHqHL.jpg', 935238);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (36, 'Marwan Hamed', '/s9OHIJHzbO7w9AXbm178hw0JJXL.jpg', 935240);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (37, 'Sandra Bullock', '/suFFFiXKMcGh6TKX8tUYGqxC9u.jpg', 18277);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (38, 'Denzel Washington', '/jj2Gcobpopodar8QjZj8pZDsGP7.jpg', 5292);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (39, 'Steven Spielberg', '/tZxcg19YQ3e8fJ0pOs7hjlnmmr6.jpg', 488);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (40, 'Will Smith', '/eze9FO9VuryXLP0aF2cRqPCcibN.jpg', 2888);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (41, 'Martin Scorsese', '/9U9Y5GQuWX3EZy39B8nkk4NY01S.jpg', 1032);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (42, 'Robert De Niro', '/cT8htcckIuyI1Lqwt1CvD02ynTh.jpg', 380);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (43, 'Al Pacino', '/2dGBb1fOcNdJZ9OjCJMHHDhTaNk.jpg', 1158);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (44, 'Francis Ford Coppola', '/mKJkXwZdmAxYdE6bnQvziqiMKzj.jpg', 1776);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (45, 'Marlon Brando', '/9iFVvtMmK5tx7gT5HENhHqPDe9F.jpg', 3084);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (46, 'Tim Robbins', '/A7Ci1moazwkJQBh5T4vZ3kqK0p1.jpg', 664);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (47, 'Morgan Freeman', '/oIciQWr8VwKoR8TmAw1owaiZFyb.jpg', 192);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (48, 'Frank Darabont', '/bFcbkRR1L8eGhT2FrUj69siSXQS.jpg', 5151);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (49, 'Brad Pitt', '/tJiSUYst4ddIaz1zge2LqCtu9tw.jpg', 287);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (50, 'Edward Norton', '/5XBzD5WuTyVQZeS4VI25z2moMeY.jpg', 819);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (51, 'David Fincher', '/ttBqvHDUBXzRII8xzQRr5Qg6tUS.jpg', 7467);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (52, 'Uma Thurman', '/6SzFiz7vgFkVfnGGTDJxsrx1lHq.jpg', 139);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (53, 'Ridley Scott', '/zABJmN9opmqD4orWl0KzYiKSOXE.jpg', 578);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (54, 'Russell Crowe', '/cdowETe1PzXlfGi4dxwy5T9c3xp.jpg', 934);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (55, 'Peter Jackson', '/4hh7hips4xc6vG6Zz6zéXlsVfu6.jpg', 108);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (56, 'Elijah Wood', '/hFfQR3BtMspgjiUfP2DQp3EYAJk.jpg', 109);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (57, 'Ian McKellen', '/5cnnnpnJG6TiYUSS7qgJheUZgnv.jpg', 1327);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (58, 'Orlando Bloom', '/qUH5K2ZOkOsOQL2aVha9JnXnTzy.jpg', 114);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (59, 'George Lucas', '/WCSZzWdtPmdRxH9LUCVi2JPCSJ.jpg', 1);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (60, 'Harrison Ford', '/5M7oN3sznp99hWYQ9sX0xheswWX.jpg', 3);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (61, 'Taha Desouky', '/fmW18Zw765Cz2mhQJUiLQXBYbEt.jpg', 3261880);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (62, 'Essam Omar', '/cpWCF6GwzZBCVD4oAhjYyE2AdNS.jpg', 3462256);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (63, 'Omar El Mohandes', '/llRPxQLj7DC2s9rezjzIrHsy4cy.jpg', 3894664);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (64, 'Bryan Cranston', '/7Jahy5LZX2Fo8fGJltMreAI49hC.jpg', 17419);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (65, 'Aaron Paul', '/8Ac9uuoYwZoYVAIJfRLzzLsGGJn.jpg', 84497);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (66, 'Vince Gilligan', '/z3E0DhBg1V1PZVEtS9vfFPzOWYB.jpg', 66633);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (67, 'Emilia Clarke', '/r6l5f1wHvBbyTVgPrBYwPSRsNlg.jpg', 1223786);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (68, 'Peter Dinklage', '/lnZPtKXzDdPCo2r9h5n1uIMmJKz.jpg', 22970);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (69, 'Kit Harington', '/4Lj1lHNOaQCuKDddrg0TbZn4WHw.jpg', 239019);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (70, 'David Benioff', '/6VvKvvyxpqgBPz3xsdjGxm9Rg4e.jpg', 228068);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (71, 'James Gandolfini', '/bGhPjVeWnNGCGNsPnm3RKoNj3gK.jpg', 3227);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (72, 'Edie Falco', '/6kE7YAixtGgaDqbOhOpVNB1R6qN.jpg', 3145);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (73, 'David Chase', '/8qJ5DXhb5pjPcYFJdNNdRsBJWUi.jpg', 4945);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (74, 'Millie Bobby Brown', '/uCgVe9HhO5Zlut9DEa35qKEEL5N.jpg', 1050851);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (75, 'Finn Wolfhard', '/4kBXMDJOGtNHx9ov75XrPxnLHNR.jpg', 1379264);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (76, 'David Harbour', '/l8HGcQhMKkRbhqX15RyILmXy2tZ.jpg', 12133);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (77, 'Matt Duffer', '/f8J9xGb8ZRXdOoS4Yl9TShxaXkP.jpg', 1398540);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (78, 'Dominic West', '/vRCAWHhgc4EjPIFYYDJ7G8O2Xsr.jpg', 8965);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (79, 'Idris Elba', '/be1bVF7qGX91a6c5WeRPs5pKXln.jpg', 5462);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (80, 'David Simon', '/iMkkStdF7WkfhxaCZFgSBEq0WO5.jpg', 27024);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (81, 'Bob Odenkirk', '/f9LHv7cXtrLLiIHQlSz9Tq1YXA.jpg', 59410);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (82, 'Rhea Seehorn', '/7dHq6yWjgYLY6OjUZXr0w4Uh2w8.jpg', 214761);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (83, 'Peter Gould', '/1vKKQGwEtBvMuwf6TzIkAV5w8sU.jpg', 213054);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (84, 'Steve Carell', '/pf4vPsLWRmYABpLVBQeJOVtVnM.jpg', 4495);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (85, 'John Krasinski', '/3hwwlxEjV7fUg1zUQHKgL4I5aCK.jpg', 38673);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (86, 'Greg Daniels', '/tqcBKHFkNQhLNY3aAK3JJ0hgGlZ.jpg', 3037);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (87, 'Jennifer Aniston', '/lHx7UVw7z4Aa2RKyNYLv5fhHsEf.jpg', 4491);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (88, 'Courteney Cox', '/6vdZMA7L5L8WRBCcJcC7uHZFhZz.jpg', 4490);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (89, 'Matthew Perry', '/jCKFqjKCZWtGLvjFjpx4t1Z9cW7.jpg', 17825);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (90, 'David Crane', '/9yb1I0qCHwNhJ3ZKKq8RY5Vvxpf.jpg', 20825);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (91, 'Benedict Cumberbatch', '/wz3MRiMlGDwCdchqFcQY8fuI8gq.jpg', 71580);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (92, 'Martin Freeman', '/bNNiDWDKhm8zNHd4ycKuFLYpN3Y.jpg', 16851);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (93, 'Mark Gatiss', '/8GUsQZeY1FNRn0WpnIQy5wkNkHQ.jpg', 78955);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (94, 'Matthew McConaughey', '/wJtnLZCRN3uiYJMZCWl8cWAkdYH.jpg', 10297);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (95, 'Woody Harrelson', '/qjJJyiEbADlVhGJpRUVgE2uFPJd.jpg', 57755);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (96, 'Nic Pizzolatto', '/rEF6V2uIJt1eNLdv8ZJQo1BmX7G.jpg', 1315516);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (97, 'Salah Abu Seif', '/salah_abu_seif.jpg', 1000001);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (98, 'Youssef Chahine', '/youssef_chahine.jpg', 1000002);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (99, 'Peter Mimi', '/peter_mimi.jpg', 1000003);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (100, 'Mohamed Sobhi', '/mohamed_sobhi.jpg', 1000004);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (101, 'Inas El-Degheidy', '/inas_degheidy.jpg', 1000005);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (102, 'Osama Anwar Okasha', '/osama_okasha.jpg', 1000006);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (103, 'Mohamed Gamal El-Adl', '/mohamed_gamal_adl.jpg', 1000007);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (104, 'Ahmed El Gendy', '/ahmed_gendy.jpg', 1000008);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (105, 'Sherif Arafa', '/sherif_arafa.jpg', 1000009);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (106, 'Amr Arafa', '/pUFtRwrdbq9Ev14BsY3XJl03zrM.jpg', 1321994);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (107, 'Mahmoud Abdel Aziz', '/mahmoud_abdel_aziz.jpg', 1000011);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (108, 'Youssra', '/youssra.jpg', 1000012);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (109, 'Nour El-Sherif', '/nour_el_sherif.jpg', 1000013);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (110, 'Salah Zulfikar', '/salah_zulfikar.jpg', 1000014);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (111, 'Yehia El-Fakharany', '/yehia_fakharany.jpg', 1000015);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (112, 'Ahmed Mekky', '/ahmed_mekky.jpg', 1000016);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (113, 'Menna Shalaby', '/menna_shalaby.jpg', 1000017);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (114, 'Ahmed Ezz', '/ahmed_ezz.jpg', 1000018);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (115, 'Amina Rizk', '/eHJBpaypMN52VSIF84r5MgvC0Mr.jpg', 1470618);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (116, 'Amr Youssef', '/vYyvP5NHlVUNdKmUgX3e7X5sAW.jpg', 226927);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (117, 'Úrsula Corberó', '/cmH8Z459tw9YkR61QfxlCSlZw9P.jpg', 1042728);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (118, 'Itziar Ituño', '/vnrfL03NwRJ1X82esSNUoYzASGr.jpg', 947514);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (119, 'Álvaro Morte', '/2TGPhdpRC5wjdFEJqnLYiN5kbwg.jpg', 1340020);
-insert into crew_member(id, name, profile_path, tmdb_id)
-values (120, 'Pedro Alonso', '/38HeVKeOBztVYrLJOWzAtEZiB02.jpg', 1109836);
-
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (1, 'Mohamed Saad', '/zpIK3GYmqDPumneEDf0aqsqxhV1.jpg', 127762, 'MALE', 'Egyptian comedian and actor known for his popular comedy films and theatrical performances.', '1967-03-11', NULL, 'Cairo, Egypt', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (2, 'Haala Shiha', '/fXcS9eioNf6X5au9yx3XU4SLm3U.jpg', 1864242, 'FEMALE', 'Egyptian actress known for her roles in romantic comedies and drama films.', '1979-08-10', NULL, 'Alexandria, Egypt', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (3, 'Abla Kamel', '/wVFfL9ZEQx4LZ4AfVvx2K8ab80b.jpg', 127764, 'FEMALE', 'Veteran Egyptian actress known for her supporting roles in Egyptian cinema.', '1962-11-15', NULL, 'Cairo, Egypt', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (4, 'Hassan Hosny', '/vMG9Carh5bi18v5unk06aYvvKZw.jpg', 127765, 'MALE', 'Egyptian actor known for his comedic roles and character acting in numerous films.', '1931-09-08', '2021-05-18', 'Cairo, Egypt', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (5, 'Wael Ehsan', '/gmXqkZdo3squRuQkqb2is8y9T5g.jpg', 127767, 'MALE', 'Egyptian actor known for his roles in comedy and drama films.', '1975-06-22', NULL, 'Giza, Egypt', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (6, 'Wentworth Miller', '/js09M98qo6rEyyIlTbRMI6XiZJH.jpg', 3972, 'MALE', 'American actor and screenwriter best known for his role as Michael Scofield in Prison Break.', '1972-06-02', NULL, 'Chipping Norton, England', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (7, 'Dominic Purcell', '/30giDZ53c8f72pPbXCLK9xMSAnw.jpg', 10862, 'MALE', 'British-Australian actor known for his role as Lincoln Burrows in Prison Break.', '1970-02-17', NULL, 'Wallasey, England', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (8, 'Paul Adelstein', '/9qkGnEWPzGayZg9gaB4xbP8UL4g.jpg', 17342, 'MALE', 'American actor known for his television roles in Prison Break and Private Practice.', '1969-04-29', NULL, 'Chicago, Illinois, USA', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (9, 'Robert Knepper', '/lRncjvgCIm1muIkK94zJSH2i3d6.jpg', 17343, 'MALE', 'American actor best known for his role as Theodore "T-Bag" Bagwell in Prison Break.', '1959-07-08', NULL, 'Fremont, Ohio, USA', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (10, 'Amaury Nolasco', '/djcol6Qn1opxkj5oebTMtOnbOnc.jpg', 17341, 'MALE', 'Puerto Rican actor known for his role as Fernando Sucre in Prison Break.', '1970-12-24', NULL, 'San Juan, Puerto Rico', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (11, 'Paul T. Scheuring', '/2hNYumD0sMCDezKvTtDwginHP4L.jpg', 54869, 'MALE', 'American screenwriter and director, creator of the television series Prison Break.', '1968-11-20', NULL, 'Aurora, Illinois, USA', 'Directing');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (12, 'Leonardo DiCaprio', '/wo2hJpn04vbtmh0B9utCFdsQhxM.jpg', 6193, 'MALE', 'American actor and film producer known for his work in biographical and period films.', '1974-11-11', NULL, 'Los Angeles, California, USA', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (13, 'Kate Winslet', '/9hJ59ogLxgcZDkvfGcjLHqbBzul.jpg', 204, 'FEMALE', 'English actress known for her versatile performances in independent films and blockbusters.', '1975-10-05', NULL, 'Reading, England', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (14, 'James Cameron', '/9qNpwAAmqAcid3cXE9b0mYZwV75.jpg', 2710, 'MALE', 'Canadian filmmaker known for writing and directing epic science fiction films like Titanic and Avatar.', '1954-08-16', NULL, 'Kapuskasing, Ontario, Canada', 'Directing');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (15, 'Tom Hanks', '/xndWFsBlClOJFRdhSt4NBwiPq2o.jpg', 31, 'MALE', 'American actor and filmmaker known for his dramatic and comedic roles in numerous acclaimed films.', '1956-07-09', NULL, 'Concord, California, USA', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (16, 'Robert Zemeckis', '/lZ9L7GMANAqwN9IxbQcxQq6DqAO.jpg', 570, 'MALE', 'American filmmaker known for his innovative visual effects and storytelling techniques.', '1951-05-14', NULL, 'Chicago, Illinois, USA', 'Directing');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (17, 'Keanu Reeves', '/rRdru6REr9i3WIHv2mntpcgxnoY.jpg', 6384, 'MALE', 'Canadian actor known for his roles in action films and dramatic performances.', '1964-09-02', NULL, 'Beirut, Lebanon', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (18, 'Laurence Fishburne', '/8suOhUmPbfKqDQ17jQ1Gy0mI3P4.jpg', 2975, 'MALE', 'American actor known for his deep voice and commanding presence in films and television.', '1961-07-30', NULL, 'Augusta, Georgia, USA', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (19, 'Lana Wachowski', '/hdBQMmClUnqRXtS0UkrLMzSQ51J.jpg', 9340, 'FEMALE', 'American filmmaker known for co-directing The Matrix trilogy and other science fiction films.', '1965-06-21', NULL, 'Chicago, Illinois, USA', 'Directing');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (20, 'Lilly Wachowski', '/k0Cz9VYLhxkZz9Yc0KPm3EhGPJw.jpg', 9341, 'FEMALE', 'American filmmaker known for co-directing The Matrix trilogy and other science fiction films.', '1967-12-29', NULL, 'Chicago, Illinois, USA', 'Directing');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (21, 'Samuel L. Jackson', '/nCJJ3NVksYNxIzEHcyC1XziwPVj.jpg', 2231, 'MALE', 'American actor known for his prolific career and distinctive voice in numerous films.', '1948-12-21', NULL, 'Washington, D.C., USA', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (22, 'John Travolta', '/ns8uZHmXDQHJt7kCgpBKqj3JfzU.jpg', 8891, 'MALE', 'American actor known for his roles in musicals, dramas, and action films.', '1954-02-18', NULL, 'Englewood, New Jersey, USA', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (23, 'Quentin Tarantino', '/1gjcpAa99FAOWGnrUvHEXXsRs7o.jpg', 138, 'MALE', 'American director and screenwriter known for his nonlinear storytelling and pop culture references.', '1963-03-27', NULL, 'Knoxville, Tennessee, USA', 'Directing');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (24, 'Christopher Nolan', '/aPZOi8lZKCQ3Uo2g2j8bFMHQQNR.jpg', 525, 'MALE', 'British filmmaker known for his complex narratives and innovative visual techniques.', '1970-07-30', NULL, 'London, England', 'Directing');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (25, 'Christian Bale', '/qCpZn2e3dimwbryLnqxZuI88PTi.jpg', 3894, 'MALE', 'English actor known for his intense method acting and physical transformations for roles.', '1974-01-30', NULL, 'Haverfordwest, Wales', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (26, 'Heath Ledger', '/5Y9HnYYa9jF4NunY9lSgJGjSe8E.jpg', 1810, 'MALE', 'Australian actor known for his diverse roles and posthumous Academy Award for The Dark Knight.', '1979-04-04', '2008-01-22', 'Perth, Australia', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (27, 'Adel Emam', '/45HzGrhVLwZEey4CnmVXFENSOrv.jpg', 4165, 'MALE', 'Egyptian actor known as the "Comedy King" of Arab cinema and his social commentary films.', '1940-05-17', NULL, 'Mansoura, Egypt', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (28, 'Youssra', '/kTn76Yy0C4YudSMqAX3h8YvMbn.jpg', 6452, 'FEMALE', 'Egyptian actress considered one of the most prominent actresses in Arabic cinema.', '1951-03-10', NULL, 'Cairo, Egypt', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (29, 'Sherif Arafa', '/7HjhYYMMZtBVyWRY2dM8WGHAzgN.jpg', 56291, 'MALE', 'Egyptian film director known for his work in Egyptian cinema and television.', '1960-12-25', NULL, 'Cairo, Egypt', 'Directing');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (30, 'Ahmed Helmy', '/jPteRUeNiQR4TRiYGiMlRYFHkXo.jpg', 1025442, 'MALE', 'Egyptian comedian and actor known for his popular comedy films and television shows.', '1969-11-18', NULL, 'Banha, Egypt', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (31, 'Mona Zaki', '/hOXSCLiLvBJ0jUjURYDUMjjTnUh.jpg', 935235, 'FEMALE', 'Egyptian actress known for her diverse roles in both comedic and dramatic films.', '1976-11-18', NULL, 'Cairo, Egypt', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (32, 'Ahmed Mekky', '/14jQPpZGchT3T5kTdQBJUlBSxMU.jpg', 1452544, 'MALE', 'Egyptian actor, director, and rapper known for his comedy films and television work.', '1980-02-19', NULL, 'Cairo, Egypt', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (33, 'Donia Samir Ghanem', '/xvF3LNwKe80Mr2EQBFmut7IgLXQ.jpg', 1503611, 'FEMALE', 'Egyptian actress known for her roles in comedy films and television series.', '1985-01-01', NULL, 'Cairo, Egypt', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (34, 'Ahmed El-Sakka', '/s0RmmGbBrCAmZe3OAiAIBgXlbRY.jpg', 935233, 'MALE', 'Egyptian actor known for his action and drama films in Egyptian cinema.', '1973-03-01', NULL, 'Cairo, Egypt', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (35, 'Karim Abdel Aziz', '/qCLCEU2HLmXpJoNPQJ5MN2BHqHL.jpg', 935238, 'MALE', 'Egyptian actor known for his leading roles in action and drama films.', '1975-08-17', NULL, 'Cairo, Egypt', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (36, 'Marwan Hamed', '/s9OHIJHzbO7w9AXbm178hw0JJXL.jpg', 935240, 'MALE', 'Egyptian film director known for his work in contemporary Egyptian cinema.', '1977-04-15', NULL, 'Cairo, Egypt', 'Directing');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (37, 'Sandra Bullock', '/suFFFiXKMcGh6TKX8tUYGqxC9u.jpg', 18277, 'FEMALE', 'American actress known for her roles in romantic comedies and dramatic films.', '1964-07-26', NULL, 'Arlington, Virginia, USA', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (38, 'Denzel Washington', '/jj2Gcobpopodar8QjZj8pZDsGP7.jpg', 5292, 'MALE', 'American actor and director known for his powerful performances in dramatic films.', '1954-12-28', NULL, 'Mount Vernon, New York, USA', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (39, 'Steven Spielberg', '/tZxcg19YQ3e8fJ0pOs7hjlnmmr6.jpg', 488, 'MALE', 'American filmmaker known for his influential work in New Hollywood and blockbuster films.', '1946-12-18', NULL, 'Cincinnati, Ohio, USA', 'Directing');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (40, 'Will Smith', '/eze9FO9VuryXLP0aF2cRqPCcibN.jpg', 2888, 'MALE', 'American actor and rapper known for his roles in action and comedy films.', '1968-09-25', NULL, 'Philadelphia, Pennsylvania, USA', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (41, 'Martin Scorsese', '/9U9Y5GQuWX3EZy39B8nkk4NY01S.jpg', 1032, 'MALE', 'American director known for his crime films and innovative filmmaking techniques.', '1942-11-17', NULL, 'New York City, New York, USA', 'Directing');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (42, 'Robert De Niro', '/cT8htcckIuyI1Lqwt1CvD02ynTh.jpg', 380, 'MALE', 'American actor known for his method acting and collaborations with Martin Scorsese.', '1943-08-17', NULL, 'New York City, New York, USA', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (43, 'Al Pacino', '/2dGBb1fOcNdJZ9OjCJMHHDhTaNk.jpg', 1158, 'MALE', 'American actor known for his intense performances and iconic roles in crime films.', '1940-04-25', NULL, 'New York City, New York, USA', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (44, 'Francis Ford Coppola', '/mKJkXwZdmAxYdE6bnQvziqiMKzj.jpg', 1776, 'MALE', 'American filmmaker known for directing The Godfather trilogy and other acclaimed films.', '1939-04-07', NULL, 'Detroit, Michigan, USA', 'Directing');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (45, 'Marlon Brando', '/9iFVvtMmK5tx7gT5HENhHqPDe9F.jpg', 3084, 'MALE', 'American actor known for his method acting and influential performances in classic films.', '1924-04-03', '2004-07-01', 'Omaha, Nebraska, USA', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (46, 'Tim Robbins', '/A7Ci1moazwkJQBh5T4vZ3kqK0p1.jpg', 664, 'MALE', 'American actor and director known for his roles in dramatic films and political activism.', '1958-10-16', NULL, 'West Covina, California, USA', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (47, 'Morgan Freeman', '/oIciQWr8VwKoR8TmAw1owaiZFyb.jpg', 192, 'MALE', 'American actor known for his distinctive voice and wise character portrayals.', '1937-06-01', NULL, 'Memphis, Tennessee, USA', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (48, 'Frank Darabont', '/bFcbkRR1L8eGhT2FrUj69siSXQS.jpg', 5151, 'MALE', 'American filmmaker known for directing prison dramas and horror films.', '1959-01-28', NULL, 'Montbéliard, France', 'Directing');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (49, 'Brad Pitt', '/tJiSUYst4ddIaz1zge2LqCtu9tw.jpg', 287, 'MALE', 'American actor and producer known for his versatile roles and humanitarian work.', '1963-12-18', NULL, 'Shawnee, Oklahoma, USA', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (50, 'Edward Norton', '/5XBzD5WuTyVQZeS4VI25z2moMeY.jpg', 819, 'MALE', 'American actor known for his intense performances and screenplay writing.', '1969-08-18', NULL, 'Boston, Massachusetts, USA', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (51, 'David Fincher', '/ttBqvHDUBXzRII8xzQRr5Qg6tUS.jpg', 7467, 'MALE', 'American filmmaker known for his dark, stylish thrillers and meticulous attention to detail.', '1962-08-28', NULL, 'Denver, Colorado, USA', 'Directing');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (52, 'Uma Thurman', '/6SzFiz7vgFkVfnGGTDJxsrx1lHq.jpg', 139, 'FEMALE', 'American actress known for her roles in independent films and Quentin Tarantino movies.', '1970-04-29', NULL, 'Boston, Massachusetts, USA', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (53, 'Ridley Scott', '/zABJmN9opmqD4orWl0KzYiKSOXE.jpg', 578, 'MALE', 'British filmmaker known for his epic historical films and science fiction movies.', '1937-11-30', NULL, 'South Shields, England', 'Directing');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (54, 'Russell Crowe', '/cdowETe1PzXlfGi4dxwy5T9c3xp.jpg', 934, 'MALE', 'New Zealand-Australian actor known for his powerful performances in epic films.', '1964-04-07', NULL, 'Wellington, New Zealand', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (55, 'Peter Jackson', '/4hh7hips4xc6vG6Zz6zéXlsVfu6.jpg', 108, 'MALE', 'New Zealand filmmaker known for directing The Lord of the Rings trilogy.', '1961-10-31', NULL, 'Pukerua Bay, New Zealand', 'Directing');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (56, 'Elijah Wood', '/hFfQR3BtMspgjiUfP2DQp3EYAJk.jpg', 109, 'MALE', 'American actor known for his role as Frodo Baggins in The Lord of the Rings trilogy.', '1981-01-28', NULL, 'Cedar Rapids, Iowa, USA', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (57, 'Ian McKellen', '/5cnnnpnJG6TiYUSS7qgJheUZgnv.jpg', 1327, 'MALE', 'English actor known for his Shakespearean roles and fantasy film performances.', '1939-05-25', NULL, 'Burnley, England', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (58, 'Orlando Bloom', '/qUH5K2ZOkOsOQL2aVha9JnXnTzy.jpg', 114, 'MALE', 'English actor known for his roles in fantasy and historical epic films.', '1977-01-13', NULL, 'Canterbury, England', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (59, 'George Lucas', '/WCSZzWdtPmdRxH9LUCVi2JPCSJ.jpg', 1, 'MALE', 'American filmmaker known for creating the Star Wars and Indiana Jones franchises.', '1944-05-14', NULL, 'Modesto, California, USA', 'Directing');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (60, 'Harrison Ford', '/5M7oN3sznp99hWYQ9sX0xheswWX.jpg', 3, 'MALE', 'American actor known for his roles as Han Solo and Indiana Jones.', '1942-07-13', NULL, 'Chicago, Illinois, USA', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (61, 'Taha Desouky', '/fmW18Zw765Cz2mhQJUiLQXBYbEt.jpg', 3261880, 'MALE', 'Egyptian actor known for his roles in contemporary Egyptian films and television.', '1985-03-12', NULL, 'Cairo, Egypt', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (62, 'Essam Omar', '/cpWCF6GwzZBCVD4oAhjYyE2AdNS.jpg', 3462256, 'MALE', 'Egyptian actor known for his supporting roles in Egyptian cinema.', '1978-09-05', NULL, 'Alexandria, Egypt', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (63, 'Omar El Mohandes', '/llRPxQLj7DC2s9rezjzIrHsy4cy.jpg', 3894664, 'MALE', 'Egyptian actor known for his comedic roles in Egyptian films and television.', '1982-11-30', NULL, 'Giza, Egypt', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (64, 'Bryan Cranston', '/7Jahy5LZX2Fo8fGJltMreAI49hC.jpg', 17419, 'MALE', 'American actor known for his roles in Malcolm in the Middle and Breaking Bad.', '1956-03-07', NULL, 'Hollywood, California, USA', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+VALUES (65, 'Aaron Paul', '/8Ac9uuoYwZoYVAIJfRLzzLsGGJn.jpg', 84497, 'MALE', 'American actor known for his role as Jesse Pinkman in Breaking Bad.', '1979-08-27', NULL, 'Emmett, Idaho, USA', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (66, 'Vince Gilligan', '/z3E0DhBg1V1PZVEtS9vfFPzOWYB.jpg', 66633, 'MALE', 'American television writer, producer, and director best known for creating the critically acclaimed series Breaking Bad and Better Call Saul.', '1967-02-10', null, 'Richmond, Virginia, USA', 'Directing');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (67, 'Emilia Clarke', '/r6l5f1wHvBbyTVgPrBYwPSRsNlg.jpg', 1223786, 'FEMALE', 'British actress best known for her role as Daenerys Targaryen in the HBO series Game of Thrones.', '1986-10-23', null, 'London, England, UK', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (68, 'Peter Dinklage', '/lnZPtKXzDdPCo2r9h5n1uIMmJKz.jpg', 22970, 'MALE', 'American actor and producer known for his role as Tyrion Lannister in Game of Thrones, for which he won multiple Emmy Awards.', '1969-06-11', null, 'Morristown, New Jersey, USA', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (69, 'Kit Harington', '/4Lj1lHNOaQCuKDddrg0TbZn4WHw.jpg', 239019, 'MALE', 'English actor best known for playing Jon Snow in the HBO television series Game of Thrones.', '1986-12-26', null, 'Acton, London, England, UK', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (70, 'David Benioff', '/6VvKvvyxpqgBPz3xsdjGxm9Rg4e.jpg', 228068, 'MALE', 'American television producer, writer, and director known for co-creating the HBO series Game of Thrones with D.B. Weiss.', '1970-09-25', null, 'New York City, New York, USA', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (71, 'James Gandolfini', '/bGhPjVeWnNGCGNsPnm3RKoNj3gK.jpg', 3227, 'MALE', 'American actor best known for his role as Tony Soprano in the HBO television series The Sopranos, for which he won three Emmy Awards.', '1961-09-18', '2013-06-19', 'Westwood, New Jersey, USA', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (72, 'Edie Falco', '/6kE7YAixtGgaDqbOhOpVNB1R6qN.jpg', 3145, 'FEMALE', 'American actress known for her roles as Carmela Soprano in The Sopranos and Jackie Peyton in Nurse Jackie.', '1963-07-05', null, 'New York City, New York, USA', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (73, 'David Chase', '/8qJ5DXhb5pjPcYFJdNNdRsBJWUi.jpg', 4945, 'MALE', 'American television writer, director, and producer best known for creating The Sopranos, which is widely regarded as one of the greatest television series of all time.', '1945-08-22', null, 'Mount Vernon, New York, USA', 'Directing');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (74, 'Millie Bobby Brown', '/uCgVe9HhO5Zlut9DEa35qKEEL5N.jpg', 1050851, 'FEMALE', 'British actress and producer known for her breakthrough role as Eleven in the Netflix science fiction drama series Stranger Things.', '2004-02-19', null, 'Marbella, Spain', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (75, 'Finn Wolfhard', '/4kBXMDJOGtNHx9ov75XrPxnLHNR.jpg', 1379264, 'MALE', 'Canadian actor and musician known for his role as Mike Wheeler in Stranger Things and Richie Tozier in the It film series.', '2002-12-23', null, 'Vancouver, British Columbia, Canada', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (76, 'David Harbour', '/l8HGcQhMKkRbhqX15RyILmMy2tZ.jpg', 12133, 'MALE', 'American actor known for his role as Jim Hopper in Stranger Things and for his work in various films and stage productions.', '1975-04-10', null, 'White Plains, New York, USA', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (77, 'Matt Duffer', '/f8J9xGb8ZRXdOoS4Yl9TShxaXkP.jpg', 1398540, 'MALE', 'American television writer, director, and producer who co-created the Netflix series Stranger Things with his twin brother Ross Duffer.', '1984-02-15', null, 'Durham, North Carolina, USA', 'Directing');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (78, 'Dominic West', '/vRCAWHhgc4EjPIFYYDJ7G8O2Xsr.jpg', 8965, 'MALE', 'English actor known for his role as Detective Jimmy McNulty in The Wire and various film and television appearances.', '1969-10-15', null, 'Sheffield, Yorkshire, England, UK', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (79, 'Idris Elba', '/be1bVF7qGX91a6c5WeRPs5pKXln.jpg', 5462, 'MALE', 'English actor, producer, and musician known for his roles in The Wire, Luther, and various blockbuster films including the Marvel Cinematic Universe.', '1972-09-06', null, 'Hackney, London, England, UK', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (80, 'David Simon', '/iMkkStdF7WkfhxaCZFgSBEq0WO5.jpg', 27024, 'MALE', 'American author, journalist, and television writer known for creating acclaimed HBO series The Wire, Generation Kill, and The Deuce.', '1960-02-09', null, 'Washington, D.C., USA', 'Directing');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (81, 'Bob Odenkirk', '/f9LHv7cXtrLLiIHQlSz9Tq1YXA.jpg', 59410, 'MALE', 'American actor, comedian, writer, and producer known for his role as Saul Goodman in Breaking Bad and Better Call Saul.', '1962-10-22', null, 'Berwyn, Illinois, USA', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (82, 'Rhea Seehorn', '/7dHq6yWjgYLY6OjUZXr0w4Uh2w8.jpg', 214761, 'FEMALE', 'American actress best known for her role as Kim Wexler in the AMC television series Better Call Saul.', '1972-05-12', null, 'Norfolk, Virginia, USA', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (83, 'Peter Gould', '/1vKKQGwEtBvMuwf6TzIkAV5w8sU.jpg', 213054, 'MALE', 'American television writer and producer who co-created Better Call Saul with Vince Gilligan and worked as a writer on Breaking Bad.', '1964-07-22', null, 'New York City, New York, USA', 'Directing');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (84, 'Steve Carell', '/pf4vPsLWRmYABpLVBQeJOVtVnM.jpg', 4495, 'MALE', 'American actor, comedian, writer, and producer known for his role as Michael Scott in The Office and various film roles.', '1962-08-16', null, 'Concord, Massachusetts, USA', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (85, 'John Krasinski', '/3hwwlxEjV7fUg1zUQHKgL4I5aCK.jpg', 38673, 'MALE', 'American actor, director, and screenwriter known for his role as Jim Halpert in The Office and for directing A Quiet Place.', '1979-10-20', null, 'Newton, Massachusetts, USA', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (86, 'Greg Daniels', '/tqcBKHFkNQhLNY3aAK3JJ0hgGlZ.jpg', 3037, 'MALE', 'American television comedy writer, producer, and director known for adapting The Office for American television and creating Parks and Recreation.', '1963-06-13', null, 'New York City, New York, USA', 'Directing');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (87, 'Jennifer Aniston', '/lHx7UVw7z4Aa2RKyNYLv5fhHsEf.jpg', 4491, 'FEMALE', 'American actress and producer best known for her role as Rachel Green on the television sitcom Friends and various romantic comedy films.', '1969-02-11', null, 'Sherman Oaks, California, USA', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (88, 'Courteney Cox', '/6vdZMA7L5L8WRBCcJcC7uHZFhZz.jpg', 4490, 'FEMALE', 'American actress and producer known for her roles as Monica Geller on Friends and Gale Weathers in the Scream film series.', '1964-06-15', null, 'Birmingham, Alabama, USA', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (89, 'Matthew Perry', '/jCKFqjKCZWtGLvjFjpx4t1Z9cW7.jpg', 17825, 'MALE', 'American-Canadian actor best known for his role as Chandler Bing on the NBC television sitcom Friends.', '1969-08-19', '2023-10-28', 'Williamstown, Massachusetts, USA', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (90, 'David Crane', '/9yb1I0qCHwNhJ3ZKKq8RY5Vvxpf.jpg', 20825, 'MALE', 'American television writer and producer who co-created the hit sitcom Friends with Marta Kauffman.', '1957-08-13', null, 'New York City, New York, USA', 'Directing');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (91, 'Benedict Cumberbatch', '/wz3MRiMlGDwCdchqFcQY8fuI8gq.jpg', 71580, 'MALE', 'English actor known for his roles as Sherlock Holmes in the BBC series Sherlock and Doctor Strange in the Marvel Cinematic Universe.', '1976-07-19', null, 'Hammersmith, London, England, UK', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (92, 'Martin Freeman', '/bNNiDWDKhm8zNHd4ycKuFLYpN3Y.jpg', 16851, 'MALE', 'English actor known for his roles as Dr. John Watson in Sherlock, Bilbo Baggins in The Hobbit film trilogy, and Tim Canterbury in The Office UK.', '1971-09-08', null, 'Aldershot, Hampshire, England, UK', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (93, 'Mark Gatiss', '/8GUsQZeY1FNRn0WpnIQy5wkNkHQ.jpg', 78955, 'MALE', 'English actor, comedian, screenwriter, and novelist known for co-creating and writing Sherlock with Steven Moffat.', '1966-10-17', null, 'Sedgefield, County Durham, England, UK', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (94, 'Matthew McConaughey', '/wJtnLZCRN3uiYJMZCWl8cWAkdYH.jpg', 10297, 'MALE', 'American actor known for his roles in romantic comedies and later dramatic performances, including his role in True Detective and Dallas Buyers Club.', '1969-11-04', null, 'Uvalde, Texas, USA', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (95, 'Woody Harrelson', '/qjJJyiEbADlVhGJpRUVgE2uFPJd.jpg', 57755, 'MALE', 'American actor known for his roles in Cheers, Natural Born Killers, and True Detective, among many other film and television appearances.', '1961-07-23', null, 'Midland, Texas, USA', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (96, 'Nic Pizzolatto', '/rEF6V2uIJt1eNLdv8ZJQo1BmX7G.jpg', 1315516, 'MALE', 'American novelist, screenwriter, and television producer best known for creating the HBO crime anthology series True Detective.', '1975-10-18', null, 'New Orleans, Louisiana, USA', 'Directing');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (97, 'Salah Abu Seif', '/salah_abu_seif.jpg', 1000001, 'MALE', 'Egyptian film director considered one of the pioneers of Egyptian cinema, known for his realistic portrayal of Egyptian society.', '1915-05-10', '1996-06-23', 'Cairo, Egypt', 'Directing');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (98, 'Youssef Chahine', '/youssef_chahine.jpg', 1000002, 'MALE', 'Egyptian film director regarded as one of the most important figures in Arab cinema, known for his social and political films.', '1926-01-25', '2008-07-27', 'Alexandria, Egypt', 'Directing');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (99, 'Peter Mimi', '/peter_mimi.jpg', 1000003, 'MALE', 'Egyptian film director known for his work in contemporary Egyptian cinema and television drama series.', '1972-03-15', null, 'Cairo, Egypt', 'Directing');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (100, 'Mohamed Sobhi', '/mohamed_sobhi.jpg', 1000004, 'MALE', 'Egyptian actor, director, and playwright known for his comedic roles and social commentary in Egyptian theater and television.', '1948-05-03', null, 'Dakahlia, Egypt', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (101, 'Inas El-Degheidy', '/inas_degheidy.jpg', 1000005, 'FEMALE', 'Egyptian film director known for her bold and controversial films that address social issues, particularly women''s rights in Egyptian society.', '1952-11-04', null, 'Cairo, Egypt', 'Directing');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (102, 'Osama Anwar Okasha', '/osama_okasha.jpg', 1000006, 'MALE', 'Prominent Egyptian screenwriter known for his influential television dramas and contributions to Egyptian television.', '1941-05-03', '2010-08-25', 'Cairo, Egypt', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (103, 'Mohamed Gamal El-Adl', '/mohamed_gamal_adl.jpg', 1000007, 'MALE', 'Egyptian television and film director known for his work in Egyptian drama series and contemporary films.', '1965-08-20', null, 'Alexandria, Egypt', 'Directing');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (104, 'Ahmed El Gendy', '/ahmed_gendy.jpg', 1000008, 'MALE', 'Egyptian director and screenwriter known for his work in Egyptian television and film industry.', '1970-12-12', null, 'Giza, Egypt', 'Directing');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (105, 'Sherif Arafa', '/sherif_arafa.jpg', 1000009, 'MALE', 'Egyptian film director known for his successful commercial films and his ability to blend entertainment with social commentary.', '1960-12-25', null, 'Cairo, Egypt', 'Directing');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (106, 'Amr Arafa', '/pUFtRwrdbq9Ev14BsY3XJl03zrM.jpg', 1321994, 'MALE', 'Egyptian film director and screenwriter known for his contemporary Egyptian films and television work.', '1975-07-08', null, 'Cairo, Egypt', 'Directing');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (107, 'Mahmoud Abdel Aziz', '/mahmoud_abdel_aziz.jpg', 1000011, 'MALE', 'Egyptian actor known for his versatile roles in Egyptian cinema and television, spanning comedy and drama.', '1946-04-03', '2016-11-04', 'Alexandria, Egypt', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (108, 'Youssra', '/youssra.jpg', 1000012, 'FEMALE', 'Egyptian actress known as one of the most prominent figures in Arabic cinema and television drama.', '1955-03-10', null, 'Cairo, Egypt', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (109, 'Nour El-Sherif', '/nour_el_sherif.jpg', 1000013, 'MALE', 'Egyptian actor considered one of the greatest actors in the history of Egyptian and Arab cinema.', '1946-04-28', '2015-08-11', 'Cairo, Egypt', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (110, 'Salah Zulfikar', '/salah_zulfikar.jpg', 1000014, 'MALE', 'Egyptian actor known for his leading roles in Egyptian cinema during the golden age of Arab cinema.', '1926-01-07', '1993-12-22', 'Alexandria, Egypt', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (111, 'Yehia El-Fakharany', '/yehia_fakharany.jpg', 1000015, 'MALE', 'Egyptian actor known for his distinguished roles in Egyptian television and theater, particularly in social dramas.', '1945-04-07', null, 'Cairo, Egypt', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (112, 'Ahmed Mekky', '/ahmed_mekky.jpg', 1000016, 'MALE', 'Egyptian actor, comedian, and rapper known for his comedic roles and his contribution to Egyptian entertainment.', '1980-05-19', null, 'Cairo, Egypt', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (113, 'Menna Shalaby', '/menna_shalaby.jpg', 1000017, 'FEMALE', 'Egyptian actress known for her roles in both independent and mainstream Egyptian films and television.', '1982-07-22', null, 'Cairo, Egypt', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (114, 'Ahmed Ezz', '/ahmed_ezz.jpg', 1000018, 'MALE', 'Egyptian actor known for his leading roles in contemporary Egyptian cinema and action films.', '1971-08-05', null, 'Alexandria, Egypt', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (115, 'Amina Rizk', '/eHJBpaypMN52VSIF84r5MgvC0Mr.jpg', 1470618, 'FEMALE', 'Egyptian actress considered one of the pioneers of Egyptian cinema, known for her dramatic performances.', '1910-04-15', '2003-08-24', 'Alexandria, Egypt', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (116, 'Amr Youssef', '/vYyvP5NHlVUNdKmUgX3e7X5sAW.jpg', 226927, 'MALE', 'Egyptian actor known for his roles in contemporary Egyptian television dramas and films.', '1983-01-11', null, 'Cairo, Egypt', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (117, 'Úrsula Corberó', '/cmH8Z459tw9YkR61QfxlCSlZw9P.jpg', 1042728, 'FEMALE', 'Spanish actress best known for her role as Tokyo in the Netflix series Money Heist (La Casa de Papel).', '1989-08-11', null, 'Barcelona, Catalonia, Spain', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (118, 'Itziar Ituño', '/vnrfL03NwRJ1X82esSNUoYzASGr.jpg', 947514, 'FEMALE', 'Spanish actress known for her role as Inspector Raquel Murillo in Money Heist and her work in Basque cinema.', '1974-06-18', null, 'Basauri, Basque Country, Spain', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (119, 'Álvaro Morte', '/2TGPhdpRC5wjdFEJqnLYiN5kbwg.jpg', 1340020, 'MALE', 'Spanish actor best known for his role as The Professor (Sergio Marquina) in the Netflix series Money Heist.', '1975-02-23', null, 'Algeciras, Andalusia, Spain', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (120, 'Pedro Alonso', '/38HeVKeOBztVYrLJOWzAtEZiB02.jpg', 1109836, 'MALE', 'Spanish actor known for his role as Berlin in Money Heist and his extensive work in Spanish television and theater.', '1971-06-21', null, 'Vigo, Galicia, Spain', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (121, 'Tate Donovan', '/uYgYbd842mtRY66Ehw441aKkOC5.jpg', 15455, 'MALE', 'American actor known for his roles in films and television, including The O.C. and various romantic comedies.', '1963-09-25', null, 'Tenafly, New Jersey, USA', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (122, 'Danny DeVito', '/6kO4IN7ndoIGw2JGgm9Rg4e.jpg', 518, 'MALE', 'American actor, director, and producer known for his roles in films like Batman Returns and the TV series It''s Always Sunny in Philadelphia.', '1944-11-17', null, 'Neptune Township, New Jersey, USA', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (123, 'Nour Al Nabawy', '/sxpNjNiVdTvHNbmHzIOVSJRxF7k.jpg', 3542989, 'FEMALE', 'Egyptian actress known for her work in contemporary Egyptian television and film.', '1985-09-14', null, 'Cairo, Egypt', 'Acting');
+INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
+values (124, 'Ahmed Ghozzi', '/8pCh6auBMJAJSD8tJtuhYWk5rEZ.jpg', 3548017, 'MALE', 'Egyptian actor and comedian known for his work in Egyptian television and comedy shows.', '1978-11-30', null, 'Alexandria, Egypt', 'Acting');
 
 insert into genre(id, name, tmdb_id) values (1, 'Action', 28);
 insert into genre(id, name, tmdb_id) values (2, 'Drama', 18);
@@ -284,169 +291,260 @@ values (5, 'Fandango At Home', '/19fkcOz0xeUgCVW8tO85uOYnYK9.jpg',7);
 -- Adding Content
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (1, 'اللمبي', 'El-Limby lives in a decrepit neighborhood with his mother Faransa and he develops feelings for his neighbor.','ar', '/xrCgrBgAeOS24sxToCPN1HW7eOL.jpg', '2002-10-06', 6.8, 42315, 'MOVIE');
-insert into movie(id, run_time, production_country, director_id, slug)
-values (1, 100, 'Egypt', 5, 'اللمبي');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (1, '/7kf3pJIuzyLPAFQCnGGUVNbBTJL.jpg', 100, 'Egypt', 5, 'اللمبي');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (9, 'آسف على الإزعاج', 'A young man receives a phone call from a famous TV presenter who asks him to appear on her show. But someone stole his ID card, which he needs to get into the TV building.', 'ar', '/h16EVoqi5aG4P7g1J2LZSCtWryk.jpg', '2008-12-03', 7.3, 60700, 'MOVIE');
-insert into movie(id, run_time, production_country, director_id, slug)
-values (9, 120, 'Egypt', 29, 'آسف-على-الإزعاج');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (9, '/8ocnkM8n1VxgQ1wMVFnSZvpYrCt.jpg', 120, 'Egypt', 29, 'آسف-على-الإزعاج');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (10, 'The Godfather', 'The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.', 'en', '/3bhkrj58Vtu7enYsRolD1fZdja1.jpg', '1972-03-14', 9.2, 238, 'MOVIE');
-insert into movie(id, run_time, production_country, director_id, slug)
-values (10, 175, 'United States', 44, 'the-godfather');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (10, '/tmU7GeKVybMWFButWEGl2M4GeiP.jpg', 175, 'United States', 44, 'the-godfather');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (11, 'The Shawshank Redemption', 'Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.', 'en', '/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg', '1994-09-23', 9.3, 278, 'MOVIE');
-insert into movie(id, run_time, production_country, director_id, slug)
-values (11, 142, 'United States', 48, 'the-shawshank-redemption');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (11, '/kXfqcdQKsToO0OUXHcrrNCHDBzO.jpg', 142, 'United States', 48, 'the-shawshank-redemption');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (12, 'Fight Club', 'An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.', 'en', '/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg', '1999-10-15', 8.8, 550, 'MOVIE');
-insert into movie(id, run_time, production_country, director_id, slug)
-values (12, 139, 'United States', 51, 'fight-club');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (12, '/xRyINp9KfMLVjRiO5nCsoRDdvvF.jpg', 139, 'United States', 51, 'fight-club');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (13, 'Kill Bill: Vol. 1', 'After awakening from a four-year coma, a former assassin wreaks vengeance on the team of assassins who betrayed her.', 'en', '/v7TaX8kXMXs5yFFGR41guUDNcnB.jpg', '2003-10-10', 8.1, 24, 'MOVIE');
-insert into movie(id, run_time, production_country, director_id, slug)
-values (13, 111, 'United States', 23, 'kill-bill-vol-1');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (13, '/p3WiF8qYS7Qp17YRYgrFh7gf9P9.jpg', 111, 'United States', 23, 'kill-bill-vol-1');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (14, 'Gladiator', 'A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.', 'en', '/ty8TGRuvJLPUmAR1H1nRIsgwvim.jpg', '2000-05-05', 8.5, 98, 'MOVIE');
-insert into movie(id, run_time, production_country, director_id, slug)
-values (14, 155, 'United States', 53, 'gladiator');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (14, '/Ar7QuJ7sJEiC0oP3I8fKBKIQD9u.jpg', 155, 'United States', 53, 'gladiator');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (15, 'Titanic', 'A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.', 'en', '/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg', '1997-12-19', 7.9, 597, 'MOVIE');
-insert into movie(id, run_time, production_country, director_id, slug)
-values (15, 194, 'United States', 14, 'titanic');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (15, '/sCzcYW9h55WcesOqA12cgEr9Exw.jpg', 194, 'United States', 14, 'titanic');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (16, 'The Matrix', 'A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.', 'en', '/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg', '1999-03-31', 8.7, 603, 'MOVIE');
-insert into movie(id, run_time, production_country, director_id, slug)
-values (16, 136, 'United States', 19, 'the-matrix');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (16, '/icmmSD4vTTDKOq2vvdulafOGw93.jpg', 136, 'United States', 19, 'the-matrix');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
-values (17, 'Pulp Fiction', 'The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.', 'en', '/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg', '1994-10-14', 8.9, 680, 'MOVIE');
-insert into movie(id, run_time, production_country, director_id, slug)
-values (17, 154, 'United States', 23, 'pulp-fiction');
+values (17, 'Kung Fu Hustle', 'It''s the 1940s, and the notorious Axe Gang terrorizes Shanghai. Small-time criminals Sing and Bone hope to join, but they only manage to make lots of very dangerous enemies.', 'cn', '/exbyTbrvRUDKN2mcNEuVor4VFQW.jpg', '2004-02-10', 8.9, 9470, 'MOVIE');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (17, '/suaEOtk1N1sgg2MTM7oZd2cfVp3.jpg', 154, 'China', 23, 'kung-fu-hustle');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (18, 'The Dark Knight', 'When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.', 'en', '/qJ2tW6WMUDux911r6m7haRef0WH.jpg', '2008-07-18', 9.0, 155, 'MOVIE');
-insert into movie(id, run_time, production_country, director_id, slug)
-values (18, 152, 'United States', 24, 'the-dark-knight');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (18, '/enNubozHn9pXi0ycTVYUWfpHZm.jpg', 152, 'United States', 24, 'the-dark-knight');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
-values (19, 'سيكو سيكو', 'Two cousins, both from a middle-class background, finally see their dream come true when their inheritance is rightfully returned to them following their uncle’s death.', 'ar', '/rlNIIPi3pm7kY5MgiN3gDHESEkk.jpg', '2025-03-30', 8.1, 608718, 'MOVIE');
-insert into movie(id, run_time, production_country, director_id, slug)
-values (19, 105, 'Egypt', 63, 'سيكو-سيكو');
+values (19, 'سيكو سيكو', 'Two cousins, both from a middle-class background, finally see their dream come true when their inheritance is rightfully returned to them following their uncle''s death.', 'ar', '/rlNIIPi3pm7kY5MgiN3gDHESEkk.jpg', '2025-03-30', 8.1, 608718, 'MOVIE');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (19, '/5uEkwwarjGu7fU0vQ9t7EFYwhzO.jpg', 105, 'Egypt', 63, 'سيكو-سيكو');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (20, 'Forrest Gump', 'The presidencies of Kennedy and Johnson, the events of Vietnam, Watergate, and other historical events unfold through the perspective of an Alabama man with an IQ of 75, whose only desire is to be reunited with his childhood sweetheart.', 'en', '/saHP97rTPS5eLmrLQEcANmKrsFl.jpg', '1994-07-06', 8.8, 13, 'MOVIE');
-insert into movie(id, run_time, production_country, director_id, slug)
-values (20, 142, 'United States', 16 ,'forrest-gump');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (20, '/tlEFuIlaxRPXIYVHXbOSAMCfWqk.jpg', 142, 'United States', 16, 'forrest-gump');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (21, 'Inception', 'A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.', 'en', '/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg', '2010-07-16', 8.8, 27205, 'MOVIE');
-insert into movie(id, run_time, production_country, director_id, slug)
-values (21, 148, 'United States', 24, 'inception');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (21, '/8ZTVqvKDQ8emSGUEMjsS4yHAwrp.jpg', 148, 'United States', 24, 'inception');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (22, 'The Lord of the Rings: The Fellowship of the Ring', 'A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.', 'en', '/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg', '2001-12-19', 8.8, 120, 'MOVIE');
-insert into movie(id, run_time, production_country, director_id, slug)
-values (22, 178, 'New Zealand', 55, 'the-lord-of-the-rings-the-fellowship-of-the-ring');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (22, '/x2RS3uTcsJJ9IfjNPcgDmukoEcQ.jpg', 178, 'New Zealand', 55, 'the-lord-of-the-rings-the-fellowship-of-the-ring');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
-values (23, 'Star Wars: Episode IV - A New Hope', 'Princess Leia is captured and held hostage by the evil Imperial forces in their effort to take over the galactic Empire. Venturesome Luke Skywalker and dashing captain Han Solo team together with the lovable robot duo R2-D2 and C-3PO to rescue her ', 'en', '/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg', '2001-12-19', 8.8, 11, 'MOVIE');
-insert into movie(id, run_time, production_country, director_id, slug)
-values (23, 121, 'United States', 59, 'star-wars-episode-iv-a-new-hope');
+values (23, 'Star Wars: Episode IV - A New Hope', 'Princess Leia is captured and held hostage by the evil Imperial forces in their effort to take over the galactic Empire. Venturesome Luke Skywalker and dashing captain Han Solo team together with the lovable robot duo R2-D2 and C-3PO to rescue her ', 'en', '/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg', '1977-05-25', 8.8, 11, 'MOVIE');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (23, '/2w4xG178RpB4MDAIfTkqAuSJzec.jpg', 121, 'United States', 59, 'star-wars-episode-iv-a-new-hope');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (24, 'الكيت كات', 'A blind man who works at a public bath house develops a bond with his son, who reads to him from paperbacks about criminal heists.', 'ar', '/u58To5A37XPHY6O5O4T6NGb1zqp.jpg', '1991-12-16', 8.0, 76492, 'MOVIE');
-insert into movie(id, run_time, production_country, director_id, slug)
-values (24, 135, 'Egypt', 36, 'الكيت-كات');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (24, '/rcJWnb2ziCW0Jwplui7amMkm4XW.jpg', 135, 'Egypt', 36, 'الكيت-كات');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (25, 'Goodfellas', 'The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill and his mob partners Jimmy Conway and Tommy DeVito in the Italian-American crime syndicate.', 'en', '/aKuFiU82s5ISJpGZp7YkIr3kCUd.jpg', '1990-09-12', 8.7, 769, 'MOVIE');
-insert into movie(id, run_time, production_country, director_id, slug)
-values (25, 146, 'United States', 41, 'goodfellas');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (25, '/7TF4p86ZafnxFuNqWdhpHXFO244.jpg', 146, 'United States', 41, 'goodfellas');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (26, 'Saving Private Ryan', 'As U.S. troops storm the beaches of Normandy, three brothers lie dead on the battlefield, with a fourth trapped behind enemy lines. Ranger captain John Miller and seven men are tasked with penetrating German-held territory and bringing the boy home.', 'en', '/1wY4psJ5NVEhCuOYROwLH2XExM2.jpg', '1998-07-24', 8.6, 857, 'MOVIE');
-insert into movie(id, run_time, production_country, director_id, slug)
-values (26, 169, 'United States', 39, 'saving-private-ryan');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (26, '/rW2xRFlJRbTnBJlQTSjQmjevIwb.jpg', 169, 'United States', 39, 'saving-private-ryan');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
-values (2, 'Prison Break', 'Dangerous threats keep Michael and Lincoln fighting to protect Sara and Mike. Meanwhile, Poseidon continues to try and outsmart Michael and the rest of the gang, which leads them to the ultimate showdown, and not everyone makes it out alive.','en', '/5E1BhkCgjLBlqx557Z5yzcN0i88.jpg', '2005-08-29', 8.078, 2288,'SERIES');
-insert into series(id, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
-values (2, 'Ended', 5, 88, 'US', 11, 'prison-break');
+values (27, 'الحريفة ', 'Circumstances force Majed to leave his comfortable life and move from his private school to a public school.', 'ar', '/bdZRCfHUMZm6FNJfudvQg6surNK.jpg', '2024-01-04', 7.3, 1197989, 'MOVIE');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (27, '/oGfAMzYsRbTlSBZFCiVNVzQ5YrC.jpg', 117, 'United States', 39, 'الحريفة');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
-values (29, 'Breaking Bad', 'When Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live, he becomes filled with a sense of fearlessness and an unrelenting desire to secure his familys.', 'en', '/ggFHVNu6YYI5L9pCfOacjizRGt.jpg', '2008-01-20', 9.5, 1396, 'SERIES');
-insert into series(id, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
-values (29, 'Ended', 5, 62, 'US', 66, 'breaking-bad');
+values (28, 'Hercules ', 'Bestowed with superhuman strength, a young mortal named Hercules sets out to prove himself a hero in the eyes of his father, the great god Zeus.', 'en', '/dK9rNoC97tgX3xXg5zdxFisdfcp.jpg', '1997-06-13', 7.3, 11970, 'MOVIE');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (28, '/oG9dcGSSu13fjFp1Uly15ZXjRKV.jpg', 117, 'United States', 39, 'hercules');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
-values (30, 'Game of Thrones', 'Seven noble families fight for control of the mythical land of Westeros. Friction between the houses leads to full-scale war. All while a very ancient evil awakens in the farthest north.', 'en', '/u3bZgnGQ9T01sWNhyveQz0wH0Hl.jpg', '2011-04-17', 9.3, 1399, 'SERIES');
-insert into series(id, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
-values (30, 'Ended', 8, 73, 'US', 70, 'game-of-thrones');
+values (50, 'WALL-E', 'A robot who is responsible for cleaning a waste-covered Earth meets another robot and falls in love with her. Together, they set out on a journey that will alter the fate of mankind.', 'en', '/vLDyPpnVLikVdYifnqD6DgTDsbW.jpg', '2008-06-27', 8.4, 10681, 'MOVIE');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (50, '/mpEjFqypc3UR1UGosWyuXcg9ahz.jpg', 98, 'United States', 40, 'wall-e');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
-values (31, 'The Sopranos', 'The story of New Jersey-based Italian-American mobster Tony Soprano and the difficulties he faces as he tries to balance the conflicting requirements of his home life and the criminal organization he heads.', 'en', '/rTc7ZXdroqjkKivFPvCPX0Ru7uw.jpg', '1999-01-10', 9.2, 1398, 'SERIES');
-insert into series(id, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
-values (31, 'Ended', 6, 86, 'US', 73, 'the-sopranos');
+values (51, 'The Lion King', 'Lion prince Simba and his father are targeted by his bitter uncle, who wants to ascend the throne himself.', 'en', '/sKCr78MXSLixwmZ8DyJLrpMsd15.jpg', '1994-06-24', 8.5, 8587, 'MOVIE');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (51, '/wXsQvli6tWqja51pYxXNG1LFIGV.jpg', 88, 'United States', 41, 'the-lion-king');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
-values (32, 'Stranger Things', 'When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.', 'en', '/49WJfeN0moxb9IPfGn8AIqMGskD.jpg', '2016-07-15', 8.7, 66732, 'SERIES');
-insert into series(id, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
-values (32, 'Ended', 4, 42, 'US', 77, 'stranger-things');
+values (52, 'Up', '78-year-old Carl Fredricksen travels to South America in his house equipped with balloons, inadvertently taking a young stowaway.', 'en', '/mFvoEwSfLqbcWwFsDjQebn9bzFe.jpg', '2009-05-29', 8.3, 14160, 'MOVIE');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (52, '/hGGC9gKo7CFE3fW07RA587e5kol.jpg', 96, 'United States', 42, 'up');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
-values (33, 'The Wire', 'Told from the points of view of both the Baltimore homicide and narcotics detectives and their targets.', 'en', '/4lbclFySvugI51fwsyxBTOm4DqK.jpg', '2002-06-02', 9.3, 1438, 'SERIES');
-insert into series(id, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
-values (33, 'Ended', 5, 60, 'US', 80, 'the-wire');
+values (53, 'Finding Nemo', 'After his son is captured in the Great Barrier Reef and taken to Sydney, a timid clownfish sets out on a journey to bring him home.', 'en', '/eHuGQ10FUzK1mdOY69wF5pGgEf5.jpg', '2003-05-30', 8.2, 12, 'MOVIE');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (53, '/eCynaAOgYYiw5yN5lBwz3IxqvaW.jpg', 100, 'United States', 43, 'finding-nemo');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
-values (34, 'Better Call Saul', 'Six years before Saul Goodman meets Walter White. We meet him when the man who will become Saul Goodman is known as Jimmy McGill, a small-time lawyer searching for his destiny, and, more immediately, hustling to make ends meet.', 'en', '/zjg4jpK1Wp2kiRvtt5ND0kznako.jpg', '2015-02-08', 8.8, 60059, 'SERIES');
-insert into series(id, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
-values (34, 'Ended', 6, 63, 'US', 83, 'better-call-saul');
+values (54, 'Toy Story', 'A cowboy doll is profoundly jealous when a new spaceman action figure supplants him as the top toy in a boy''s bedroom.', 'en', '/uXDfjJbdP4ijW5hWSBrPrlKpxab.jpg', '1995-11-22', 8.3, 862, 'MOVIE');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (54, '/3Rfvhy1Nl6sSGJwyjb0QiZzZYlB.jpg', 81, 'United States', 44, 'toy-story');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
-values (35, 'The Office', 'The everyday lives of office employees in the Scranton, Pennsylvania branch of the fictional Dunder Mifflin Paper Company.', 'en', '/7DJKHzAi83BmQrWLrYYOqcoKfhR.jpg', '2005-03-24', 8.8, 2316, 'SERIES');
-insert into series(id, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
-values (35, 'Ended', 9, 201, 'US', 86, 'the-office');
+values (55, 'Toy Story 3', 'The toys are mistakenly delivered to a day-care center instead of the attic right before Andy leaves for college, and it''s up to Woody to convince the other toys that they weren''t abandoned.', 'en', '/AbbXspMOwdvwWZgVN0nabZq03Ec.jpg', '2010-06-18', 8.3, 10193, 'MOVIE');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (55, '/uAfhsySkr1UzQg1zdg3dZQRz9Fd.jpg', 103, 'United States', 45, 'toy-story-3');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
-values (36, 'Friends', 'The misadventures of a group of friends as they navigate the pitfalls of work, life and love in Manhattan.', 'en', '/2koX1xLkpTQM4IZebYvKysFW1Nh.jpg', '1994-09-22', 8.9, 1668, 'SERIES');
-insert into series(id, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
-values (36, 'Ended', 10, 236, 'US', 90, 'friends');
+values (56, 'Monsters, Inc.', 'In order to power the city, monsters have to scare children so that they scream. However, the children are toxic to the monsters, and after a child gets through, two monsters realize things may not be what they think.', 'en', '/qjlbN6aK1qgeg3SspFVovT2D1Me.jpg', '2001-11-02', 8.1, 585, 'MOVIE');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (56, '/c7VbRPlev1bRfKvTxr98erw5T7B.jpg', 92, 'United States', 46, 'monsters-inc');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
-values (37, 'Sherlock', 'A modern update finds the famous sleuth and his doctor partner solving crime in 21st century London.', 'en', '/7WTsnHkbA0FaG6R9twfFde0I9hl.jpg', '2010-07-25', 9.1, 19885, 'SERIES');
-insert into series(id, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
-values (37, 'Ended', 4, 15, 'GB', 93, 'sherlock');
+values (57, 'Spirited Away', 'During her family''s move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by gods, witches and spirits, and where humans are changed into beasts.', 'ja', '/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg', '2001-07-20', 8.6, 129, 'MOVIE');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (57, '/m4TUa2ciEWSlk37rOsjiSIvZDXE.jpg', 124, 'Japan', 47, 'spirited-away');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
-values (38, 'True Detective', 'An American anthology crime drama television series created and written by Nic Pizzolatto. The series, broadcast by the premium cable network HBO, premiered on January 12, 2014.', 'en', '/cuV2O5ZyDLHSOWzg3nLVljp1ubw.jpg', '2014-01-12', 8.9, 46648, 'SERIES');
-insert into series(id, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
-values (38, 'Ended', 4, 30, 'US', 96, 'true-detective');
+values (58, 'How to Train Your Dragon', 'A hapless young Viking who aspires to hunt dragons becomes the unlikely friend of a young dragon himself, and learns there may be more to the creatures than he assumed.', 'en', '/ygGmAO60t8GyqUo9xYeYxSZAR3b.jpg', '2010-03-26', 8.1, 10191, 'MOVIE');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (58, '/59vDC1BuEQvti24OMr0ZvtAK6R1.jpg', 98, 'United States', 48, 'how-to-train-your-dragon');
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
-values (39, 'رأفت الهجان', 'Epic spy drama based on true events, following Egyptian intelligence officer Raafat Al-Haggan who infiltrated Israeli society for 17 years. One of the most acclaimed Arabic series ever made and patriotism during critical periods in Middle Eastern history.', 'ar', '/xWasNqXzlYom9Ghn3ykO3QrMF4P.jpg', '1988-01-01', 9.1, 90674, 'SERIES');
-insert into series(id, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
-values (39, 'Ended', 1, 31, 'EG', 97, 'رأفت-الهجان');
-insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
-values (40, 'ارابيسك', 'Groundbreaking Egyptian drama series that tackled controversial social issues in Egyptian society. Each episode explored different themes including corruption, making it one of the most influential series in Arabic television history.', 'ar', '/3VzNab3jrVqDcei4LexoRINXjfV.jpg', '1994-01-01', 8.9, 90994, 'SERIES');
-insert into series(id, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
-values (40, 'Ended', 4, 120, 'EG', 98, 'اربايسك');
-insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
-values (41, 'الميزان', 'A legal drama following the life of a principled lawyer who fights for justice in a corrupt system.', 'ar', '/wk8XF95KdXTNFVl7nIRuLuLO8dm.jpg', '2018-05-16', 8.7, 88015, 'SERIES');
-insert into series(id, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
-values (41, 'Ended', 1, 30, 'EG', 99, 'الميزان');
-insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
-values (42, 'يوميات ونيس', 'Wanees and Maysa are proud parents who want what''s best for their four children.', 'ar', '/jz6NCOJ6wYvw2yhGXZ502FiyjKK.jpg', '1999-12-06', 8.8, 55991, 'SERIES');
-insert into series(id, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
-values (42, 'Ended', 6, 100, 'EG', 100, 'wanis-wa-jamaloh');
-insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
-values (43, 'العار', 'The series revolves around the family of Haji Abdul Sattar, who is a drug dealer and is assisted by his eldest son without the knowledge of his family.', 'ar', '/hXtqGeIczLjfrlrvoYBXeBWQctb.jpg', '2011-09-13', 8.6, 96822, 'SERIES');
-insert into series(id, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
-values (43, 'Ended', 1, 30, 'EG', 101, 'العار');
-insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
-values (44, 'ليالي الحلمية', 'Epic historical drama set in Cairo during the 1940s-1950s, following multiple families through major historical events including World War II, the Palestine conflict, and the Egyptian revolution.', 'ar', '/ri5YHgzMyFptkO4qfeeoe9zaUiG.jpg', '1987-09-01', 9.0, 52560, 'SERIES');
-insert into series(id, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
-values (44, 'Ended', 5, 150, 'EG', 102, 'ليالي-الحلمية');
-insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
-values (45, 'حارة اليهود', 'Historical drama set in 1940s Cairo, depicting the coexistence of Egyptian Muslims, Christians, and Jews in the same neighborhood.', 'ar', '/NTF1wrCHVMeiOGqU7gry3vocz3.jpg', '2015-06-18', 5.5, 110473, 'SERIES');
-insert into series(id, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
-values (45, 'Ended', 1, 30, 'EG', 103, 'حارة-اليهود');
-insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
-values (46, 'الكبير اوي', 'Al Kabeer seeks to find love again after his wife was gone, unaware that what he is looking for is closer than he imagines.', 'ar', '/oj4XM6wpGRIcx3QoQx1PF1fx5E5.jpg', '2010-08-11', 7.0, 52698, 'SERIES');
-insert into series(id, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
-values (46, 'Ended', 6, 180, 'EG', 104, 'الكبير-اوي');
-insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
-values (47, 'ام كلثوم', 'Biographical drama chronicling the life of Umm Kulthum, the legendary Egyptian singer known as "The Star of the East.', 'ar', '/7m9b5BDaIiqYhaGzEb8cNolibtj.jpg', '1999-01-01', 8.3, 100887, 'SERIES');
-insert into series(id, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
-values (47, 'Ended', 1, 31, 'EG', 105, 'ام-كلثوم');
-insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
-values (48, 'جراند اوتيل', 'Egyptian adaptation of the Spanish series, set in 1950s Cairo at a luxury hotel.', 'ar', '/gXKdgR3WhYa6ay9TEaU4fnL6bJq.jpg', '2016-05-27', 7.2, 71688, 'SERIES');
-insert into series(id, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
-values (48, 'Ended', 3, 90, 'EG', 106, 'جراند-اوتيل');
+values (59, 'The Incredibles', 'While trying to lead a quiet suburban life, a family of undercover superheroes are forced into action to save the world.', 'en', '/2LqaLgk4Z226KkgPJuiOQ58wvrm.jpg', '2004-11-05', 8.0, 9806, 'MOVIE');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (59, '/se5Hxz7PArQZOG3Nx2bpfOhLhtV.jpg', 115, 'United States', 49, 'the-incredibles');
 
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (2, 'Prison Break', 'Dangerous threats keep Michael and Lincoln fighting to protect Sara and Mike. Meanwhile, Poseidon continues to try and outsmart Michael and the rest of the gang, which leads them to the ultimate showdown, and not everyone makes it out alive.','en', '/5E1BhkCgjLBlqx557Z5yzcN0i88.jpg', '2005-08-29', 8.078, 2288,'SERIES');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (2, '/7w165QdHmJuTHSQwEyJDBDpuDT7.jpg', 'Ended', 5, 88, 'US', 11, 'prison-break');
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (29, 'Breaking Bad', 'When Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live, he becomes filled with a sense of fearlessness and an unrelenting desire to secure his familys.', 'en', '/ggFHVNu6YYI5L9pCfOacjizRGt.jpg', '2008-01-20', 9.5, 1396, 'SERIES');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (29, '/9faGSFi5jam6pDWGNd0p8JcJgXQ.jpg', 'Ended', 5, 62, 'US', 66, 'breaking-bad');
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (30, 'Game of Thrones', 'Seven noble families fight for control of the mythical land of Westeros. Friction between the houses leads to full-scale war. All while a very ancient evil awakens in the farthest north.', 'en', '/u3bZgnGQ9T01sWNhyveQz0wH0Hl.jpg', '2011-04-17', 9.3, 1399, 'SERIES');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (30, '/zZqpAXxVSBtxV9qPBcscfXBcL2w.jpg', 'Ended', 8, 73, 'US', 70, 'game-of-thrones');
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (31, 'The Sopranos', 'The story of New Jersey-based Italian-American mobster Tony Soprano and the difficulties he faces as he tries to balance the conflicting requirements of his home life and the criminal organization he heads.', 'en', '/rTc7ZXdroqjkKivFPvCPX0Ru7uw.jpg', '1999-01-10', 9.2, 1398, 'SERIES');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (31, '/lNpkvX2s8LGB0mjGODMT4o6Up7j.jpg', 'Ended', 6, 86, 'US', 73, 'the-sopranos');
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (32, 'Stranger Things', 'When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.', 'en', '/49WJfeN0moxb9IPfGn8AIqMGskD.jpg', '2016-07-15', 8.7, 66732, 'SERIES');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (32, '/56v2KjBlU4XaOv9rVYEQypROD7P.jpg', 'Ended', 4, 42, 'US', 77, 'stranger-things');
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (33, 'The Wire', 'Told from the points of view of both the Baltimore homicide and narcotics detectives and their targets.', 'en', '/4lbclFySvugI51fwsyxBTOm4DqK.jpg', '2002-06-02', 9.3, 1438, 'SERIES');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (33, '/layPSOJGckJv3PXZDIVluMq69mn.jpg', 'Ended', 5, 60, 'US', 80, 'the-wire');
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (34, 'Better Call Saul', 'Six years before Saul Goodman meets Walter White. We meet him when the man who will become Saul Goodman is known as Jimmy McGill, a small-time lawyer searching for his destiny, and, more immediately, hustling to make ends meet.', 'en', '/zjg4jpK1Wp2kiRvtt5ND0kznako.jpg', '2015-02-08', 8.8, 60059, 'SERIES');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (34, '/hPea3Qy5Gd6z4kJLUruBbwAH8Rm.jpg', 'Ended', 6, 63, 'US', 83, 'better-call-saul');
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (35, 'The Office', 'The everyday lives of office employees in the Scranton, Pennsylvania branch of the fictional Dunder Mifflin Paper Company.', 'en', '/7DJKHzAi83BmQrWLrYYOqcoKfhR.jpg', '2005-03-24', 8.8, 2316, 'SERIES');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (35, '/mLyW3UTgi2lsMdtueYODcfAB9Ku.jpg', 'Ended', 9, 201, 'US', 86, 'the-office');
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (36, 'Friends', 'The misadventures of a group of friends as they navigate the pitfalls of work, life and love in Manhattan.', 'en', '/2koX1xLkpTQM4IZebYvKysFW1Nh.jpg', '1994-09-22', 8.9, 1668, 'SERIES');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (36, '/l0qVZIpXtIo7km9u5Yqh0nKPOr5.jpg', 'Ended', 10, 236, 'US', 90, 'friends');
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (37, 'Sherlock', 'A modern update finds the famous sleuth and his doctor partner solving crime in 21st century London.', 'en', '/7WTsnHkbA0FaG6R9twfFde0I9hl.jpg', '2010-07-25', 9.1, 19885, 'SERIES');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (37, '/hmLTIRtVyTHShJl2Wb8LHmvUgJm.jpg', 'Ended', 4, 15, 'GB', 93, 'sherlock');
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (38, 'True Detective', 'An American anthology crime drama television series created and written by Nic Pizzolatto. The series, broadcast by the premium cable network HBO, premiered on January 12, 2014.', 'en', '/cuV2O5ZyDLHSOWzg3nLVljp1ubw.jpg', '2014-01-12', 8.9, 46648, 'SERIES');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (38, '/siA2d4PNn4JVFZAwfIYx4pnKCaK.jpg', 'Ended', 4, 30, 'US', 96, 'true-detective');
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (39, 'رأفت الهجان', 'Epic spy drama based on true events, following Egyptian intelligence officer Raafat Al-Haggan who infiltrated Israeli society for 17 years. One of the most acclaimed Arabic series ever made and patriotism during critical periods in Middle Eastern history.', 'ar', '/xWasNqXzlYom9Ghn3ykO3QrMF4P.jpg', '1988-01-01', 9.1, 90674, 'SERIES');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (39, '/XjSFUYhBAYgV6TMslETzhxoiXo.jpg', 'Ended', 1, 31, 'EG', 97, 'رأفت-الهجان');
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (40, 'ارابيسك', 'Groundbreaking Egyptian drama series that tackled controversial social issues in Egyptian society. Each episode explored different themes including corruption, making it one of the most influential series in Arabic television history.', 'ar', '/3VzNab3jrVqDcei4LexoRINXjfV.jpg', '1994-01-01', 8.9, 90994, 'SERIES');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (40, '/3gQnEfzcxBvHOhm8EV18dCyno29.jpg', 'Ended', 4, 120, 'EG', 98, 'ارابيسك');
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (41, 'الميزان', 'A legal drama following the life of a principled lawyer who fights for justice in a corrupt system.', 'ar', '/wk8XF95KdXTNFVl7nIRuLuLO8dm.jpg', '2018-05-16', 8.7, 88015, 'SERIES');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (41, '/uje9ZX7L9IrWo0xvXFvLFhFH5L5.jpg', 'Ended', 1, 30, 'EG', 99, 'الميزان');
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (42, 'يوميات ونيس', 'Wanees and Maysa are proud parents who want what''s best for their four children.', 'ar', '/jz6NCOJ6wYvw2yhGXZ502FiyjKK.jpg', '1999-12-06', 8.8, 55991, 'SERIES');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (42, null, 'Ended', 6, 100, 'EG', 100, 'يوميات-ونيس');
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (43, 'العار', 'The series revolves around the family of Haji Abdul Sattar, who is a drug dealer and is assisted by his eldest son without the knowledge of his family.', 'ar', '/hXtqGeIczLjfrlrvoYBXeBWQctb.jpg', '2011-09-13', 8.6, 96822, 'SERIES');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (43, '/zd8aQaHeVFBHIshetWMM6z34x61.jpg', 'Ended', 1, 30, 'EG', 101, 'العار');
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (44, 'ليالي الحلمية', 'Epic historical drama set in Cairo during the 1940s-1950s, following multiple families through major historical events including World War II, the Palestine conflict, and the Egyptian revolution.', 'ar', '/ri5YHgzMyFptkO4qfeeoe9zaUiG.jpg', '1987-09-01', 9.0, 52560, 'SERIES');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (44, '/aWbZ8VAckvLDsyokfbMXszkYI3o.jpg', 'Ended', 5, 150, 'EG', 102, 'ليالي-الحلمية');
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (45, 'حارة اليهود', 'Historical drama set in 1940s Cairo, depicting the coexistence of Egyptian Muslims, Christians, and Jews in the same neighborhood.', 'ar', '/NTF1wrCHVMeiOGqU7gry3vocz3.jpg', '2015-06-18', 5.5, 110473, 'SERIES');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (45,  null, 'Ended', 1, 30, 'EG', 103, 'حارة-اليهود');
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (46, 'الكبير اوي', 'Al Kabeer seeks to find love again after his wife was gone, unaware that what he is looking for is closer than he imagines.', 'ar', '/oj4XM6wpGRIcx3QoQx1PF1fx5E5.jpg', '2010-08-11', 7.0, 52698, 'SERIES');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (46, '/wZsD7yIXU4f7IORXEv2lb5MKao0.jpg', 'Ended', 6, 180, 'EG', 104, 'الكبير-اوي');
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (47, 'ام كلثوم', 'Biographical drama chronicling the life of Umm Kulthum, the legendary Egyptian singer known as "The Star of the East.', 'ar', '/7m9b5BDaIiqYhaGzEb8cNolibtj.jpg', '1999-01-01', 8.3, 100887, 'SERIES');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (47, '/wsJaraepTMbi0hVppD20fibnOL4.jpg', 'Ended', 1, 31, 'EG', 105, 'ام-كلثوم');
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (48, 'جراند اوتيل', 'Egyptian adaptation of the Spanish series, set in 1950s Cairo at a luxury hotel.', 'ar', '/gXKdgR3WhYa6ay9TEaU4fnL6bJq.jpg', '2016-05-27', 7.2, 71688, 'SERIES');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (48, '/ikJpPwOA6I7LDyzaxAvY3PUxzmI.jpg', 'Ended', 3, 90, 'EG', 106, 'جراند-اوتيل');
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (49, 'La casa de papel', 'To carry out the biggest heist in history, a mysterious man called The Professor recruits a band of eight robbers who have a single characteristic: none of them has anything to lose.', 'es', '/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg', '2017-05-27', 8.2, 71446, 'SERIES');
-insert into series(id, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
-values (49, 'Ended', 3, 40, 'Spain', null, 'la-casa-de-papel');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (49, '/gFZriCkpJYsApPZEF3jhxL4yLzG.jpg', 'Ended', 3, 40, 'Spain', null, 'la-casa-de-papel');
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (60, 'Band of Brothers', 'The story of Easy Company of the U.S. Army 101st Airborne Division, and their mission in World War II Europe, from Operation Overlord, through V-J Day.', 'en', '/pGzV187ogXzgJrvPRy2YPi29ofH.jpg', '2001-09-09', 9.4, 4613, 'SERIES');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (60, '/2yDV0xLyqW88dn5qE7YCRnoYmfy.jpg', 'Ended', 1, 10, 'United States', 50, 'band-of-brothers');
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (61, 'Chernobyl', 'The true story of one of the worst man-made catastrophes in history: the catastrophic nuclear accident at Chernobyl. A tale of the brave men and women who sacrificed to save Europe from unimaginable disaster.', 'en', '/hlLXt2tOPT6RRnjiUmoxyG1LTFi.jpg', '2019-05-06', 9.3, 87108, 'SERIES');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (61, '/900tHlUYUkp7Ol04XFSoAaEIXcT.jpg', 'Ended', 1, 5, 'United Kingdom', 51, 'chernobyl');
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (62, 'Avatar: The Last Airbender', 'In a war-torn world of elemental magic, a young boy reawakens to undertake a dangerous mystic quest to fulfill his destiny as the Avatar, and bring peace to the world.', 'en', '/v2vn1coUMPKw0GI1KGC5J4IXtqp.jpg', '2005-02-21', 9.3, 246, 'SERIES');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (62, '/kU98MbVVgi72wzceyrEbClZmMFe.jpg', 'Ended', 3, 61, 'United States', 52, 'avatar-the-last-airbender');
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (63, 'Cosmos: A Spacetime Odyssey', 'An exploration of our discovery of the laws of nature and coordinates in space and time.', 'en', '/5o07ps0QZ0bNoRYxTn9cPdRWlUu.jpg', '2014-03-09', 9.2, 61662, 'SERIES');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (63, '/2Nwbv0hrN8sThLvgooShcPqmFrO.jpg', 'Ended', 1, 13, 'United States', 53, 'cosmos-a-spacetime-odyssey');
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (64, 'The Twilight Zone', 'A series of unrelated stories containing drama, psychological thriller, fantasy, science fiction, suspense, and/or horror, often concluding with a macabre or unexpected twist.', 'en', '/7uY4pCOxbEdv4M8jTE4uMPVoSIW.jpg', '1959-10-02', 9.0, 6357, 'SERIES');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (64, '/v6mHYpO4NG2O3F1S4YFf08iV01f.jpg', 'Ended', 5, 156, 'United States', 54, 'the-twilight-zone');
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (65, 'Attack on Titan', 'Several hundred years ago, humans were nearly exterminated by Titans. Titans are typically several stories tall, seem to have no intelligence, devour human beings and, worst of all, seem to do it for the pleasure rather than as a food source.', 'ja', '/hTP1DtLGFamjfu8WqjnuQdP1n4i.jpg', '2013-04-07', 9.0, 1429, 'SERIES');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (65, '/aok7IhrbA83josNz9Dqh8tNA0Ao.jpg', 'Ended', 4, 75, 'Japan', 55, 'attack-on-titan');
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (66, 'Arcane', 'Amid the stark discord of twin cities Piltover and Zaun, two sisters fight on rival sides of a war between magic technologies and clashing convictions.', 'en', '/fqldf2t8ztc9aiwn3k6mlX3tvRT.jpg', '2021-11-06', 9.0, 94605, 'SERIES');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (66, '/wQEW3xLrQAThu1GvqpsKQyejrYS.jpg', 'Continuing', 2, 18, 'United States', 56, 'arcane');
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (67, 'Fullmetal Alchemist: Brotherhood', 'Two brothers search for a Philosopher''s Stone after an attempt to revive their deceased mother goes awry and leaves them in damaged physical forms.', 'ja', '/5ZFUEOULaVml7pQuXxhpR2SmVUw.jpg', '2009-04-05', 9.1, 31911, 'SERIES');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (67, '/A6tMQAo6t6eRFCPhsrShmxZLqFB.jpg', 'Ended', 1, 64, 'Japan', 57, 'fullmetal-alchemist-brotherhood');
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (68, 'The Last Dance', 'A 10-part documentary chronicling the untold story of Michael Jordan and the Chicago Bulls dynasty with rare, never-before-seen footage and sound from the 1997-98 championship season.', 'en', '/oVf4xGGbDtwVHiKn8uTuSriY7PH.jpg', '2020-04-19', 9.1, 97180, 'SERIES');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (68, '/kY0h95L73t7a6ev6Rv0aHSCtN7y.jpg', 'Ended', 1, 10, 'United States', 58, 'the-last-dance');
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (69, 'Death Note', 'Light Yagami is an ace student with great prospects—and he''s bored out of his mind. But all that changes when he finds the Death Note, a notebook dropped by a rogue Shinigami death god.', 'ja', '/tCZFfYTIwrR7n94J6G14Y4hAFU6.jpg', '2006-10-04', 9.0, 13916, 'SERIES');
+insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
+values (69, '/koBa94NxTaGe2FoDzlXMuJptsv0.jpg', 'Ended', 1, 37, 'Japan', 59, 'death-note');
+
+
+
 
 
 -- Adding Content-Genre
@@ -650,6 +748,54 @@ insert into content_genre(id, content_id, genre_id)
 values (99, 49, 1);
 insert into content_genre(id, content_id, genre_id)
 values (100, 49, 7);
+insert into content_genre(id, content_id, genre_id)
+values (101, 27, 2);
+insert into content_genre(id, content_id, genre_id)
+values (102, 27, 1);
+insert into content_genre(id, content_id, genre_id)
+values (103, 28, 2);
+insert into content_genre(id, content_id, genre_id)
+values (104, 28, 3);
+insert into content_genre(id, content_id, genre_id)
+values (105, 50, 14);
+insert into content_genre(id, content_id, genre_id)
+values (106, 51, 14);
+insert into content_genre(id, content_id, genre_id)
+values (107, 52, 14);
+insert into content_genre(id, content_id, genre_id)
+values (108, 53, 14);
+insert into content_genre(id, content_id, genre_id)
+values (109, 54, 14);
+insert into content_genre(id, content_id, genre_id)
+values (110, 55, 14);
+insert into content_genre(id, content_id, genre_id)
+values (111, 56, 14);
+insert into content_genre(id, content_id, genre_id)
+values (112, 57, 14);
+insert into content_genre(id, content_id, genre_id)
+values (113, 58, 14);
+insert into content_genre(id, content_id, genre_id)
+values (114, 59, 14);
+insert into content_genre(id, content_id, genre_id)
+values (115,60, 1);
+insert into content_genre(id, content_id, genre_id)
+values (116,61, 2);
+insert into content_genre(id, content_id, genre_id)
+values (117,62, 3);
+insert into content_genre(id, content_id, genre_id)
+values (118,63, 3);
+insert into content_genre(id, content_id, genre_id)
+values (119,64, 2);
+insert into content_genre(id, content_id, genre_id)
+values (120,65, 3);
+insert into content_genre(id, content_id, genre_id)
+values (121,66, 14);
+insert into content_genre(id, content_id, genre_id)
+values (122,67, 2);
+insert into content_genre(id, content_id, genre_id)
+values (123,68, 3);
+insert into content_genre(id, content_id, genre_id)
+values (124,69, 14);
 
 -- Adding Content-Provider
 insert into content_provider(id, content_id, provider_id)
@@ -794,6 +940,51 @@ insert into content_provider(id, content_id, provider_id)
 values (70, 49, 2);
 insert into content_provider(id, content_id, provider_id)
 values (71, 49, 3);
+insert into content_provider(id, content_id, provider_id)
+values (72, 27, 2);
+insert into content_provider(id, content_id, provider_id)
+values (73, 28, 1);
+insert into content_provider(id, content_id, provider_id)
+values (74, 50, 1);
+insert into content_provider(id, content_id, provider_id)
+values (75, 51, 1);
+insert into content_provider(id, content_id, provider_id)
+values (76, 52, 1);
+insert into content_provider(id, content_id, provider_id)
+values (77, 53, 1);
+insert into content_provider(id, content_id, provider_id)
+values (78, 54, 1);
+insert into content_provider(id, content_id, provider_id)
+values (79, 55, 1);
+insert into content_provider(id, content_id, provider_id)
+values (80, 56, 1);
+insert into content_provider(id, content_id, provider_id)
+values (81, 57, 1);
+insert into content_provider(id, content_id, provider_id)
+values (82, 58, 1);
+insert into content_provider(id, content_id, provider_id)
+values (83, 59, 1);
+insert into content_provider(id, content_id, provider_id)
+values (84, 50, 1);
+insert into content_provider(id, content_id, provider_id)
+values (85, 51, 1);
+insert into content_provider(id, content_id, provider_id)
+values (86, 52, 1);
+insert into content_provider(id, content_id, provider_id)
+values (87, 53, 1);
+insert into content_provider(id, content_id, provider_id)
+values (88, 54, 1);
+insert into content_provider(id, content_id, provider_id)
+values (89, 55, 1);
+insert into content_provider(id, content_id, provider_id)
+values (90, 56, 1);
+insert into content_provider(id, content_id, provider_id)
+values (91, 57, 1);
+insert into content_provider(id, content_id, provider_id)
+values (92, 58, 1);
+insert into content_provider(id, content_id, provider_id)
+values (93, 59, 1);
+
 
 
 
@@ -996,6 +1187,54 @@ insert into content_cast(id, crew_member_id, content_id, character_name)
 values (118, 119, 49, 'Profesor');
 insert into content_cast(id, crew_member_id, content_id, character_name)
 values (119, 120, 49, 'Berlín');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (120, 121, 28, 'Hercules (voice)');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (121, 122, 28, 'Philoctetes (voice)');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (122, 123, 27, 'ماجد');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (123, 124, 27, 'ششتاوي');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (124, 60, 50, 'robot');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (125, 40, 51, 'mufasa');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (126, 55, 52, 'Carl Fredricksen');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (127, 56, 53, 'Nemo');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (128, 58, 54, 'buzz lightyear');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (129, 51, 55, 'buzz lightyear');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (130, 33, 56, 'مارد وشوشني');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (131, 81, 57, 'sullen');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (132, 99, 58, 'حذوقة');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (133, 12, 59, 'Daddy Pig');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (134, 60, 60, 'John Cena');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (135, 40, 61, 'Chernobyl');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (136, 55, 62, 'Avatar');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (137, 56, 63, 'Cosmo');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (138, 58, 64, 'Mezo');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (139, 51, 65, 'Levi Ackerman');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (140, 33, 66, 'Jinx');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (141, 81, 67, 'Boody');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (142, 99, 68, 'Michael Jordan');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (143, 12, 69, 'Yagmi Light');
 
 
 

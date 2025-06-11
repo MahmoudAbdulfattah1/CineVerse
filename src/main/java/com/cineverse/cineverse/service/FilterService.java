@@ -25,7 +25,14 @@ public class FilterService {
         List<FilterOption> languageOptions = List.of(
                 new FilterOption("English", "en"),
                 new FilterOption("Arabic", "ar"),
-                new FilterOption("Spain", "es")
+                new FilterOption("Spanish", "es"),
+                new FilterOption("French", "fr"),
+                new FilterOption("German", "de"),
+                new FilterOption("Japanese", "ja"),
+                new FilterOption("Korean", "ko"),
+                new FilterOption("Chinese", "cn"),
+                new FilterOption("Hindi", "hi"),
+                new FilterOption("Italian", "it")
         );
         sections.add(new FilterSection("Language", "lang", languageOptions, false));
         List<FilterOption> sortOptions = List.of(

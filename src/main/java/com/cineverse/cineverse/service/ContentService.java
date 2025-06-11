@@ -1,14 +1,13 @@
 package com.cineverse.cineverse.service;
 
-import com.cineverse.cineverse.configuration.TMDBApiConfiguration;
 import com.cineverse.cineverse.domain.entity.*;
 import com.cineverse.cineverse.domain.enums.ContentType;
-import com.cineverse.cineverse.dto.*;
 import com.cineverse.cineverse.repository.*;
-import com.cineverse.cineverse.service.mapper.CreditMapper;
-import com.cineverse.cineverse.service.mapper.ProviderMapper;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.AllArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -23,98 +22,97 @@ public class ContentService {
     private ReviewRepository reviewRepository;
     private ContentTypeRepository contentTypeRepository;
     private YoutubeService youtubeService;
-    private final TMDBApiConfiguration tmdbApiConfiguration;
-    private final CreditMapper creditMapper;
-    private final ProviderMapper providerMapper;
 
-    public List<ContentMetaDataDto> filterContent(List<String> genres, Integer year, Integer rate, ContentType contentType, String language, String sortBy) {
-        return contentRepository.filterContent(genres, year, rate, contentType, language, sortBy);
+    public Page<Content> filterContent(List<String> genres, Integer year, Integer rate,
+                                       ContentType contentType, String language, String sortBy, int page, int size) {
+        Pageable pageable = PageRequest.of(page, size);
+        return contentRepository.filterContent(genres, year, rate, contentType, language, sortBy, pageable);
     }
 
-    public List<ContentMetaDataDto> searchContent(String keyword) {
-        return contentRepository.searchContent(keyword);
+    public Page<Content> searchContent(String keyword, int page, int size) {
+        Pageable pageable = PageRequest.of(page, size);
+        return contentRepository.searchContent(keyword, pageable);
     }
 
-    public MovieDto getMovieDetails(String movieSlug) {
-        Movie movie = movieRepository.findMovieWithGenres(movieSlug);
-        return new MovieDto(
-                movie.getId(),
-                movie.getTitle(),
-                movie.getOverview(),
-                tmdbApiConfiguration.getBaseImageUrl() + movie.getPosterPath(),
-                movie.getReleaseDate(),
-                movie.getRuntime(),
-                movie.getLanguage(),
-                movie.getProductionCountry(),
-                movie.getImdbRate(),
-                getPlatformRate(movie.getId()),
-                movie.getGenres().stream().map(genre -> genre.getGenre().getName())
-                        .toList()
+    public Movie getMovieDetails(String movieSlug) {
+        return movieRepository.findMovieWithGenres(movieSlug);
+    }
+
+    public Series getSeriesDetails(String slug) {
+        return seriesRepository.findSeriesWithGenres(slug);
+    }
+
+    public Content getContentDetails(String slug) {
+        if (movieRepository.existsBySlug(slug)) {
+            return getMovieDetails(slug);
+        } else if (seriesRepository.existsBySlug(slug)) {
+            return getSeriesDetails(slug);
+        }
+        throw new EntityNotFoundException("Content not found");
+    }
+
+
+    public String getContentTrailer(int contentId) {
+        ContentType contentType = contentTypeRepository.findContentTypeById(contentId)
+                .orElseThrow(() -> new EntityNotFoundException("Content not found"));
+        Content content = switch (contentType) {
+            case MOVIE -> movieRepository.findMovieById(contentId);
+            case SERIES -> seriesRepository.findSeriesById(contentId);
+            default -> throw new IllegalArgumentException("Unsupported content type: " + contentType);
+        };
+        return youtubeService.getTrailerUrl(
+                content.getTitle(),
+                content.getReleaseDate().getYear(),
+                content.getContentType()
         );
     }
 
-    public SeriesDto getSeriesDetails(String slug) {
-        Series series = seriesRepository.findSeriesWithGenres(slug);
-        return new SeriesDto(
-                series.getId(),
-                series.getTitle(),
-                series.getOverview(),
-                tmdbApiConfiguration.getBaseImageUrl() + series.getPosterPath(),
-                series.getReleaseDate(),
-                series.getLanguage(),
-                series.getProductionCountry(),
-                series.getImdbRate(),
-                getPlatformRate(series.getId()),
-                series.getNumberOfSeasons(),
-                series.getNumberOfEpisodes(),
-                series.getStatus(),
-                series.getGenres().stream().map(genre -> genre.getGenre().getName())
-                        .toList()
-        );
+
+    public List<Review> getReviews(int contentId) {
+        return contentRepository.existsById(contentId) ? reviewRepository.findContentReviews(contentId) : null;
     }
 
-    public ContentDetailsDto getContentDetails(String slug) {
-        boolean movie = movieRepository.existsBySlug(slug);
-        boolean series = seriesRepository.existsBySlug(slug);
-        return movie ?
-                getMovieDetails(slug) :
-                series ? getSeriesDetails(slug) :
-                        null;
-    }
 
     public float getPlatformRate(int contentId) {
         float rate = contentRepository.getPlatformRate(contentId);
         return Math.round(rate * 10) / 10.0f;
     }
 
-    public List<ProviderDto> getContentProviders(int contentId) {
-        return providerMapper.map(contentRepository.findContentProviders(contentId));
+    public int getContentTotalReviewsCount(int contentId) {
+        return contentRepository.totalReviewsCount(contentId);
     }
 
-    public TrailerDto getContentTrailer(int contentId) {
-        return new TrailerDto(youtubeService.getTrailerUrl(contentRepository.findContentTitleWithId(contentId)));
+    public int getContentTotalWatchlistCount(int contentId) {
+        return contentRepository.totalWatchlistCount(contentId);
     }
 
-    public ContentStatsDto getContentStats(int contentId) {
-        return new ContentStatsDto(
-                contentRepository.totalReviews(contentId),
-                contentRepository.totalWatchlists(contentId)
-        );
+    public CrewMember getContentDirector(int contentId) {
+        return switch (getContentTypeOrThrow(contentId)) {
+            case MOVIE -> movieRepository.findMovieDirector(contentId);
+            case SERIES -> seriesRepository.findSeriesDirector(contentId);
+            default -> throw new IllegalArgumentException("Unsupported content type.");
+        };
     }
 
-    public List<ReviewDto> getContentReviews(int contentId) {
-        return reviewRepository.findContentReviews(contentId);
+    public List<ContentCast> getContentCast(int contentId) {
+        return switch (getContentTypeOrThrow(contentId)) {
+            case MOVIE -> movieRepository.findMovieCast(contentId);
+            case SERIES -> seriesRepository.findSeriesCast(contentId);
+            default -> throw new IllegalArgumentException("Unsupported content type.");
+        };
     }
 
-    public CastAndCrewDto getContentCredits(int contentId) {
-        ContentType type = contentTypeRepository.findContentTypeById(contentId).orElseThrow(
-                () -> new EntityNotFoundException("Content not found"));
-        return type.equals(ContentType.MOVIE) ?
-                new CastAndCrewDto(creditMapper.map(movieRepository.findMovieDirector(contentId)), creditMapper.map(movieRepository.findMovieCasts(contentId))) :
-                type.equals(ContentType.SERIES) ?
-                        new CastAndCrewDto(creditMapper.map(seriesRepository.findSeriesDirector(contentId)), creditMapper.map(seriesRepository.findSeriesCasts(contentId))) :
-                        null;
+    public List<Provider> getContentProviders(int contentId) {
+        return switch (getContentTypeOrThrow(contentId)) {
+            case MOVIE -> movieRepository.findMovieProviders(contentId);
+            case SERIES -> seriesRepository.findSeriesProviders(contentId);
+            default -> throw new IllegalArgumentException("Unsupported content type.");
+        };
     }
 
+    private ContentType getContentTypeOrThrow(int contentId) {
+        return contentTypeRepository.findContentTypeById(contentId)
+                .orElseThrow(() -> new EntityNotFoundException("Content not found"));
+    }
 
 }
