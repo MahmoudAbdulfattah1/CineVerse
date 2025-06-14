@@ -49,6 +49,7 @@ public interface SeriesRepository extends JpaRepository<Series, Integer> {
     List<Provider> findSeriesProviders(@Param("id") int id);
 
     boolean existsBySlug(String slug);
+    boolean existsById(int id);
 
 
 }
