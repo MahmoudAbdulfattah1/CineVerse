@@ -19,6 +19,8 @@ public class ContentService {
     private ContentRepository contentRepository;
     private MovieRepository movieRepository;
     private SeriesRepository seriesRepository;
+    private SeasonRepository seasonRepository;
+    private EpisodeRepository episodeRepository;
     private ReviewRepository reviewRepository;
     private ContentTypeRepository contentTypeRepository;
     private YoutubeService youtubeService;
@@ -108,6 +110,33 @@ public class ContentService {
             case SERIES -> seriesRepository.findSeriesProviders(contentId);
             default -> throw new IllegalArgumentException("Unsupported content type.");
         };
+    }
+    public List<Season> getSeasonsBySeriesId(int seriesId) {
+        if (!seriesRepository.existsById(seriesId)) {
+            throw new EntityNotFoundException("Series not found");
+        }
+        return seasonRepository.findAllSeasonsBySeriesId(seriesId);
+    }
+    public Season getSeasonByNumberAndSeriesId(int seasonNumber, int seriesId) {
+        if (!seriesRepository.existsById(seriesId)) {
+            throw new EntityNotFoundException("Series not found");
+        }
+        return seasonRepository.findSeasonBySeasonNumberAndSeriesId(seasonNumber, seriesId);
+    }
+    public List<Episode> getSeasonEpisodes(int seasonNumber, int seriesId) {
+        if (!seriesRepository.existsById(seriesId)) {
+            throw new EntityNotFoundException("Series not found");
+        }
+        return episodeRepository.findAllEpisodesBySeriesIdAndSeasonNumber(seriesId, seasonNumber);
+    }
+    public Episode getEpisodeByNumberAndSeasonNumberAndSeriesId(int seriesId, int seasonNumber, int episodeNumber) {
+        if (!seriesRepository.existsById(seriesId)) {
+            throw new EntityNotFoundException("Series not found");
+        }
+        return episodeRepository.findEpisodeByNumberAndSeasonNumberAndSeriesId(seriesId, seasonNumber, episodeNumber);
+    }
+    public int getEpisodeCountBySeasonId(int seasonId) {
+        return episodeRepository.countBySeasonId(seasonId);
     }
 
     private ContentType getContentTypeOrThrow(int contentId) {
