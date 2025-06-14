@@ -15,7 +15,7 @@ public class Episode extends Content {
     @Column(name = "run_time")
     private int runTime;
     private int episodeNumber;
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "season_id")
     private Season season;
 

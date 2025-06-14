@@ -16,7 +16,7 @@ public class Season extends Content {
 
     @Column(name = "season_number")
     private int seasonNumber;
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "series_id")
     private Series series;
     @OneToMany(mappedBy = "season", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
