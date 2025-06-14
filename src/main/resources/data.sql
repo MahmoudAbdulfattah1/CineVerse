@@ -413,6 +413,48 @@ insert into content(id, title, overview, original_language, poster_path, release
 values (59, 'The Incredibles', 'While trying to lead a quiet suburban life, a family of undercover superheroes are forced into action to save the world.', 'en', '/2LqaLgk4Z226KkgPJuiOQ58wvrm.jpg', '2004-11-05', 8.0, 9806, 'MOVIE');
 insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
 values (59, '/se5Hxz7PArQZOG3Nx2bpfOhLhtV.jpg', 115, 'United States', 49, 'the-incredibles');
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (334, 'مش انا', 'A comedy-drama about a man who wakes up to find his life completely changed, exploring themes of identity and self-discovery in modern Egyptian society.', 'ar', '/c2s9KtPxMZbX83zlQfsDylQ0HjU.jpg', '2021-08-15', 7.2, 820001, 'MOVIE');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (334, '/5epmQjwWTY1el7b5i8HGXwUv2yJ.jpg', 105, 'Egypt', 15, 'مش-انا');
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (335, '200 جنيه', 'A social comedy that follows the story of a young man trying to make ends meet in Cairo, highlighting the economic struggles of Egyptian youth.', 'ar', '/mWQ1vBaGmkiwHJRiQw5hjwIVOQO.jpg', '2020-01-22', 6.8, 820002, 'MOVIE');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (335, '/pk66Cypz4cNmWITgm197SZ0mbDJ.jpg', 95, 'Egypt', 28, '200-جنيه');
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (336, 'كازابلانكا', 'A romantic drama set in modern-day Cairo, telling the story of love and loss against the backdrop of contemporary Egyptian society.', 'ar', '/aUU5UNi0mqYBaIrBcRCPN4ZhURH.jpg', '2021-12-08', 7.5, 820003, 'MOVIE');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (336, '/ripsaXE9rbwpeJSMZH6JlBrEVsh.jpg', 118, 'Egypt', 42, 'كازابلانكا');
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (337, 'Spider-Man: No Way Home', 'Peter Parker is unmasked and no longer able to separate his normal life from the high-stakes of being a super-hero. When he asks for help from Doctor Strange the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man.', 'en', '/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg', '2021-08-12', 10, 820004, 'MOVIE');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (337, '/zD5v1E4joAzFvmAEytt7fM3ivyT.jpg', 102, 'Egypt', 56, 'spider-man-no-way-home');
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (338, 'الناظر', 'Ashour, Salaah’s father, runs his school with severity and cruelty. after Ashour''s death, Salah inherits the job and lets Sayed, his deputy, take charge.', 'ar', '/LCfNyXpldwNCC127HkwNP3I8Mm.jpg', '2002-10-20', 7.8, 820005, 'MOVIE');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (338, '/eX8k6tMRmmVdotMEGGHPhrHkoX7.jpg', 125, 'Egypt', 73, 'الناظر');
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (339, 'تراب الماس', 'A thriller about diamond smuggling in Egypt, following a detective as he uncovers a complex web of corruption and crime.', 'ar', '/achk3sKbE8GOj0FQ22q0lqLZ8h3.jpg', '2022-03-15', 7.1, 820006, 'MOVIE');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (339, '/xjRtu8lwnLTZp0oM8cvf5GuM1fo.jpg', 110, 'Egypt', 89, 'تراب-الماس');
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (340, 'فول الصين العظيم', 'Mohy Al-Sharqawi is a young man whose grandfather and his uncles form a smuggling gang. As Mohy is a coward who cannot go along with them, he goes to live with his mother and step-father but they send him to China to represent Egypt in a cooking competition which gets him into a lot of troubles', 'ar', '/xk3cOm7iRFi3kFom3zdh1c7qpKv.jpg', '2006-07-28', 6.7, 820007, 'MOVIE');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (340, '/hVNTiC7rFjqvwzD6d3rP1lTgL5u.jpg', 98, 'Egypt', 104, 'فول-الصين-العظيم');
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (341, 'ولاد رزق 3', 'The third installment of the popular action-comedy series, following the four brothers as they face new challenges and adventures.', 'ar', '/oYwTsy5sNz3TvIeYBWyDRYnTzdu.jpg', '2023-06-07', 7.6, 820008, 'MOVIE');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (341, '/bMjSLynLefcVZ8vPsVHyQDdAvZF.jpg', 135, 'Egypt', 7, 'ولاد-رزق-3');
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (342, 'اخر ديك في مصر', 'A comedy about a man who believes he is the last traditional Egyptian gentleman, navigating modern society with old-fashioned values.', 'ar', '/r2ImTMrxz3gCuhLfGrHn78OgB9W.jpg', '2023-10-18', 7.0, 820009, 'MOVIE');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (342, '/gdtpcrqJDDDV1eoUYnKrqFuGdcX.jpg', 108, 'Egypt', 91, 'اخر-ديك-في-مصر');
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (343, 'الممر', 'A psychological thriller about a man trapped in a mysterious corridor, exploring themes of isolation and the human psyche.', 'ar', '/o1k1sH3i4idKxucryiS81ziHb8s.jpg', '2024-02-14', 7.3, 820010, 'MOVIE');
+insert into movie(id, backdrop_path, run_time, production_country, director_id, slug)
+values (343, '/25J2DmlvyIhASUbj66lCaAUQ0qK.jpg', 112, 'Egypt', 3, 'الممر');
+
+
 
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (2, 'Prison Break', 'Dangerous threats keep Michael and Lincoln fighting to protect Sara and Mike. Meanwhile, Poseidon continues to try and outsmart Michael and the rest of the gang, which leads them to the ultimate showdown, and not everyone makes it out alive.','en', '/5E1BhkCgjLBlqx557Z5yzcN0i88.jpg', '2005-08-29', 8.078, 2288,'SERIES');
@@ -797,6 +839,28 @@ values (123,68, 3);
 insert into content_genre(id, content_id, genre_id)
 values (124,69, 14);
 
+insert into content_genre(id, content_id, genre_id)
+values (125,334, 2);
+insert into content_genre(id, content_id, genre_id)
+values (126,335, 3);
+insert into content_genre(id, content_id, genre_id)
+values (127,336, 4);
+insert into content_genre(id, content_id, genre_id)
+values (128,337, 5);
+insert into content_genre(id, content_id, genre_id)
+values (129,338, 6);
+insert into content_genre(id, content_id, genre_id)
+values (130,339, 7);
+insert into content_genre(id, content_id, genre_id)
+values (131,340, 8);
+insert into content_genre(id, content_id, genre_id)
+values (132,341, 9);
+insert into content_genre(id, content_id, genre_id)
+values (133,342, 10);
+insert into content_genre(id, content_id, genre_id)
+values (134,343, 14);
+
+
 -- Adding Content-Provider
 insert into content_provider(id, content_id, provider_id)
 values (1, 1, 1);
@@ -984,6 +1048,28 @@ insert into content_provider(id, content_id, provider_id)
 values (92, 58, 1);
 insert into content_provider(id, content_id, provider_id)
 values (93, 59, 1);
+
+
+insert into content_provider(id, content_id, provider_id)
+values (94, 334, 1);
+insert into content_provider(id, content_id, provider_id)
+values (95, 335, 1);
+insert into content_provider(id, content_id, provider_id)
+values (96, 336, 1);
+insert into content_provider(id, content_id, provider_id)
+values (97, 337, 1);
+insert into content_provider(id, content_id, provider_id)
+values (98, 338, 1);
+insert into content_provider(id, content_id, provider_id)
+values (99, 339, 1);
+insert into content_provider(id, content_id, provider_id)
+values (100, 340, 1);
+insert into content_provider(id, content_id, provider_id)
+values (101, 341, 1);
+insert into content_provider(id, content_id, provider_id)
+values (102, 342, 1);
+insert into content_provider(id, content_id, provider_id)
+values (103, 343, 1);
 
 
 
@@ -1235,40 +1321,1119 @@ insert into content_cast(id, crew_member_id, content_id, character_name)
 values (142, 99, 68, 'Michael Jordan');
 insert into content_cast(id, crew_member_id, content_id, character_name)
 values (143, 12, 69, 'Yagmi Light');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (144, 20, 334, 'تامر حسني');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (145, 22, 335, 'احمد السقا');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (146, 23, 336, 'امير كرارة');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (147, 25, 337, 'Peter parker');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (148, 30, 338, 'صلاح عاشور');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (149, 2, 339, 'اسر ياسين');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (150, 4, 340, 'موهي الشرقاوي');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (151, 5, 341, 'احمد عز');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (152, 30, 342, 'محمد الديك');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (153, 50, 343, 'الكوماندو عز');
 
 
 
 -- Adding Seasons
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (3, 'Prison Break Season 1', 'Lincoln Burrows is currently on death row and scheduled to die in a few months for an assassination his younger brother Michael is convinced he did not commit.','en', '/jnMW2qcOjgwsjHx6QkOIeXShsLi.jpg', '2005-01-20', 8.078, 7132, 'SEASON');
-
-insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
-values (4, 'Prison Break Season 2', 's eight hours has passed since the escape, Michael, Lincoln, Sucre, C-Note and Abruzzi attempt to evade their seekers.','en', '/sRZyjc1BVnVFnTkeU33TG9C6Djd.jpg', '2006-01-20', 8.078, 7133 ,'SEASON');
-
 insert into season(id, season_number, series_id)
 values (3, 1, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (4, 'Prison Break Season 2', 's eight hours has passed since the escape, Michael, Lincoln, Sucre, C-Note and Abruzzi attempt to evade their seekers.','en', '/sRZyjc1BVnVFnTkeU33TG9C6Djd.jpg', '2006-01-20', 8.078, 7133 ,'SEASON');
 insert into season(id, season_number, series_id)
 values (4, 2, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (70, 'Breaking Bad Season 1', 'A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his familys future.', 'en', '/1yeVJox3rjo2jBKrrihIMj7uoS9.jpg', '2008-01-20', 9.0, 30272, 'SEASON');
+insert into season(id, season_number, series_id)
+values (70, 1, 29);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (71, 'Breaking Bad Season 2', 'Walt and Jesse attempt to tie up loose ends. The desperate situation gets more complicated with the flip of a coin. Walt gains a new partner.', 'en', '/e3ZT6707EVqUbOqVzNrsafmd4P4.jpg', '2009-03-08', 9.1, 30273, 'SEASON');
+insert into season(id, season_number, series_id)
+values (71, 2, 29);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (72, 'Breaking Bad Season 3', 'Walt faces a new danger on a new front and deals with an increasingly angry Skyler, who must consider what to do next with her life and the kids.', 'en', '/ffP8Q8ew048YofHRnFVM18ipxAK.jpg', '2010-03-21', 9.2, 30274, 'SEASON');
+insert into season(id, season_number, series_id)
+values (72, 3, 29);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (82, 'Game of Thrones Season 1', 'Trouble is brewing in the Seven Kingdoms of Westeros. For the driven inhabitants of this visionary world, control of Westeros Iron Throne holds the lure of great power.', 'en', '/wgfKiqzuMrFIkU1M68DDDY8kGC1.jpg', '2011-04-17', 9.0, 63056, 'SEASON');
+insert into season(id, season_number, series_id)
+values (82, 1, 30);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (83, 'Game of Thrones Season 2', 'The cold winds of winter are rising in Westeros and the night is coming soon. Based on the bestselling book series by George R.R. Martin, this hit Emmy-winning fantasy series chronicles an epic struggle for power.', 'en', '/rQGfhbrhNhP8UrOuKKlpKSu6d6b.jpg', '2012-04-01', 9.0, 63057, 'SEASON');
+insert into season(id, season_number, series_id)
+values (83, 2, 30);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (84, 'Game of Thrones Season 3', 'Duplicity and treachery continue to unfold as members of the fellowship face new tests and challenges.', 'en', '/1XS1oqL89opfnbLl8xKScF3TDVt.jpg', '2013-03-31', 9.1, 63058, 'SEASON');
+insert into season(id, season_number, series_id)
+values (84, 3, 30);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (94, 'The Sopranos Season 1', 'Tony Soprano juggles the problems of his fractious family with those of a Family of a different sort - the mob. He sees a therapist to deal with his professional and personal problems.', 'en', '/yy1BMPiGeNUNRzGpsjF0UmDmfmF.jpg', '1999-01-10', 9.2, 54242, 'SEASON');
+insert into season(id, season_number, series_id)
+values (94, 1, 31);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (95, 'The Sopranos Season 2', 'Tony continues to juggle his family life and mob responsibilities. New challenges arise as family tensions increase and business deals become more complicated.', 'en', '/l2wPvGJYN2tN23K1jzgE5w5uWIa.jpg', '2000-01-16', 9.3, 54243, 'SEASON');
+insert into season(id, season_number, series_id)
+values (95, 2, 31);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (96, 'The Sopranos Season 3', 'Tony faces new personal and professional challenges while dealing with problems within his organization and his increasingly complex family dynamics.', 'en', '/mTSjOmWHNRTVKJ8wHAWDZDUHLYO.jpg', '2001-03-04', 9.1, 54244, 'SEASON');
+insert into season(id, season_number, series_id)
+values (96, 3, 31);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (106, 'Stranger Things Season 1', 'When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.', 'en', '/rbnuP7hlynAMLdqcQRCpZW9qDkV.jpg', '2016-07-15', 8.7, 77575, 'SEASON');
+insert into season(id, season_number, series_id)
+values (106, 1, 32);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (107, 'Stranger Things Season 2', 'Its 1984 and the citizens of Hawkins, Indiana are still reeling from the horrors of the demogorgon and the secrets of Hawkins Lab.', 'en', '/lXS60geme1LlEob5Wgvj3KilClA.jpg', '2017-10-27', 8.8, 77576, 'SEASON');
+insert into season(id, season_number, series_id)
+values (107, 2, 32);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (108, 'Stranger Things Season 3', 'Its 1985 in Hawkins, Indiana, and summer brings new dangers. When the towns threatened by enemies old and new, Eleven and her friends are reminded that evil never ends.', 'en', '/x2LSRK2Cm7MZhjluni1msVJ3wDF.jpg', '2019-07-04', 8.7, 77577, 'SEASON');
+insert into season(id, season_number, series_id)
+values (108, 3, 32);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (118, 'The Wire Season 1', 'Baltimore drug scene, seen through the eyes of drug dealers and law enforcement. As the series starts, the Baltimore Police Department forms a joint task force with the DEA to investigate a drug organization.', 'en', '/oggnxmvofLtGqoba9TStPSJLMBY.jpg', '2002-06-02', 9.4, 53693, 'SEASON');
+insert into season(id, season_number, series_id)
+values (118, 1, 33);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (119, 'The Wire Season 2', 'Season two of The Wire focuses on the dying American port city through the eyes of stevedores, drug dealers, and bureaucrats.', 'en', '/9WBJQh5nqUzNV6zJAITSyGdTNOA.jpg', '2003-06-01', 9.2, 53694, 'SEASON');
+insert into season(id, season_number, series_id)
+values (119, 2, 33);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (120, 'The Wire Season 3', 'The third season focuses on the Baltimore drug scene from the perspective of law enforcement, drug dealers, and politicians.', 'en', '/37grTOUqHoYpc2rOJf7U9nqRU4p.jpg', '2004-09-19', 9.6, 53695, 'SEASON');
+insert into season(id, season_number, series_id)
+values (120, 3, 33);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (130, 'Better Call Saul Season 1', 'Six years before Saul Goodman meets Walter White. We meet him when the man who will become Saul Goodman is known as Jimmy McGill, a small-time lawyer searching for his destiny.', 'en', '/6MKPzUCnW4OGhwKDitiLMWZDGHH.jpg', '2015-02-08', 8.6, 78456, 'SEASON');
+insert into season(id, season_number, series_id)
+values (130, 1, 34);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (131, 'Better Call Saul Season 2', 'Jimmy continues his transformation into Saul while Mike becomes increasingly involved in the criminal underworld. Chuck continues to battle his illness.', 'en', '/ejCpITlTKfTLKH6vgNV7oJPANal.jpg', '2016-02-15', 8.8, 78457, 'SEASON');
+insert into season(id, season_number, series_id)
+values (131, 2, 34);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (132, 'Better Call Saul Season 3', 'Jimmy faces consequences for his actions while Mike finds himself deeper in Gustavos organization. The relationship between Jimmy and Chuck reaches a breaking point.', 'en', '/snzD6fXhY98w8ay2Lp8tHC1zoK8.jpg', '2017-04-10', 9.0, 78458, 'SEASON');
+insert into season(id, season_number, series_id)
+values (132, 3, 34);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (142, 'The Office Season 1', 'A documentary crew follows the employees of Dunder Mifflin Scranton as they navigate their daily office life under the management of Michael Scott.','en', '/7DJKHzAi83BmQrWLrYYOqcoKfhR.jpg', '2005-03-24', 8.5, 23161, 'SEASON');
+insert into season(id, season_number, series_id)
+values (142, 1, 35);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (143, 'The Office Season 2', 'The Scranton branch continues to deal with corporate changes and office politics while Michael Scott tries to maintain his unique management style.','en', '/7DJKHzAi83BmQrWLrYYOqcoKfhR.jpg', '2005-09-20', 8.7, 23162, 'SEASON');
+insert into season(id, season_number, series_id)
+values (143, 2, 35);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (152, 'Friends Season 1', 'Six young friends navigate life and love in New York City as they support each other through the ups and downs of adulthood.','en', '/2koX1xLkpTQM4IZebYvKysFW1Nh.jpg', '1994-09-22', 8.7, 16681, 'SEASON');
+insert into season(id, season_number, series_id)
+values (152, 1, 36);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (153, 'Friends Season 2', 'The group faces new challenges in relationships and careers while their friendship grows stronger through various comedic situations.','en', '/2koX1xLkpTQM4IZebYvKysFW1Nh.jpg', '1995-09-21', 8.8, 16682, 'SEASON');
+insert into season(id, season_number, series_id)
+values (153, 2, 36);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (162, 'Sherlock Season 1', 'Consulting detective Sherlock Holmes and his partner Dr. John Watson solve crimes in modern-day London using deductive reasoning and technology.','en', '/7WTsnHkbA0FaG6R9twfFde0I9hl.jpg', '2010-07-25', 9.2, 198851, 'SEASON');
+insert into season(id, season_number, series_id)
+values (162, 1, 37);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (163, 'Sherlock Season 2', 'Sherlock and Watson face more complex cases while Sherlock encounters his greatest nemesis, the criminal mastermind Moriarty.','en', '/7WTsnHkbA0FaG6R9twfFde0I9hl.jpg', '2012-01-01', 9.4, 198852, 'SEASON');
+insert into season(id, season_number, series_id)
+values (163, 2, 37);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (172, 'True Detective Season 1', 'Louisiana State Police detectives Rust Cohle and Martin Hart investigate a series of ritualistic murders spanning 17 years.','en', '/cuV2O5ZyDLHSOWzg3nLVljp1ubw.jpg', '2014-01-12', 9.0, 466481, 'SEASON');
+insert into season(id, season_number, series_id)
+values (172, 1, 38);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (173, 'True Detective Season 2', 'Three police officers and a career criminal navigate corruption and conspiracy in California involving a murdered city manager.','en', '/cuV2O5ZyDLHSOWzg3nLVljp1ubw.jpg', '2015-06-21', 7.8, 466482, 'SEASON');
+insert into season(id, season_number, series_id)
+values (173, 2, 38);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (182, 'رأفت الهجان الموسم الأول', 'الموسم الأول من المسلسل الاستخباراتي الملحمي الذي يتبع الضابط المصري رأفت الهجان في مهمته التجسسية داخل المجتمع الإسرائيلي', 'ar', '/xWasNqXzlYom9Ghn3ykO3QrMF4P.jpg', '1988-01-01', 9.1, 90675, 'SEASON');
+insert into season(id, season_number, series_id)
+values (182, 1, 39);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (183, 'ارابيسك الموسم الأول', 'الموسم الأول من المسلسل الاجتماعي الرائد الذي تناول قضايا مثيرة للجدل في المجتمع المصري', 'ar', '/3VzNab3jrVqDcei4LexoRINXjfV.jpg', '1994-01-01', 8.9, 90995, 'SEASON');
+insert into season(id, season_number, series_id)
+values (183, 1, 40);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (184, 'الميزان الموسم الأول', 'الموسم الأول من المسلسل القانوني الذي يتبع حياة محامي مبدئي يكافح من أجل العدالة في نظام فاسد', 'ar', '/wk8XF95KdXTNFVl7nIRuLuLO8dm.jpg', '2018-05-16', 8.7, 88016, 'SEASON');
+insert into season(id, season_number, series_id)
+values (184, 1, 41);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (185, 'يوميات ونيس الموسم الأول', 'الموسم الأول من المسلسل العائلي الذي يتبع ونيس وميسة وأطفالهما الأربعة', 'ar', '/jz6NCOJ6wYvw2yhGXZ502FiyjKK.jpg', '1999-12-06', 8.8, 55992, 'SEASON');
+insert into season(id, season_number, series_id)
+values (185, 1, 42);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (186, 'العار الموسم الأول', 'الموسم الأول من المسلسل الدرامي الذي يدور حول عائلة الحاج عبد الستار تاجر المخدرات', 'ar', '/hXtqGeIczLjfrlrvoYBXeBWQctb.jpg', '2011-09-13', 8.6, 96823, 'SEASON');
+insert into season(id, season_number, series_id)
+values (186, 1, 43);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (187, 'ليالي الحلمية الموسم الأول', 'الموسم الأول من الملحمة التاريخية التي تدور في القاهرة خلال الأربعينات والخمسينات', 'ar', '/ri5YHgzMyFptkO4qfeeoe9zaUiG.jpg', '1987-09-01', 9.0, 52561, 'SEASON');
+insert into season(id, season_number, series_id)
+values (187, 1, 44);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (188, 'حارة اليهود الموسم الأول', 'الموسم الأول من المسلسل التاريخي الذي يصور التعايش بين المسلمين والمسيحيين واليهود في القاهرة', 'ar', '/NTF1wrCHVMeiOGqU7gry3vocz3.jpg', '2015-06-18', 5.5, 110474, 'SEASON');
+insert into season(id, season_number, series_id)
+values (188, 1, 45);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (189, 'الكبير اوي الموسم الأول', 'الموسم الأول من المسلسل الكوميدي الذي يتبع الكبير في بحثه عن الحب مرة أخرى', 'ar', '/oj4XM6wpGRIcx3QoQx1PF1fx5E5.jpg', '2010-08-11', 7.0, 52699, 'SEASON');
+insert into season(id, season_number, series_id)
+values (189, 1, 46);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (190, 'ام كلثوم الموسم الأول', 'الموسم الأول من المسلسل الذي يؤرخ لحياة أم كلثوم كوكب الشرق', 'ar', '/7m9b5BDaIiqYhaGzEb8cNolibtj.jpg', '1999-01-01', 8.3, 100888, 'SEASON');
+insert into season(id, season_number, series_id)
+values (190, 1, 47);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (191, 'جراند اوتيل الموسم الأول', 'الموسم الأول من المسلسل المقتبس من المسلسل الإسباني والذي يدور في فندق فاخر بالقاهرة في الخمسينات', 'ar', '/gXKdgR3WhYa6ay9TEaU4fnL6bJq.jpg', '2016-05-27', 7.2, 71689, 'SEASON');
+insert into season(id, season_number, series_id)
+values (191, 1, 48);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (242, 'La casa de papel Season 1', 'The Professor recruits eight uniquely skilled robbers to infiltrate the Royal Mint of Spain in the most ambitious heist in history.', 'es', '/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg', '2017-05-02', 8.2, 714461, 'SEASON');
+insert into season(id, season_number, series_id)
+values (242, 1, 49);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (243, 'La casa de papel Season 2', 'The hostage situation at the Royal Mint intensifies as the robbers face new challenges and the police close in.', 'es', '/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg', '2017-10-16', 8.2, 714462, 'SEASON');
+insert into season(id, season_number, series_id)
+values (243, 2, 49);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (244, 'La casa de papel Season 3', 'The Professor and his team return for an even more ambitious heist at the Bank of Spain.', 'es', '/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg', '2019-07-19', 8.2, 714463, 'SEASON');
+insert into season(id, season_number, series_id)
+values (244, 3, 49);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (245, 'Band of Brothers Season 1', 'Follow Easy Company of the 506th Regiment of the 101st Airborne Division from their initial training in Georgia through the end of World War II.', 'en', '/pGzV187ogXzgJrvPRy2YPi29ofH.jpg', '2001-09-09', 9.4, 46131, 'SEASON');
+insert into season(id, season_number, series_id)
+values (245, 1, 60);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (246, 'Chernobyl Season 1', 'The true story of the catastrophic nuclear accident at Chernobyl and the brave men and women who sacrificed to save Europe.', 'en', '/hlLXt2tOPT6RRnjiUmoxyG1LTFi.jpg', '2019-05-06', 9.3, 871081, 'SEASON');
+insert into season(id, season_number, series_id)
+values (246, 1, 61);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (247, 'Avatar: The Last Airbender Season 1', 'Aang awakens from the iceberg and begins his journey to master the four elements and defeat the Fire Nation.', 'en', '/v2vn1coUMPKw0GI1KGC5J4IXtqp.jpg', '2005-02-21', 9.3, 2461, 'SEASON');
+insert into season(id, season_number, series_id)
+values (247, 1, 62);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (248, 'Avatar: The Last Airbender Season 2', 'Team Avatar travels to Ba Sing Se while Aang continues his earthbending training and faces new challenges.', 'en', '/v2vn1coUMPKw0GI1KGC5J4IXtqp.jpg', '2006-04-07', 9.3, 2462, 'SEASON');
+insert into season(id, season_number, series_id)
+values (248, 2, 62);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (249, 'Avatar: The Last Airbender Season 3', 'Aang masters firebending and prepares for the final confrontation with Fire Lord Ozai.', 'en', '/v2vn1coUMPKw0GI1KGC5J4IXtqp.jpg', '2007-09-21', 9.3, 2463, 'SEASON');
+insert into season(id, season_number, series_id)
+values (249, 3, 62);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (250, 'Cosmos: A Spacetime Odyssey Season 1', 'Neil deGrasse Tyson explores the universe and our place within it, following in Carl Sagan''s footsteps.', 'en', '/5o07ps0QZ0bNoRYxTn9cPdRWlUu.jpg', '2014-03-09', 9.2, 616621, 'SEASON');
+insert into season(id, season_number, series_id)
+values (250, 1, 63);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (251, 'The Twilight Zone Season 1', 'Rod Serling''s anthology series begins with tales of the strange, supernatural, and unexplained.', 'en', '/7uY4pCOxbEdv4M8jTE4uMPVoSIW.jpg', '1959-10-02', 9.0, 63571, 'SEASON');
+insert into season(id, season_number, series_id)
+values (251, 1, 64);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (252, 'The Twilight Zone Season 2', 'The second season continues with more mind-bending stories from the fifth dimension.', 'en', '/7uY4pCOxbEdv4M8jTE4uMPVoSIW.jpg', '1960-09-30', 9.0, 63572, 'SEASON');
+insert into season(id, season_number, series_id)
+values (252, 2, 64);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (253, 'The Twilight Zone Season 3', 'The third season delivers more haunting tales of suspense and science fiction.', 'en', '/7uY4pCOxbEdv4M8jTE4uMPVoSIW.jpg', '1961-09-15', 9.0, 63573, 'SEASON');
+insert into season(id, season_number, series_id)
+values (253, 3, 64);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (254, 'The Twilight Zone Season 4', 'The fourth season features hour-long episodes with deeper exploration of psychological themes.', 'en', '/7uY4pCOxbEdv4M8jTE4uMPVoSIW.jpg', '1963-01-03', 9.0, 63574, 'SEASON');
+insert into season(id, season_number, series_id)
+values (254, 4, 64);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (255, 'The Twilight Zone Season 5', 'The final season returns to the half-hour format with classic Twilight Zone storytelling.', 'en', '/7uY4pCOxbEdv4M8jTE4uMPVoSIW.jpg', '1963-09-27', 9.0, 63575, 'SEASON');
+insert into season(id, season_number, series_id)
+values (255, 5, 64);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (256, 'Attack on Titan Season 1', 'Humanity fights for survival against the Titans that threaten to destroy their civilization.', 'ja', '/hTP1DtLGFamjfu8WqjnuQdP1n4i.jpg', '2013-04-07', 9.0, 14291, 'SEASON');
+insert into season(id, season_number, series_id)
+values (256, 1, 65);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (257, 'Attack on Titan Season 2', 'The truth about the Titans begins to unfold as new threats emerge from within the walls.', 'ja', '/hTP1DtLGFamjfu8WqjnuQdP1n4i.jpg', '2017-04-01', 9.0, 14292, 'SEASON');
+insert into season(id, season_number, series_id)
+values (257, 2, 65);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (258, 'Attack on Titan Season 3', 'The Survey Corps faces political intrigue and uncovers shocking secrets about their world.', 'ja', '/hTP1DtLGFamjfu8WqjnuQdP1n4i.jpg', '2018-07-23', 9.0, 14293, 'SEASON');
+insert into season(id, season_number, series_id)
+values (258, 3, 65);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (259, 'Attack on Titan Season 4', 'The final season reveals the ultimate truth about the Titans and the fate of humanity.', 'ja', '/hTP1DtLGFamjfu8WqjnuQdP1n4i.jpg', '2020-12-07', 9.0, 14294, 'SEASON');
+insert into season(id, season_number, series_id)
+values (259, 4, 65);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (260, 'Arcane Season 1', 'Sisters Vi and Jinx find themselves on opposing sides of a conflict between the utopian Piltover and the oppressed Zaun.', 'en', '/fqldf2t8ztc9aiwn3k6mlX3tvRT.jpg', '2021-11-06', 9.0, 946051, 'SEASON');
+insert into season(id, season_number, series_id)
+values (260, 1, 66);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (261, 'Arcane Season 2', 'The conflict between Piltover and Zaun escalates as Vi and Jinx''s relationship reaches its breaking point.', 'en', '/fqldf2t8ztc9aiwn3k6mlX3tvRT.jpg', '2024-11-09', 9.0, 946052, 'SEASON');
+insert into season(id, season_number, series_id)
+values (261, 2, 66);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (262, 'Fullmetal Alchemist: Brotherhood Season 1', 'Edward and Alphonse Elric search for the Philosopher''s Stone to restore their bodies after a failed alchemical experiment.', 'ja', '/5ZFUEOULaVml7pQuXxhpR2SmVUw.jpg', '2009-04-05', 9.1, 319111, 'SEASON');
+insert into season(id, season_number, series_id)
+values (262, 1, 67);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (263, 'The Last Dance Season 1', 'An intimate look at Michael Jordan and the Chicago Bulls'' quest for a sixth NBA championship in 1998.', 'en', '/oVf4xGGbDtwVHiKn8uTuSriY7PH.jpg', '2020-04-19', 9.1, 971801, 'SEASON');
+insert into season(id, season_number, series_id)
+values (263, 1, 68);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (264, 'Death Note Season 1', 'Light Yagami discovers a supernatural notebook that can kill anyone whose name is written in it.', 'ja', '/tCZFfYTIwrR7n94J6G14Y4hAFU6.jpg', '2006-10-04', 9.0, 139161, 'SEASON');
+insert into season(id, season_number, series_id)
+values (264, 1, 69);
+
+
+
+
+
+
 
 -- Adding Episodes
 insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
 values (5, 'Pilot', 'Michael Scofield, a structural engineer, attempts to rob a bank in order to get incarcerated at Fox River State Penitentiary, where his brother Lincoln Burrows, accused of murdering the Vice Presidents brother, is scheduled to be executed.','en', '/zQbhElwkCKV4QG6OtXmN7wResE.jpg', '2005-08-29', 8.078, 1111, 'EPISODE');
-insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
-values (6, 'Allen', 'Michael seeks help of his fellow prison inhabitants to execute his escape plans.','en', '/cng0p8lg3dskrktVA2W9cJZePY4.jpg', '2005-08-29', 8.4, 1112, 'EPISODE');
-insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
-values (7, 'Manhunt', 'As eight hours has passed since the escape, Michael, Lincoln, Sucre, C-Note and Abruzzi attempt to evade their seekers.','en', '/3gksayUgMiPsBGxYkmMmJcumJSI.jpg', '2006-08-29', 9, 1121, 'EPISODE');
-insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
-values (8, 'Otis', 'Mahone tries to lure the escapees by targeting an imprisoned LJ. Michael and Lincoln come up with a plan to free LJ from jail.','en', '/4MQOW5Z4EFSELwWjwbyXD2xqP5.jpg', '2006-09-29', 9.5, 1122, 'EPISODE');
-
-
 insert into episode(id ,run_time, season_id, episode_number)
 values (5, 45, 3, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (6, 'Allen', 'Michael seeks help of his fellow prison inhabitants to execute his escape plans.','en', '/cng0p8lg3dskrktVA2W9cJZePY4.jpg', '2005-08-29', 8.4, 1112, 'EPISODE');
 insert into episode(id ,run_time, season_id, episode_number)
 values (6, 45, 3, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (7, 'Manhunt', 'As eight hours has passed since the escape, Michael, Lincoln, Sucre, C-Note and Abruzzi attempt to evade their seekers.','en', '/3gksayUgMiPsBGxYkmMmJcumJSI.jpg', '2006-08-29', 9, 1121, 'EPISODE');
 insert into episode(id ,run_time, season_id, episode_number)
 values (7, 45, 4, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (8, 'Otis', 'Mahone tries to lure the escapees by targeting an imprisoned LJ. Michael and Lincoln come up with a plan to free LJ from jail.','en', '/4MQOW5Z4EFSELwWjwbyXD2xqP5.jpg', '2006-09-29', 9.5, 1122, 'EPISODE');
 insert into episode(id ,run_time, season_id, episode_number)
 values (8, 45, 4, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (73, 'Pilot', 'When an unassuming high school chemistry teacher discovers he has a rare form of lung cancer, he decides to team up with a former student to cook and sell pure crystal meth.', 'en', '/ydlY3iPfeOAvu8gVqrxPoMvzNCn.jpg', '2008-01-20', 8.2, 62085, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (73, 58, 70, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (74, 'Cats in the Bag', 'Walt and Jesse attempt to tie up loose ends. The desperate situation gets more complicated with the flip of a coin.', 'en', '/tjDNvbokPLtEnpVrxaABsrz2do5.jpg', '2008-01-27', 8.2, 62086, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (74, 48, 70, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (75, 'And the Bags in the River', 'Walt and Jesse clean up after the bathtub incident before Walt decides whether or not he should kill their remaining prisoner.', 'en', '/extRRb5Ma1hA8VHA3zj4P7Z8POd.jpg', '2008-02-10', 8.3, 62087, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (75, 48, 70, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (76, 'Seven Thirty-Seven', 'Walt attempts to form a new alliance as he deals with chain of command issues. Hank and Marie argue over what to do with Walts kids.', 'en', '/ihP5IgaVG0EBnczIaEkSWVFfaN8.jpg', '2009-03-08', 8.3, 62088, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (76, 47, 71, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (77, 'Grilled', 'Walt and Jesse find themselves in trouble with a local drug dealer. Skyler opens up to her boss about her concerns regarding Walt.', 'en', '/vQJNGQZ50Q2PEobWDq7s3pGaVi3.jpg', '2009-03-15', 8.4, 62089, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (77, 47, 71, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (78, 'Bit by a Dead Bee', 'Walt and Jesse cover their tracks by creating an alibi. Meanwhile, Marie tends to a depressed Hank.', 'en', '/9kCbEKn0nKbECtUYGbKt4PFYvJL.jpg', '2009-03-22', 8.1, 62090, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (78, 47, 71, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (79, 'No Mas', 'Walt faces a new danger on a new front and deals with an increasingly angry Skyler, who must consider what to do next with her life and the kids.', 'en', '/6kkfxDtKhO5KEP8AEXBJIqqPzxG.jpg', '2010-03-21', 8.2, 62091, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (79, 47, 72, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (80, 'Caballo Sin Nombre', 'Despite ever-increasing tension between Walt and Skyler, he pulls out all the stops in an effort to reconcile with his family.', 'en', '/cFoVNqcVtGLktu4GfCBzAy1xsJn.jpg', '2010-03-28', 8.3, 62092, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (80, 47, 72, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (81, 'I.F.T.', 'Walt takes drastic action to protect his secret and Gus makes it clear that he wont tolerate insubordination.', 'en', '/vMJhBM2PBqd0aw2Z2DVcfQYQKKi.jpg', '2010-04-04', 8.4, 62093, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (81, 47, 72, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (85, 'Winter Is Coming', 'Jon Arryn, the Hand of the King, is dead. King Robert Baratheon plans to ask his oldest friend, Eddard Stark, to take Jons place.', 'en', '/xIfVIM5yrBeTFs70elPpcr6jWSb.jpg', '2011-04-17', 8.9, 63065, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (85, 62, 82, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (86, 'The Kingsroad', 'While Bran recovers from his fall, Ned takes only his daughters to Kings Landing. Jon Snow goes with his uncle Benjen to The Wall.', 'en', '/vw8JlmELIDqjDLm0dn6nGBNxaHf.jpg', '2011-04-24', 8.8, 63066, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (86, 56, 82, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (87, 'Lord Snow', 'Lord Stark is torn between his family and an old friend when asked to serve at the side of King Robert Baratheon; Viserys plans to wed his sister to a savage Dothraki warlord in exchange for an army.', 'en', '/bGVgMOmPTK4TnUAuaBn8V8n4TTT.jpg', '2011-05-01', 8.7, 63067, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (87, 58, 82, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (88, 'The North Remembers', 'Tyrion arrives at Kings Landing to take his fathers place as Hand of the King. Stannis Baratheon plans to take the Iron Throne for his own.', 'en', '/1f6ZiOEK8PGzGlWaUMDK53YMk1n.jpg', '2012-04-01', 8.8, 63068, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (88, 53, 83, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (89, 'The Night Lands', 'Arya makes friends with Gendry. Tyrion tries to take control of the Small Council. Theon arrives at his home, Pyke.', 'en', '/mGKnJnHsj3PGu3EGrn8DexQ1ufI.jpg', '2012-04-08', 8.6, 63069, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (89, 54, 83, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (90, 'What Is Dead May Never Die', 'At the Red Keep, Tyrion plots three alliances through the promise of a royal marriage. Catelyn arrives in the Stormlands to forge an alliance of her own.', 'en', '/szOTVjIDrBmHlcFr2ER8O4PFSMN.jpg', '2012-04-15', 8.7, 63070, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (90, 53, 83, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (91, 'Valar Dohaeris', 'Jon is brought before Mance Rayder, the King Beyond the Wall, while the Night Watch survivors retreat south. In Kings Landing, Tyrion asks for his reward.', 'en', '/nPaaDkUqeFdWJZ5fNs4pRuyCLUV.jpg', '2013-03-31', 8.8, 63071, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (91, 55, 84, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (92, 'Dark Wings, Dark Words', 'Sansa says too much. Shae asks Tyrion for a favor. Jaime finds a way to pass the time while Robb and Catelyn receive some unexpected visitors.', 'en', '/kRnJkuWDgO3LfL3Sdi4ZsQIQGPQ.jpg', '2013-04-07', 8.6, 63072, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (92, 57, 84, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (93, 'Walk of Punishment', 'The Night Watch takes stock. Varys meets his better. Arya is taken to the commander of the Brotherhood. Daenerys makes an exchange.', 'en', '/fTONJdqPMjMOLnhNHbXaC1KKtVQ.jpg', '2013-04-14', 8.7, 63073, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (93, 53, 84, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (97, 'The Sopranos', 'After suffering a series of mysterious anxiety attacks, New Jersey mob boss Tony Soprano agrees to see a psychiatrist, Dr. Jennifer Melfi.', 'en', '/xJcNjMghEr5qnzVKG9rQd9Lp7Sw.jpg', '1999-01-10', 8.8, 54245, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (97, 58, 94, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (98, '46 Long', 'Tony is getting fed up with his mother. Brendan Filone and Christopher Moltisanti hijack a truck, but it belongs to Comley Trucking, a company that pays protection money to Tony.', 'en', '/fhb2f7oLPmKGcTD7AFIzxs9x4kG.jpg', '1999-01-17', 8.3, 54246, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (98, 46, 94, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (99, 'Denial, Anger, Acceptance', 'Tony encourages an unwanted visitor to leave and deals with a problematic associate. Dr. Melfi suggests Tony should place his mother in a nursing home.', 'en', '/hj8bLQjHKJE2qxFJCN3gJA2CQmr.jpg', '1999-01-24', 8.4, 54247, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (99, 50, 94, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (100, 'Guy Walks Into a Psychiatrists Office', 'Tony begins the new millennium with new worries. He is concerned about his nephew Christopher and his drug problem, and about his own sessions with Dr. Melfi.', 'en', '/jE6pJnqLpNkTnKUPbsf7kRhf3tq.jpg', '2000-01-16', 8.7, 54248, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (100, 47, 95, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (101, 'Do Not Resuscitate', 'Tony buys Janice a house, thinking shell be staying for good. He goes to visit his mother but she had a stroke and is now in the hospital.', 'en', '/fEgkxUKWBYyFNWiE2mGEKj7HSKH.jpg', '2000-01-23', 8.5, 54249, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (101, 46, 95, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (102, 'Toodle-Fucking-Oo', 'Richie Aprile gets out of prison and causes problems for Tony. Junior falls and injures his back, and ends up in a nursing home.', 'en', '/l4iY8Q8mEJKPrCY2QQ3LRPbf4AH.jpg', '2000-01-30', 8.6, 54250, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (102, 52, 95, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (103, 'Mr. Ruggerios Neighborhood', 'The FBI has been watching the Soprano home. Agent Skip Lipari approaches Adriana at the Crazy Horse and tries to get her to work for the FBI.', 'en', '/oKIcC6sVsB5eJJuRFNWqhDKCNs2.jpg', '2001-03-04', 8.9, 54251, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (103, 52, 96, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (104, 'Proshai, Livushka', 'In the aftermath of Livias death, Tony deals with the many inconveniences surrounding her funeral while Janice and Barbara arrive to attend the services.', 'en', '/qcg1VQdv4pFcUNOJMNb6vM2KKLX.jpg', '2001-03-11', 9.0, 54252, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (104, 57, 96, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (105, 'Fortunate Son', 'Christopher begins rehab, and Tony investigates the attempted hit on his life while attending Meadows soccer game.', 'en', '/dEGz4lFBFgmWyNJ6fVj7YZThOg6.jpg', '2001-03-18', 8.8, 54253, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (105, 54, 96, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (109, 'Chapter One: The Vanishing of Will Byers', 'On his way home from a friends house, young Will sees something terrifying. Nearby, a sinister secret lurks in the depths of a government lab.', 'en', '/o7fi4HZ9dxjJfSGy83VIjNgDdCY.jpg', '2016-07-15', 8.7, 77578, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (109, 47, 106, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (110, 'Chapter Two: The Weirdo on Maple Street', 'Lucas, Mike and Dustin try to talk to the girl they found in the woods. Hopper questions an anxious Joyce about an unsettling phone call.', 'en', '/oInOaIBeWrB5WyAYb2EQGmWJJ8P.jpg', '2016-07-15', 8.6, 77579, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (110, 55, 106, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (111, 'Chapter Three: Holly, Jolly', 'Hopper breaks into the lab while Nancy and Jonathan confront the force that took Will. The boys ask Mr. Clarke how to travel to another dimension.', 'en', '/cwH62JKtl29qPrfNbqSLz6wlY7G.jpg', '2016-07-15', 8.9, 77580, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (111, 52, 106, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (112, 'Chapter Five: Dig Dug', 'Nancy and Jonathan swap conspiracy theories with a reluctant Murray. Joyce and Hopper return to Hawkins Lab. El struggles to channel her powers.', 'en', '/vBLES2HoU1n4vP70LZ7EHCOCiKq.jpg', '2017-10-27', 8.8, 77581, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (112, 57, 107, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (113, 'Chapter Six: The Spy', 'Wills connection to a shadowy evil grows stronger but no one is quite sure how to stop it. Elsewhere, Dustin and Steve forge an unlikely bond.', 'en', '/8mGNnRVlEfCyiGTSRUiPyoBaP0V.jpg', '2017-10-27', 9.1, 77582, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (113, 60, 107, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (114, 'Chapter Seven: The Bathtub', 'Eleven makes plans to finish what she started while the survivors turn up the heat on the monstrous terror thats holding Will hostage.', 'en', '/u7TcrnyUfaJtj5fSKlVbWyNGX0w.jpg', '2017-10-27', 9.4, 77583, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (114, 62, 107, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (115, 'Chapter One: Suzie, Do You Copy?', 'Summer brings new jobs and budding romance. But when Dustins radio picks up a Russian broadcast, hell discover that the evil forces in Hawkins didnt go away.', 'en', '/8qbiGrLaGE37Xrt4rMclk2FVhIW.jpg', '2019-07-04', 8.4, 77584, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (115, 52, 108, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (116, 'Chapter Two: The Mall Rats', 'Nancy and Jonathan follow a lead, Steve and Robin sign on to a secret mission, and Max and Eleven go shopping. A rattled Billy has troubling visions.', 'en', '/1Y5ym2RGj6z8XJ8BKu8qZN6Mm4f.jpg', '2019-07-04', 8.2, 77585, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (116, 49, 108, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (117, 'Chapter Three: The Case of the Missing Lifeguard', 'With El and Max looking for Billy, Will declares a day without girls. Steve and Dustin go on a stakeout, and Joyce and Hopper return to Hawkins Lab.', 'en', '/hD0vBSbPdCUWe2Mz1DEWcUJJ9hH.jpg', '2019-07-04', 8.3, 77586, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (117, 51, 108, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (121, 'The Target', 'Baltimore Detective Jimmy McNulty finds himself in hot water with his superior Major William Rawls after a drug dealer, DAngelo Barksdale, is acquitted for murder.', 'en', '/u8UxDjraoMaElObMlE7Q3QTZj2j.jpg', '2002-06-02', 8.6, 53696, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (121, 60, 118, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (122, 'The Detail', 'McNulty feels the heat when Rawls and Deputy Commissioner Burrell question his involvement in the murder case. Meanwhile, greedy city councilman Clay Davis muscules his way into the drug probe.', 'en', '/rKEwLnqLXTdwvMlJzJ8xPO9g9Gc.jpg', '2002-06-09', 8.7, 53697, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (122, 60, 118, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (123, 'The Buys', 'The early days of the Barksdale detail are marked by a series of small victories, first when Kima and McNulty track down DAngelo, then when Herc and Carver bust a Barksdale crew.', 'en', '/aMUZnS8WLbGmP7Q3r8HgHuL6cH8.jpg', '2002-06-16', 8.8, 53698, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (123, 60, 118, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (124, 'Ebb Tide', 'Ziggy loses his prized Camaro to drug dealers who fronted him a package he couldnt sell. Unable to pay his debt, Ziggy turns to his uncle Frank for financial help.', 'en', '/uHT8Q0H8bPBdU2u5k4xMYh2fKD4.jpg', '2003-06-01', 8.8, 53699, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (124, 59, 119, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (125, 'Collateral Damage', 'Sobotka applies political pressure, and Valchek fights back by reassigning the case to Daniels detail. Meanwhile, Ziggy tries to make amends for his latest blunder.', 'en', '/vHyuOmgTJfbE5nCf4qZPL3P9a23.jpg', '2003-06-08', 8.9, 53700, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (125, 60, 119, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (126, 'All Due Respect', 'Bunk and McNulty look for the connection between Sobotkas union and the fourteen dead women, while Ziggy decides to change his life with one big score.', 'en', '/nPOcf8zLpKcKAL9h4FLyGcb3ZdX.jpg', '2003-06-15', 9.0, 53701, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (126, 59, 119, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (127, 'Time After Time', 'The Barksdales are forced to seek new territory as their previous operations are no longer safe. Stringer Bell tempts some of Prop Joes crew to work for the Barksdales.', 'en', '/sVWyF8npVVF7u9gAGL2uHfPp3Lf.jpg', '2004-09-19', 9.1, 53702, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (127, 60, 120, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (128, 'All Due Respect', 'Herc and Carver learn that bringing down the Barksdale organization will not be easy. Meanwhile, Cutty struggles with returning to his old life.', 'en', '/sFqN56XSVr5zJiw5C7nOr5XjHN2.jpg', '2004-09-26', 9.0, 53703, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (128, 60, 120, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (129, 'Dead Soldiers', 'Stringer Bell convinces Avon that they can do business with Proposition Joe, but the wiretap catches them in the act. Meanwhile, Cutty prepares to get out of the game for good.', 'en', '/uGSTpSH7dM4jUYM8bOIqOkAzjpg.jpg', '2004-10-03', 9.2, 53704, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (129, 60, 120, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (133, 'Uno', 'Struggling public defender Jimmy McGill constructs an elaborate yet questionable plan for drumming up business. Meanwhile, former police officer Mike Ehrmantraut makes ends meet as a parking lot attendant.', 'en', '/6x4ybOzlEHTdLqJZRjJc6B2JCPe.jpg', '2015-02-08', 8.2, 78459, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (133, 47, 130, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (134, 'Mijo', 'As his troubles escalate to a boiling point, Jimmy finds himself in dire straits. An act of carelessness puts Chuck at risk.', 'en', '/t9kkWqHr7vfE9tBqPn3MYGtjUqD.jpg', '2015-02-09', 8.4, 78460, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (134, 47, 130, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (135, 'Nacho', 'Jimmy pulls out all the stops to prove that his dangerous advertisement created a winning case for his client, but his relationship with Kim becomes strained as a result.', 'en', '/bNJwSjKJ8ITIcG3QdK3Ue4vXn8c.jpg', '2015-02-16', 8.3, 78461, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (135, 47, 130, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (136, 'Switch', 'Jimmy and Kim work on their first case together, which proves more challenging than expected. Mike reluctantly plays bodyguard to an increasingly paranoid Daniel Wormald.', 'en', '/hHQI4pqNRRtfVfpLIEJB2Y6BHBk.jpg', '2016-02-15', 8.5, 78462, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (136, 47, 131, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (137, 'Cobbler', 'Mike brokers a deal between Daniel and Nacho. Jimmy works to exonerate an eccentric client. Howard offers Jimmy a job opportunity that Jimmy quickly declines.', 'en', '/thPy5MKQH5t9Rf9yKGkjfhqxkPl.jpg', '2016-02-22', 8.7, 78463, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (137, 47, 131, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (138, 'Amarillo', 'Kim examines her options in the wake of the Mesa Verde incident. Jimmy turns to an unconventional source for help expanding his business.', 'en', '/q8JGTh5JI7SN6u8QcT2A5YCjQ8u.jpg', '2016-02-29', 8.6, 78464, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (138, 47, 131, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (139, 'Mabel', 'Jimmy tries to settle debts. Nacho reunites with an acquaintance. Mike helps Stacey with a project and makes a connection.', 'en', '/2ZOdZzEV7Ga6FRvmr6qNcOV5N1L.jpg', '2017-04-10', 8.8, 78465, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (139, 47, 132, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (140, 'Witness', 'Jimmy and Chuck air their differences. Nacho takes charge. Mike enforces Gustavos orders.', 'en', '/uWMtjRIVKAY8jdFZCNJNUIgV8bH.jpg', '2017-04-17', 8.9, 78466, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (140, 47, 132, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (141, 'Sunk Costs', 'Jimmy tries to make amends. Nacho gambles with his future. Hamlin pushes Kim to make a difficult choice.', 'en', '/vUO2g8rQ6djgWaLkJ8nVRp0sKqQ.jpg', '2017-04-24', 9.0, 78467, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (141, 47, 132, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (144, 'Pilot', 'A documentary crew arrives at the Scranton branch of Dunder Mifflin to film the daily operations and meet regional manager Michael Scott.','en', '/mLyW3UTgi2lsMdtueYODcfAB9Ku.jpg', '2005-03-24', 8.2, 231611, 'EPISODE');
+insert into episode(id ,run_time, season_id, episode_number)
+values (144, 22, 142, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (145, 'Diversity Day', 'Michael conducts a diversity training seminar after an incident with Chris Rock impersonations, leading to uncomfortable situations for everyone.','en', '/mLyW3UTgi2lsMdtueYODcfAB9Ku.jpg', '2005-03-29', 8.4, 231612, 'EPISODE');
+insert into episode(id ,run_time, season_id, episode_number)
+values (145, 22, 142, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (146, 'Health Care', 'Michael puts Dwight in charge of choosing a new healthcare plan for the office, leading to chaos as employees try to influence the decision.','en', '/mLyW3UTgi2lsMdtueYODcfAB9Ku.jpg', '2005-04-05', 8.3, 231613, 'EPISODE');
+insert into episode(id ,run_time, season_id, episode_number)
+values (146, 22, 142, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (147, 'The Alliance', 'Jim and Dwight form an unlikely alliance when Jim tricks Dwight into believing there is a conspiracy in the office.','en', '/mLyW3UTgi2lsMdtueYODcfAB9Ku.jpg', '2005-04-12', 8.1, 231614, 'EPISODE');
+insert into episode(id ,run_time, season_id, episode_number)
+values (147, 22, 142, 4);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (148, 'The Dundies', 'Michael hosts the annual Dundie Awards at Chilis, where Pam gets drunk and Jim realizes his feelings for her.','en', '/mLyW3UTgi2lsMdtueYODcfAB9Ku.jpg', '2005-09-20', 8.6, 231621, 'EPISODE');
+insert into episode(id ,run_time, season_id, episode_number)
+values (148, 22, 143, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (149, 'Sexual Harassment', 'Michael is accused of sexual harassment and must attend a seminar, while Jim deals with his growing attraction to Pam.','en', '/mLyW3UTgi2lsMdtueYODcfAB9Ku.jpg', '2005-09-27', 8.4, 231622, 'EPISODE');
+insert into episode(id ,run_time, season_id, episode_number)
+values (149, 22, 143, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (150, 'Office Olympics', 'While Michael and Dwight visit a property, Jim organizes Office Olympics to boost morale among the remaining employees.','en', '/mLyW3UTgi2lsMdtueYODcfAB9Ku.jpg', '2005-10-04', 8.8, 231623, 'EPISODE');
+insert into episode(id ,run_time, season_id, episode_number)
+values (150, 22, 143, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (151, 'The Fire', 'When a fire drill goes wrong, the employees are stuck in the parking lot where they learn more about each other than they bargained for.','en', '/mLyW3UTgi2lsMdtueYODcfAB9Ku.jpg', '2005-10-11', 8.5, 231624, 'EPISODE');
+insert into episode(id ,run_time, season_id, episode_number)
+values (151, 22, 143, 4);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (154, 'The Pilot', 'Rachel leaves her fiancé at the altar and reunites with her high school friend Monica, meeting her group of friends for the first time.','en', '/l0qVZIpXtIo7km9u5Yqh0nKPOr5.jpg', '1994-09-22', 8.3, 166811, 'EPISODE');
+insert into episode(id ,run_time, season_id, episode_number)
+values (154, 22, 152, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (155, 'The One with the Sonogram at the End', 'Ross learns that his ex-wife is pregnant with his child, while Rachel tries to return her engagement ring.','en', '/l0qVZIpXtIo7km9u5Yqh0nKPOr5.jpg', '1994-09-29', 8.1, 166812, 'EPISODE');
+insert into episode(id ,run_time, season_id, episode_number)
+values (155, 22, 152, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (156, 'The One with the Thumb', 'Monica dates a guy that everyone hates, Chandler starts smoking again, and Pheobe finds a thumb in her soda.','en', '/l0qVZIpXtIo7km9u5Yqh0nKPOr5.jpg', '1994-10-06', 8.0, 166813, 'EPISODE');
+insert into episode(id ,run_time, season_id, episode_number)
+values (156, 22, 152, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (157, 'The One with Georges Standalones', 'The friends attend a funeral where they reflect on life and relationships, leading to some unexpected revelations.','en', '/l0qVZIpXtIo7km9u5Yqh0nKPOr5.jpg', '1994-10-13', 8.2, 166814, 'EPISODE');
+insert into episode(id ,run_time, season_id, episode_number)
+values (157, 22, 152, 4);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (158, 'The One with Ross New Girlfriend', 'Ross introduces his new girlfriend Julie to the group, much to Rachels dismay, while Monica gets a roommate.','en', '/l0qVZIpXtIo7km9u5Yqh0nKPOr5.jpg', '1995-09-21', 8.4, 166821, 'EPISODE');
+insert into episode(id ,run_time, season_id, episode_number)
+values (158, 22, 153, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (159, 'The One with the Breast Milk', 'Ross is uncomfortable when Carol breastfeeds in front of everyone, and Monica and Rachel compete for the attention of a neighbor.','en', '/l0qVZIpXtIo7km9u5Yqh0nKPOr5.jpg', '1995-09-28', 8.2, 166822, 'EPISODE');
+insert into episode(id ,run_time, season_id, episode_number)
+values (159, 22, 153, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (160, 'The One Where Mr. Heckles Dies', 'The cranky downstairs neighbor Mr. Heckles dies, leaving his possessions to Monica and Rachel, causing the friends to reflect on their lives.','en', '/l0qVZIpXtIo7km9u5Yqh0nKPOr5.jpg', '1995-10-05', 8.3, 166823, 'EPISODE');
+insert into episode(id ,run_time, season_id, episode_number)
+values (160, 22, 153, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (161, 'The One with Phoebes Husband', 'The friends discover that Phoebe has been secretly married to a gay Canadian ice dancer to help him get a green card.','en', '/l0qVZIpXtIo7km9u5Yqh0nKPOr5.jpg', '1995-10-12', 8.1, 166824, 'EPISODE');
+insert into episode(id ,run_time, season_id, episode_number)
+values (161, 22, 153, 4);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (164, 'A Study in Pink', 'Dr. John Watson meets the brilliant but eccentric Sherlock Holmes and they investigate a series of apparent suicides that are actually murders.','en', '/hmLTIRtVyTHShJl2Wb8LHmvUgJm.jpg', '2010-07-25', 9.0, 1988511, 'EPISODE');
+insert into episode(id ,run_time, season_id, episode_number)
+values (164, 88, 162, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (165, 'The Blind Banker', 'Sherlock and Watson investigate a mysterious cipher connected to a series of break-ins at a bank and an ancient Chinese smuggling ring.','en', '/hmLTIRtVyTHShJl2Wb8LHmvUgJm.jpg', '2010-08-01', 8.4, 1988512, 'EPISODE');
+insert into episode(id ,run_time, season_id, episode_number)
+values (165, 89, 162, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (166, 'The Great Game', 'Sherlock is challenged by a mysterious bomber who forces him to solve cases within time limits or innocent people will die.','en', '/hmLTIRtVyTHShJl2Wb8LHmvUgJm.jpg', '2010-08-08', 9.1, 1988513, 'EPISODE');
+insert into episode(id ,run_time, season_id, episode_number)
+values (166, 88, 162, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (167, 'A Scandal in Belgravia', 'Sherlock faces his first defeat when he encounters Irene Adler, a dominatrix who knows how to play his own game better than he does.','en', '/hmLTIRtVyTHShJl2Wb8LHmvUgJm.jpg', '2010-08-15', 8.9, 1988514, 'EPISODE');
+insert into episode(id ,run_time, season_id, episode_number)
+values (167, 90, 162, 4);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (168, 'A Scandal in Belgravia', 'Sherlock meets Irene Adler, the dominatrix who becomes his intellectual equal and emotional weakness.','en', '/hmLTIRtVyTHShJl2Wb8LHmvUgJm.jpg', '2012-01-01', 9.2, 1988521, 'EPISODE');
+insert into episode(id ,run_time, season_id, episode_number)
+values (168, 90, 163, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (169, 'The Hounds of Baskerville', 'Sherlock and Watson investigate a case involving a gigantic hound and government conspiracy at a secret military base.','en', '/hmLTIRtVyTHShJl2Wb8LHmvUgJm.jpg', '2012-01-08', 8.8, 1988522, 'EPISODE');
+insert into episode(id ,run_time, season_id, episode_number)
+values (169, 88, 163, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (170, 'The Reichenbach Fall', 'Moriarty launches his final game against Sherlock, discrediting him publicly and forcing him to make the ultimate sacrifice.','en', '/hmLTIRtVyTHShJl2Wb8LHmvUgJm.jpg', '2012-01-15', 9.6, 1988523, 'EPISODE');
+insert into episode(id ,run_time, season_id, episode_number)
+values (170, 88, 163, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (171, 'The Sign of Three', 'Sherlock serves as best man at Watsons wedding while solving a case that threatens the celebration.','en', '/hmLTIRtVyTHShJl2Wb8LHmvUgJm.jpg', '2012-01-22', 8.7, 1988524, 'EPISODE');
+insert into episode(id ,run_time, season_id, episode_number)
+values (171, 86, 163, 4);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (174, 'The Long Bright Dark', 'Detectives Rust Cohle and Martin Hart are brought in to revisit a homicide case they worked in 1995 involving occult practices.','en', '/siA2d4PNn4JVFZAwfIYx4pnKCaK.jpg', '2014-01-12', 9.2, 4664811, 'EPISODE');
+insert into episode(id ,run_time, season_id, episode_number)
+values (174, 58, 172, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (175, 'Seeing Things', 'Cohle and Hart investigate a series of ritualistic murders while their partnership begins to show signs of strain.','en', '/siA2d4PNn4JVFZAwfIYx4pnKCaK.jpg', '2014-01-19', 8.9, 4664812, 'EPISODE');
+insert into episode(id ,run_time, season_id, episode_number)
+values (175, 55, 172, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (176, 'The Locked Room', 'The investigation leads to a tent revival and a minister with suspicious connections to the murder victims.','en', '/siA2d4PNn4JVFZAwfIYx4pnKCaK.jpg', '2014-01-26', 8.8, 4664813, 'EPISODE');
+insert into episode(id ,run_time, season_id, episode_number)
+values (176, 57, 172, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (177, 'Who Goes There', 'Cohle goes undercover with a dangerous biker gang to gather intelligence on the case, putting his life at risk.','en', '/siA2d4PNn4JVFZAwfIYx4pnKCaK.jpg', '2014-02-02', 9.7, 4664814, 'EPISODE');
+insert into episode(id ,run_time, season_id, episode_number)
+values (177, 59, 172, 4);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (178, 'The Western Book of the Dead', 'Three officers investigate the murder of a city manager in California, uncovering a web of corruption and conspiracy.','en', '/siA2d4PNn4JVFZAwfIYx4pnKCaK.jpg', '2015-06-21', 7.6, 4664821, 'EPISODE');
+insert into episode(id ,run_time, season_id, episode_number)
+values (178, 60, 173, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (179, 'Night Finds You', 'The investigation deepens as the three officers uncover connections between the murder and powerful political figures.','en', '/siA2d4PNn4JVFZAwfIYx4pnKCaK.jpg', '2015-06-28', 7.4, 4664822, 'EPISODE');
+insert into episode(id ,run_time, season_id, episode_number)
+values (179, 59, 173, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (180, 'Maybe Tomorrow', 'Ray Velcoro and Frank Semyon team up to investigate the conspiracy while Ani Bezzerides follows her own leads.','en', '/siA2d4PNn4JVFZAwfIYx4pnKCaK.jpg', '2015-07-05', 7.8, 4664823, 'EPISODE');
+insert into episode(id ,run_time, season_id, episode_number)
+values (180, 58, 173, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (181, 'Down Will Come', 'A shootout with the suspected killer leads to chaos and casualties, changing the course of the investigation dramatically.','en', '/siA2d4PNn4JVFZAwfIYx4pnKCaK.jpg', '2015-07-12', 8.2, 4664824, 'EPISODE');
+insert into episode(id ,run_time, season_id, episode_number)
+values (181, 57, 173, 4);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (192, 'البداية', 'الحلقة الأولى من رأفت الهجان التي تبدأ بتجنيد الضابط المصري للمهمة الاستخباراتية الخطيرة', 'ar', '/xWasNqXzlYom9Ghn3ykO3QrMF4P.jpg', '1988-01-01', 9.2, 90676, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (192, 50, 182, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (193, 'الرحلة', 'رأفت يبدأ رحلته إلى إسرائيل وتأسيس هويته الجديدة كيهودي مصري', 'ar', '/xWasNqXzlYom9Ghn3ykO3QrMF4P.jpg', '1988-01-08', 9.1, 90677, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (193, 50, 182, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (194, 'الاندماج', 'رأفت يحاول الاندماج في المجتمع الإسرائيلي وبناء علاقات تساعده في مهمته', 'ar', '/xWasNqXzlYom9Ghn3ykO3QrMF4P.jpg', '1988-01-15', 9.0, 90678, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (194, 50, 182, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (195, 'المخاطر', 'رأفت يواجه مخاطر كبيرة قد تكشف هويته الحقيقية', 'ar', '/xWasNqXzlYom9Ghn3ykO3QrMF4P.jpg', '1988-01-22', 9.3, 90679, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (195, 50, 182, 4);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (196, 'المعلومات', 'رأفت ينجح في الحصول على معلومات مهمة للمخابرات المصرية', 'ar', '/xWasNqXzlYom9Ghn3ykO3QrMF4P.jpg', '1988-01-29', 9.2, 90680, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (196, 50, 182, 5);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (197, 'الفساد', 'الحلقة الأولى تتناول قضية الفساد في المجتمع المصري', 'ar', '/3VzNab3jrVqDcei4LexoRINXjfV.jpg', '1994-01-01', 8.8, 90996, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (197, 45, 183, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (198, 'الطلاق', 'حلقة تتناول قضية الطلاق وتأثيرها على الأسرة المصرية', 'ar', '/3VzNab3jrVqDcei4LexoRINXjfV.jpg', '1994-01-08', 8.9, 90997, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (198, 45, 183, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (199, 'البطالة', 'حلقة تسلط الضوء على مشكلة البطالة بين الشباب', 'ar', '/3VzNab3jrVqDcei4LexoRINXjfV.jpg', '1994-01-15', 8.7, 90998, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (199, 45, 183, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (200, 'الرشوة', 'حلقة تكشف عن انتشار الرشوة في المؤسسات الحكومية', 'ar', '/3VzNab3jrVqDcei4LexoRINXjfV.jpg', '1994-01-22', 9.0, 90999, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (200, 45, 183, 4);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (201, 'التعليم', 'حلقة تتناول أزمة التعليم في مصر ونقص الإمكانيات', 'ar', '/3VzNab3jrVqDcei4LexoRINXjfV.jpg', '1994-01-29', 8.8, 91000, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (201, 45, 183, 5);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (202, 'القضية الأولى', 'المحامي المبدئي يواجه أول قضية صعبة في مواجهة الفساد', 'ar', '/wk8XF95KdXTNFVl7nIRuLuLO8dm.jpg', '2018-05-16', 8.8, 88017, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (202, 45, 184, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (203, 'المواجهة', 'المحامي يواجه ضغوطاً كبيرة لتنازل عن مبادئه', 'ar', '/wk8XF95KdXTNFVl7nIRuLuLO8dm.jpg', '2018-05-23', 8.7, 88018, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (203, 45, 184, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (204, 'الحقيقة', 'كشف الحقيقة وراء قضية معقدة تتطلب شجاعة كبيرة', 'ar', '/wk8XF95KdXTNFVl7nIRuLuLO8dm.jpg', '2018-05-30', 8.9, 88019, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (204, 45, 184, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (205, 'التضحية', 'المحامي يضحي بمصالحه الشخصية من أجل العدالة', 'ar', '/wk8XF95KdXTNFVl7nIRuLuLO8dm.jpg', '2018-06-06', 8.8, 88020, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (205, 45, 184, 4);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (206, 'الانتصار', 'انتصار العدالة رغم كل الصعوبات والتحديات', 'ar', '/wk8XF95KdXTNFVl7nIRuLuLO8dm.jpg', '2018-06-13', 9.0, 88021, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (206, 45, 184, 5);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (207, 'العائلة', 'تعريف بعائلة ونيس وميسة وأطفالهما الأربعة', 'ar', '/jz6NCOJ6wYvw2yhGXZ502FiyjKK.jpg', '1999-12-06', 8.9, 55993, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (207, 30, 185, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (208, 'المدرسة', 'مشاكل الأطفال في المدرسة وكيفية التعامل معها', 'ar', '/jz6NCOJ6wYvw2yhGXZ502FiyjKK.jpg', '1999-12-13', 8.8, 55994, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (208, 30, 185, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (209, 'العمل', 'ونيس يواجه مشاكل في العمل وتأثيرها على الأسرة', 'ar', '/jz6NCOJ6wYvw2yhGXZ502FiyjKK.jpg', '1999-12-20', 8.7, 55995, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (209, 30, 185, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (210, 'الأصدقاء', 'أهمية الصداقة وتأثير الأصدقاء على الأطفال', 'ar', '/jz6NCOJ6wYvw2yhGXZ502FiyjKK.jpg', '1999-12-27', 8.9, 55996, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (210, 30, 185, 4);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (211, 'العيد', 'احتفال العائلة بالعيد والقيم الأسرية', 'ar', '/jz6NCOJ6wYvw2yhGXZ502FiyjKK.jpg', '2000-01-03', 9.0, 55997, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (211, 30, 185, 5);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (212, 'السر المظلم', 'كشف السر المظلم لعائلة الحاج عبد الستار', 'ar', '/hXtqGeIczLjfrlrvoYBXeBWQctb.jpg', '2011-09-13', 8.7, 96824, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (212, 45, 186, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (213, 'الشك', 'بداية الشكوك حول أنشطة الحاج عبد الستار', 'ar', '/hXtqGeIczLjfrlrvoYBXeBWQctb.jpg', '2011-09-20', 8.6, 96825, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (213, 45, 186, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (214, 'الكشف', 'كشف الحقيقة المؤلمة عن تجارة المخدرات', 'ar', '/hXtqGeIczLjfrlrvoYBXeBWQctb.jpg', '2011-09-27', 8.8, 96826, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (214, 45, 186, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (215, 'الصدمة', 'صدمة أفراد العائلة عند اكتشاف الحقيقة', 'ar', '/hXtqGeIczLjfrlrvoYBXeBWQctb.jpg', '2011-10-04', 8.5, 96827, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (215, 45, 186, 4);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (216, 'المواجهة', 'مواجهة العائلة للعار والفضيحة', 'ar', '/hXtqGeIczLjfrlrvoYBXeBWQctb.jpg', '2011-10-11', 8.7, 96828, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (216, 45, 186, 5);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (217, 'بداية الحكاية', 'بداية الحكاية في حي الحلمية في الأربعينات', 'ar', '/ri5YHgzMyFptkO4qfeeoe9zaUiG.jpg', '1987-09-01', 9.1, 52562, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (217, 50, 187, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (218, 'الحرب العالمية', 'تأثير الحرب العالمية الثانية على سكان الحي', 'ar', '/ri5YHgzMyFptkO4qfeeoe9zaUiG.jpg', '1987-09-08', 9.0, 52563, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (218, 50, 187, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (219, 'فلسطين', 'تأثير الصراع في فلسطين على الشعب المصري', 'ar', '/ri5YHgzMyFptkO4qfeeoe9zaUiG.jpg', '1987-09-15', 9.2, 52564, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (219, 50, 187, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (220, 'الثورة', 'بداية الثورة المصرية وتأثيرها على الحي', 'ar', '/ri5YHgzMyFptkO4qfeeoe9zaUiG.jpg', '1987-09-22', 9.3, 52565, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (220, 50, 187, 4);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (221, 'التغيير', 'التغييرات الجذرية في المجتمع المصري', 'ar', '/ri5YHgzMyFptkO4qfeeoe9zaUiG.jpg', '1987-09-29', 9.1, 52566, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (221, 50, 187, 5);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (222, 'الحارة', 'تعريف بالحارة وسكانها من الديانات المختلفة', 'ar', '/NTF1wrCHVMeiOGqU7gry3vocz3.jpg', '2015-06-18', 5.6, 110475, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (222, 45, 188, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (223, 'التعايش', 'كيف تعايش سكان الحارة رغم اختلاف الديانات', 'ar', '/NTF1wrCHVMeiOGqU7gry3vocz3.jpg', '2015-06-25', 5.5, 110476, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (223, 45, 188, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (224, 'الصراع', 'بداية الصراعات والتوترات في الحارة', 'ar', '/NTF1wrCHVMeiOGqU7gry3vocz3.jpg', '2015-07-02', 5.4, 110477, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (224, 45, 188, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (225, 'الهجرة', 'هجرة اليهود من الحارة وأثرها على الجيران', 'ar', '/NTF1wrCHVMeiOGqU7gry3vocz3.jpg', '2015-07-09', 5.3, 110478, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (225, 45, 188, 4);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (226, 'النهاية', 'نهاية حقبة التعايش في الحارة', 'ar', '/NTF1wrCHVMeiOGqU7gry3vocz3.jpg', '2015-07-16', 5.7, 110479, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (226, 45, 188, 5);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (227, 'الكبير', 'تعريف بشخصية الكبير وبحثه عن الحب الجديد', 'ar', '/oj4XM6wpGRIcx3QoQx1PF1fx5E5.jpg', '2010-08-11', 7.1, 52700, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (227, 30, 189, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (228, 'البحث', 'الكبير يبدأ في البحث عن شريكة حياة جديدة', 'ar', '/oj4XM6wpGRIcx3QoQx1PF1fx5E5.jpg', '2010-08-18', 7.0, 52701, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (228, 30, 189, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (229, 'المشاكل', 'مشاكل كوميدية يواجهها الكبير في رحلة البحث', 'ar', '/oj4XM6wpGRIcx3QoQx1PF1fx5E5.jpg', '2010-08-25', 7.2, 52702, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (229, 30, 189, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (230, 'الاكتشاف', 'الكبير يكتشف أن ما يبحث عنه قريب منه', 'ar', '/oj4XM6wpGRIcx3QoQx1PF1fx5E5.jpg', '2010-09-01', 6.9, 52703, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (230, 30, 189, 4);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (231, 'السعادة', 'الكبير يجد السعادة التي كان يبحث عنها', 'ar', '/oj4XM6wpGRIcx3QoQx1PF1fx5E5.jpg', '2010-09-08', 7.3, 52704, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (231, 30, 189, 5);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (232, 'الطفولة', 'طفولة أم كلثوم في قرية طماي الزهايرة', 'ar', '/7m9b5BDaIiqYhaGzEb8cNolibtj.jpg', '1999-01-01', 8.4, 100889, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (232, 50, 190, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (233, 'الموهبة', 'اكتشاف موهبة أم كلثوم الغنائية المبكرة', 'ar', '/7m9b5BDaIiqYhaGzEb8cNolibtj.jpg', '1999-01-08', 8.3, 100890, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (233, 50, 190, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (234, 'القاهرة', 'انتقال أم كلثوم إلى القاهرة لبدء مشوارها الفني', 'ar', '/7m9b5BDaIiqYhaGzEb8cNolibtj.jpg', '1999-01-15', 8.5, 100891, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (234, 50, 190, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (235, 'النجومية', 'بداية نجومية أم كلثوم وشهرتها الواسعة', 'ar', '/7m9b5BDaIiqYhaGzEb8cNolibtj.jpg', '1999-01-22', 8.2, 100892, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (235, 50, 190, 4);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (236, 'كوكب الشرق', 'أم كلثوم تصبح كوكب الشرق وسيدة الغناء العربي', 'ar', '/7m9b5BDaIiqYhaGzEb8cNolibtj.jpg', '1999-01-29', 8.6, 100893, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (236, 50, 190, 5);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (237, 'الفندق', 'تعريف بفندق جراند اوتيل الفاخر في القاهرة', 'ar', '/gXKdgR3WhYa6ay9TEaU4fnL6bJq.jpg', '2016-05-27', 7.3, 71690, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (237, 45, 191, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (238, 'الأسرار', 'كشف أول الأسرار الخفية في الفندق', 'ar', '/gXKdgR3WhYa6ay9TEaU4fnL6bJq.jpg', '2016-06-03', 7.2, 71691, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (238, 45, 191, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (239, 'الغموض', 'أحداث غامضة تحدث في الفندق', 'ar', '/gXKdgR3WhYa6ay9TEaU4fnL6bJq.jpg', '2016-06-10', 7.1, 71692, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (239, 45, 191, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (240, 'المؤامرة', 'كشف المؤامرة الكبرى التي تحاك في الفندق', 'ar', '/gXKdgR3WhYa6ay9TEaU4fnL6bJq.jpg', '2016-06-17', 7.4, 71693, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (240, 45, 191, 4);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (241, 'الحقيقة', 'كشف الحقيقة وراء أحداث الفندق الغامضة', 'ar', '/gXKdgR3WhYa6ay9TEaU4fnL6bJq.jpg', '2016-06-24', 7.0, 71694, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (241, 45, 191, 5);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (265, 'Efectuar lo acordado', 'The Professor recruits Tokyo and seven other robbers for a heist at the Royal Mint of Spain.', 'es', '/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg', '2017-05-02', 8.2, 7144611, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (265, 67, 242, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (266, 'Imprudencias letales', 'Hostage negotiator Raquel enters the scene. The Professor has an unusual phone conversation with her.', 'es', '/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg', '2017-05-02', 8.3, 7144612, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (266, 70, 242, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (267, 'Errar al disparar', 'Police grab an image of the mastermind behind the heist. Raquel is suspicious of the gentleman she meets at a café.', 'es', '/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg', '2017-05-09', 8.4, 7144613, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (267, 69, 242, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (268, 'Se acabaron las máscaras', 'The Professor reveals his identity to Raquel. Resistance builds in the Mint as the robbers face new challenges.', 'es', '/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg', '2017-10-16', 8.5, 7144621, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (268, 71, 243, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (269, 'La cabeza del plan', 'The Professor explains his plan to Raquel. Berlin takes control of the situation inside the Mint.', 'es', '/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg', '2017-10-23', 8.6, 7144622, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (269, 68, 243, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (270, 'Airbag', 'The police find the Professor''s hideout. The heist comes to its dramatic conclusion.', 'es', '/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg', '2017-10-30', 8.7, 7144623, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (270, 65, 243, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (271, 'Hemos vuelto', 'When Rio is captured, a distraught Tokyo turns to the Professor for help. Armed with a bold new plan, they reunite the team.', 'es', '/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg', '2019-07-19', 8.8, 7144631, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (271, 56, 244, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (272, 'Aikido', 'The Professor recruits Martín to put his brother''s plan into action. Palermo and Nairobi get into a heated argument.', 'es', '/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg', '2019-07-19', 8.9, 7144632, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (272, 58, 244, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (273, 'Hawái', 'Tokyo and Nairobi''s efforts go drastically awry. The Professor recalls Berlin detailing how they''d steal the gold from the water-logged vault.', 'es', '/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg', '2019-07-19', 9.0, 7144633, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (273, 55, 244, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (274, 'Currahee', 'Easy Company begins their training under the harsh leadership of Captain Sobel at Camp Toccoa.', 'en', '/pGzV187ogXzgJrvPRy2YPi29ofH.jpg', '2001-09-09', 9.4, 461311, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (274, 94, 245, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (275, 'Day of Days', 'Easy Company parachutes into Normandy on D-Day and fights to take the coastal battery at Brécourt Manor.', 'en', '/pGzV187ogXzgJrvPRy2YPi29ofH.jpg', '2001-09-16', 9.5, 461312, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (275, 69, 245, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (276, 'Carentan', 'Easy Company moves inland from Utah Beach to capture the French town of Carentan.', 'en', '/pGzV187ogXzgJrvPRy2YPi29ofH.jpg', '2001-09-23', 9.3, 461313, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (276, 68, 245, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (277, '1:23:45', 'The Chernobyl nuclear power plant accident unfolds in the early hours of April 26, 1986.', 'en', '/hlLXt2tOPT6RRnjiUmoxyG1LTFi.jpg', '2019-05-06', 9.6, 8710811, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (277, 56, 246, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (278, 'Please Remain Calm', 'The Soviet authorities attempt to cover up the disaster while the radiation spreads.', 'en', '/hlLXt2tOPT6RRnjiUmoxyG1LTFi.jpg', '2019-05-13', 9.5, 8710812, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (278, 62, 246, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (279, 'Open Wide, O Earth', 'The cleanup begins as the Soviet Union tries to prevent further contamination.', 'en', '/hlLXt2tOPT6RRnjiUmoxyG1LTFi.jpg', '2019-05-20', 9.4, 8710813, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (279, 60, 246, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (280, 'The Boy in the Iceberg', 'Katara and Sokka discover Aang frozen in an iceberg and learn he is the long-lost Avatar.', 'en', '/v2vn1coUMPKw0GI1KGC5J4IXtqp.jpg', '2005-02-21', 8.9, 24611, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (280, 23, 247, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (281, 'The Avatar Returns', 'Prince Zuko attacks the Southern Water Tribe village looking for the Avatar.', 'en', '/v2vn1coUMPKw0GI1KGC5J4IXtqp.jpg', '2005-02-21', 8.8, 24612, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (281, 23, 247, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (282, 'The Southern Air Temple', 'Aang returns to his home at the Southern Air Temple and learns the fate of his people.', 'en', '/v2vn1coUMPKw0GI1KGC5J4IXtqp.jpg', '2005-02-25', 9.0, 24613, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (282, 23, 247, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (283, 'The Avatar State', 'General Fong tries to trigger Aang''s Avatar State to end the war quickly.', 'en', '/v2vn1coUMPKw0GI1KGC5J4IXtqp.jpg', '2006-03-17', 8.7, 24621, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (283, 23, 248, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (284, 'The Cave of Two Lovers', 'Aang and Katara get trapped in the Cave of Two Lovers with a group of traveling musicians.', 'en', '/v2vn1coUMPKw0GI1KGC5J4IXtqp.jpg', '2006-03-24', 8.6, 24622, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (284, 23, 248, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (285, 'Return to Omashu', 'Aang discovers that Omashu has been taken over by the Fire Nation and his friend King Bumi has been imprisoned.', 'en', '/v2vn1coUMPKw0GI1KGC5J4IXtqp.jpg', '2006-04-07', 8.8, 24623, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (285, 23, 248, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (286, 'The Awakening', 'Aang wakes up on a Fire Nation ship after the events in Ba Sing Se.', 'en', '/v2vn1coUMPKw0GI1KGC5J4IXtqp.jpg', '2007-09-21', 8.9, 24631, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (286, 23, 249, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (287, 'The Headband', 'Aang goes undercover at a Fire Nation school to learn about Fire Nation culture.', 'en', '/v2vn1coUMPKw0GI1KGC5J4IXtqp.jpg', '2007-09-28', 8.7, 24632, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (287, 23, 249, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (288, 'The Painted Lady', 'Katara helps a Fire Nation village by posing as a river spirit known as the Painted Lady.', 'en', '/v2vn1coUMPKw0GI1KGC5J4IXtqp.jpg', '2007-10-05', 8.5, 24633, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (288, 23, 249, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (289, 'Standing Up in the Milky Way', 'Neil deGrasse Tyson sets off on the Ship of the Imagination to discover Earth''s place in the universe.', 'en', '/5o07ps0QZ0bNoRYxTn9cPdRWlUu.jpg', '2014-03-09', 9.3, 6166211, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (289, 44, 250, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (290, 'Some of the Things That Molecules Do', 'Explore the origin of life and evolution, from the primordial Earth to complex organisms.', 'en', '/5o07ps0QZ0bNoRYxTn9cPdRWlUu.jpg', '2014-03-16', 9.2, 6166212, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (290, 44, 250, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (291, 'When Knowledge Conquered Fear', 'Learn how scientific thinking rescued humanity from superstition and fear.', 'en', '/5o07ps0QZ0bNoRYxTn9cPdRWlUu.jpg', '2014-03-23', 9.1, 6166213, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (291, 44, 250, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (292, 'Where Is Everybody?', 'A man finds himself alone in a deserted town with no memory of how he got there.', 'en', '/7uY4pCOxbEdv4M8jTE4uMPVoSIW.jpg', '1959-10-02', 8.1, 6357111, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (292, 25, 251, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (293, 'One for the Angels', 'A sidewalk pitchman tries to cheat death by making the perfect sales pitch.', 'en', '/7uY4pCOxbEdv4M8jTE4uMPVoSIW.jpg', '1959-10-09', 8.0, 6357112, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (293, 25, 251, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (294, 'Mr. Denton on Doomsday', 'A washed-up gunfighter gets a second chance at life with the help of a mysterious stranger.', 'en', '/7uY4pCOxbEdv4M8jTE4uMPVoSIW.jpg', '1959-10-16', 7.9, 6357113, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (294, 25, 251, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (295, 'King Nine Will Not Return', 'A World War II bomber pilot finds himself stranded in the desert next to his crashed plane.', 'en', '/7uY4pCOxbEdv4M8jTE4uMPVoSIW.jpg', '1960-09-30', 8.2, 6357121, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (295, 25, 252, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (296, 'The Man in the Bottle', 'A poor antique dealer finds a genie in a bottle, but his wishes come with unexpected consequences.', 'en', '/7uY4pCOxbEdv4M8jTE4uMPVoSIW.jpg', '1960-10-07', 8.3, 6357122, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (296, 25, 252, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (297, 'Nervous Man in a Four Dollar Room', 'A small-time crook confronts his conscience in a shabby hotel room.', 'en', '/7uY4pCOxbEdv4M8jTE4uMPVoSIW.jpg', '1960-10-14', 8.1, 6357123, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (297, 25, 252, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (298, 'Two', 'In a post-apocalyptic world, two survivors from opposing sides must learn to trust each other.', 'en', '/7uY4pCOxbEdv4M8jTE4uMPVoSIW.jpg', '1961-09-15', 8.4, 6357131, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (298, 25, 253, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (299, 'The Arrival', 'An airplane lands at an airport, but no one can agree on what type of plane it is.', 'en', '/7uY4pCOxbEdv4M8jTE4uMPVoSIW.jpg', '1961-09-22', 7.8, 6357132, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (299, 25, 253, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (300, 'The Shelter', 'A neighborhood turns against itself when a radio broadcast warns of incoming missiles.', 'en', '/7uY4pCOxbEdv4M8jTE4uMPVoSIW.jpg', '1961-09-29', 8.5, 6357133, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (300, 25, 253, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (301, 'The Thirty-Fathom Grave', 'A Navy destroyer crew hears mysterious sounds coming from a sunken submarine.', 'en', '/7uY4pCOxbEdv4M8jTE4uMPVoSIW.jpg', '1963-01-10', 8.0, 6357141, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (301, 51, 254, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (302, 'Valley of the Shadow', 'A man stumbles upon a peaceful town with a dark secret involving advanced technology.', 'en', '/7uY4pCOxbEdv4M8jTE4uMPVoSIW.jpg', '1963-01-17', 7.9, 6357142, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (302, 51, 254, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (303, 'He''s Alive', 'A young neo-Nazi receives guidance from the ghost of Adolf Hitler.', 'en', '/7uY4pCOxbEdv4M8jTE4uMPVoSIW.jpg', '1963-01-24', 8.2, 6357143, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (303, 51, 254, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (304, 'In Praise of Pip', 'A bookie''s son is wounded in Vietnam, leading to a supernatural encounter.', 'en', '/7uY4pCOxbEdv4M8jTE4uMPVoSIW.jpg', '1963-09-27', 8.3, 6357151, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (304, 25, 255, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (305, 'Steel', 'In a future where human boxing is banned, a manager tries to pass off his robot as human.', 'en', '/7uY4pCOxbEdv4M8jTE4uMPVoSIW.jpg', '1963-10-04', 8.1, 6357152, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (305, 25, 255, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (306, 'Nightmare at 20,000 Feet', 'A nervous airplane passenger sees a gremlin destroying the plane''s wing during flight.', 'en', '/7uY4pCOxbEdv4M8jTE4uMPVoSIW.jpg', '1963-10-11', 9.0, 6357153, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (306, 25, 255, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (307, 'To You, in 2000 Years: The Fall of Shiganshina, Part 1', 'The Colossal Titan appears and breaches Wall Maria, forcing humanity to retreat.', 'ja', '/hTP1DtLGFamjfu8WqjnuQdP1n4i.jpg', '2013-04-07', 9.0, 1429111, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (307, 24, 256, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (308, 'That Day: The Fall of Shiganshina, Part 2', 'Eren witnesses his mother''s death and vows revenge against the Titans.', 'ja', '/hTP1DtLGFamjfu8WqjnuQdP1n4i.jpg', '2013-04-14', 8.9, 1429112, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (308, 24, 256, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (309, 'A Dim Light Amid Despair: Humanity''s Comeback, Part 1', 'Eren, Mikasa, and Armin begin their military training to join the Survey Corps.', 'ja', '/hTP1DtLGFamjfu8WqjnuQdP1n4i.jpg', '2013-04-21', 8.8, 1429113, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (309, 24, 256, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (310, 'Beast Titan', 'The Beast Titan appears and Titans are discovered inside Wall Rose.', 'ja', '/hTP1DtLGFamjfu8WqjnuQdP1n4i.jpg', '2017-04-01', 9.1, 1429121, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (310, 24, 257, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (311, 'I''m Home', 'Sasha returns to her village to find it under Titan attack.', 'ja', '/hTP1DtLGFamjfu8WqjnuQdP1n4i.jpg', '2017-04-08', 8.7, 1429122, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (311, 24, 257, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (312, 'Southwestward', 'The Survey Corps searches for the breach in Wall Rose while uncovering disturbing truths.', 'ja', '/hTP1DtLGFamjfu8WqjnuQdP1n4i.jpg', '2017-04-15', 8.8, 1429123, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (312, 24, 257, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (313, 'Smoke Signal', 'The Survey Corps faces the Interior Military Police in a deadly game of cat and mouse.', 'ja', '/hTP1DtLGFamjfu8WqjnuQdP1n4i.jpg', '2018-07-23', 9.2, 1429131, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (313, 24, 258, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (314, 'Pain', 'Historia learns the truth about her family and the walls surrounding humanity.', 'ja', '/hTP1DtLGFamjfu8WqjnuQdP1n4i.jpg', '2018-07-30', 9.0, 1429132, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (314, 24, 258, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (315, 'Old Story', 'The truth about the Titans and the history of the walls is finally revealed.', 'ja', '/hTP1DtLGFamjfu8WqjnuQdP1n4i.jpg', '2018-08-06', 9.3, 1429133, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (315, 24, 258, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (316, 'The Other Side of the Ocean', 'The story shifts to Marley, revealing the truth about the world beyond the walls.', 'ja', '/hTP1DtLGFamjfu8WqjnuQdP1n4i.jpg', '2020-12-07', 9.4, 1429141, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (316, 24, 259, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (317, 'Midnight Train', 'Reiner reflects on his past as the Armored Titan while the Warriors prepare for war.', 'ja', '/hTP1DtLGFamjfu8WqjnuQdP1n4i.jpg', '2020-12-14', 9.2, 1429142, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (317, 24, 259, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (318, 'The Door of Hope', 'Reiner''s traumatic memories of his time on Paradis Island are revealed.', 'ja', '/hTP1DtLGFamjfu8WqjnuQdP1n4i.jpg', '2020-12-21', 9.1, 1429143, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (318, 24, 259, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (319, 'Welcome to the Playground', 'Sisters Vi and Powder live in the undercity of Zaun and dream of a better life in Piltover.', 'en', '/fqldf2t8ztc9aiwn3k6mlX3tvRT.jpg', '2021-11-06', 9.0, 9460511, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (319, 44, 260, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (320, 'Some Mysteries Are Better Left Unsolved', 'A heist in Piltover goes wrong, leading to tragic consequences for the sisters.', 'en', '/fqldf2t8ztc9aiwn3k6mlX3tvRT.jpg', '2021-11-06', 8.9, 9460512, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (320, 43, 260, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (321, 'The Base Violence Necessary for Change', 'Vi and Powder are separated after a devastating explosion tears their family apart.', 'en', '/fqldf2t8ztc9aiwn3k6mlX3tvRT.jpg', '2021-11-06', 9.1, 9460513, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (321, 42, 260, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (322, 'Heavy is the Crown', 'Years later, Vi works as an enforcer while Jinx has become a symbol of rebellion in Zaun.', 'en', '/fqldf2t8ztc9aiwn3k6mlX3tvRT.jpg', '2024-11-09', 9.2, 9460521, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (322, 45, 261, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (323, 'Watch It All Burn', 'The conflict between Piltover and Zaun escalates as both sisters choose their sides.', 'en', '/fqldf2t8ztc9aiwn3k6mlX3tvRT.jpg', '2024-11-09', 9.0, 9460522, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (323, 46, 261, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (324, 'Finally Got the Name Right', 'Vi and Jinx face each other in a final confrontation that will determine the fate of both cities.', 'en', '/fqldf2t8ztc9aiwn3k6mlX3tvRT.jpg', '2024-11-09', 9.3, 9460523, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (324, 48, 261, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (325, 'Fullmetal Alchemist', 'Edward and Alphonse Elric attempt human transmutation to bring back their mother, with disastrous results.', 'ja', '/5ZFUEOULaVml7pQuXxhpR2SmVUw.jpg', '2009-04-05', 9.1, 3191111, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (325, 24, 262, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (326, 'The First Day', 'The Elric brothers begin their journey to find the Philosopher''s Stone in Central City.', 'ja', '/5ZFUEOULaVml7pQuXxhpR2SmVUw.jpg', '2009-04-12', 9.0, 3191112, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (326, 24, 262, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (327, 'City of Heresy', 'Edward and Alphonse investigate a priest who claims to perform miracles using alchemy.', 'ja', '/5ZFUEOULaVml7pQuXxhpR2SmVUw.jpg', '2009-04-19', 8.9, 3191113, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (327, 24, 262, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (328, 'I Took It Personal', 'Michael Jordan reflects on his final season with the Chicago Bulls and the drive that made him great.', 'en', '/oVf4xGGbDtwVHiKn8uTuSriY7PH.jpg', '2020-04-19', 9.1, 9718011, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (328, 88, 263, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (329, 'Cigar', 'The early years of Michael Jordan''s career and his relationship with his teammates are explored.', 'en', '/oVf4xGGbDtwVHiKn8uTuSriY7PH.jpg', '2020-04-19', 9.0, 9718012, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (329, 87, 263, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (330, 'Return', 'Jordan''s first retirement and his brief baseball career before returning to basketball.', 'en', '/oVf4xGGbDtwVHiKn8uTuSriY7PH.jpg', '2020-04-26', 8.9, 9718013, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (330, 89, 263, 3);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (331, 'Rebirth', 'Light Yagami finds the Death Note and begins his crusade against criminals as Kira.', 'ja', '/tCZFfYTIwrR7n94J6G14Y4hAFU6.jpg', '2006-10-04', 9.0, 1391611, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (331, 23, 264, 1);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (332, 'Confrontation', 'The mysterious detective L begins investigating the Kira case and challenges Light directly.', 'ja', '/tCZFfYTIwrR7n94J6G14Y4hAFU6.jpg', '2006-10-11', 9.1, 1391612, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (332, 23, 264, 2);
+insert into content(id, title, overview, original_language, poster_path, release_date, imdb_rate, tmdb_id, content_type)
+values (333, 'Dealings', 'Light begins working with L while secretly continuing his activities as Kira.', 'ja', '/tCZFfYTIwrR7n94J6G14Y4hAFU6.jpg', '2006-10-18', 9.0, 1391613, 'EPISODE');
+insert into episode(id, run_time, season_id, episode_number)
+values (333, 23, 264, 3);
+
 
 -- Adding Users
 insert into app_user(id, name, username, password, email, date_of_birth, profile_picture)
