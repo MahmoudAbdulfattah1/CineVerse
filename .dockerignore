@@ -1,39 +1,40 @@
-# flyctl launch added from .gitignore
-**\HELP.md
-**\.gradle
-**\build
-!**\gradle\wrapper\gradle-wrapper.jar
-!**\**\src\main\**\build
-!**\**\src\test\**\build
+# Gradle and build artifacts
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
 
-### STS ###
-**\.apt_generated
-**\.classpath
-**\.factorypath
-**\.project
-**\.settings
-**\.springBeans
-**\.sts4-cache
-**\bin
-!**\**\src\main\**\bin
-!**\**\src\test\**\bin
+# IDEs
+# STS (Spring Tool Suite)
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!src/main/**/bin/
+!src/test/**/bin/
 
-### IntelliJ IDEA ###
-**\.idea
-**\*.iws
-**\*.iml
-**\*.ipr
-**\out
-!**\**\src\main\**\out
-!**\**\src\test\**\out
+# IntelliJ IDEA
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+!src/main/**/out/
+!src/test/**/out/
 
-### NetBeans ###
-nbproject\private
-nbbuild
-dist
-nbdist
-.nb-gradle
+# NetBeans
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
 
-### VS Code ###
-**\.vscode
+# VS Code
+.vscode/
+
+# Misc
 fly.toml
+HELP.md
