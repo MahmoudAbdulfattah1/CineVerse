@@ -248,6 +248,589 @@ values (123, 'Nour Al Nabawy', '/sxpNjNiVdTvHNbmHzIOVSJRxF7k.jpg', 3542989, 'FEM
 INSERT INTO crew_member(id, name, profile_path, tmdb_id, gender, biography, birthday, deathday, place_of_birth, known_for_department)
 values (124, 'Ahmed Ghozzi', '/8pCh6auBMJAJSD8tJtuhYWk5rEZ.jpg', 3548017, 'MALE', 'Egyptian actor and comedian known for his work in Egyptian television and comedy shows.', '1978-11-30', null, 'Alexandria, Egypt', 'Acting');
 
+-- Add nicknames for crew members
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (1, 'El Limby');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (1, 'محمد سعد');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (1, 'Mohammed Saad');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (2, 'هالة شيحة');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (2, 'Hala Shiha');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (2, 'Halla Sheha');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (3, 'عبلة كامل');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (3, 'Abla Kamal');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (3, 'Ablah Kamel');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (4, 'حسن حسني');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (4, 'Hassan Husny');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (4, 'Hasan Hosni');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (5, 'وائل إحسان');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (5, 'Wael Ihsan');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (5, 'Wa''el Ehsan');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (6, 'Went Miller');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (6, 'Michael Scofield');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (6, 'Wentworth Earl Miller III');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (7, 'Dom Purcell');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (7, 'Lincoln Burrows');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (7, 'Dominic Haakon Myrtvedt Purcell');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (8, 'Paul S. Adelstein');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (8, 'Agent Kellerman');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (8, 'Paul Steven Adelstein');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (9, 'T-Bag');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (9, 'Theodore Bagwell');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (9, 'Robert Lyle Knepper');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (10, 'Sucre');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (10, 'Fernando Sucre');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (10, 'Amaury Nolasco Garrido');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (11, 'Paul Scheuring');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (11, 'Paul T Scheuring');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (11, 'Paul Thomas Scheuring');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (12, 'Leo DiCaprio');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (12, 'Leo');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (12, 'Leonardo Wilhelm DiCaprio');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (13, 'Kate Elizabeth Winslet');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (13, 'Kate Winslet CBE');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (13, 'Katie Winslet');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (14, 'Jim Cameron');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (14, 'James Francis Cameron');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (14, 'King of the World');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (15, 'Thomas Jeffrey Hanks');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (15, 'America''s Dad');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (15, 'T. Hanks');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (16, 'Bob Zemeckis');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (16, 'Robert Lee Zemeckis');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (16, 'Robert L. Zemeckis');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (17, 'Keanu Charles Reeves');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (17, 'Neo');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (17, 'John Wick');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (18, 'Laurence John Fishburne III');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (18, 'Larry Fishburne');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (18, 'Morpheus');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (19, 'Lana Wachowski');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (19, 'Larry Wachowski');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (19, 'The Wachowski');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (20, 'Lilly Wachowski');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (20, 'Andy Wachowski');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (20, 'The Wachowski');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (21, 'Sam Jackson');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (21, 'Samuel Leroy Jackson');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (21, 'SLJ');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (22, 'John Joseph Travolta');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (22, 'Barbarino');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (22, 'Danny Zuko');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (23, 'QT');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (23, 'Quentin Jerome Tarantino');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (23, 'The Master');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (24, 'Chris Nolan');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (24, 'Christopher Edward Nolan');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (24, 'Christopher Jonathan James Nolan');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (25, 'Christian Charles Philip Bale');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (25, 'Batman');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (25, 'The Dark Knight');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (26, 'Heath Andrew Ledger');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (26, 'The Joker');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (26, 'Heathcliff Andrew Ledger');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (27, 'عادل إمام');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (27, 'The Comedy King');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (27, 'Za''eem');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (28, 'يسرا');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (28, 'Yousra');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (28, 'Civene Nassim');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (29, 'شريف عرفة');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (29, 'Sherief Arafa');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (29, 'Shareef Arafa');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (30, 'أحمد حلمي');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (30, 'Ahmed Helmi');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (30, 'Ahmad Hilmy');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (31, 'منى زكي');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (31, 'Muna Zaki');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (31, 'Mona Zaky');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (32, 'أحمد مكي');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (32, 'Ahmed Makky');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (32, 'Ahmad Mekki');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (33, 'دنيا سمير غانم');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (33, 'Donia Samir Ghanim');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (33, 'Dounia Samir Ghanem');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (34, 'أحمد السقا');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (34, 'Ahmed Al-Sakka');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (34, 'Ahmad El Sakka');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (35, 'كريم عبد العزيز');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (35, 'Kareem Abdel Aziz');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (35, 'Karim Abd El Aziz');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (36, 'مروان حامد');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (36, 'Marwan Hamed');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (36, 'Marwan Hamid');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (37, 'Sandra Annette Bullock');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (37, 'Sandy Bullock');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (37, 'America''s Sweetheart');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (38, 'Denzel Hayes Washington Jr.');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (38, 'Training Day');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (38, 'The Equalizer');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (39, 'Steven Allan Spielberg');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (39, 'The Master');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (39, 'King of Hollywood');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (40, 'Willard Carroll Smith Jr.');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (40, 'The Fresh Prince');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (40, 'Big Willie');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (41, 'Martin Charles Scorsese');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (41, 'Marty Scorsese');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (41, 'The Master of Cinema');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (42, 'Robert Anthony De Niro Jr.');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (42, 'Bobby De Niro');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (42, 'Bob De Niro');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (43, 'Alfredo James Pacino');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (43, 'Scarface');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (43, 'Tony Montana');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (44, 'Francis Ford Coppola');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (44, 'The Godfather Director');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (44, 'FFC');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (45, 'Marlon Brando Jr.');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (45, 'The Godfather');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (45, 'Don Vito Corleone');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (46, 'Timothy Francis Robbins');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (46, 'Andy Dufresne');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (46, 'Tim Robbins');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (47, 'Morgan Freeman');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (47, 'The Voice of God');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (47, 'Red');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (48, 'Frank Árpád Darabont');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (48, 'Frank Darabont');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (48, 'The Shawshank Director');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (49, 'William Bradley Pitt');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (49, 'Brad Pitt');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (49, 'Tyler Durden');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (50, 'Edward Harrison Norton');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (50, 'Ed Norton');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (50, 'The Narrator');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (51, 'David Andrew Leo Fincher');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (51, 'Dave Fincher');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (51, 'The Perfectionist');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (52, 'Uma Karuna Thurman');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (52, 'The Bride');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (52, 'Beatrix Kiddo');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (53, 'Sir Ridley Scott');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (53, 'Ridley Scott');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (53, 'The Gladiator Director');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (54, 'Russell Ira Crowe');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (54, 'Maximus');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (54, 'The Gladiator');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (55, 'Sir Peter Robert Jackson');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (55, 'PJ');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (55, 'The King of Middle-earth');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (56, 'Elijah Jordan Wood');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (56, 'Frodo');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (56, 'Elijah Wood');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (57, 'Sir Ian Murray McKellen');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (57, 'Gandalf');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (57, 'Magneto');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (58, 'Orlando Jonathan Blanchard Copeland Bloom');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (58, 'Legolas');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (58, 'Will Turner');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (59, 'George Walton Lucas Jr.');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (59, 'The Creator');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (59, 'Star Wars Creator');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (60, 'Harrison Ford');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (60, 'Han Solo');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (60, 'Indiana Jones');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (61, 'طه دسوقي');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (61, 'Taha Desouky');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (61, 'Taha Desouki');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (62, 'عصام عمر');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (62, 'Essam Omar');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (62, 'Issam Omar');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (63, 'عمر المهندس');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (63, 'Omar Al Mohandes');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (63, 'Omar El-Mohandes');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (64, 'Bryan Lee Cranston');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (64, 'Walter White');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (64, 'Heisenberg');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (65, 'Aaron Paul Sturtevant');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (65, 'Jesse Pinkman');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (65, 'Cap''n Cook');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (66, 'Vincent Gilligan');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (66, 'Breaking Bad Creator');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (66, 'Vince Gilligan Jr.');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (67, 'Emilia Isobel Euphemia Rose Clarke');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (67, 'Daenerys Targaryen');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (67, 'Khaleesi');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (68, 'Peter Hayden Dinklage');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (68, 'Tyrion Lannister');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (68, 'The Imp');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (69, 'Christopher Catesby Harington');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (69, 'Jon Snow');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (69, 'King of the North');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (70, 'David Friedman');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (70, 'DB Weiss Partner');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (70, 'GoT Co-Creator');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (71, 'Tony Soprano');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (71, 'Jim Gandolfini');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (71, 'Jimmy Gandolfini');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (72, 'Carmela Soprano');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (72, 'Jackie Peyton');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (72, 'Edith Falco');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (73, 'David DeCesare');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (73, 'The Sopranos Creator');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (73, 'Dave Chase');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (74, 'Eleven');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (74, 'El');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (74, 'MBB');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (75, 'Mike Wheeler');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (75, 'Richie Tozier');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (75, 'Finn Wolfhard-Huntley');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (76, 'Jim Hopper');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (76, 'Chief Hopper');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (76, 'Dave Harbour');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (77, 'The Duffer Brothers');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (77, 'Matthew Duffer');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (77, 'Duffer Twin');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (78, 'Jimmy McNulty');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (78, 'Detective McNulty');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (78, 'Dom West');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (79, 'Stringer Bell');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (79, 'John Luther');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (79, 'DJ Big Driis');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (80, 'The Wire Creator');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (80, 'Dave Simon');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (80, 'David J. Simon');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (81, 'Saul Goodman');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (81, 'Jimmy McGill');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (81, 'Robert Odenkirk');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (82, 'Kim Wexler');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (82, 'Rhea M. Seehorn');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (82, 'Rhea Seehorn-Larson');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (83, 'Better Call Saul Co-Creator');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (83, 'Pete Gould');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (83, 'Peter M. Gould');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (84, 'Michael Scott');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (84, 'Steven Carell');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (84, 'Steve Carrell');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (85, 'Jim Halpert');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (85, 'Johnny Krasinski');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (85, 'John Burke Krasinski');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (86, 'Gregory Martin Daniels');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (86, 'The Office US Creator');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (86, 'Greg M. Daniels');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (87, 'Rachel Green');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (87, 'Jen Aniston');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (87, 'Jennifer Joanna Aniston');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (88, 'Monica Geller');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (88, 'Gale Weathers');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (88, 'Courteney Bass Cox');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (89, 'Chandler Bing');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (89, 'Matt Perry');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (89, 'Matthew Langford Perry');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (90, 'Friends Co-Creator');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (90, 'Dave Crane');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (90, 'David L. Crane');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (91, 'Sherlock Holmes');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (91, 'Doctor Strange');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (91, 'Benedict Timothy Carlton Cumberbatch');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (92, 'Dr. John Watson');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (92, 'Bilbo Baggins');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (92, 'Martin John Christopher Freeman');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (93, 'Mycroft Holmes');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (93, 'Mark Philip David Gatiss');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (93, 'Sherlock Co-Creator');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (94, 'Rust Cohle');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (94, 'Matt McConaughey');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (94, 'Matthew David McConaughey');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (95, 'Marty Hart');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (95, 'Woodrow Harrelson');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (95, 'Woody Tracy Harrelson');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (96, 'True Detective Creator');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (96, 'Nicholas Austin Pizzolatto');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (96, 'Nick Pizzolatto');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (97, 'صلاح أبو سيف');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (97, 'أستاذ الواقعية');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (97, 'The Master of Realism');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (98, 'يوسف شاهين');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (98, 'جوزيف شاهين');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (98, 'Joseph Chahine');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (99, 'بيتر ميمي');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (99, 'Peter Mimi El Masry');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (99, 'بيتر ميمي المصري');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (100, 'محمد صبحي');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (100, 'العندليب الأسمر الكوميدي');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (100, 'أبو الكوميديا المصرية');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (101, 'إيناس الدغيدي');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (101, 'سيدة الإثارة');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (101, 'Lady of Controversy');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (102, 'أسامة أنور عكاشة');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (102, 'عميد الدراما العربية');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (102, 'Dean of Arab Drama');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (103, 'محمد جمال العدل');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (103, 'Mohamed Gamal El Adl');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (103, 'جمال العدل');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (104, 'أحمد الجندي');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (104, 'Ahmed Elgendy');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (104, 'أحمد محمد الجندي');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (105, 'شريف عرفة');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (105, 'Sherif Arafa El Masry');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (105, 'شريف عرفة المصري');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (106, 'عمرو عرفة');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (106, 'Amr Arafa Junior');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (106, 'عمرو عرفة الابن');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (107, 'محمود عبد العزيز');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (107, 'نجم الكوميديا والدراما');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (107, 'Comedy and Drama Star');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (108, 'يسرا');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (108, 'سندريلا الشاشة العربية');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (108, 'Cinderella of Arab Screen');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (109, 'نور الشريف');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (109, 'ملك المأساة');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (109, 'King of Tragedy');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (110, 'صلاح ذو الفقار');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (110, 'فارس الشاشة العربية');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (110, 'Knight of Arab Screen');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (111, 'يحيى الفخراني');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (111, 'مدرسة التمثيل');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (111, 'School of Acting');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (112, 'أحمد مكي');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (112, 'شيكو');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (112, 'Chico');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (113, 'منة شلبي');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (113, 'مينا شلبي');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (113, 'Menna Chalaby');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (114, 'أحمد عز');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (114, 'نجم الأكشن');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (114, 'Action Star');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (115, 'أمينة رزق');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (115, 'رائدة السينما المصرية');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (115, 'Pioneer of Egyptian Cinema');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (116, 'عمرو يوسف');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (116, 'Amr Yousef');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (116, 'عمرو محمد يوسف');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (117, 'Tokyo');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (117, 'Úrsula Corberó Delgado');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (117, 'La Casa de Papel Tokyo');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (118, 'Raquel Murillo');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (118, 'Inspector Murillo');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (118, 'Itziar Ituño Martínez');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (119, 'The Professor');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (119, 'Sergio Marquina');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (119, 'El Profesor');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (120, 'Berlin');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (120, 'Andrés de Fonollosa');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (120, 'Pedro González Alonso');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (121, 'Tate Buckley Donovan');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (121, 'Sandy Cohen');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (121, 'Jimmy Cooper');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (122, 'The Penguin');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (122, 'Frank Reynolds');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (122, 'Daniel Michael DeVito Jr.');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (123, 'نور النبوي');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (123, 'Nour Elnabawy');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (123, 'نور محمد النبوي');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (124, 'أحمد غزي');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (124, 'Ahmed Gozzy');
+INSERT INTO crew_member_aliases (crew_member_id, alias) VALUES (124, 'أحمد محمد غزي');
+
+-- Social Media Data
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (1, 'mohamedsaad.official', 'mohamedsaadofficial', NULL, 'MohamedSaadEG', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (2, 'hala.shiha', 'halashiha', NULL, 'HalaSiha', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (3, 'abla.kamel', 'ablakamel', NULL, 'AblaKamel', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (4, 'hassan.hosny', 'hassanhosny', NULL, 'HassanHosny', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (5, 'wael.ehsan', 'waelehsan', NULL, 'WaelEhsan', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (6, 'wentworthmiller', 'wentworthmillerofficial', NULL, 'WentMiller', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (7, 'dominicpurcell', 'dominicpurcellofficial', NULL, 'DominicPurcell', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (8, 'paul.adelstein', 'pauladelstein', NULL, 'PaulAdelstein', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (9, 'robert.knepper', 'robertknepper', NULL, 'RobertKnepper', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (10, 'amaury.nolasco', 'amaurynolasco', NULL, 'AmauryNolasco', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (11, 'paul.scheuring', 'paulscheuring', NULL, 'PaulScheuring', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (12, 'leonardodicaprio', 'leonardodicaprio', NULL, NULL, NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (13, 'kate.winslet', 'katewinsletofficial', NULL, 'KateWinslet', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (14, 'jamescameron', 'jamescameron', NULL, 'JimCameron', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (15, 'tomhanks', 'tomhanks', NULL, 'tomhanks', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (16, 'robert.zemeckis', 'robertzemeckis', NULL, 'RobertZemeckis', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (17, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (18, 'laurence.fishburne', 'laurencefishburne', NULL, 'LaurenceFish', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (19, 'lana.wachowski', 'lanawachowski', NULL, 'LanaWachowski', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (20, 'lilly.wachowski', 'lillywachowski', NULL, 'LillyWachowski', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (21, 'samuelljackson', 'samuelljackson', NULL, 'SamuelLJackson', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (22, 'john.travolta', 'johntravolta', NULL, 'JohnTravolta', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (23, 'quentin.tarantino', 'quentintarantino', NULL, 'QuentinTarantino', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (24, 'christopher.nolan', 'christophernolan', NULL, 'ChristopherNolan', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (25, 'christian.bale', 'christianbale', NULL, 'ChristianBale', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (26, 'heath.ledger', 'heathledger', NULL, 'HeathLedger', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (27, 'adel.emam', 'adelemam', NULL, 'AdelEmam', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (28, 'youssra.official', 'youssra', NULL, 'Youssra', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (29, 'sherif.arafa', 'sherifarafa', NULL, 'SherifArafa', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (30, 'ahmed.helmy', 'ahmedhelmy', 'ahmedhelmy', 'AhmedHelmy', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (31, 'mona.zaki', 'monazaki', NULL, 'MonaZaki', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (32, 'ahmed.mekky', 'ahmedmekky', 'ahmedmekky', 'AhmedMekky', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (33, 'donia.samir', 'doniasamir', 'doniasamir', 'DoniaSamir', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (34, 'ahmed.elsakka', 'ahmedelsakka', NULL, 'AhmedElSakka', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (35, 'karim.abdelaziz', 'karimabdelaziz', NULL, 'KarimAziz', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (36, 'marwan.hamed', 'marwanhamed', NULL, 'MarwanHamed', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (37, 'sandra.bullock', 'sandrabullock', NULL, 'SandraBullock', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (38, 'denzel.washington', 'denzelwashington', NULL, 'DenzelWashington', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (39, 'steven.spielberg', 'stevenspielberg', NULL, 'StevenSpielberg', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (40, 'willsmith', 'willsmith', 'willsmith', 'willsmith', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (41, 'martin.scorsese', 'martinscorsese', NULL, 'MartinScorsese', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (42, 'robert.deniro', 'robertdeniro', NULL, 'RobertDeNiro', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (43, 'al.pacino', 'alpacino', NULL, 'AlPacino', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (44, 'francis.coppola', 'franciscoppola', NULL, 'FrancisCoppola', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (45, 'marlon.brando', 'marlonbrando', NULL, 'MarlonBrando', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (46, 'tim.robbins', 'timrobbins', NULL, 'TimRobbins', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (47, 'morgan.freeman', 'morganfreeman', NULL, 'MorganFreeman', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (48, 'frank.darabont', 'frankdarabont', NULL, 'FrankDarabont', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (49, 'brad.pitt', 'bradpitt', NULL, 'BradPitt', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (50, 'edward.norton', 'edwardnorton', NULL, 'EdwardNorton', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (51, 'david.fincher', 'davidfincher', NULL, 'DavidFincher', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (52, 'uma.thurman', 'umathurman', NULL, 'UmaThurman', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (53, 'ridley.scott', 'ridleyscott', NULL, 'RidleyScott', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (54, 'russell.crowe', 'russellcrowe', NULL, 'russellcrowe', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (55, 'peter.jackson', 'peterjackson', NULL, 'PeterJackson', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (56, 'elijah.wood', 'elijahwood', NULL, 'ElijahWood', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (57, 'ian.mckellen', 'ianmckellen', NULL, 'IanMcKellen', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (58, 'orlando.bloom', 'orlandobloom', NULL, 'OrlandoBloom', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (59, 'george.lucas', 'georgelucas', NULL, 'GeorgeLucas', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (60, 'harrison.ford', 'harrisonford', NULL, 'HarrisonFord', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (61, 'TahaDesouky', 'tahadesouky', NULL, NULL, NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (62, NULL, 'essam__omar', NULL, 'Essam__Omar', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (63, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (64, 'thebryancranston', 'bryancranston', NULL, 'BryanCranston', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (65, NULL, 'aaronpaul', NULL, 'aaronpaul_8', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (66, NULL, NULL, NULL, 'Vince_Gilligan', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (67, NULL, 'emilia_clarke', NULL, 'emiliaclarke', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (68, NULL, 'peterdinklage', NULL, NULL, NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (69, NULL, 'kitharingtonig', NULL, NULL, NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (70, NULL, NULL, NULL, 'DavidBenioff2', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (71, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (72, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (73, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (74, NULL, 'milliebobbybrown', 'milliebobbybrown', NULL, NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (75, NULL, 'finnwolfhardofficial', NULL, NULL, NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (76, NULL, 'dkharbour', NULL, 'DavidKHarbour', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (77, NULL, NULL, NULL, 'mattduffer', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (78, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (79, NULL, 'idriselba', NULL, 'idriselba', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (80, NULL, NULL, NULL, 'AoDespair', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (81, NULL, 'mrbobodenkirk', NULL, 'mrbobodenkirk', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (82, NULL, 'rheaseehorn', NULL, 'rheaseehorn', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (83, NULL, NULL, NULL, 'petergould', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (84, NULL, 'stevecarell', NULL, 'SteveCarell', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (85, NULL, 'johnkrasinski', NULL, 'johnkrasinski', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (86, NULL, NULL, NULL, 'GregDaniels', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (87, NULL, 'jenniferaniston', NULL, 'JenniferAniston', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (88, NULL, 'courteneycoxofficial', NULL, 'CourteneyCox', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (89, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (90, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (91, NULL, 'benedictcumberbatch', NULL, NULL, NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (92, NULL, 'martinfreeman', NULL, 'MartinFreeman', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (93, NULL, NULL, NULL, 'Markgatiss', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (94, NULL, 'officiallymcconaughey', NULL, NULL, NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (95, NULL, 'woodyharrelson', NULL, NULL, NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (96, NULL, NULL, NULL, 'NicPizzolatto', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (117, NULL, 'ursulolita', 'ursulacorbero', NULL, NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (118, NULL, 'itziarituno', NULL, NULL, NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (119, 'alvaro.morte', 'alvaromorte', NULL, 'AlvaroMorte', NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (120, NULL, 'pedroalonsoochoro', NULL, NULL, NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (121, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO crew_member_social(crew_member_id, facebook_id, instagram_id, tiktok_id, twitter_id, youtube_id)
+VALUES (122, NULL, 'dannydevito', NULL, 'DannyDeVito', NULL);
+
+
+
+-- Adding Genres
 insert into genre(id, name, tmdb_id) values (1, 'Action', 28);
 insert into genre(id, name, tmdb_id) values (2, 'Drama', 18);
 insert into genre(id, name, tmdb_id) values (3, 'Comedy', 35);
@@ -1340,7 +1923,33 @@ values (151, 5, 341, 'احمد عز');
 insert into content_cast(id, crew_member_id, content_id, character_name)
 values (152, 30, 342, 'محمد الديك');
 insert into content_cast(id, crew_member_id, content_id, character_name)
-values (153, 50, 343, 'الكوماندو عز');
+values (154, 1, 69, 'L');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (155, 1, 338, 'اللمبي');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (158, 1, 40, 'اللمبي');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (159, 1, 41, 'اللمبي');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (160, 1, 341, 'اللمبي');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (161, 1, 39, 'اللمبي');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (162, 1, 336, 'اللمبي');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (163, 1, 334, 'اللمبي');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (164, 1, 335, 'اللمبي');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (165, 1, 38, 'اللمبي');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (166, 1, 54, 'اللمبي');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (167, 1, 55, 'اللمبي');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (168, 1, 64, 'اللمبي');
+insert into content_cast(id, crew_member_id, content_id, character_name)
+values (169, 1, 65, 'اللمبي');
 
 
 
