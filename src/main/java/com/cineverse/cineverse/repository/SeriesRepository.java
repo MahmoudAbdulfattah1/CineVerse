@@ -48,7 +48,16 @@ public interface SeriesRepository extends JpaRepository<Series, Integer> {
             """)
     List<Provider> findSeriesProviders(@Param("id") int id);
 
+    @Query("""
+            SELECT DISTINCT s FROM Series s
+            JOIN FETCH s.genres cg
+            JOIN FETCH cg.genre
+            WHERE s.director.id = :directorId
+            """)
+    List<Series> findByDirectorId(int directorId);
+
     boolean existsBySlug(String slug);
+
     boolean existsById(int id);
 
 
