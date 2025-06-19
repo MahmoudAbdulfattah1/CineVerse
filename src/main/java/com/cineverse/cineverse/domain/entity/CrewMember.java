@@ -6,7 +6,6 @@ import lombok.*;
 
 import java.time.LocalDate;
 import java.util.List;
-import java.util.Set;
 
 @Entity
 @Getter
@@ -29,12 +28,19 @@ public class CrewMember {
     private LocalDate deathday;
     private String placeOfBirth;
     private String knownForDepartment;
+    @ElementCollection
+    @CollectionTable(
+            name = "crew_member_aliases",
+            joinColumns = @JoinColumn(name = "crew_member_id")
+    )
+    @Column(name = "alias")
+    private List<String> alsoKnownAs;
     @OneToMany(mappedBy = "cast", fetch = FetchType.LAZY)
-    private Set<ContentCast> contentCasts;
+    private List<ContentCast> contentCasts;
     @OneToMany(mappedBy = "director", fetch = FetchType.LAZY)
-    private Set<Series> series;
+    private List<Series> series;
     @OneToMany(mappedBy = "director", fetch = FetchType.LAZY)
-    private Set<Movie> movies;
+    private List<Movie> movies;
 
     public CrewMember(int tmdbId, String name, String profilePath, Gender gender, String biography,
                       LocalDate birthday, LocalDate deathday, String placeOfBirth, String knownForDepartment) {
