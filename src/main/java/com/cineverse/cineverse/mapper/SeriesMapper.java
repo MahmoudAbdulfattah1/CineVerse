@@ -3,7 +3,6 @@ package com.cineverse.cineverse.mapper;
 import com.cineverse.cineverse.configuration.TMDBApiConfiguration;
 import com.cineverse.cineverse.domain.entity.Series;
 import com.cineverse.cineverse.dto.SeriesDto;
-import com.cineverse.cineverse.service.ContentService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;
 
@@ -11,7 +10,6 @@ import org.springframework.stereotype.Component;
 @AllArgsConstructor
 public class SeriesMapper {
     private final TMDBApiConfiguration tmdbApiConfiguration;
-    private final ContentService contentService;
 
     public SeriesDto toDto(Series series) {
         if (series == null) return null;
@@ -25,7 +23,6 @@ public class SeriesMapper {
                 series.getLanguage(),
                 series.getProductionCountry(),
                 series.getImdbRate(),
-                contentService.getPlatformRate(series.getId()),
                 series.getNumberOfSeasons(),
                 series.getNumberOfEpisodes(),
                 series.getStatus(),
