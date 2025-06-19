@@ -96,36 +96,42 @@ public class ContentRepositoryImpl implements ContentRepositoryCustom {
 
         return entityManager.createQuery(countQuery).getSingleResult();
     }
-
-    @Override
-    public Page<Content> searchContent(String keyword, Pageable pageable) {
+    public Page<Content> searchContent(String keyword, ContentType contentType, Pageable pageable) {
         if (keyword == null || keyword.isBlank()) {
             return new PageImpl<>(Collections.emptyList(), pageable, 0);
         }
-        int totalNeeded = (int) (pageable.getOffset() + pageable.getPageSize());
-        int fetchLimit = Math.max(totalNeeded * 2, 100);
 
-        List<Movie> movies = queryContent(Movie.class, keyword, fetchLimit);
-        List<Series> series = queryContent(Series.class, keyword, fetchLimit);
+        int totalNeeded = (int) (pageable.getOffset() + pageable.getPageSize());
+        int HARD_MAX = 200;
+        int fetchLimit = Math.min(Math.max(totalNeeded * 2, 100), HARD_MAX);
 
         List<Content> combined = new ArrayList<>();
-        combined.addAll(movies);
-        combined.addAll(series);
+
+        if (contentType == null || contentType == ContentType.MOVIE) {
+            combined.addAll(queryContent(Movie.class, keyword, fetchLimit));
+        }
+
+        if (contentType == null || contentType == ContentType.SERIES) {
+            combined.addAll(queryContent(Series.class, keyword, fetchLimit));
+        }
 
         List<Content> sortedContent = combined.stream()
                 .sorted(Comparator.comparing(Content::getImdbRate).reversed())
-                .collect(Collectors.toList());
+                .toList();
 
         int start = (int) pageable.getOffset();
         int end = Math.min(start + pageable.getPageSize(), sortedContent.size());
+        List<Content> pageContent = start >= sortedContent.size()
+                ? Collections.emptyList()
+                : sortedContent.subList(start, end);
 
-        List<Content> pageContent = start >= sortedContent.size() ? Collections.emptyList() :
-                sortedContent.subList(start, end);
-
-
-        long totalMovies = countContent(Movie.class, keyword);
-        long totalSeries = countContent(Series.class, keyword);
-        long total = totalMovies + totalSeries;
+        long total = 0;
+        if (contentType == null || contentType == ContentType.MOVIE) {
+            total += countContent(Movie.class, keyword);
+        }
+        if (contentType == null || contentType == ContentType.SERIES) {
+            total += countContent(Series.class, keyword);
+        }
 
         return new PageImpl<>(pageContent, pageable, total);
     }

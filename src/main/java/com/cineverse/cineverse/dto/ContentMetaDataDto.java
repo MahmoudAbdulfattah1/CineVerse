@@ -16,18 +16,19 @@ public class ContentMetaDataDto {
     private String slug;
     private String posterPath;
     private LocalDate releaseDate;
-    private Float rate;
+    private Float imdbRate;
     private String overview;
-    private  String type;
+    private String type;
     private Set<String> genres;
 
-    public ContentMetaDataDto(int id, String title, String slug, String posterPath, LocalDate releaseDate, Float rate, String overview, String type, Set<String> genres) {
+    public ContentMetaDataDto(int id, String title, String slug, String posterPath, LocalDate releaseDate, Float imdbRate
+            , String overview, String type, Set<String> genres) {
         this.id = id;
         this.title = title;
         this.slug = slug;
         this.posterPath = posterPath;
         this.releaseDate = releaseDate;
-        this.rate = rate;
+        this.imdbRate = imdbRate;
         this.overview = overview;
         this.type = type;
         this.genres = genres;

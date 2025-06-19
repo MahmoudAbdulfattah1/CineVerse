@@ -31,9 +31,9 @@ public class ContentService {
         return contentRepository.filterContent(genres, year, rate, contentType, language, sortBy, pageable);
     }
 
-    public Page<Content> searchContent(String keyword, int page, int size) {
+    public Page<Content> searchContent(String keyword, ContentType type, int page, int size) {
         Pageable pageable = PageRequest.of(page, size);
-        return contentRepository.searchContent(keyword, pageable);
+        return contentRepository.searchContent(keyword, type, pageable);
     }
 
     public Movie getMovieDetails(String movieSlug) {
@@ -111,30 +111,35 @@ public class ContentService {
             default -> throw new IllegalArgumentException("Unsupported content type.");
         };
     }
+
     public List<Season> getSeasonsBySeriesId(int seriesId) {
         if (!seriesRepository.existsById(seriesId)) {
             throw new EntityNotFoundException("Series not found");
         }
         return seasonRepository.findAllSeasonsBySeriesId(seriesId);
     }
+
     public Season getSeasonByNumberAndSeriesId(int seasonNumber, int seriesId) {
         if (!seriesRepository.existsById(seriesId)) {
             throw new EntityNotFoundException("Series not found");
         }
         return seasonRepository.findSeasonBySeasonNumberAndSeriesId(seasonNumber, seriesId);
     }
+
     public List<Episode> getSeasonEpisodes(int seasonNumber, int seriesId) {
         if (!seriesRepository.existsById(seriesId)) {
             throw new EntityNotFoundException("Series not found");
         }
         return episodeRepository.findAllEpisodesBySeriesIdAndSeasonNumber(seriesId, seasonNumber);
     }
+
     public Episode getEpisodeByNumberAndSeasonNumberAndSeriesId(int seriesId, int seasonNumber, int episodeNumber) {
         if (!seriesRepository.existsById(seriesId)) {
             throw new EntityNotFoundException("Series not found");
         }
         return episodeRepository.findEpisodeByNumberAndSeasonNumberAndSeriesId(seriesId, seasonNumber, episodeNumber);
     }
+
     public int getEpisodeCountBySeasonId(int seasonId) {
         return episodeRepository.countBySeasonId(seasonId);
     }

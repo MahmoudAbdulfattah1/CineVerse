@@ -54,9 +54,10 @@ public class ContentController {
     @GetMapping("/search")
     public ResponseEntity<Page<ContentMetaDataDto>> searchByTitle(
             @RequestParam(required = true) String q,
+            @RequestParam(required = false) ContentType type,
             @RequestParam(defaultValue = "0") int page,
             @RequestParam(defaultValue = "12") int size) {
-        return ResponseEntity.ok(contentMetaDataMapper.toDto(contentService.searchContent(q, page, size)));
+        return ResponseEntity.ok(contentMetaDataMapper.toDto(contentService.searchContent(q, type, page, size)));
     }
 
     @GetMapping("/{slug}")
@@ -86,7 +87,8 @@ public class ContentController {
     public ResponseEntity<ContentStatsDto> getContentStats(@PathVariable int id) {
         return ResponseEntity.ok(new ContentStatsDto(
                 contentService.getContentTotalReviewsCount(id),
-                contentService.getContentTotalWatchlistCount(id))
+                contentService.getContentTotalWatchlistCount(id),
+                contentService.getPlatformRate(id))
         );
     }
 
@@ -102,21 +104,27 @@ public class ContentController {
                 creditMapper.mapContentCast(contentService.getContentCast(id)))
         );
     }
+
     @GetMapping("/{id}/seasons")
     public ResponseEntity<List<SeasonDto>> getSeriesSeasons(@PathVariable int id) {
         return ResponseEntity.ok(seasonMapper.toDto(contentService.getSeasonsBySeriesId(id)));
     }
+
     @GetMapping("/{id}/seasons/{number}")
     public ResponseEntity<SeasonDto> getSeriesSeason(@PathVariable int id, @PathVariable int number) {
-        return ResponseEntity.ok(seasonMapper.toDto(contentService.getSeasonByNumberAndSeriesId(number,id)));
+        return ResponseEntity.ok(seasonMapper.toDto(contentService.getSeasonByNumberAndSeriesId(number, id)));
     }
+
     @GetMapping("/{id}/seasons/{number}/episodes")
     public ResponseEntity<List<EpisodeDto>> getSeasonEpisodes(@PathVariable int id, @PathVariable int number) {
         return ResponseEntity.ok(episodeMapper.toDto(contentService.getSeasonEpisodes(number, id)));
     }
+
     @GetMapping("/{id}/seasons/{seasonNumber}/episodes/{episodeNumber}")
-    public ResponseEntity<EpisodeDto> getSeasonEpisodes(@PathVariable int id, @PathVariable int seasonNumber, @PathVariable int episodeNumber) {
-        return ResponseEntity.ok(episodeMapper.toDto(contentService.getEpisodeByNumberAndSeasonNumberAndSeriesId(id, seasonNumber, episodeNumber)));
+    public ResponseEntity<EpisodeDto> getSeasonEpisodes(@PathVariable int id, @PathVariable int seasonNumber,
+                                                        @PathVariable int episodeNumber) {
+        return ResponseEntity.ok(episodeMapper.toDto(contentService.getEpisodeByNumberAndSeasonNumberAndSeriesId(id,
+                seasonNumber, episodeNumber)));
     }
 
 }

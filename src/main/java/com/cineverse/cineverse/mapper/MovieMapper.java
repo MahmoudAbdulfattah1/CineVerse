@@ -3,7 +3,6 @@ package com.cineverse.cineverse.mapper;
 import com.cineverse.cineverse.configuration.TMDBApiConfiguration;
 import com.cineverse.cineverse.domain.entity.Movie;
 import com.cineverse.cineverse.dto.MovieDto;
-import com.cineverse.cineverse.service.ContentService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;
 
@@ -11,7 +10,6 @@ import org.springframework.stereotype.Component;
 @AllArgsConstructor
 public class MovieMapper {
     private final TMDBApiConfiguration tmdbApiConfiguration;
-    private final ContentService contentService;
 
     public MovieDto toDto(Movie movie) {
         if (movie == null) return null;
@@ -26,7 +24,6 @@ public class MovieMapper {
                 movie.getLanguage(),
                 movie.getProductionCountry(),
                 movie.getImdbRate(),
-                contentService.getPlatformRate(movie.getId()),
                 movie.getGenres().stream().map(genre -> genre.getGenre().getName()).toList()
         );
 
