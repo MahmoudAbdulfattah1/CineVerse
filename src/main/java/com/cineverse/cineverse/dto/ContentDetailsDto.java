@@ -20,7 +20,6 @@ public interface ContentDetailsDto {
 
     float getImdbRate();
 
-    float getPlatformRate();
 
     List<String> getGenres();
 }

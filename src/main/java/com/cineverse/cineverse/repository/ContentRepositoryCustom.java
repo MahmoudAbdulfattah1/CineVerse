@@ -12,6 +12,6 @@ public interface ContentRepositoryCustom {
     Page<Content> filterContent(List<String> genres, Integer year, Integer rate, ContentType contentType,
                                 String language, String sortBy, Pageable pageable);
 
-    Page<Content> searchContent(String keyword, Pageable pageable);
+    public Page<Content> searchContent(String keyword, ContentType contentType, Pageable pageable);
 
 }
