@@ -1,4 +1,4 @@
-package com.cineverse.cineverse.domain.trailerquery;
+package com.cineverse.cineverse.infrastructure.youtube.trailerquery;
 
 public class ArabicMovieQueryBuilder implements TrailerQueryBuilder {
     @Override

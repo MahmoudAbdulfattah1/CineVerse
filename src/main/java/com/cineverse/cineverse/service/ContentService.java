@@ -3,6 +3,7 @@ package com.cineverse.cineverse.service;
 import com.cineverse.cineverse.domain.entity.*;
 import com.cineverse.cineverse.domain.enums.ContentStatus;
 import com.cineverse.cineverse.domain.enums.ContentType;
+import com.cineverse.cineverse.infrastructure.youtube.YoutubeClient;
 import com.cineverse.cineverse.repository.*;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.AllArgsConstructor;
@@ -25,7 +26,7 @@ public class ContentService {
     private ReviewRepository reviewRepository;
     private ContentTypeRepository contentTypeRepository;
     private ContentTrailerRepository contentTrailerRepository;
-    private YoutubeService youtubeService;
+    private YoutubeClient youtubeClient;
 
     public Page<Content> filterContent(List<String> genres, Integer year, Integer rate,
                                        ContentType contentType, String language, String sortBy, ContentStatus status, String order, int page, int size) {
@@ -68,7 +69,7 @@ public class ContentService {
             case SERIES -> seriesRepository.findSeriesById(contentId);
             default -> throw new IllegalArgumentException("Unsupported content type: " + contentType);
         };
-        return youtubeService.getTrailerUrl(
+        return youtubeClient.getTrailerUrl(
                 content.getTitle(),
                 content.getReleaseDate().getYear(),
                 content.getContentType(),

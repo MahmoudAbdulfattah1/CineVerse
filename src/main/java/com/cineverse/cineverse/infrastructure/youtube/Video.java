@@ -1,5 +1,10 @@
-package com.cineverse.cineverse.service;
+package com.cineverse.cineverse.infrastructure.youtube;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class Video {
     String videoId;
     String title;

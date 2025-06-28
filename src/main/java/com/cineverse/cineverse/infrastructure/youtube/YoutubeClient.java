@@ -1,8 +1,9 @@
-package com.cineverse.cineverse.service;
+package com.cineverse.cineverse.infrastructure.youtube;
 
 import com.cineverse.cineverse.configuration.YoutubeApiConfiguration;
 import com.cineverse.cineverse.domain.enums.ContentType;
-import com.cineverse.cineverse.domain.trailerquery.*;
+import com.cineverse.cineverse.infrastructure.youtube.trailerquery.*;
+import com.cineverse.cineverse.util.YouTubeVideoScorerUtil;
 import com.fasterxml.jackson.databind.JsonNode;
 import jakarta.annotation.PostConstruct;
 import org.springframework.http.ResponseEntity;
@@ -13,11 +14,11 @@ import java.util.*;
 
 
 @Service
-public class YoutubeService {
+public class YoutubeClient {
     private final RestTemplate restTemplate;
     private final YoutubeApiConfiguration youtubeApiConfiguration;
 
-    public YoutubeService(RestTemplate restTemplate, YoutubeApiConfiguration youtubeApiConfiguration) {
+    public YoutubeClient(RestTemplate restTemplate, YoutubeApiConfiguration youtubeApiConfiguration) {
         this.restTemplate = restTemplate;
         this.youtubeApiConfiguration = youtubeApiConfiguration;
     }
@@ -87,7 +88,7 @@ public class YoutubeService {
         String query = buildTrailerQuery(title, year, type, language, genres);
         String apiKey = youtubeApiConfiguration.getApiKey();
         String normTitle = normalizeArabic(title).toLowerCase();
-        VideoScorerUtil scorer = new VideoScorerUtil();
+        YouTubeVideoScorerUtil scorer = new YouTubeVideoScorerUtil();
 
         String apiUrl = "https://www.googleapis.com/youtube/v3/search"
                 + "?part=snippet"

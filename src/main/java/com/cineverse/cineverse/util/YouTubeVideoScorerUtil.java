@@ -1,8 +1,10 @@
-package com.cineverse.cineverse.service;
+package com.cineverse.cineverse.util;
+
+import com.cineverse.cineverse.infrastructure.youtube.Video;
 
 import java.util.*;
 
-public class VideoScorerUtil {
+public class YouTubeVideoScorerUtil {
 
     private static final int TRUSTED_CHANNEL_SCORE = 10;
     private static final int OFFICIAL_TRAILER_COMBO_SCORE = 8;
@@ -101,9 +103,9 @@ public class VideoScorerUtil {
         if (video == null || searchTitle == null) {
             return 0;
         }
-        String videoTitle = normalize(video.title);
-        String channelName = normalize(video.channelTitle);
-        String description = normalize(video.description);
+        String videoTitle = normalize(video.getTitle());
+        String channelName = normalize(video.getChannelTitle());
+        String description = normalize(video.getDescription());
         String normalizedSearchTitle = normalize(searchTitle);
         int score = 0;
 
