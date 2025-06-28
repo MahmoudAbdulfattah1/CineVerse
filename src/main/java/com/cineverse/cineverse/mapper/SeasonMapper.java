@@ -5,8 +5,6 @@ import com.cineverse.cineverse.domain.entity.Season;
 import com.cineverse.cineverse.dto.SeasonDto;
 import com.cineverse.cineverse.service.ContentService;
 import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -23,20 +21,21 @@ public class SeasonMapper {
                 season.getId(),
                 season.getTitle(),
                 season.getOverview(),
-                tmdbApiConfiguration.getBaseImageUrl() + season.getPosterPath(),
+                season.getPosterPath() == null ? null : tmdbApiConfiguration.getBaseImageUrl() + season.getPosterPath(),
                 season.getSeasonNumber(),
                 season.getImdbRate(),
                 season.getReleaseDate(),
                 contentService.getEpisodeCountBySeasonId(season.getId())
         )).toList();
     }
+
     public SeasonDto toDto(Season season) {
         if (season == null) return null;
-        return  new SeasonDto(
+        return new SeasonDto(
                 season.getId(),
                 season.getTitle(),
                 season.getOverview(),
-                tmdbApiConfiguration.getBaseImageUrl() + season.getPosterPath(),
+                season.getPosterPath() == null ? null : tmdbApiConfiguration.getBaseImageUrl() + season.getPosterPath(),
                 season.getSeasonNumber(),
                 season.getImdbRate(),
                 season.getReleaseDate(),
