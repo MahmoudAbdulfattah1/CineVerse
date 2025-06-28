@@ -13,18 +13,18 @@ public class EpisodeDto {
     private String overview;
     private String posterPath;
     private int episodeNumber;
-    private float rate;
+    private float imdbRate;
     private int runTime;
     private LocalDate releaseDate;
 
-    public EpisodeDto(int id, String title, String overview, String posterPath, int episodeNumber, float rate,
+    public EpisodeDto(int id, String title, String overview, String posterPath, int episodeNumber, float imdbRate,
                       int runTime, LocalDate releaseDate) {
         this.id = id;
         this.title = title;
         this.overview = overview;
         this.posterPath = posterPath;
         this.episodeNumber = episodeNumber;
-        this.rate = rate;
+        this.imdbRate = imdbRate;
         this.runTime = runTime;
         this.releaseDate = releaseDate;
     }

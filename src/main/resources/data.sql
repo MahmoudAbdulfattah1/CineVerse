@@ -831,33 +831,33 @@ VALUES (122, NULL, 'dannydevito', NULL, 'DannyDeVito', NULL);
 
 
 -- Adding Genres
-insert into genre(id, name, tmdb_id) values (1, 'Action', 28);
-insert into genre(id, name, tmdb_id) values (2, 'Drama', 18);
-insert into genre(id, name, tmdb_id) values (3, 'Comedy', 35);
-insert into genre(id, name, tmdb_id) values (4, 'Horror', 27);
-insert into genre(id, name, tmdb_id) values (5, 'Fantasy', 14);
-insert into genre(id, name, tmdb_id) values (6, 'Mystery', 9648);
-insert into genre(id, name, tmdb_id) values (7, 'Crime', 80);
-insert into genre(id, name, tmdb_id) values (8, 'Science Fiction', 878);
-insert into genre(id, name, tmdb_id) values (9, 'Romance', 10749);
-insert into genre(id, name, tmdb_id) values (10, 'Adventure', 12);
-insert into genre(id, name, tmdb_id) values (11, 'Thriller', 53);
-insert into genre(id, name, tmdb_id) values (12, 'Family', 10751);
-insert into genre(id, name, tmdb_id) values (13, 'Documentary', 99);
-insert into genre(id, name, tmdb_id) values (14, 'Animation', 16);
-insert into genre(id, name, tmdb_id) values (15, 'War', 10752);
-insert into genre(id, name, tmdb_id) values (16, 'Kids', 10762);
-insert into genre(id, name, tmdb_id) values (17, 'News', 10763);
-insert into genre(id, name, tmdb_id) values (18, 'Reality', 10764);
-insert into genre(id, name, tmdb_id) values (19, 'Sci-Fi & Fantasy', 10765);
-insert into genre(id, name, tmdb_id) values (20, 'Soap', 10766);
-insert into genre(id, name, tmdb_id) values (21, 'Talk', 10767);
-insert into genre(id, name, tmdb_id) values (22, 'War & Politics', 10768);
-insert into genre(id, name, tmdb_id) values (23, 'Western', 37);
-insert into genre(id, name, tmdb_id) values (24, 'History', 36);
-insert into genre(id, name, tmdb_id) values (25, 'Music', 10402);
-insert into genre(id, name, tmdb_id) values (26, 'TV Movie', 10770);
-insert into genre(id, name, tmdb_id) values (27, 'Action & Adventure', 10759);
+INSERT INTO genre ("name",tmdb_id,"type") VALUES ('Comedy',35,'ALL');
+INSERT INTO genre ("name",tmdb_id,"type") VALUES ('Crime',80,'ALL');
+INSERT INTO genre ("name",tmdb_id,"type") VALUES ('Documentary',99,'ALL');
+INSERT INTO genre ("name",tmdb_id,"type") VALUES ('Animation',16,'ALL');
+INSERT INTO genre ("name",tmdb_id,"type") VALUES ('Drama',18,'ALL');
+INSERT INTO genre ("name",tmdb_id,"type") VALUES ('Family',10751,'ALL');
+INSERT INTO genre ("name",tmdb_id,"type") VALUES ('Mystery',9648,'ALL');
+INSERT INTO genre ("name",tmdb_id,"type") VALUES ('Western',37,'ALL');
+INSERT INTO genre ("name",tmdb_id,"type") VALUES ('Action',28,'MOVIE');
+INSERT INTO genre ("name",tmdb_id,"type") VALUES ('Adventure',12,'MOVIE');
+INSERT INTO genre ("name",tmdb_id,"type") VALUES ('Fantasy',14,'MOVIE');
+INSERT INTO genre ("name",tmdb_id,"type") VALUES ('History',36,'MOVIE');
+INSERT INTO genre ("name",tmdb_id,"type") VALUES ('Horror',27,'MOVIE');
+INSERT INTO genre ("name",tmdb_id,"type") VALUES ('Music',10402,'MOVIE');
+INSERT INTO genre ("name",tmdb_id,"type") VALUES ('Romance',10749,'MOVIE');
+INSERT INTO genre ("name",tmdb_id,"type") VALUES ('Science Fiction',878,'MOVIE');
+INSERT INTO genre ("name",tmdb_id,"type") VALUES ('Thriller',53,'MOVIE');
+INSERT INTO genre ("name",tmdb_id,"type") VALUES ('TV Movie',10770,'MOVIE');
+INSERT INTO genre ("name",tmdb_id,"type") VALUES ('War',10752,'MOVIE');
+INSERT INTO genre ("name",tmdb_id,"type") VALUES ('Action & Adventure',10759,'SERIES');
+INSERT INTO genre ("name",tmdb_id,"type") VALUES ('Kids',10762,'SERIES');
+INSERT INTO genre ("name",tmdb_id,"type") VALUES ('News',10763,'SERIES');
+INSERT INTO genre ("name",tmdb_id,"type") VALUES ('Reality',10764,'SERIES');
+INSERT INTO genre ("name",tmdb_id,"type") VALUES ('Sci-Fi & Fantasy',10765,'SERIES');
+INSERT INTO genre ("name",tmdb_id,"type") VALUES ('Soap',10766,'SERIES');
+INSERT INTO genre ("name",tmdb_id,"type") VALUES ('Talk',10767,'SERIES');
+INSERT INTO genre ("name",tmdb_id,"type") VALUES ('War & Politics',10768,'SERIES');
 
 -- Adding Providers
 insert into provider(id, name, logo, tmdb_id)
@@ -1168,6 +1168,11 @@ values (69, 'Death Note', 'Light Yagami is an ace student with great prospectsâ€
 insert into series(id, backdrop_path, status, number_of_seasons, number_of_episodes, production_country, director_id, slug)
 values (69, '/koBa94NxTaGe2FoDzlXMuJptsv0.jpg', 'Ended', 1, 37, 'Japan', 59, 'death-note');
 
+
+insert into content_trailer(id, content_id, youtube_id)
+values (1, 2, 'AL9zLctDJaU');
+insert into content_trailer(id, content_id, youtube_id)
+values (2, 27, 'CkC3HQSZJqE');
 
 
 

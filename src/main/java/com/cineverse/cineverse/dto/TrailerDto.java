@@ -9,6 +9,6 @@ public class TrailerDto {
     private String trailer;
 
     public TrailerDto(String trailer) {
-        this.trailer = trailer;
+        this.trailer = trailer == null ? null : "https://www.youtube.com/watch?v=" + trailer;
     }
 }

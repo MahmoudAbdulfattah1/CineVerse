@@ -1,5 +1,6 @@
 package com.cineverse.cineverse.domain.entity;
 
+import com.cineverse.cineverse.domain.enums.GenreType;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -16,10 +17,14 @@ public class Genre {
     @Column(name = "tmdb_id")
     private int tmdbId;
     private String name;
+    @Enumerated(EnumType.STRING)
+    private GenreType type;
     @OneToMany(mappedBy = "genre", fetch = FetchType.LAZY)
     private Set<ContentGenre> genres;
-    public Genre(int tmdbId, String name) {
+
+    public Genre(int tmdbId, String name, GenreType type) {
         this.tmdbId = tmdbId;
         this.name = name;
+        this.type = type;
     }
 }

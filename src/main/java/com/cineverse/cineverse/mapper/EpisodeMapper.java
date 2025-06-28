@@ -19,20 +19,23 @@ public class EpisodeMapper {
                 episode.getId(),
                 episode.getTitle(),
                 episode.getOverview(),
-                tmdbApiConfiguration.getBaseImageUrl() + episode.getPosterPath(),
+                episode.getPosterPath() == null || episode.getPosterPath().isBlank() ? null :
+                        tmdbApiConfiguration.getBaseImageUrl() + episode.getPosterPath(),
                 episode.getEpisodeNumber(),
                 episode.getImdbRate(),
                 episode.getRunTime(),
                 episode.getReleaseDate()
         )).toList();
     }
+
     public EpisodeDto toDto(Episode episode) {
         if (episode == null) return null;
-        return  new EpisodeDto(
+        return new EpisodeDto(
                 episode.getId(),
                 episode.getTitle(),
                 episode.getOverview(),
-                tmdbApiConfiguration.getBaseImageUrl() + episode.getPosterPath(),
+                episode.getPosterPath() == null || episode.getPosterPath().isBlank() ? null :
+                        tmdbApiConfiguration.getBaseImageUrl() + episode.getPosterPath(),
                 episode.getEpisodeNumber(),
                 episode.getImdbRate(),
                 episode.getRunTime(),

@@ -3,6 +3,7 @@ package com.cineverse.cineverse.controller;
 import com.cineverse.cineverse.domain.entity.Content;
 import com.cineverse.cineverse.domain.entity.Movie;
 import com.cineverse.cineverse.domain.entity.Series;
+import com.cineverse.cineverse.domain.enums.ContentStatus;
 import com.cineverse.cineverse.domain.enums.ContentType;
 import com.cineverse.cineverse.dto.*;
 import com.cineverse.cineverse.mapper.*;
@@ -39,10 +40,12 @@ public class ContentController {
             @RequestParam(required = false) ContentType type,
             @RequestParam(required = false) String lang,
             @RequestParam(required = false) String sortBy,
+            @RequestParam(required = false) ContentStatus status,
+            @RequestParam(required = false) String order,
             @RequestParam(defaultValue = "0") int page,
             @RequestParam(defaultValue = "24") int size) {
         return ResponseEntity.ok(contentMetaDataMapper.toDto(
-                contentService.filterContent(genres, year, rate, type, lang, sortBy, page, size))
+                contentService.filterContent(genres, year, rate, type, lang, sortBy, status, order, page, size))
         );
     }
 

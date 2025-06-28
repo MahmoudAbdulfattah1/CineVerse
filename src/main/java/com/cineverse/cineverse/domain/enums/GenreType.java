@@ -1,5 +1,5 @@
 package com.cineverse.cineverse.domain.enums;
 
-public enum Gender {
-    MALE, FEMALE, UNKNOWN
+public enum GenreType {
+    ALL, SERIES, MOVIE
 }

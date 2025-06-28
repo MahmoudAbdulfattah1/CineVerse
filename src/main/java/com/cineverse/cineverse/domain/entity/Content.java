@@ -18,10 +18,10 @@ public class Content {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    @Column(name = "tmdb_id", unique = true)
+    @Column(name = "tmdb_id")
     private int tmdbId;
     private String title;
-    @Column(length = 2000)
+    @Column(length = 3500)
     private String overview;
     @Column(name = "release_date")
     private LocalDate releaseDate;

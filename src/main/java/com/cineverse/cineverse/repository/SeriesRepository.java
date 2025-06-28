@@ -20,6 +20,8 @@ public interface SeriesRepository extends JpaRepository<Series, Integer> {
 
     @Query("""
             SELECT  s FROM Series s
+            JOIN FETCH s.genres cg
+            JOIN FETCH cg.genre
             WHERE s.id = :id
             """)
     Series findSeriesById(int id);
