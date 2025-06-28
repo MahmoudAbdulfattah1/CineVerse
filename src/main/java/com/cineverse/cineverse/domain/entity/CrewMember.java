@@ -22,7 +22,7 @@ public class CrewMember {
     private String profilePath;
     @Enumerated(EnumType.STRING)
     private Gender gender;
-    @Column(length = 3000)
+    @Column(length = 5000)
     private String biography;
     private LocalDate birthday;
     private LocalDate deathday;
