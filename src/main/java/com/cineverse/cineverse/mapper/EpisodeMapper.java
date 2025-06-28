@@ -19,7 +19,8 @@ public class EpisodeMapper {
                 episode.getId(),
                 episode.getTitle(),
                 episode.getOverview(),
-                episode.getPosterPath() == null ? null : tmdbApiConfiguration.getBaseImageUrl() + episode.getPosterPath(),
+                episode.getPosterPath() == null || episode.getPosterPath().isBlank() ? null :
+                        tmdbApiConfiguration.getBaseImageUrl() + episode.getPosterPath(),
                 episode.getEpisodeNumber(),
                 episode.getImdbRate(),
                 episode.getRunTime(),
@@ -33,7 +34,8 @@ public class EpisodeMapper {
                 episode.getId(),
                 episode.getTitle(),
                 episode.getOverview(),
-                episode.getPosterPath() == null ? null : tmdbApiConfiguration.getBaseImageUrl() + episode.getPosterPath(),
+                episode.getPosterPath() == null || episode.getPosterPath().isBlank() ? null :
+                        tmdbApiConfiguration.getBaseImageUrl() + episode.getPosterPath(),
                 episode.getEpisodeNumber(),
                 episode.getImdbRate(),
                 episode.getRunTime(),

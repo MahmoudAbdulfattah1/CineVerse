@@ -21,7 +21,8 @@ public class SeasonMapper {
                 season.getId(),
                 season.getTitle(),
                 season.getOverview(),
-                season.getPosterPath() == null ? null : tmdbApiConfiguration.getBaseImageUrl() + season.getPosterPath(),
+                season.getPosterPath() == null || season.getPosterPath().isBlank() ? null :
+                        tmdbApiConfiguration.getBaseImageUrl() + season.getPosterPath(),
                 season.getSeasonNumber(),
                 season.getImdbRate(),
                 season.getReleaseDate(),
