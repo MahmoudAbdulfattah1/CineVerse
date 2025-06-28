@@ -13,12 +13,6 @@ import java.util.List;
 
 @Repository
 public interface MovieRepository extends JpaRepository<Movie, Integer> {
-    @Query("""
-            SELECT DISTINCT m FROM Movie m
-            LEFT JOIN FETCH m.genres cg
-            LEFT JOIN FETCH cg.genre
-            """)
-    List<Movie> findAllWithGenres();
 
     @Query("""
             SELECT DISTINCT m FROM Movie m
@@ -30,6 +24,8 @@ public interface MovieRepository extends JpaRepository<Movie, Integer> {
 
     @Query("""
             SELECT m FROM Movie m
+            JOIN FETCH m.genres cg
+            JOIN FETCH cg.genre
             WHERE m.id = :id
             """)
     Movie findMovieById(@Param("id") int id);
