@@ -1,6 +1,7 @@
 package com.cineverse.cineverse.service;
 
 import com.cineverse.cineverse.domain.entity.*;
+import com.cineverse.cineverse.domain.enums.ContentStatus;
 import com.cineverse.cineverse.domain.enums.ContentType;
 import com.cineverse.cineverse.repository.*;
 import jakarta.persistence.EntityNotFoundException;
@@ -23,12 +24,13 @@ public class ContentService {
     private EpisodeRepository episodeRepository;
     private ReviewRepository reviewRepository;
     private ContentTypeRepository contentTypeRepository;
+    private ContentTrailerRepository contentTrailerRepository;
     private YoutubeService youtubeService;
 
     public Page<Content> filterContent(List<String> genres, Integer year, Integer rate,
-                                       ContentType contentType, String language, String sortBy, int page, int size) {
+                                       ContentType contentType, String language, String sortBy, ContentStatus status, String order, int page, int size) {
         Pageable pageable = PageRequest.of(page, size);
-        return contentRepository.filterContent(genres, year, rate, contentType, language, sortBy, pageable);
+        return contentRepository.filterContent(genres, year, rate, contentType, language, sortBy, status, order, pageable);
     }
 
     public Page<Content> searchContent(String keyword, ContentType type, int page, int size) {
@@ -55,6 +57,10 @@ public class ContentService {
 
 
     public String getContentTrailer(int contentId) {
+        String trailerId = contentTrailerRepository.findYoutubeIdByContentId(contentId);
+        if (trailerId != null) {
+            return trailerId;
+        }
         ContentType contentType = contentTypeRepository.findContentTypeById(contentId)
                 .orElseThrow(() -> new EntityNotFoundException("Content not found"));
         Content content = switch (contentType) {
@@ -65,7 +71,11 @@ public class ContentService {
         return youtubeService.getTrailerUrl(
                 content.getTitle(),
                 content.getReleaseDate().getYear(),
-                content.getContentType()
+                content.getContentType(),
+                content.getLanguage(),
+                content.getGenres().stream()
+                        .map(genre -> genre.getGenre().getName())
+                        .toList()
         );
     }
 
