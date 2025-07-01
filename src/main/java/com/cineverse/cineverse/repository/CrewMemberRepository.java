@@ -13,7 +13,7 @@ public interface CrewMemberRepository extends JpaRepository<CrewMember, Integer>
     @Query("""
            SELECT cm 
            FROM CrewMember cm 
-           JOIN FETCH cm.alsoKnownAs 
+           LEFT JOIN FETCH cm.alsoKnownAs 
            WHERE cm.id = :id
             """)
     Optional<CrewMember> findByIdWithAliases(@Param("id") int id);
