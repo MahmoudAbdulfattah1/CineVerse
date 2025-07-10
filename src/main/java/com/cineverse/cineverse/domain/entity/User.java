@@ -31,8 +31,10 @@ public class User {
     @Column(unique = true)
     private String username;
     @NotBlank
-    @Size(min = 8, max = 20)
+    @Size(min = 6, message = "Password must be at least 6 characters")
     private String password;
+    @Size(max = 1000, message = "Bio cannot exceed 1000 characters")
+    private String bio;
     private String name;
     @Column(name = "date_of_birth")
     private LocalDate dateOfBirth;
