@@ -76,17 +76,18 @@ public class AuthController {
 
 
     @GetMapping("/verify")
-    public ResponseEntity<String> verifyEmail(@RequestParam("token") String token) {
+    public ResponseEntity<ApiResponse> verifyEmail(@RequestParam("token") String token) {
         try {
             String message = verificationService.verifyToken(token);
-            return ResponseEntity.ok(message);
+            return ResponseEntity.ok(ApiResponse.success(null, message));
         } catch (IllegalStateException ex) {
-            return ResponseEntity.badRequest().body(ex.getMessage());
+            return ResponseEntity.badRequest().body(ApiResponse.failure("Verification failed: " + ex.getMessage()));
         }
     }
 
     @PostMapping("/resend-verification")
     public ResponseEntity<ApiResponse> resendVerification(@RequestBody ResendEmailVerificationRequest request) {
+        System.out.println("Resending verification for user: " + request);
         try {
             authService.resendVerificationToken(request.getUsername());
             return ResponseEntity.ok(
