@@ -96,26 +96,6 @@ public class UserService {
         throw new RuntimeException("User is not authenticated");
     }
 
-//    @Transactional
-//    public User updateProfilePicture(int userId, MultipartFile file) throws IOException {
-//
-//        Optional<User> userOptional = userRepository.findById(userId);
-//        if (userOptional.isEmpty()) {
-//            throw new IllegalArgumentException("User not found with ID: " + userId);
-//        }
-//
-//        User user = userOptional.get();
-//
-//        if (user.getProfilePictureUuid() != null && !user.getProfilePictureUuid().isEmpty()) {
-//            boolean deleted = cloudinaryService.deleteImage(user.getProfilePictureUuid(), PROFILE_PICTURES_FOLDER);
-//        }
-//
-//        String newImageUuid = cloudinaryService.uploadImage(file, PROFILE_PICTURES_FOLDER);
-//        user.setProfilePictureUuid(newImageUuid);
-//        User updatedUser = userRepository.save(user);
-//        return updatedUser;
-//    }
-
     @Transactional
     public User updateProfilePicture(int userId, MultipartFile file) throws IOException {
         User user = userRepository.findById(userId)
@@ -131,29 +111,6 @@ public class UserService {
     }
 
 
-//    @Transactional
-//    public User removeProfilePicture(int userId) {
-//        Optional<User> userOptional = userRepository.findById(userId);
-//
-//        if (userOptional.isEmpty()) {
-//            throw new IllegalArgumentException("User not found with ID: " + userId);
-//        }
-//
-//        User user = userOptional.get();
-//
-//        if (user.getProfilePictureUuid() != null && !user.getProfilePictureUuid().isEmpty()) {
-//            try {
-//                boolean deleted = cloudinaryService.deleteImage(user.getProfilePictureUuid(), PROFILE_PICTURES_FOLDER);
-//            } catch (IOException ex) {
-//                throw new RuntimeException("Failed to delete profile picture: " + ex.getMessage());
-//            }
-//        }
-//
-//        user.setProfilePictureUuid(null);
-//        User updatedUser = userRepository.save(user);
-//
-//        return updatedUser;
-//    }
 @Transactional
 public void removeProfilePicture(int userId) {
     User user = userRepository.findById(userId)
@@ -184,31 +141,6 @@ public void removeProfilePicture(int userId) {
 
         userRepository.delete(user);
     }
-
-
-
-//    @Transactional
-//    public boolean deleteUser(int userId) {
-//        Optional<User> userOptional = userRepository.findById(userId);
-//
-//        if (userOptional.isEmpty()) {
-//            throw new IllegalArgumentException("User not found with ID: " + userId);
-//        }
-//
-//        User user = userOptional.get();
-//
-//        if (user.getProfilePictureUuid() != null && !user.getProfilePictureUuid().isEmpty()) {
-//            try {
-//                boolean deleted = cloudinaryService.deleteImage(user.getProfilePictureUuid(), PROFILE_PICTURES_FOLDER);
-//            } catch (IOException e) {
-//                throw new RuntimeException("Failed to cleanup profile picture: " + e.getMessage());
-//            }
-//        }
-//
-//        userRepository.delete(user);
-//
-//        return true;
-//    }
 
 
 }
