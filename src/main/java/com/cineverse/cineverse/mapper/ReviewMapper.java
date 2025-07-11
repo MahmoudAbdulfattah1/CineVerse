@@ -17,7 +17,7 @@ public class ReviewMapper {
                         new UserDto(
                                 r.getUser().getId(),
                                 r.getUser().getName(),
-                                r.getUser().getProfilePicture()
+                                r.getUser().getProfilePictureUuid()
                         ),
                         r.getId(),
                         r.getRate(),
