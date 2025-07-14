@@ -39,6 +39,7 @@ public class SecurityConfiguration {
                         .requestMatchers("/user/**").authenticated()
                         .requestMatchers("/contents/**").permitAll()
                         .requestMatchers("/artists/**").permitAll()
+                        .requestMatchers("/v3/api-docs/**", "/swagger-ui/**", "/swagger-ui.html").permitAll()
                         .anyRequest().authenticated()
                 )
                 .oauth2Login(oauth -> oauth
