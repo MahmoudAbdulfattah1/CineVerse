@@ -28,7 +28,7 @@ public class AuthService {
         User savedUser = userService.registerUser(user);
         String token = jwtService.generateToken(new UserPrincipal(savedUser));
         String link = frontendUrl + "auth/verify?token=" + token;
-        emailService.sendVerificationEmail(savedUser.getEmail(), link);
+        emailService.sendVerificationEmail(savedUser.getEmail(), user.getUsername(), link);
     }
 
 
@@ -49,7 +49,7 @@ public class AuthService {
     public String forgetPasswordToken(User user) {
         String jwtToken = jwtService.generateToken(new UserPrincipal(user));
         String link = frontendUrl + "auth/reset-password?token=" + jwtToken;
-        emailService.sendResetPasswordEmail(user.getEmail(), link);
+        emailService.sendResetPasswordEmail(user.getEmail(), user.getUsername(), link);
         return jwtToken;
     }
 
@@ -73,7 +73,7 @@ public class AuthService {
 
         String jwtToken = jwtService.generateToken(new UserPrincipal(user));
         String link = frontendUrl + "auth/verify?token=" + jwtToken;
-        emailService.sendVerificationEmail(user.getEmail(), link);
+        emailService.sendVerificationEmail(user.getEmail(), username, link);
     }
 
 }

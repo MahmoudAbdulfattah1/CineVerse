@@ -30,8 +30,7 @@ public class User {
     @NotBlank
     @Column(unique = true)
     private String username;
-    @NotBlank
-    @Size(min = 6, message = "Password must be at least 6 characters")
+    @Column(nullable = true)
     private String password;
     @Size(max = 1000, message = "Bio cannot exceed 1000 characters")
     private String bio;
@@ -41,6 +40,8 @@ public class User {
     private String profilePictureUuid;
     @Enumerated(EnumType.STRING)
     private Role role;
+    @Column(name = "is_oauth2_user")
+    private boolean isOauth2User;
     @Column(name = "created_at")
     private LocalDateTime createdAt;
     @Column(name = "updated_at")
