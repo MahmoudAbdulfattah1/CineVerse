@@ -20,6 +20,7 @@ public class UserProfileDto {
     private String bio;
     private LocalDate dateOfBirth;
     private String profilePicture;
+    private boolean isOauth2User;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 }

@@ -19,6 +19,7 @@ public class UserMapper {
                 .bio(user.getBio())
                 .dateOfBirth(user.getDateOfBirth())
                 .profilePicture(fullPath(user.getProfilePictureUuid()))
+                .isOauth2User(user.isOauth2User())
                 .createdAt(user.getCreatedAt())
                 .updatedAt(user.getUpdatedAt())
                 .build();

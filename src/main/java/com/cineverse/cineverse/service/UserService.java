@@ -36,6 +36,7 @@ public class UserService {
             throw new RuntimeException("Email already exists!");
         }
         user.setPassword(passwordEncoder.encode(user.getPassword()));
+        user.setOauth2User(false);
         return userRepository.save(user);
 
     }
@@ -77,7 +78,9 @@ public class UserService {
         if (user == null || user.getId() != userId) {
             throw new RuntimeException("User not found or not authenticated");
         }
-
+        if (user.isOauth2User()) {
+            throw new RuntimeException("Password cannot be changed for OAuth2 users.");
+        }
         if (!passwordEncoder.matches(currentPassword, user.getPassword())) {
             throw new RuntimeException("Current password is incorrect");
         }
@@ -111,22 +114,23 @@ public class UserService {
     }
 
 
-@Transactional
-public void removeProfilePicture(int userId) {
-    User user = userRepository.findById(userId)
-            .orElseThrow(() -> new IllegalArgumentException("User not found with ID: " + userId));
+    @Transactional
+    public void removeProfilePicture(int userId) {
+        User user = userRepository.findById(userId)
+                .orElseThrow(() -> new IllegalArgumentException("User not found with ID: " + userId));
 
-    if (user.getProfilePictureUuid() != null && !user.getProfilePictureUuid().isEmpty()) {
-        try {
-            cloudinaryService.deleteImage(user.getProfilePictureUuid(), PROFILE_PICTURES_FOLDER);
-        } catch (IOException ex) {
-            throw new RuntimeException("Failed to delete profile picture: " + ex.getMessage());
+        if (user.getProfilePictureUuid() != null && !user.getProfilePictureUuid().isEmpty()) {
+            try {
+                cloudinaryService.deleteImage(user.getProfilePictureUuid(), PROFILE_PICTURES_FOLDER);
+            } catch (IOException ex) {
+                throw new RuntimeException("Failed to delete profile picture: " + ex.getMessage());
+            }
         }
+
+        user.setProfilePictureUuid(null);
+        userRepository.save(user);
     }
 
-    user.setProfilePictureUuid(null);
-    userRepository.save(user);
-}
     @Transactional
     public void deleteUser(User user) {
         String profilePictureUuid = user.getProfilePictureUuid();
