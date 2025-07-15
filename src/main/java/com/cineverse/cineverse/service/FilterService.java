@@ -2,8 +2,8 @@ package com.cineverse.cineverse.service;
 
 import com.cineverse.cineverse.domain.entity.Genre;
 import com.cineverse.cineverse.domain.enums.GenreType;
-import com.cineverse.cineverse.dto.FilterOption;
-import com.cineverse.cineverse.dto.FilterSection;
+import com.cineverse.cineverse.dto.content.FilterOption;
+import com.cineverse.cineverse.dto.content.FilterSection;
 import com.cineverse.cineverse.repository.GenreRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;

@@ -1,7 +1,7 @@
 package com.cineverse.cineverse.configuration;
 
-import com.cineverse.cineverse.service.CustomUserDetailsService;
-import com.cineverse.cineverse.service.JwtService;
+import com.cineverse.cineverse.service.auth.CustomUserDetailsService;
+import com.cineverse.cineverse.service.auth.JwtService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

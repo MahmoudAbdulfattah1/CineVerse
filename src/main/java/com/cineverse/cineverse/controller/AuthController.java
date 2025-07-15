@@ -4,8 +4,11 @@ import com.cineverse.cineverse.domain.entity.User;
 import com.cineverse.cineverse.domain.entity.UserPrincipal;
 import com.cineverse.cineverse.dto.ApiResponse;
 import com.cineverse.cineverse.dto.auth.*;
-import com.cineverse.cineverse.mapper.AuthMapper;
+import com.cineverse.cineverse.exception.user.UserNotFoundException;
+import com.cineverse.cineverse.mapper.auth.AuthMapper;
 import com.cineverse.cineverse.service.*;
+import com.cineverse.cineverse.service.auth.AuthService;
+import com.cineverse.cineverse.service.auth.JwtService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -22,35 +25,24 @@ public class AuthController {
     private final AuthService authService;
     private final JwtService jwtService;
     private final UserService userService;
-    private final VerificationService verificationService;
 
     @PostMapping("/register")
     public ResponseEntity<ApiResponse> register(@Valid @RequestBody RegisterRequest request) {
-        try {
-            User user = AuthMapper.mapToUser(request);
-            authService.register(user);
-
-            return ResponseEntity.ok(ApiResponse.success(null, "User registered successfully. Please verify your " +
-                    "email."));
-        } catch (RuntimeException ex) {
-            return ResponseEntity.badRequest().body(
-                    ApiResponse.failure("Registration failed: " + ex.getMessage())
-            );
-        }
+        User user = AuthMapper.mapToUser(request);
+        authService.register(user);
+        return ResponseEntity.ok(ApiResponse.success(
+                null, "User registered successfully. Please verify your email."));
     }
 
 
     @PostMapping("/login")
     public ResponseEntity<ApiResponse> login(@Valid @RequestBody LoginRequest request) {
-        try {
-            User user = authService.login(request.getUsername(), request.getPassword());
-            String token = jwtService.generateToken(new UserPrincipal(user));
-            AuthResponse response = AuthMapper.mapToAuthResponse(user, token, "Login successful");
-            return ResponseEntity.ok(ApiResponse.success(response));
-        } catch (RuntimeException ex) {
-            return ResponseEntity.badRequest().body(ApiResponse.failure(ex.getMessage()));
-        }
+        User user = authService.login(request.getUsername(), request.getPassword());
+        String token = jwtService.generateToken(new UserPrincipal(user));
+        AuthResponse response = AuthMapper.mapToAuthResponse(user, token, "Login successful");
+        return ResponseEntity.ok(ApiResponse.success(response));
     }
+
 
     @PostMapping("/logout")
     public ResponseEntity<ApiResponse> logout() {
@@ -69,7 +61,6 @@ public class AuthController {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
                     .body(ApiResponse.failure("No authenticated user found"));
         }
-
         String username = authentication.getName();
         return ResponseEntity.ok(ApiResponse.success(username, "Current user retrieved successfully"));
     }
@@ -77,57 +68,36 @@ public class AuthController {
 
     @GetMapping("/verify")
     public ResponseEntity<ApiResponse> verifyEmail(@RequestParam("token") String token) {
-        try {
-            String message = verificationService.verifyToken(token);
-            return ResponseEntity.ok(ApiResponse.success(null, message));
-        } catch (IllegalStateException ex) {
-            return ResponseEntity.badRequest().body(ApiResponse.failure("Verification failed: " + ex.getMessage()));
-        }
+        String message = authService.verifyToken(token);
+        return ResponseEntity.ok(ApiResponse.success(null, message));
     }
+
 
     @PostMapping("/resend-verification")
     public ResponseEntity<ApiResponse> resendVerification(@RequestBody ResendEmailVerificationRequest request) {
-        System.out.println("Resending verification for user: " + request);
-        try {
-            authService.resendVerificationToken(request.getUsername());
-            return ResponseEntity.ok(
-                    ApiResponse.success(null, "Verification email resent successfully.")
-            );
-
-        } catch (RuntimeException ex) {
-            return ResponseEntity.badRequest().body(
-                    ApiResponse.failure("Resend failed: " + ex.getMessage())
-            );
-        }
+        authService.resendVerificationToken(request.getUsername());
+        return ResponseEntity.ok(
+                ApiResponse.success(null, "Verification email resent successfully.")
+        );
     }
 
 
     @PostMapping("/forget-password")
     public ResponseEntity<ApiResponse> forgetPassword(@Valid @RequestBody ForgetPasswordRequest request) {
-        try {
-            User user = userService.findByEmail(request.getEmail())
-                    .orElseThrow(() -> new RuntimeException("User not found with email: " + request.getEmail()));
-            String token = authService.forgetPasswordToken(user);
-            AuthResponse response = AuthMapper.mapToAuthResponse(
-                    user, token, "Reset password email sent successfully."
-            );
-
-            return ResponseEntity.ok(ApiResponse.success(response));
-        } catch (RuntimeException ex) {
-            return ResponseEntity.badRequest().body(ApiResponse.failure("Reset password failed: " + ex.getMessage()));
-        }
+        User user = userService.findByEmail(request.getEmail())
+                .orElseThrow(() -> new UserNotFoundException("User not found with email: " + request.getEmail()));
+        String token = authService.forgetPasswordToken(user);
+        AuthResponse response = AuthMapper.mapToAuthResponse(
+                user, token, "Reset password email sent successfully."
+        );
+        return ResponseEntity.ok(ApiResponse.success(response));
     }
+
 
     @PostMapping("/reset-password")
     public ResponseEntity<ApiResponse> resetPassword(@Valid @RequestBody ResetPasswordRequest request) {
-        try {
-            authService.resetPassword(request.getToken(), request.getNewPassword());
-            return ResponseEntity.ok(ApiResponse.success(null, "Password reset successfully."));
-        } catch (RuntimeException ex) {
-            return ResponseEntity.badRequest().body(
-                    ApiResponse.failure("Password reset failed: " + ex.getMessage())
-            );
-        }
+        authService.resetPassword(request.getToken(), request.getNewPassword());
+        return ResponseEntity.ok(ApiResponse.success(null, "Password reset successfully."));
     }
 
 
