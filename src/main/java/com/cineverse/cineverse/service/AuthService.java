@@ -2,6 +2,10 @@ package com.cineverse.cineverse.service;
 
 import com.cineverse.cineverse.domain.entity.User;
 import com.cineverse.cineverse.domain.entity.UserPrincipal;
+import com.cineverse.cineverse.exception.auth.InvalidOrExpiredTokenException;
+import com.cineverse.cineverse.exception.auth.InvalidCredentialsException;
+import com.cineverse.cineverse.exception.auth.UserAlreadyVerifiedException;
+import com.cineverse.cineverse.exception.user.UserNotFoundException;
 import com.cineverse.cineverse.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -37,11 +41,10 @@ public class AuthService {
             Authentication authentication = authenticationManager.authenticate(
                     new UsernamePasswordAuthenticationToken(username, password)
             );
-
             UserPrincipal userPrincipal = (UserPrincipal) authentication.getPrincipal();
             return userPrincipal.getUser();
         } catch (Exception e) {
-            throw new RuntimeException("Invalid username or password");
+            throw new InvalidCredentialsException("Invalid username or password");
         }
     }
 
@@ -54,26 +57,42 @@ public class AuthService {
     }
 
     public void resetPassword(String token, String newPassword) {
-        String username = jwtService.extractUsername(token);
-
+        String username;
+        try {
+            username = jwtService.extractUsername(token);
+        } catch (Exception e) {
+            throw new InvalidOrExpiredTokenException("Invalid or expired token.");
+        }
         User user = userRepository.findByUsername(username)
-                .orElseThrow(() -> new RuntimeException("Invalid or expired token"));
-
+                .orElseThrow(() -> new UserNotFoundException("User not found"));
         userService.resetPassword(user, newPassword);
     }
 
 
+
     public void resendVerificationToken(String username) {
         User user = userRepository.findByUsername(username)
-                .orElseThrow(() -> new RuntimeException("User not found"));
-
+                .orElseThrow(() -> new UserNotFoundException("User not found"));
         if (user.isEnabled()) {
-            throw new RuntimeException("User already verified");
+            throw new UserAlreadyVerifiedException("User already verified");
         }
-
         String jwtToken = jwtService.generateToken(new UserPrincipal(user));
         String link = frontendUrl + "auth/verify?token=" + jwtToken;
         emailService.sendVerificationEmail(user.getEmail(), username, link);
+    }
+
+    public String verifyToken(String token) {
+        String username = jwtService.extractUsername(token);
+        User user = userRepository.findByUsername(username)
+                .orElseThrow(() -> new UserNotFoundException("User not found"));
+
+        if (user.isEnabled()) {
+            return "User already verified.";
+        }
+        user.setEnabled(true);
+        userRepository.save(user);
+
+        return "Email verified successfully!";
     }
 
 }
