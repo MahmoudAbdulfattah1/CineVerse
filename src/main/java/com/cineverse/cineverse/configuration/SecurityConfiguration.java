@@ -1,7 +1,7 @@
 package com.cineverse.cineverse.configuration;
 
-import com.cineverse.cineverse.service.CustomOAuth2UserService;
-import com.cineverse.cineverse.service.CustomUserDetailsService;
+import com.cineverse.cineverse.service.auth.CustomOAuth2UserService;
+import com.cineverse.cineverse.service.auth.CustomUserDetailsService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -18,7 +18,6 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
-import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 import org.springframework.security.web.authentication.HttpStatusEntryPoint;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
