@@ -2,10 +2,14 @@ package com.cineverse.cineverse.service;
 
 import com.cineverse.cineverse.domain.entity.User;
 import com.cineverse.cineverse.domain.entity.UserPrincipal;
+import com.cineverse.cineverse.exception.auth.*;
+import com.cineverse.cineverse.exception.global.BadRequestException;
+import com.cineverse.cineverse.exception.global.InternalServerErrorException;
+import com.cineverse.cineverse.exception.user.NoFieldsToUpdateException;
+import com.cineverse.cineverse.exception.user.UserNotFoundException;
 import com.cineverse.cineverse.repository.UserRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -13,7 +17,6 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.util.Optional;
 
 
@@ -29,11 +32,11 @@ public class UserService {
     @Transactional
     public User registerUser(User user) {
         if (userRepository.existsByUsername(user.getUsername())) {
-            throw new RuntimeException("Username already exists!");
+            throw new RegistrationException("Username already exists!");
         }
 
         if (userRepository.existsByEmail(user.getEmail())) {
-            throw new RuntimeException("Email already exists!");
+            throw new RegistrationException("Email already exists!");
         }
         user.setPassword(passwordEncoder.encode(user.getPassword()));
         user.setOauth2User(false);
@@ -41,9 +44,11 @@ public class UserService {
 
     }
 
-    public Optional<User> findByUsername(String username) {
-        return userRepository.findByUsername(username);
+    public User findByUsernameOrThrow(String username) {
+        return userRepository.findByUsername(username)
+                .orElseThrow(() -> new UserNotFoundException("User not found"));
     }
+
 
     public Optional<User> findByEmail(String email) {
         return userRepository.findByEmail(email);
@@ -53,10 +58,10 @@ public class UserService {
     public User updateUserProfile(String name, String bio, LocalDate dateOfBirth) {
         User user = getCurrentAuthenticatedUser();
         if (user == null) {
-            throw new RuntimeException("User not found");
+            throw new UserNotFoundException("User not found");
         }
         if (name == null && bio == null && dateOfBirth == null) {
-            throw new RuntimeException("No fields to update");
+            throw new NoFieldsToUpdateException("No fields to update");
         }
         if (name != null) user.setName(name);
         if (bio != null) user.setBio(bio);
@@ -76,13 +81,13 @@ public class UserService {
     public void changeAuthenticatedUserPassword(int userId, String currentPassword, String newPassword) {
         User user = getCurrentAuthenticatedUser();
         if (user == null || user.getId() != userId) {
-            throw new RuntimeException("User not found or not authenticated");
+            throw new UserNotFoundOrAuthenticatedException("User not found or not authenticated");
         }
         if (user.isOauth2User()) {
-            throw new RuntimeException("Password cannot be changed for OAuth2 users.");
+            throw new OAuth2UserException("Password cannot be changed for OAuth2 users.");
         }
         if (!passwordEncoder.matches(currentPassword, user.getPassword())) {
-            throw new RuntimeException("Current password is incorrect");
+            throw new InvalidCurrentPasswordException("Current password is incorrect");
         }
 
         user.setPassword(passwordEncoder.encode(newPassword));
@@ -96,13 +101,17 @@ public class UserService {
             return userPrincipal.getUser();
         }
 
-        throw new RuntimeException("User is not authenticated");
+        throw new UserNotAuthenticatedException("User is not authenticated");
     }
 
     @Transactional
     public User updateProfilePicture(int userId, MultipartFile file) throws IOException {
         User user = userRepository.findById(userId)
-                .orElseThrow(() -> new IllegalArgumentException("User not found with ID: " + userId));
+                .orElseThrow(() -> new UserNotFoundException("User not found"));
+
+        if (file == null || file.isEmpty()) {
+            throw new BadRequestException("File is required");
+        }
 
         if (user.getProfilePictureUuid() != null && !user.getProfilePictureUuid().isEmpty()) {
             cloudinaryService.deleteImage(user.getProfilePictureUuid(), PROFILE_PICTURES_FOLDER);
@@ -117,13 +126,13 @@ public class UserService {
     @Transactional
     public void removeProfilePicture(int userId) {
         User user = userRepository.findById(userId)
-                .orElseThrow(() -> new IllegalArgumentException("User not found with ID: " + userId));
+                .orElseThrow(() -> new UserNotFoundException("User not found"));
 
         if (user.getProfilePictureUuid() != null && !user.getProfilePictureUuid().isEmpty()) {
             try {
                 cloudinaryService.deleteImage(user.getProfilePictureUuid(), PROFILE_PICTURES_FOLDER);
             } catch (IOException ex) {
-                throw new RuntimeException("Failed to delete profile picture: " + ex.getMessage());
+                throw new InternalServerErrorException("Failed to delete profile picture: " + ex.getMessage());
             }
         }
 
@@ -139,12 +148,11 @@ public class UserService {
             try {
                 cloudinaryService.deleteImage(profilePictureUuid, PROFILE_PICTURES_FOLDER);
             } catch (IOException e) {
-                throw new RuntimeException("Failed to cleanup profile picture: " + e.getMessage());
+                throw new InternalServerErrorException("Failed to clean up profile picture: " + e.getMessage());
             }
         }
 
         userRepository.delete(user);
     }
-
 
 }
