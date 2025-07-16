@@ -9,6 +9,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.oauth2.core.user.OAuth2User;
@@ -24,6 +25,8 @@ public class OAuth2LoginSuccessHandler implements AuthenticationSuccessHandler {
     private final JwtService jwtService;
     private final UserRepository userRepository;
     private final ObjectMapper objectMapper;
+    @Value("${app.frontend.url}")
+    private String frontendUrl;
 
     @Override
     public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response,
@@ -36,19 +39,9 @@ public class OAuth2LoginSuccessHandler implements AuthenticationSuccessHandler {
 
         String token = jwtService.generateToken(new UserPrincipal(user));
 
-        AuthResponse authResponse = AuthResponse.builder()
-                .token(token)
-                .type("Bearer")
-                .userId(user.getId())
-                .username(user.getUsername())
-                .email(user.getEmail())
-                .message("OAuth2 login successful")
-                .build();
+        String frontendRedirectUrl = String.format("%s/oauth2/success?token=%s", frontendUrl, token);
 
-        response.setContentType("application/json");
-        response.setCharacterEncoding("UTF-8");
-
-        objectMapper.writeValue(response.getWriter(), authResponse);
+        response.sendRedirect(frontendRedirectUrl);
     }
 }
 
