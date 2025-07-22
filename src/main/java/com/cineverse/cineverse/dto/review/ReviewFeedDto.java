@@ -1,5 +1,6 @@
 package com.cineverse.cineverse.dto.review;
 
+import com.cineverse.cineverse.domain.enums.ContentType;
 import com.cineverse.cineverse.domain.enums.ReactionType;
 import lombok.Builder;
 import lombok.Getter;
@@ -11,9 +12,9 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @Builder
-public class ReviewDto {
+public class ReviewFeedDto {
     private ReviewerDto user;
-    private int reviewID;
+    private int reviewId;
     private int rate;
     private String title;
     private String description;
@@ -21,12 +22,18 @@ public class ReviewDto {
     private long dislikeCount;
     private boolean spoiler;
     private ReactionType userReaction;
+    private int contentId;
+    private ContentType contentType;
+    private String contentTitle;
+    private String contentPosterPath;
     private LocalDateTime createdAt;
 
-    public ReviewDto(ReviewerDto user, int reviewID, int rate, String title, String description, long likeCount,
-                     long dislikeCount, boolean spoiler, ReactionType userReaction, LocalDateTime createdAt) {
+    public ReviewFeedDto(ReviewerDto user, int reviewId, int rate, String title, String description, long likeCount,
+                         long dislikeCount, boolean spoiler, ReactionType userReaction,
+                         int contentId, ContentType contentType, String contentTitle, String contentPosterPath,
+                         LocalDateTime createdAt) {
         this.user = user;
-        this.reviewID = reviewID;
+        this.reviewId = reviewId;
         this.rate = rate;
         this.title = title;
         this.description = description;
@@ -34,6 +41,10 @@ public class ReviewDto {
         this.dislikeCount = dislikeCount;
         this.spoiler = spoiler;
         this.userReaction = userReaction;
+        this.contentId = contentId;
+        this.contentType = contentType;
+        this.contentTitle = contentTitle;
+        this.contentPosterPath = contentPosterPath;
         this.createdAt = createdAt;
     }
 }
