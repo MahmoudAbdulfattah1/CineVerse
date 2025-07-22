@@ -8,12 +8,14 @@ import com.cineverse.cineverse.exception.crew.CrewMemberNotFoundException;
 import com.cineverse.cineverse.exception.crew.SocialLinksNotFoundException;
 import com.cineverse.cineverse.exception.global.BadRequestException;
 import com.cineverse.cineverse.exception.global.InternalServerErrorException;
+import com.cineverse.cineverse.exception.review.*;
 import com.cineverse.cineverse.exception.user.NoFieldsToUpdateException;
 import com.cineverse.cineverse.exception.user.UserNotFoundException;
 import io.jsonwebtoken.ExpiredJwtException;
 import io.jsonwebtoken.JwtException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
@@ -63,6 +65,14 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(InvalidCredentialsException.class)
     public ResponseEntity<ApiResponse> handleInvalidUsernameOrPasswordException(InvalidCredentialsException ex) {
+        return new ResponseEntity<>(
+                ApiResponse.failure(ex.getMessage()),
+                HttpStatus.UNAUTHORIZED
+        );
+    }
+
+    @ExceptionHandler(UnauthorizedAccessException.class)
+    public ResponseEntity<ApiResponse> handleUnauthorizedException(UnauthorizedAccessException ex) {
         return new ResponseEntity<>(
                 ApiResponse.failure(ex.getMessage()),
                 HttpStatus.UNAUTHORIZED
@@ -177,4 +187,53 @@ public class GlobalExceptionHandler {
         );
     }
 
+    @ExceptionHandler(NoReviewersFoundException.class)
+    public ResponseEntity<ApiResponse> handleNoReviewersFoundException(NoReviewersFoundException ex) {
+        return new ResponseEntity<>(
+                ApiResponse.failure(ex.getMessage()),
+                HttpStatus.NOT_FOUND
+        );
+    }
+
+    @ExceptionHandler(UserAlreadyReviewedException.class)
+    public ResponseEntity<ApiResponse> handleUserAlreadyReviewedException(UserAlreadyReviewedException ex) {
+        return new ResponseEntity<>(
+                ApiResponse.failure(ex.getMessage()),
+                HttpStatus.BAD_REQUEST
+        );
+    }
+
+    @ExceptionHandler(ReviewNotFoundException.class)
+    public ResponseEntity<ApiResponse> handleReviewNotFoundException(ReviewNotFoundException ex) {
+        return new ResponseEntity<>(
+                ApiResponse.failure(ex.getMessage()),
+                HttpStatus.NOT_FOUND
+        );
+    }
+
+    @ExceptionHandler(ReactionNotFoundException.class)
+    public ResponseEntity<ApiResponse> handleReactionNotFoundException(ReactionNotFoundException ex) {
+        return new ResponseEntity<>(
+                ApiResponse.failure(ex.getMessage()),
+                HttpStatus.NOT_FOUND
+        );
+    }
+
+    @ExceptionHandler(ReactionAlreadyExistsException.class)
+    public ResponseEntity<ApiResponse> handleReactionAlreadyExistsException(ReactionAlreadyExistsException ex) {
+        return new ResponseEntity<>(
+                ApiResponse.failure(ex.getMessage()),
+                HttpStatus.BAD_REQUEST
+        );
+    }
+
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+    public ResponseEntity<ApiResponse> handleMethodArgumentNotValidException(MethodArgumentNotValidException ex) {
+        ex.getBindingResult().getFieldError();
+        String errorMessage = ex.getBindingResult().getFieldError().getDefaultMessage();
+        return new ResponseEntity<>(
+                ApiResponse.failure(errorMessage),
+                HttpStatus.BAD_REQUEST
+        );
+    }
 }

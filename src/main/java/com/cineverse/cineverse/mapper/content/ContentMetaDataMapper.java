@@ -1,10 +1,9 @@
 package com.cineverse.cineverse.mapper.content;
 
 import com.cineverse.cineverse.configuration.TMDBApiConfiguration;
-import com.cineverse.cineverse.domain.entity.Content;
-import com.cineverse.cineverse.domain.entity.Movie;
-import com.cineverse.cineverse.domain.entity.Series;
+import com.cineverse.cineverse.domain.entity.*;
 import com.cineverse.cineverse.dto.content.ContentMetaDataDto;
+import com.cineverse.cineverse.dto.content.ContentSummaryDto;
 import lombok.AllArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
@@ -62,4 +61,32 @@ public class ContentMetaDataMapper {
 
         return new PageImpl<>(dtoList, contentPage.getPageable(), contentPage.getTotalElements());
     }
+
+    public ContentSummaryDto toContentSummary(Content content) {
+        ContentSummaryDto dto = new ContentSummaryDto();
+        dto.setContentType(content.getContentType());
+
+        switch (content.getContentType()) {
+            case MOVIE -> dto.setSlug(((Movie) content).getSlug());
+
+            case SERIES -> dto.setSlug(((Series) content).getSlug());
+
+            case SEASON -> {
+                Season season = (Season) content;
+                dto.setSeasonNumber(season.getSeasonNumber());
+                dto.setSlug(season.getSeries().getSlug()); // Series slug
+            }
+
+            case EPISODE -> {
+                Episode episode = (Episode) content;
+                dto.setSeasonNumber(episode.getSeason().getSeasonNumber());
+                dto.setEpisodeNumber(episode.getEpisodeNumber());
+                dto.setSlug(episode.getSeason().getSeries().getSlug()); // Series slug
+            }
+        }
+
+        return dto;
+    }
+
+
 }

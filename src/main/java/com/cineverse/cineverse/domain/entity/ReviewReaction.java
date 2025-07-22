@@ -22,7 +22,7 @@ public class ReviewReaction {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id")
     private User user;
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "review_id")
     private Review review;
     @Enumerated(EnumType.STRING)
@@ -37,7 +37,16 @@ public class ReviewReaction {
         this.user = user;
         this.review = review;
         this.reactionType = reactionType;
-        this.createdAt = LocalDate.now();
-        this.updatedAt = LocalDate.now();
+    }
+
+    @PrePersist
+    protected void onCreate() {
+        createdAt = LocalDate.now();
+        updatedAt = LocalDate.now();
+    }
+
+    @PreUpdate
+    protected void onUpdate() {
+        updatedAt = LocalDate.now();
     }
 }

@@ -24,7 +24,6 @@ public class ContentService {
     private SeriesRepository seriesRepository;
     private SeasonRepository seasonRepository;
     private EpisodeRepository episodeRepository;
-    private ReviewRepository reviewRepository;
     private ContentTypeRepository contentTypeRepository;
     private ContentTrailerRepository contentTrailerRepository;
     private YoutubeClient youtubeClient;
@@ -82,15 +81,6 @@ public class ContentService {
                         .toList()
         );
     }
-
-
-    public List<Review> getReviews(int contentId) {
-        if (!contentRepository.existsById(contentId)) {
-            throw new ContentNotFoundException("Content not found");
-        }
-        return reviewRepository.findContentReviews(contentId);
-    }
-
 
     public float getPlatformRate(int contentId) {
         float rate = contentRepository.getPlatformRate(contentId);
@@ -164,6 +154,19 @@ public class ContentService {
     private ContentType getContentTypeOrThrow(int contentId) {
         return contentTypeRepository.findContentTypeById(contentId)
                 .orElseThrow(() -> new ContentNotFoundException("Content not found"));
+    }
+
+    public Content getTypedContentById(int contentId, ContentType contentType) {
+        return switch (contentType) {
+            case MOVIE -> movieRepository.findById(contentId)
+                    .orElseThrow(() -> new ContentNotFoundException("Movie not found"));
+            case SERIES -> seriesRepository.findById(contentId)
+                    .orElseThrow(() -> new ContentNotFoundException("Series not found"));
+            case SEASON -> seasonRepository.findById(contentId)
+                    .orElseThrow(() -> new ContentNotFoundException("Season not found"));
+            case EPISODE -> episodeRepository.findById(contentId)
+                    .orElseThrow(() -> new ContentNotFoundException("Episode not found"));
+        };
     }
 
 }

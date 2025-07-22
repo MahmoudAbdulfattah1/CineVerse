@@ -8,10 +8,8 @@ import com.cineverse.cineverse.domain.enums.ContentType;
 import com.cineverse.cineverse.dto.*;
 import com.cineverse.cineverse.dto.content.*;
 import com.cineverse.cineverse.dto.crew.CastAndCrewDto;
-import com.cineverse.cineverse.dto.review.ReviewDto;
 import com.cineverse.cineverse.mapper.content.*;
 import com.cineverse.cineverse.mapper.crew.CreditMapper;
-import com.cineverse.cineverse.mapper.review.ReviewMapper;
 import com.cineverse.cineverse.service.ContentService;
 import com.cineverse.cineverse.service.FilterService;
 import lombok.AllArgsConstructor;
@@ -30,7 +28,6 @@ public class ContentController {
     private FilterService filterService;
     private ProviderMapper providerMapper;
     private CreditMapper creditMapper;
-    private ReviewMapper reviewMapper;
     private MovieMapper movieMapper;
     private SeriesMapper seriesMapper;
     private SeasonMapper seasonMapper;
@@ -116,14 +113,6 @@ public class ContentController {
         );
     }
 
-    @GetMapping("/{id}/reviews")
-    public ResponseEntity<ApiResponse> getContentReviews(@PathVariable int id) {
-        List<ReviewDto> reviews = reviewMapper.toDto(contentService.getReviews(id));
-        return ResponseEntity.ok(
-                ApiResponse.success(reviews, "Content reviews fetched successfully")
-        );
-    }
-
     @GetMapping("/{id}/credits")
     public ResponseEntity<ApiResponse> getContentCredits(@PathVariable int id) {
         CastAndCrewDto credits = new CastAndCrewDto(
@@ -168,5 +157,16 @@ public class ContentController {
                 ApiResponse.success(episode, "Episode details fetched successfully")
         );
     }
+
+    @GetMapping("{contentId}/summary")
+    public ResponseEntity<ApiResponse> getContentSummary(
+            @PathVariable int contentId,
+            @RequestParam ContentType contentType) {
+
+        Content content = contentService.getTypedContentById(contentId, contentType);
+        ContentSummaryDto summaryDto =  contentMetaDataMapper.toContentSummary(content);
+        return ResponseEntity.ok(ApiResponse.success(summaryDto, "Content summary fetched successfully"));
+    }
+
 
 }
