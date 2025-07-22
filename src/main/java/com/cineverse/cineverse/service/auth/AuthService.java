@@ -32,7 +32,7 @@ public class AuthService {
     public void register(User user) {
         User savedUser = userService.registerUser(user);
         String token = jwtService.generateToken(new UserPrincipal(savedUser));
-        String link = frontendUrl + "auth/verify?token=" + token;
+        String link = frontendUrl + "/auth/verify?token=" + token;
         emailService.sendVerificationEmail(savedUser.getEmail(), user.getUsername(), link);
     }
 
@@ -52,7 +52,7 @@ public class AuthService {
 
     public String forgetPasswordToken(User user) {
         String jwtToken = jwtService.generateToken(new UserPrincipal(user));
-        String link = frontendUrl + "auth/reset-password?token=" + jwtToken;
+        String link = frontendUrl + "/auth/reset-password?token=" + jwtToken;
         emailService.sendResetPasswordEmail(user.getEmail(), user.getUsername(), link);
         return jwtToken;
     }
@@ -78,7 +78,7 @@ public class AuthService {
             throw new UserAlreadyVerifiedException("User already verified");
         }
         String jwtToken = jwtService.generateToken(new UserPrincipal(user));
-        String link = frontendUrl + "auth/verify?token=" + jwtToken;
+        String link = frontendUrl + "/auth/verify?token=" + jwtToken;
         emailService.sendVerificationEmail(user.getEmail(), username, link);
     }
 

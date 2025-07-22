@@ -2,10 +2,8 @@ package com.cineverse.cineverse.configuration;
 
 import com.cineverse.cineverse.domain.entity.User;
 import com.cineverse.cineverse.domain.entity.UserPrincipal;
-import com.cineverse.cineverse.dto.auth.AuthResponse;
 import com.cineverse.cineverse.repository.UserRepository;
 import com.cineverse.cineverse.service.auth.JwtService;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
@@ -24,7 +22,7 @@ public class OAuth2LoginSuccessHandler implements AuthenticationSuccessHandler {
 
     private final JwtService jwtService;
     private final UserRepository userRepository;
-    private final ObjectMapper objectMapper;
+
     @Value("${app.frontend.url}")
     private String frontendUrl;
 
