@@ -103,6 +103,13 @@ public class UserService {
 
         throw new UserNotAuthenticatedException("User is not authenticated");
     }
+    public User getCurrentAuthenticatedUserOrNull() {
+        try {
+            return getCurrentAuthenticatedUser();
+        } catch (Exception e) {
+            return null;
+        }
+    }
 
     @Transactional
     public User updateProfilePicture(int userId, MultipartFile file) throws IOException {
@@ -155,4 +162,8 @@ public class UserService {
         userRepository.delete(user);
     }
 
+    public User getById(int userId) {
+        return userRepository.findById(userId)
+                .orElseThrow(() -> new UserNotFoundException("User not found"));
+    }
 }
