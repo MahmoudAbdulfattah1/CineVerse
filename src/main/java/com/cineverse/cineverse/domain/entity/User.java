@@ -48,15 +48,15 @@ public class User {
     private LocalDateTime updatedAt;
     private boolean enabled;
     @JsonIgnore
-    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private Set<Review> reviews;
     @JsonIgnore
-    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private Set<Watchlist> watchlists;
 
     @PrePersist
     protected void onCreate() {
-        enabled = false;
+        enabled = isOauth2User;
         role = Role.USER;
         createdAt = LocalDateTime.now();
         updatedAt = LocalDateTime.now();
