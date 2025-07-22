@@ -15,6 +15,7 @@ import io.jsonwebtoken.ExpiredJwtException;
 import io.jsonwebtoken.JwtException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
@@ -222,6 +223,16 @@ public class GlobalExceptionHandler {
     public ResponseEntity<ApiResponse> handleReactionAlreadyExistsException(ReactionAlreadyExistsException ex) {
         return new ResponseEntity<>(
                 ApiResponse.failure(ex.getMessage()),
+                HttpStatus.BAD_REQUEST
+        );
+    }
+
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+    public ResponseEntity<ApiResponse> handleMethodArgumentNotValidException(MethodArgumentNotValidException ex) {
+        ex.getBindingResult().getFieldError();
+        String errorMessage = ex.getBindingResult().getFieldError().getDefaultMessage();
+        return new ResponseEntity<>(
+                ApiResponse.failure(errorMessage),
                 HttpStatus.BAD_REQUEST
         );
     }
