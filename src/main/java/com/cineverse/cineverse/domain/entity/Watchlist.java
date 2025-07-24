@@ -38,7 +38,16 @@ public class Watchlist {
         this.user = user;
         this.content = content;
         this.watchingStatus = WatchingStatus.TO_WATCH;
+    }
+
+    @PrePersist
+    private void prePersist() {
         this.createdAt = LocalDate.now();
+        this.updatedAt = LocalDate.now();
+    }
+
+    @PreUpdate
+    private void preUpdate() {
         this.updatedAt = LocalDate.now();
     }
 }
