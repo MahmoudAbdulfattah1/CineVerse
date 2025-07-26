@@ -5,7 +5,6 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Getter
@@ -13,7 +12,7 @@ import java.time.LocalDateTime;
 @Builder
 public class ReviewDto {
     private ReviewerDto user;
-    private int reviewID;
+    private int reviewId;
     private int rate;
     private String title;
     private String description;
@@ -23,10 +22,10 @@ public class ReviewDto {
     private ReactionType userReaction;
     private LocalDateTime createdAt;
 
-    public ReviewDto(ReviewerDto user, int reviewID, int rate, String title, String description, long likeCount,
+    public ReviewDto(ReviewerDto user, int reviewId, int rate, String title, String description, long likeCount,
                      long dislikeCount, boolean spoiler, ReactionType userReaction, LocalDateTime createdAt) {
         this.user = user;
-        this.reviewID = reviewID;
+        this.reviewId = reviewId;
         this.rate = rate;
         this.title = title;
         this.description = description;

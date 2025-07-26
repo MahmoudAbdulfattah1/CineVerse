@@ -10,12 +10,12 @@ public class ContentCastDto {
     private int id;
     private String characterName;
     private String name;
-    private String path;
+    private String imageUrl;
 
-    public ContentCastDto(int id, String characterName, String name, String path) {
+    public ContentCastDto(int id, String characterName, String name, String imageUrl) {
         this.id = id;
         this.characterName = characterName;
         this.name = name;
-        this.path = path;
+        this.imageUrl = imageUrl;
     }
 }

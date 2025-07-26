@@ -11,18 +11,18 @@ public class SeasonDto {
     private int id;
     private String title;
     private String overview;
-    private String posterPath;
+    private String posterUrl;
     private int seasonNumber;
     private float imdbRate;
     private LocalDate releaseDate;
     private int numberOfEpisodes;
 
-    public SeasonDto(int id, String title, String overview, String posterPath, int seasonNumber, float imdbRate,
+    public SeasonDto(int id, String title, String overview, String posterUrl, int seasonNumber, float imdbRate,
                      LocalDate releaseDate, int numberOfEpisodes) {
         this.id = id;
         this.title = title;
         this.overview = overview;
-        this.posterPath = posterPath;
+        this.posterUrl = posterUrl;
         this.seasonNumber = seasonNumber;
         this.imdbRate = imdbRate;
         this.releaseDate = releaseDate;

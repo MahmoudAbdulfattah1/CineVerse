@@ -8,13 +8,13 @@ import lombok.Setter;
 @Setter
 @Builder
 public class ReviewerDto {
-    private int userId;
+    private int id;
     private String username;
     private String name;
     private String imageUrl;
 
-    public ReviewerDto(int userId, String username, String name, String imageUrl) {
-        this.userId = userId;
+    public ReviewerDto(int id, String username, String name, String imageUrl) {
+        this.id = id;
         this.username = username;
         this.name = name;
         this.imageUrl = imageUrl;
