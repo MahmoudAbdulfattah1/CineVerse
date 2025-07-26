@@ -43,4 +43,7 @@ public interface WatchlistRepository extends JpaRepository<Watchlist, Integer> {
 
     boolean existsByUserAndContent(User user, Content content);
 
+    boolean existsByUserIdAndContentId(int userId, int contentId);
+
+
 }

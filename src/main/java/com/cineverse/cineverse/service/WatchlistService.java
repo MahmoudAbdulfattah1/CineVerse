@@ -81,4 +81,14 @@ public class WatchlistService {
         watchlistRepository.delete(watchlist);
     }
 
+    public boolean existsByUserIdAndContentId(int userId, int contentId) {
+        if (!userRepository.existsById(userId)) {
+            throw new UserNotFoundException("User not found");
+        }
+        if (!contentRepository.existsById(contentId)) {
+            throw new ContentNotFoundException("Content not found");
+        }
+        return watchlistRepository.existsByUserIdAndContentId(userId, contentId);
+    }
+
 }

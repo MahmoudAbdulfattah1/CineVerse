@@ -37,6 +37,22 @@ public class WatchlistController {
         ));
     }
 
+    @GetMapping
+    public ResponseEntity<ApiResponse> getWatchlistByCurrentUserAndWatchingStatus(
+            @RequestParam(defaultValue = "TO_WATCH") WatchingStatus status,
+            @RequestParam(defaultValue = "0") int page,
+            @RequestParam(defaultValue = "10") int size) {
+        User currentUser = userService.getCurrentAuthenticatedUser();
+        Page<WatchlistItemDto> watchlistPage = watchlistService.getWatchlistByUserAndWatchingStatus(
+
+                        currentUser.getUsername(), status, page, size)
+                .map(watchlistMapper::toWatchlistItemDto);
+        return ResponseEntity.ok(ApiResponse.success(
+                watchlistPage
+                , "Watchlist fetched successfully"
+        ));
+    }
+
 
     @PostMapping
     public ResponseEntity<ApiResponse> addToWatchlist(@RequestParam int contentId) {
@@ -64,6 +80,14 @@ public class WatchlistController {
         User currentUser = userService.getCurrentAuthenticatedUser();
         watchlistService.deleteWatchlistEntry(watchlistId, currentUser.getId());
         return ResponseEntity.ok(ApiResponse.success(null, "Watchlist entry deleted successfully"));
+    }
+
+    @GetMapping("/exists")
+    public ResponseEntity<ApiResponse> existsByUserIdAndContentId(
+            @RequestParam int contentId) {
+        User currentUser = userService.getCurrentAuthenticatedUser();
+        boolean exists = watchlistService.existsByUserIdAndContentId(currentUser.getId(), contentId);
+        return ResponseEntity.ok(ApiResponse.success(exists, "Watchlist item existence checked successfully"));
     }
 
 }
