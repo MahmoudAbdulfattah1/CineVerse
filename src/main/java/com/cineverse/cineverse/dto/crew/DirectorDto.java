@@ -8,13 +8,13 @@ import lombok.Setter;
 public class DirectorDto {
     private int id;
     private String name;
-    private String path;
+    private String imageUrl;
 
 
-    public DirectorDto(int id, String name, String path) {
+    public DirectorDto(int id, String name, String imageUrl) {
         this.id = id;
         this.name = name;
-        this.path = path;
+        this.imageUrl = imageUrl;
     }
 
 
