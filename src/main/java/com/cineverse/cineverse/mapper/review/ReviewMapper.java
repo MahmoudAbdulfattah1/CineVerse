@@ -15,7 +15,7 @@ public class ReviewMapper {
 
     public ReviewDto toContentReviewDto(Review review, ReactionType userReaction) {
         return ReviewDto.builder()
-                .reviewID(review.getId())
+                .reviewId(review.getId())
                 .title(review.getReviewTitle())
                 .rate(review.getRate())
                 .description(review.getDescription())
@@ -24,7 +24,7 @@ public class ReviewMapper {
                 .spoiler(review.getSpoiler())
                 .userReaction(userReaction)
                 .user(ReviewerDto.builder()
-                        .userId(review.getUser().getId())
+                        .id(review.getUser().getId())
                         .name(review.getUser().getName())
                         .username(review.getUser().getUsername())
                         .imageUrl(userImageFullPath(review.getUser().getProfilePictureUuid()))
@@ -36,7 +36,7 @@ public class ReviewMapper {
 
     public ReviewDto toContentReviewDto(Review review) {
         return ReviewDto.builder()
-                .reviewID(review.getId())
+                .reviewId(review.getId())
                 .title(review.getReviewTitle())
                 .rate(review.getRate())
                 .description(review.getDescription())
@@ -44,7 +44,7 @@ public class ReviewMapper {
                 .dislikeCount(review.getDislikeCount())
                 .spoiler(review.getSpoiler())
                 .user(ReviewerDto.builder()
-                        .userId(review.getUser().getId())
+                        .id(review.getUser().getId())
                         .name(review.getUser().getName())
                         .username(review.getUser().getUsername())
                         .imageUrl(userImageFullPath(review.getUser().getProfilePictureUuid()))
@@ -70,7 +70,7 @@ public class ReviewMapper {
                 .contentId(view.getContentId())
                 .contentType(view.getContentType())
                 .user(ReviewerDto.builder()
-                        .userId(view.getUserId())
+                        .id(view.getUserId())
                         .username(view.getUsername())
                         .name(view.getName())
                         .imageUrl(userImageFullPath(view.getProfilePictureUuid()))
