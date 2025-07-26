@@ -10,7 +10,6 @@ public interface ContentDetailsDto {
 
     String getOverview();
 
-    String getPosterPath();
 
     LocalDate getReleaseDate();
 

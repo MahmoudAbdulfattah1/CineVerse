@@ -11,18 +11,18 @@ public class EpisodeDto {
     private int id;
     private String title;
     private String overview;
-    private String posterPath;
+    private String posterUrl;
     private int episodeNumber;
     private float imdbRate;
     private int runTime;
     private LocalDate releaseDate;
 
-    public EpisodeDto(int id, String title, String overview, String posterPath, int episodeNumber, float imdbRate,
+    public EpisodeDto(int id, String title, String overview, String posterUrl, int episodeNumber, float imdbRate,
                       int runTime, LocalDate releaseDate) {
         this.id = id;
         this.title = title;
         this.overview = overview;
-        this.posterPath = posterPath;
+        this.posterUrl = posterUrl;
         this.episodeNumber = episodeNumber;
         this.imdbRate = imdbRate;
         this.runTime = runTime;
