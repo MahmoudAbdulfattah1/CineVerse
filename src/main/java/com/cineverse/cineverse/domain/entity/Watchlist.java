@@ -4,7 +4,7 @@ import com.cineverse.cineverse.domain.enums.WatchingStatus;
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Entity
 @Getter
@@ -30,15 +30,18 @@ public class Watchlist {
     @Column(name = "watching_status")
     private WatchingStatus watchingStatus;
     @Column(name = "created_at")
-    private LocalDate createdAt;
+    private LocalDateTime createdAt;
     @Column(name = "updated_at")
-    private LocalDate updatedAt;
+    private LocalDateTime updatedAt;
 
-    public Watchlist(User user, Content content) {
-        this.user = user;
-        this.content = content;
-        this.watchingStatus = WatchingStatus.TO_WATCH;
-        this.createdAt = LocalDate.now();
-        this.updatedAt = LocalDate.now();
+    @PrePersist
+    private void prePersist() {
+        this.createdAt = LocalDateTime.now();
+        this.updatedAt = LocalDateTime.now();
+    }
+
+    @PreUpdate
+    private void preUpdate() {
+        this.updatedAt = LocalDateTime.now();
     }
 }

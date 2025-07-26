@@ -11,6 +11,8 @@ import com.cineverse.cineverse.exception.global.InternalServerErrorException;
 import com.cineverse.cineverse.exception.review.*;
 import com.cineverse.cineverse.exception.user.NoFieldsToUpdateException;
 import com.cineverse.cineverse.exception.user.UserNotFoundException;
+import com.cineverse.cineverse.exception.watchlist.ContentAlreadyExistsInWatchlistException;
+import com.cineverse.cineverse.exception.watchlist.WatchlistNotFoundException;
 import io.jsonwebtoken.ExpiredJwtException;
 import io.jsonwebtoken.JwtException;
 import org.springframework.http.HttpStatus;
@@ -132,7 +134,8 @@ public class GlobalExceptionHandler {
     }
 
     @ExceptionHandler(UserNotFoundOrAuthenticatedException.class)
-    public ResponseEntity<ApiResponse> handleUserNotFoundOrAuthenticatedException(UserNotFoundOrAuthenticatedException ex) {
+    public ResponseEntity<ApiResponse> handleUserNotFoundOrAuthenticatedException(
+            UserNotFoundOrAuthenticatedException ex) {
         return new ResponseEntity<>(
                 ApiResponse.failure(ex.getMessage()),
                 HttpStatus.UNAUTHORIZED
@@ -233,6 +236,31 @@ public class GlobalExceptionHandler {
         String errorMessage = ex.getBindingResult().getFieldError().getDefaultMessage();
         return new ResponseEntity<>(
                 ApiResponse.failure(errorMessage),
+                HttpStatus.BAD_REQUEST
+        );
+    }
+
+    @ExceptionHandler(WatchlistNotFoundException.class)
+    public ResponseEntity<ApiResponse> handleWatchlistNotFoundException(WatchlistNotFoundException ex) {
+        return new ResponseEntity<>(
+                ApiResponse.failure(ex.getMessage()),
+                HttpStatus.NOT_FOUND
+        );
+    }
+
+    @ExceptionHandler(ContentAlreadyExistsInWatchlistException.class)
+    public ResponseEntity<ApiResponse> handleContentAlreadyExistsInWatchlistException(
+            ContentAlreadyExistsInWatchlistException ex) {
+        return new ResponseEntity<>(
+                ApiResponse.failure(ex.getMessage()),
+                HttpStatus.BAD_REQUEST
+        );
+    }
+
+    @ExceptionHandler(IllegalArgumentException.class)
+    public ResponseEntity<ApiResponse> handleIllegalArgumentException(IllegalArgumentException ex) {
+        return new ResponseEntity<>(
+                ApiResponse.failure(ex.getMessage()),
                 HttpStatus.BAD_REQUEST
         );
     }
