@@ -10,7 +10,7 @@ import com.cineverse.cineverse.exception.content.ContentNotFoundException;
 import com.cineverse.cineverse.exception.review.ReviewNotFoundException;
 import com.cineverse.cineverse.exception.review.UserAlreadyReviewedException;
 import com.cineverse.cineverse.exception.user.UserNotFoundException;
-import com.cineverse.cineverse.mapper.review.ReviewMapper;
+import com.cineverse.cineverse.mapper.ReviewMapper;
 import com.cineverse.cineverse.repository.ContentRepository;
 import com.cineverse.cineverse.repository.ReviewReactionRepository;
 import com.cineverse.cineverse.repository.ReviewRepository;

@@ -1,4 +1,4 @@
-package com.cineverse.cineverse.mapper.crew;
+package com.cineverse.cineverse.mapper;
 
 import com.cineverse.cineverse.configuration.TMDBApiConfiguration;
 import com.cineverse.cineverse.domain.entity.ContentCast;

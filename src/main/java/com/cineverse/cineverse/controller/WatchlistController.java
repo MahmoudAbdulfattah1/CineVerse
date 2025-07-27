@@ -5,7 +5,7 @@ import com.cineverse.cineverse.domain.entity.Watchlist;
 import com.cineverse.cineverse.domain.enums.WatchingStatus;
 import com.cineverse.cineverse.dto.ApiResponse;
 import com.cineverse.cineverse.dto.watchlist.WatchlistItemDto;
-import com.cineverse.cineverse.mapper.watchlist.WatchlistMapper;
+import com.cineverse.cineverse.mapper.WatchlistMapper;
 import com.cineverse.cineverse.service.UserService;
 import com.cineverse.cineverse.service.WatchlistService;
 import lombok.AllArgsConstructor;

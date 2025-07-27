@@ -1,4 +1,4 @@
-package com.cineverse.cineverse.mapper.auth;
+package com.cineverse.cineverse.mapper;
 
 import com.cineverse.cineverse.domain.entity.User;
 import com.cineverse.cineverse.dto.auth.AuthResponse;

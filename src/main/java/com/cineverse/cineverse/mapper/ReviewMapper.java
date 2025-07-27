@@ -1,4 +1,4 @@
-package com.cineverse.cineverse.mapper.review;
+package com.cineverse.cineverse.mapper;
 
 import com.cineverse.cineverse.domain.entity.Review;
 import com.cineverse.cineverse.domain.enums.ReactionType;

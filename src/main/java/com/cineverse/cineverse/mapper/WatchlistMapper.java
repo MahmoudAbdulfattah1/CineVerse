@@ -1,4 +1,4 @@
-package com.cineverse.cineverse.mapper.watchlist;
+package com.cineverse.cineverse.mapper;
 
 import com.cineverse.cineverse.domain.entity.Content;
 import com.cineverse.cineverse.domain.entity.Watchlist;

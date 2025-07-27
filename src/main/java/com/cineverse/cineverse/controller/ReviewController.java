@@ -6,7 +6,7 @@ import com.cineverse.cineverse.domain.entity.User;
 import com.cineverse.cineverse.domain.enums.ReactionType;
 import com.cineverse.cineverse.dto.ApiResponse;
 import com.cineverse.cineverse.dto.review.*;
-import com.cineverse.cineverse.mapper.review.ReviewMapper;
+import com.cineverse.cineverse.mapper.ReviewMapper;
 import com.cineverse.cineverse.service.ContentService;
 import com.cineverse.cineverse.service.ReviewReactionService;
 import com.cineverse.cineverse.service.ReviewService;

@@ -5,7 +5,7 @@ import com.cineverse.cineverse.dto.ApiResponse;
 import com.cineverse.cineverse.dto.auth.ChangePasswordRequest;
 import com.cineverse.cineverse.dto.auth.UpdateProfileRequest;
 import com.cineverse.cineverse.dto.auth.UserProfileDto;
-import com.cineverse.cineverse.mapper.user.UserMapper;
+import com.cineverse.cineverse.mapper.UserMapper;
 import com.cineverse.cineverse.service.UserService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
