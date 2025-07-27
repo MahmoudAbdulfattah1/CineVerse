@@ -1,13 +1,15 @@
 package com.cineverse.cineverse.dto.crew;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.time.LocalDate;
 import java.util.List;
 
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 public class CrewMemberDto {
     private int id;
     private String name;
@@ -18,17 +20,4 @@ public class CrewMemberDto {
     private String placeOfBirth;
     private String knownForDepartment;
     private List<String> alsoKnownAs;
-
-    public CrewMemberDto(int id, String name, String imageUrl, String biography, LocalDate birthday, LocalDate deathday,
-                         String placeOfBirth, String knownForDepartment, List<String> alsoKnownAs) {
-        this.id = id;
-        this.name = name;
-        this.imageUrl = imageUrl;
-        this.biography = biography;
-        this.birthday = birthday;
-        this.deathday = deathday;
-        this.placeOfBirth = placeOfBirth;
-        this.knownForDepartment = knownForDepartment;
-        this.alsoKnownAs = alsoKnownAs;
-    }
 }

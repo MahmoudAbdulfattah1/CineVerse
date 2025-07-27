@@ -11,8 +11,6 @@ import com.cineverse.cineverse.dto.crew.DirectorDto;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;
 
-import java.util.List;
-
 @Component
 @AllArgsConstructor
 public class CrewMemberMapper {
@@ -25,41 +23,51 @@ public class CrewMemberMapper {
 
     public CrewMemberDto toCrewMemberDto(CrewMember crewMember) {
         if (crewMember == null) return null;
-        return new CrewMemberDto(
-                crewMember.getId(),
-                crewMember.getName(),
-                fullPath(crewMember.getProfilePath()),
-                crewMember.getBiography(),
-                crewMember.getBirthday(),
-                crewMember.getDeathday(),
-                crewMember.getPlaceOfBirth(),
-                crewMember.getKnownForDepartment(),
-                crewMember.getAlsoKnownAs()
-        );
-    }
-    public DirectorDto toDirectorDto(CrewMember crewMember) {
-        if (crewMember == null) return null;
-        return new DirectorDto(crewMember.getId(), crewMember.getName(),
-                fullPath(crewMember.getProfilePath()));
+        return CrewMemberDto.builder()
+                .id(crewMember.getId())
+                .name(crewMember.getName())
+                .imageUrl(fullPath(crewMember.getProfilePath()))
+                .biography(crewMember.getBiography())
+                .birthday(crewMember.getBirthday())
+                .deathday(crewMember.getDeathday())
+                .placeOfBirth(crewMember.getPlaceOfBirth())
+                .knownForDepartment(crewMember.getKnownForDepartment())
+                .alsoKnownAs(crewMember.getAlsoKnownAs())
+                .build();
     }
 
-    public List<ContentCastDto> toContentCastDto(List<ContentCast> contentCast) {
-        if (contentCast == null) return List.of();
-        return contentCast.stream()
-                .map(c -> new ContentCastDto(c.getCast().getId(), c.getCharacterName(), c.getCast().getName(),
-                        fullPath(c.getCast().getProfilePath())))
-                .toList();
+    public DirectorDto toDirectorDto(CrewMember crewMember) {
+        return crewMember == null ? null : DirectorDto.builder()
+                .id(crewMember.getId())
+                .name(crewMember.getName())
+                .imageUrl(fullPath(crewMember.getProfilePath()))
+                .build();
     }
+
+    public ContentCastDto toContentCastDto(ContentCast contentCast) {
+        return ContentCastDto.builder()
+                .id(contentCast.getCast().getId())
+                .characterName(contentCast.getCharacterName())
+                .name(contentCast.getCast().getName())
+                .imageUrl(fullPath(contentCast.getCast().getProfilePath()))
+                .build();
+    }
+
     public CrewMemberSocialDto toCrewMemberSocialDto(CrewMemberSocial crewMemberSocial) {
         if (crewMemberSocial == null) return null;
 
-        return new CrewMemberSocialDto(
-                crewMemberSocial.getFacebookId() != null ? facebookUrl + crewMemberSocial.getFacebookId() : null,
-                crewMemberSocial.getInstagramId() != null ? instagramUrl + crewMemberSocial.getInstagramId() : null,
-                crewMemberSocial.getTwitterId() != null ? twitterUrl + crewMemberSocial.getTwitterId() : null,
-                crewMemberSocial.getTiktokId() != null ? tiktokUrl + crewMemberSocial.getTiktokId() : null,
-                crewMemberSocial.getYoutubeId() != null ? youtubeUrl + crewMemberSocial.getYoutubeId() : null
-        );
+        return CrewMemberSocialDto.builder()
+                .facebookUrl(crewMemberSocial.getFacebookId() != null ?
+                        facebookUrl + crewMemberSocial.getFacebookId() : null)
+                .instagramUrl(crewMemberSocial.getInstagramId() != null ?
+                        instagramUrl + crewMemberSocial.getInstagramId() : null)
+                .twitterUrl(crewMemberSocial.getTwitterId() != null ?
+                        twitterUrl + crewMemberSocial.getTwitterId() : null)
+                .tiktokUrl(crewMemberSocial.getTiktokId() != null ?
+                        tiktokUrl + crewMemberSocial.getTiktokId() : null)
+                .youtubeUrl(crewMemberSocial.getYoutubeId() != null ?
+                        youtubeUrl + crewMemberSocial.getYoutubeId() : null)
+                .build();
     }
 
     private String fullPath(String path) {

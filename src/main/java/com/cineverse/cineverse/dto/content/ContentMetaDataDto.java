@@ -1,15 +1,16 @@
 package com.cineverse.cineverse.dto.content;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.time.LocalDate;
 import java.util.Set;
 
-@NoArgsConstructor
+
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 public class ContentMetaDataDto {
     private int id;
     private String title;
@@ -20,18 +21,4 @@ public class ContentMetaDataDto {
     private String overview;
     private String type;
     private Set<String> genres;
-
-    public ContentMetaDataDto(int id, String title, String slug, String posterUrl, LocalDate releaseDate, Float imdbRate
-            , String overview, String type, Set<String> genres) {
-        this.id = id;
-        this.title = title;
-        this.slug = slug;
-        this.posterUrl = posterUrl;
-        this.releaseDate = releaseDate;
-        this.imdbRate = imdbRate;
-        this.overview = overview;
-        this.type = type;
-        this.genres = genres;
-    }
-
 }

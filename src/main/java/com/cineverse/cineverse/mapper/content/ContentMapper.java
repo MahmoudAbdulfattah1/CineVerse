@@ -19,120 +19,127 @@ public class ContentMapper {
     private final TMDBApiConfiguration tmdbApiConfiguration;
 
     public Page<ContentMetaDataDto> toContentMetaDataDto(Page<Content> contentPage) {
-        List<ContentMetaDataDto> dtoList = contentPage.getContent().stream().map(content -> {
-
-            String slug = null;
-            if (content instanceof Movie movie) slug = movie.getSlug();
-            else if (content instanceof Series series) slug = series.getSlug();
-
-            return new ContentMetaDataDto(
-                    content.getId(),
-                    content.getTitle(),
-                    slug,
-                    tmdbApiConfiguration.getBaseImageUrl() + content.getPosterPath(),
-                    content.getReleaseDate(),
-                    content.getImdbRate(),
-                    content.getOverview(),
-                    content.getContentType().toString(),
-                    content.getGenres().stream().map(genre -> genre.getGenre().getName())
-                            .collect(Collectors.toSet())
-            );
-        }).collect(Collectors.toList());
+        List<ContentMetaDataDto> dtoList = contentPage.getContent().stream()
+                .map(this::toContentMetaDataDto)
+                .collect(Collectors.toList());
 
         return new PageImpl<>(dtoList, contentPage.getPageable(), contentPage.getTotalElements());
     }
 
+
+    public ContentMetaDataDto toContentMetaDataDto(Content content) {
+        String slug = null;
+        if (content instanceof Movie movie) slug = movie.getSlug();
+        else if (content instanceof Series series) slug = series.getSlug();
+        return ContentMetaDataDto.builder()
+                .id(content.getId())
+                .title(content.getTitle())
+                .slug(slug)
+                .posterUrl(tmdbApiConfiguration.getBaseImageUrl() + content.getPosterPath())
+                .releaseDate(content.getReleaseDate())
+                .imdbRate(content.getImdbRate())
+                .overview(content.getOverview())
+                .type(content.getContentType().toString())
+                .genres(content.getGenres().stream()
+                        .map(genre -> genre.getGenre().getName())
+                        .collect(Collectors.toSet()))
+                .build();
+    }
+
     public ContentSummaryDto toContentSummary(Content content) {
-        ContentSummaryDto dto = new ContentSummaryDto();
-        dto.setContentType(content.getContentType());
+        ContentSummaryDto.ContentSummaryDtoBuilder builder = ContentSummaryDto.builder()
+                .contentType(content.getContentType());
 
         switch (content.getContentType()) {
-            case MOVIE -> dto.setSlug(((Movie) content).getSlug());
+            case MOVIE -> builder.slug(((Movie) content).getSlug());
 
-            case SERIES -> dto.setSlug(((Series) content).getSlug());
+            case SERIES -> builder.slug(((Series) content).getSlug());
 
             case SEASON -> {
                 Season season = (Season) content;
-                dto.setSeasonNumber(season.getSeasonNumber());
-                dto.setSlug(season.getSeries().getSlug()); // Series slug
+                builder.seasonNumber(season.getSeasonNumber())
+                        .slug(season.getSeries().getSlug());
             }
 
             case EPISODE -> {
                 Episode episode = (Episode) content;
-                dto.setSeasonNumber(episode.getSeason().getSeasonNumber());
-                dto.setEpisodeNumber(episode.getEpisodeNumber());
-                dto.setSlug(episode.getSeason().getSeries().getSlug()); // Series slug
+                builder.seasonNumber(episode.getSeason().getSeasonNumber())
+                        .episodeNumber(episode.getEpisodeNumber())
+                        .slug(episode.getSeason().getSeries().getSlug());
             }
         }
 
-        return dto;
+        return builder.build();
     }
 
     public EpisodeDto toEpisodeDto(Episode episode) {
         if (episode == null) return null;
-        return new EpisodeDto(
-                episode.getId(),
-                episode.getTitle(),
-                episode.getOverview(),
-                episode.getPosterPath() == null || episode.getPosterPath().isBlank() ? null :
-                        tmdbApiConfiguration.getBaseImageUrl() + episode.getPosterPath(),
-                episode.getEpisodeNumber(),
-                episode.getImdbRate(),
-                episode.getRunTime(),
-                episode.getReleaseDate()
-        );
+        return EpisodeDto.builder()
+                .id(episode.getId())
+                .title(episode.getTitle())
+                .overview(episode.getOverview())
+                .posterUrl(episode.getPosterPath() == null || episode.getPosterPath().isBlank() ? null :
+                        tmdbApiConfiguration.getBaseImageUrl() + episode.getPosterPath())
+                .episodeNumber(episode.getEpisodeNumber())
+                .imdbRate(episode.getImdbRate())
+                .runTime(episode.getRunTime())
+                .releaseDate(episode.getReleaseDate())
+                .build();
     }
 
     public SeriesDto toSeriesDto(Series series) {
         if (series == null) return null;
-        return new SeriesDto(
-                series.getId(),
-                series.getTitle(),
-                series.getOverview(),
-                tmdbApiConfiguration.getBaseImageUrl() + series.getPosterPath(),
-                tmdbApiConfiguration.getBaseImageUrl() + series.getBackdropPath(),
-                series.getReleaseDate(),
-                series.getLanguage(),
-                series.getProductionCountry(),
-                series.getImdbRate(),
-                series.getNumberOfSeasons(),
-                series.getNumberOfEpisodes(),
-                series.getStatus(),
-                series.getGenres().stream().map(genre -> genre.getGenre().getName()).toList()
-        );
+        return SeriesDto.builder()
+                .id(series.getId())
+                .title(series.getTitle())
+                .overview(series.getOverview())
+                .posterUrl(tmdbApiConfiguration.getBaseImageUrl() + series.getPosterPath())
+                .backdropUrl(tmdbApiConfiguration.getBaseImageUrl() + series.getBackdropPath())
+                .releaseDate(series.getReleaseDate())
+                .language(series.getLanguage())
+                .productionCountry(series.getProductionCountry())
+                .imdbRate(series.getImdbRate())
+                .numberOfSeasons(series.getNumberOfSeasons())
+                .numberOfEpisodes(series.getNumberOfEpisodes())
+                .status(series.getStatus())
+                .genres(series.getGenres().stream()
+                        .map(genre -> genre.getGenre().getName())
+                        .collect(Collectors.toList()))
+                .build();
     }
 
     public MovieDto toMovieDto(Movie movie) {
         if (movie == null) return null;
-        return new MovieDto(
-                movie.getId(),
-                movie.getTitle(),
-                movie.getOverview(),
-                tmdbApiConfiguration.getBaseImageUrl() + movie.getPosterPath(),
-                tmdbApiConfiguration.getBaseImageUrl() + movie.getBackdropPath(),
-                movie.getReleaseDate(),
-                movie.getRuntime(),
-                movie.getLanguage(),
-                movie.getProductionCountry(),
-                movie.getImdbRate(),
-                movie.getGenres().stream().map(genre -> genre.getGenre().getName()).toList()
-        );
-
+        return MovieDto.builder()
+                .id(movie.getId())
+                .title(movie.getTitle())
+                .overview(movie.getOverview())
+                .posterUrl(tmdbApiConfiguration.getBaseImageUrl() + movie.getPosterPath())
+                .backdropUrl(tmdbApiConfiguration.getBaseImageUrl() + movie.getBackdropPath())
+                .releaseDate(movie.getReleaseDate())
+                .runtime(movie.getRuntime())
+                .language(movie.getLanguage())
+                .productionCountry(movie.getProductionCountry())
+                .imdbRate(movie.getImdbRate())
+                .genres(movie.getGenres().stream()
+                        .map(genre -> genre.getGenre().getName())
+                        .collect(Collectors.toList()))
+                .build();
     }
 
     public SeasonDto toSeasonDto(Season season) {
         if (season == null) return null;
-        return new SeasonDto(
-                season.getId(),
-                season.getTitle(),
-                season.getOverview(),
-                season.getPosterPath() == null || season.getPosterPath().isBlank() ? null :
-                        tmdbApiConfiguration.getBaseImageUrl() + season.getPosterPath(),
-                season.getSeasonNumber(),
-                season.getImdbRate(),
-                season.getReleaseDate(),
-                contentService.getEpisodeCountBySeasonId(season.getId())
-        );
+        return SeasonDto.builder()
+                .id(season.getId())
+                .title(season.getTitle())
+                .overview(season.getOverview())
+                .posterUrl(season.getPosterPath() == null || season.getPosterPath().isBlank() ? null :
+                        tmdbApiConfiguration.getBaseImageUrl() + season.getPosterPath())
+                .seasonNumber(season.getSeasonNumber())
+                .imdbRate(season.getImdbRate())
+                .releaseDate(season.getReleaseDate())
+                .numberOfEpisodes(contentService.getEpisodeCountBySeasonId(season.getId()))
+                .build();
     }
 
     public List<ProviderDto> toProviderDto(List<Provider> providers) {

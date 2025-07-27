@@ -85,7 +85,6 @@ public class ContentController {
 
     @GetMapping("/{id}/providers")
     public ResponseEntity<ApiResponse> getContentProviders(@PathVariable int id) {
-//        List<ProviderDto> providers = providerMapper.map(contentService.getContentProviders(id));
         List<ProviderDto> providers = contentMapper.toProviderDto(contentService.getContentProviders(id));
         return ResponseEntity.ok(
                 ApiResponse.success(providers, "Content providers fetched successfully")
@@ -115,7 +114,9 @@ public class ContentController {
     public ResponseEntity<ApiResponse> getContentCredits(@PathVariable int id) {
         CastAndCrewDto credits = new CastAndCrewDto(
                 crewMemberMapper.toDirectorDto(contentService.getContentDirector(id)),
-                crewMemberMapper.toContentCastDto(contentService.getContentCast(id))
+                contentService.getContentCast(id).stream()
+                        .map(crewMemberMapper::toContentCastDto)
+                        .toList()
         );
         return ResponseEntity.ok(
                 ApiResponse.success(credits, "Content credits fetched successfully")
