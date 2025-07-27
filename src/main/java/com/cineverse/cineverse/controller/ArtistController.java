@@ -6,9 +6,8 @@ import com.cineverse.cineverse.dto.ApiResponse;
 import com.cineverse.cineverse.dto.content.ContentMetaDataDto;
 import com.cineverse.cineverse.dto.crew.CrewMemberDto;
 import com.cineverse.cineverse.dto.crew.CrewMemberSocialDto;
-import com.cineverse.cineverse.mapper.content.ContentMetaDataMapper;
+import com.cineverse.cineverse.mapper.content.ContentMapper;
 import com.cineverse.cineverse.mapper.crew.CrewMemberMapper;
-import com.cineverse.cineverse.mapper.crew.CrewMemberSocialMapper;
 import com.cineverse.cineverse.service.CrewMemberService;
 import lombok.AllArgsConstructor;
 import org.springframework.data.domain.Page;
@@ -25,13 +24,12 @@ import org.springframework.web.bind.annotation.*;
 public class ArtistController {
     private CrewMemberService crewMemberService;
     private CrewMemberMapper crewMemberMapper;
-    private CrewMemberSocialMapper crewMemberMapperSocial;
-    private ContentMetaDataMapper contentMetaDataMapper;
+    private ContentMapper contentMapper;
 
     @GetMapping("/{crewMemberId}")
     public ResponseEntity<ApiResponse> getCrewMemberDetails(@PathVariable int crewMemberId) {
         CrewMember crewMember = crewMemberService.getCrewMemberDetails(crewMemberId);
-        CrewMemberDto crewMemberDto = crewMemberMapper.toDto(crewMember);
+        CrewMemberDto crewMemberDto = crewMemberMapper.toCrewMemberDto(crewMember);
         return ResponseEntity.ok(
                 ApiResponse.success(crewMemberDto, "Crew member details fetched successfully")
         );
@@ -40,7 +38,7 @@ public class ArtistController {
     @GetMapping("/{crewMemberId}/social")
     public ResponseEntity<ApiResponse> getCrewMemberSocial(@PathVariable int crewMemberId) {
         CrewMemberSocialDto crewMemberSocialDto =
-                crewMemberMapperSocial.toDto(crewMemberService.getCrewMemberSocial(crewMemberId));
+                crewMemberMapper.toCrewMemberSocialDto(crewMemberService.getCrewMemberSocial(crewMemberId));
         return ResponseEntity.ok(
                 ApiResponse.success(crewMemberSocialDto, "Crew member social links fetched successfully")
         );
@@ -53,7 +51,7 @@ public class ArtistController {
             @PageableDefault(size = 5, sort = "releaseDate", direction = Sort.Direction.DESC) Pageable pageable) {
 
         Page<Content> contentPage = crewMemberService.getCrewMemberContents(crewMemberId, type, pageable);
-        Page<ContentMetaDataDto> contentDtoPage = contentMetaDataMapper.toDto(contentPage);
+        Page<ContentMetaDataDto> contentDtoPage = contentMapper.toContentMetaDataDto(contentPage);
         return ResponseEntity.ok(
                 ApiResponse.success(contentDtoPage, "Crew member contents fetched successfully")
         );

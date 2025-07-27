@@ -9,7 +9,7 @@ import com.cineverse.cineverse.dto.*;
 import com.cineverse.cineverse.dto.content.*;
 import com.cineverse.cineverse.dto.crew.CastAndCrewDto;
 import com.cineverse.cineverse.mapper.content.*;
-import com.cineverse.cineverse.mapper.crew.CreditMapper;
+import com.cineverse.cineverse.mapper.crew.CrewMemberMapper;
 import com.cineverse.cineverse.service.ContentService;
 import com.cineverse.cineverse.service.FilterService;
 import lombok.AllArgsConstructor;
@@ -26,13 +26,8 @@ import java.util.List;
 public class ContentController {
     private ContentService contentService;
     private FilterService filterService;
-    private ProviderMapper providerMapper;
-    private CreditMapper creditMapper;
-    private MovieMapper movieMapper;
-    private SeriesMapper seriesMapper;
-    private SeasonMapper seasonMapper;
-    private EpisodeMapper episodeMapper;
-    private ContentMetaDataMapper contentMetaDataMapper;
+    private CrewMemberMapper crewMemberMapper;
+    private ContentMapper contentMapper;
 
     @GetMapping("/filter")
     public ResponseEntity<ApiResponse> filterContent(
@@ -46,9 +41,10 @@ public class ContentController {
             @RequestParam(required = false) String order,
             @RequestParam(defaultValue = "0") int page,
             @RequestParam(defaultValue = "24") int size) {
-        Page<ContentMetaDataDto> filteredContent = contentMetaDataMapper.toDto(contentService.filterContent(
-                genres, year, rate, type, lang, sortBy, status, order, page, size)
-        );
+        Page<ContentMetaDataDto> filteredContent =
+                contentMapper.toContentMetaDataDto(contentService.filterContent(
+                        genres, year, rate, type, lang, sortBy, status, order, page, size)
+                );
         return ResponseEntity.ok(
                 ApiResponse.success(filteredContent, "Filtered content fetched successfully")
         );
@@ -68,8 +64,9 @@ public class ContentController {
             @RequestParam(required = false) ContentType type,
             @RequestParam(defaultValue = "0") int page,
             @RequestParam(defaultValue = "12") int size) {
-        Page<ContentMetaDataDto> searchedContent = contentMetaDataMapper.toDto(contentService.searchContent(q, type,
-                page, size));
+        Page<ContentMetaDataDto> searchedContent =
+                contentMapper.toContentMetaDataDto(contentService.searchContent(q, type,
+                        page, size));
         return ResponseEntity.ok(ApiResponse.success(searchedContent, "Search results fetched successfully"));
     }
 
@@ -77,9 +74,9 @@ public class ContentController {
     public ResponseEntity<ApiResponse> getContentDetails(@PathVariable String slug) {
         Content content = contentService.getContentDetails(slug);
         ContentDetailsDto contentDto = (content instanceof Movie movie) ?
-                movieMapper.toDto(movie) :
+                contentMapper.toMovieDto(movie) :
                 (content instanceof Series series) ?
-                        seriesMapper.toDto(series) :
+                        contentMapper.toSeriesDto(series) :
                         null;
         return ResponseEntity.ok(
                 ApiResponse.success(contentDto, "Content details fetched successfully")
@@ -88,7 +85,8 @@ public class ContentController {
 
     @GetMapping("/{id}/providers")
     public ResponseEntity<ApiResponse> getContentProviders(@PathVariable int id) {
-        List<ProviderDto> providers = providerMapper.map(contentService.getContentProviders(id));
+//        List<ProviderDto> providers = providerMapper.map(contentService.getContentProviders(id));
+        List<ProviderDto> providers = contentMapper.toProviderDto(contentService.getContentProviders(id));
         return ResponseEntity.ok(
                 ApiResponse.success(providers, "Content providers fetched successfully")
         );
@@ -116,8 +114,8 @@ public class ContentController {
     @GetMapping("/{id}/credits")
     public ResponseEntity<ApiResponse> getContentCredits(@PathVariable int id) {
         CastAndCrewDto credits = new CastAndCrewDto(
-                creditMapper.mapDirector(contentService.getContentDirector(id)),
-                creditMapper.mapContentCast(contentService.getContentCast(id))
+                crewMemberMapper.toDirectorDto(contentService.getContentDirector(id)),
+                crewMemberMapper.toContentCastDto(contentService.getContentCast(id))
         );
         return ResponseEntity.ok(
                 ApiResponse.success(credits, "Content credits fetched successfully")
@@ -126,7 +124,9 @@ public class ContentController {
 
     @GetMapping("/{id}/seasons")
     public ResponseEntity<ApiResponse> getSeriesSeasons(@PathVariable int id) {
-        List<SeasonDto> seasons = seasonMapper.toDto(contentService.getSeasonsBySeriesId(id));
+        List<SeasonDto> seasons = contentService.getSeasonsBySeriesId(id).stream()
+                .map(contentMapper::toSeasonDto)
+                .toList();
         return ResponseEntity.ok(
                 ApiResponse.success(seasons, "Series seasons fetched successfully")
         );
@@ -134,7 +134,7 @@ public class ContentController {
 
     @GetMapping("/{id}/seasons/{number}")
     public ResponseEntity<ApiResponse> getSeriesSeason(@PathVariable int id, @PathVariable int number) {
-        SeasonDto season = seasonMapper.toDto(contentService.getSeasonByNumberAndSeriesId(number, id));
+        SeasonDto season = contentMapper.toSeasonDto(contentService.getSeasonByNumberAndSeriesId(number, id));
         return ResponseEntity.ok(
                 ApiResponse.success(season, "Series season fetched successfully")
         );
@@ -142,7 +142,10 @@ public class ContentController {
 
     @GetMapping("/{id}/seasons/{number}/episodes")
     public ResponseEntity<ApiResponse> getSeasonEpisodes(@PathVariable int id, @PathVariable int number) {
-        List<EpisodeDto> episodes = episodeMapper.toDto(contentService.getSeasonEpisodes(number, id));
+        List<EpisodeDto> episodes =
+                contentService.getSeasonEpisodes(number, id).stream()
+                        .map(contentMapper::toEpisodeDto)
+                        .toList();
         return ResponseEntity.ok(
                 ApiResponse.success(episodes, "Season episodes fetched successfully")
         );
@@ -151,8 +154,8 @@ public class ContentController {
     @GetMapping("/{id}/seasons/{seasonNumber}/episodes/{episodeNumber}")
     public ResponseEntity<ApiResponse> getSeasonEpisodes(@PathVariable int id, @PathVariable int seasonNumber,
                                                          @PathVariable int episodeNumber) {
-        EpisodeDto episode = episodeMapper.toDto(contentService.getEpisodeByNumberAndSeasonNumberAndSeriesId(id,
-                seasonNumber, episodeNumber));
+        EpisodeDto episode = contentMapper.toEpisodeDto(
+                contentService.getEpisodeByNumberAndSeasonNumberAndSeriesId(id, seasonNumber, episodeNumber));
         return ResponseEntity.ok(
                 ApiResponse.success(episode, "Episode details fetched successfully")
         );
@@ -162,9 +165,8 @@ public class ContentController {
     public ResponseEntity<ApiResponse> getContentSummary(
             @PathVariable int contentId,
             @RequestParam ContentType contentType) {
-
         Content content = contentService.getTypedContentById(contentId, contentType);
-        ContentSummaryDto summaryDto =  contentMetaDataMapper.toContentSummary(content);
+        ContentSummaryDto summaryDto = contentMapper.toContentSummary(content);
         return ResponseEntity.ok(ApiResponse.success(summaryDto, "Content summary fetched successfully"));
     }
 
