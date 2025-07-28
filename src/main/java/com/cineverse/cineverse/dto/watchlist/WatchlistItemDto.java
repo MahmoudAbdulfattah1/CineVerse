@@ -16,7 +16,7 @@ public class WatchlistItemDto {
     private int contentId;
     private String title;
     private String overview;
-    private String contentPoster;
+    private String contentPosterUrl;
     private ContentType contentType;
     private float imdbRate;
     private WatchingStatus watchingStatus;

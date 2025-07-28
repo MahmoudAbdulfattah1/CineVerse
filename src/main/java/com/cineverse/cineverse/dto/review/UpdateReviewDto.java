@@ -1,7 +1,5 @@
 package com.cineverse.cineverse.dto.review;
 
-import jakarta.validation.constraints.Max;
-import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.Size;
 import lombok.Builder;
 import lombok.Getter;
@@ -20,10 +18,4 @@ public class UpdateReviewDto {
     private String description;
     private boolean spoiler;
 
-    public UpdateReviewDto(int rate, String title, String description, boolean spoiler) {
-        this.rate = rate;
-        this.title = title;
-        this.description = description;
-        this.spoiler = spoiler;
-    }
 }

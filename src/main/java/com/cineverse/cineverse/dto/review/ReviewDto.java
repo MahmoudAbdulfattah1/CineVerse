@@ -1,14 +1,14 @@
 package com.cineverse.cineverse.dto.review;
 
 import com.cineverse.cineverse.domain.enums.ReactionType;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.time.LocalDateTime;
 
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @Builder
 public class ReviewDto {
     private ReviewerDto user;
@@ -21,18 +21,4 @@ public class ReviewDto {
     private boolean spoiler;
     private ReactionType userReaction;
     private LocalDateTime createdAt;
-
-    public ReviewDto(ReviewerDto user, int reviewId, int rate, String title, String description, long likeCount,
-                     long dislikeCount, boolean spoiler, ReactionType userReaction, LocalDateTime createdAt) {
-        this.user = user;
-        this.reviewId = reviewId;
-        this.rate = rate;
-        this.title = title;
-        this.description = description;
-        this.likeCount = likeCount;
-        this.dislikeCount = dislikeCount;
-        this.spoiler = spoiler;
-        this.userReaction = userReaction;
-        this.createdAt = createdAt;
-    }
 }

@@ -66,7 +66,7 @@ public class ReviewMapper {
                 .spoiler(view.isSpoiler())
                 .userReaction(userReaction)
                 .contentTitle(view.getContentTitle())
-                .contentPosterPath(contentImageFullPath(view.getContentPosterPath()))
+                .contentPosterUrl(contentImageFullPath(view.getContentPosterPath()))
                 .contentId(view.getContentId())
                 .contentType(view.getContentType())
                 .user(ReviewerDto.builder()
@@ -91,7 +91,7 @@ public class ReviewMapper {
                 .contentId(review.getContentId())
                 .contentType(review.getContentType())
                 .contentTitle(review.getContentTitle())
-                .contentPosterPath(contentImageFullPath(review.getContentPosterPath()))
+                .contentPosterUrl(contentImageFullPath(review.getContentPosterPath()))
                 .userReaction(userReaction)
                 .createdAt(review.getCreatedAt())
                 .build();

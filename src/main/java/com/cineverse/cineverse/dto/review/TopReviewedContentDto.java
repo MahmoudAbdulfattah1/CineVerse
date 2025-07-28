@@ -1,12 +1,12 @@
 package com.cineverse.cineverse.dto.review;
 
 import com.cineverse.cineverse.domain.enums.ContentType;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @Builder
 public class TopReviewedContentDto {
     private Long contentId;
@@ -14,14 +14,4 @@ public class TopReviewedContentDto {
     private ContentType contentType;
     private Double averageRate;
     private Integer reviewCount;
-
-    public TopReviewedContentDto(Long contentId, String title, ContentType contentType, Double averageRate, Integer reviewCount) {
-        this.contentId = contentId;
-        this.title = title;
-        this.contentType = contentType;
-        this.averageRate = averageRate;
-        this.reviewCount = reviewCount;
-    }
-
-
 }

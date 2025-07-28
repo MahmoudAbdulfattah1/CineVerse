@@ -1,16 +1,13 @@
 package com.cineverse.cineverse.dto.review;
 
-import jakarta.validation.constraints.Max;
-import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 import org.hibernate.validator.constraints.Range;
 
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @Builder
 public class CreateReviewDto {
     private int contentId;
@@ -21,13 +18,4 @@ public class CreateReviewDto {
     @Size(max = 1000, message = "Description must be at most 1000 characters long")
     private String description;
     private boolean spoiler;
-
-    public CreateReviewDto(int contentId, int rate, String title, String description, boolean spoiler) {
-        this.contentId = contentId;
-        this.rate = rate;
-        this.title = title;
-        this.description = description;
-        this.spoiler = spoiler;
-    }
-
 }

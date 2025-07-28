@@ -20,7 +20,7 @@ public class WatchlistMapper {
                 .contentId(watchlist.getContentId())
                 .title(watchlist.getTitle())
                 .overview(watchlist.getOverview())
-                .contentPoster(contentImageFullPath(watchlist.getContentPoster()))
+                .contentPosterUrl(contentImageFullPath(watchlist.getContentPoster()))
                 .contentType(watchlist.getContentType())
                 .imdbRate(watchlist.getImdbRate())
                 .watchingStatus(watchlist.getWatchingStatus())
