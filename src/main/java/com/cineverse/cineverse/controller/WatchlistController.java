@@ -86,8 +86,9 @@ public class WatchlistController {
     public ResponseEntity<ApiResponse> existsByUserIdAndContentId(
             @RequestParam int contentId) {
         User currentUser = userService.getCurrentAuthenticatedUser();
-        boolean exists = watchlistService.existsByUserIdAndContentId(currentUser.getId(), contentId);
-        return ResponseEntity.ok(ApiResponse.success(exists, "Watchlist item existence checked successfully"));
+        Integer watchlistId = watchlistService.getWatchlistIdByUserIdAndContentId(currentUser.getId(), contentId);
+        return ResponseEntity.ok(ApiResponse.success(watchlistId,
+                watchlistId != null ? "Watchlist entry exists" : "Watchlist entry does not exist"));
     }
 
 }
