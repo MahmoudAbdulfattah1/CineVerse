@@ -35,7 +35,7 @@ public class ReviewService {
     private final ReviewMapper reviewMapper;
 
 
-public Page<ReviewFeedDto> getReviewFeed(int page, int size, String sortBy, Integer userId) {
+    public Page<ReviewFeedDto> getReviewFeed(int page, int size, String sortBy, Integer userId) {
     Sort sort = "likes".equalsIgnoreCase(sortBy)
             ? Sort.by(Sort.Direction.DESC, "likeCount")
             : Sort.by(Sort.Direction.DESC, "createdAt");
@@ -55,14 +55,12 @@ public Page<ReviewFeedDto> getReviewFeed(int page, int size, String sortBy, Inte
             ? getUserReactionsForReviews(userId, reviewIds)
             : Collections.emptyMap();
 
-    List<ReviewFeedDto> dtos = views.getContent().stream()
+    List<ReviewFeedDto> reviewFeedDto = views.getContent().stream()
             .map(view -> reviewMapper.toFeedDto(view, userReactions.get(view.getId())))
             .toList();
 
-    return new PageImpl<>(dtos, pageable, views.getTotalElements());
+    return new PageImpl<>(reviewFeedDto, pageable, views.getTotalElements());
 }
-
-
 
     public Map<Integer, ReactionType> getUserReactionsForReviews(int userId, List<Integer> reviewIds) {
         List<ReviewReaction> reactions = reviewReactionRepository.findByUserIdAndReviewIdIn(userId, reviewIds);
@@ -73,45 +71,45 @@ public Page<ReviewFeedDto> getReviewFeed(int page, int size, String sortBy, Inte
                 ));
     }
 
-    public Page<ReviewDto> getContentReviews(int contentId, int page, int size, Integer userId) {
+    public Page<ReviewDto> getContentReviews(int contentId, int page, int size, String sortBy, Integer userId) {
+        Sort sort = "likes".equalsIgnoreCase(sortBy)
+                ? Sort.by(Sort.Direction.DESC, "likeCount")
+                : Sort.by(Sort.Direction.DESC, "createdAt");
+
         if (!contentRepository.existsById(contentId)) {
             throw new ContentNotFoundException("Content not found");
         }
 
-        Pageable pageable = PageRequest.of(page, size);
+        Pageable pageable = PageRequest.of(page, size, sort);
         Page<Review> reviews = reviewRepository.findContentReviews(contentId, pageable);
 
         Map<Integer, ReactionType> userReactions = (userId != null)
                 ? getUserReactionsForReviews(userId, reviews.stream().map(Review::getId).toList())
                 : Collections.emptyMap();
 
-        List<ReviewDto> dtoList = reviews.getContent().stream()
+        List<ReviewDto> contentReviewsDto = reviews.getContent().stream()
                 .map(review -> reviewMapper.toContentReviewDto(review, userReactions.get(review.getId())))
                 .toList();
 
-        return new PageImpl<>(dtoList, pageable, reviews.getTotalElements());
+        return new PageImpl<>(contentReviewsDto, pageable, reviews.getTotalElements());
     }
 
-    public List<TopReviewersDto> getTopReviewers(int page, int size) {
-        Pageable pageable = PageRequest.of(page, size);
-        List<TopReviewerView> topReviewers = reviewRepository.findTopReviewersWithStats(pageable);
-        if (topReviewers.isEmpty()) {
-            throw new UserNotFoundException("No reviewers found");
-        }
-        return topReviewers.stream()
-                .map(reviewMapper::toTopReviewersDto)
-                .toList();
+public List<TopReviewerView> getTopReviewers(int page, int size) {
+    Pageable pageable = PageRequest.of(page, size);
+    List<TopReviewerView> topReviewers = reviewRepository.findTopReviewersWithStats(pageable);
+    if (topReviewers.isEmpty()) {
+        throw new UserNotFoundException("No reviewers found");
     }
+    return topReviewers;
+}
 
-    public List<TopReviewedContentDto> getTopReviewedContent(int page, int size) {
+    public List<TopReviewedContentView> getTopReviewedContent(int page, int size) {
         Pageable pageable = PageRequest.of(page, size);
         List<TopReviewedContentView> topReviewedContent = reviewRepository.findTopReviewedContentWithStats(pageable);
         if (topReviewedContent.isEmpty()) {
             throw new ContentNotFoundException("No reviewed content found");
         }
-        return topReviewedContent.stream()
-                .map(reviewMapper::toTopReviewedContentDto)
-                .toList();
+        return topReviewedContent;
     }
 
     public Page<UserReviewDto> getUserReviews(String username, int page, int size, Integer userId) {

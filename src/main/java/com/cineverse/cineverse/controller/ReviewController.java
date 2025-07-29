@@ -7,7 +7,6 @@ import com.cineverse.cineverse.domain.enums.ReactionType;
 import com.cineverse.cineverse.dto.ApiResponse;
 import com.cineverse.cineverse.dto.review.*;
 import com.cineverse.cineverse.mapper.ReviewMapper;
-import com.cineverse.cineverse.service.ContentService;
 import com.cineverse.cineverse.service.ReviewReactionService;
 import com.cineverse.cineverse.service.ReviewService;
 import com.cineverse.cineverse.service.UserService;
@@ -23,35 +22,36 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/reviews")
 @AllArgsConstructor
 public class ReviewController {
-    private final ContentService contentService;
     private final ReviewService reviewService;
     private final ReviewReactionService reviewReactionService;
     private final UserService userService;
     private final ReviewMapper reviewMapper;
 
-@GetMapping
-public ResponseEntity<ApiResponse> getReviewFeed(
-        @RequestParam(defaultValue = "0") Integer page,
-        @RequestParam(defaultValue = "10") Integer size,
-        @RequestParam(defaultValue = "recent") String sortBy) {
+    @GetMapping
+    public ResponseEntity<ApiResponse> getReviewFeed(
+            @RequestParam(defaultValue = "0") Integer page,
+            @RequestParam(defaultValue = "10") Integer size,
+            @RequestParam(defaultValue = "recent") String sortBy) {
 
-    User user = userService.getCurrentAuthenticatedUserOrNull();
-    Integer userId = (user != null) ? user.getId() : null;
-
-    Page<ReviewFeedDto> reviewFeed = reviewService.getReviewFeed(page, size, sortBy, userId);
-
-    return ResponseEntity.ok(ApiResponse.success(reviewFeed, "Review feed fetched successfully"));
-}
-
-
-    @GetMapping("/contents/{contentId}")
-    public ResponseEntity<ApiResponse> getContentReviews(@PathVariable int contentId,
-                                                         @RequestParam(defaultValue = "0") int page,
-                                                         @RequestParam(defaultValue = "10") int size) {
         User user = userService.getCurrentAuthenticatedUserOrNull();
         Integer userId = (user != null) ? user.getId() : null;
 
-        Page<ReviewDto> reviewFeed = reviewService.getContentReviews(contentId, page, size, userId);
+        Page<ReviewFeedDto> reviewFeed = reviewService.getReviewFeed(page, size, sortBy, userId);
+
+        return ResponseEntity.ok(ApiResponse.success(reviewFeed, "Review feed fetched successfully"));
+    }
+
+    @GetMapping("/contents/{contentId}")
+    public ResponseEntity<ApiResponse> getContentReviews(
+            @PathVariable int contentId,
+            @RequestParam(defaultValue = "0") int page,
+            @RequestParam(defaultValue = "10") int size,
+            @RequestParam(defaultValue = "recent") String sortBy) {
+
+        User user = userService.getCurrentAuthenticatedUserOrNull();
+        Integer userId = (user != null) ? user.getId() : null;
+
+        Page<ReviewDto> reviewFeed = reviewService.getContentReviews(contentId, page, size, sortBy, userId);
 
         return ResponseEntity.ok(
                 ApiResponse.success(reviewFeed, "Content reviews fetched successfully")
@@ -63,7 +63,9 @@ public ResponseEntity<ApiResponse> getReviewFeed(
             @RequestParam(defaultValue = "0") int page,
             @RequestParam(defaultValue = "5") int size) {
         return ResponseEntity.ok(
-                ApiResponse.success(reviewService.getTopReviewers(page, size), "Top reviewers fetched successfully")
+                ApiResponse.success(reviewService.getTopReviewers(page, size).stream()
+                        .map(reviewMapper::toTopReviewersDto)
+                        .toList(), "Top reviewers fetched successfully")
         );
     }
 
@@ -72,11 +74,11 @@ public ResponseEntity<ApiResponse> getReviewFeed(
             @RequestParam(defaultValue = "0") int page,
             @RequestParam(defaultValue = "5") int size) {
         return ResponseEntity.ok(
-                ApiResponse.success(reviewService.getTopReviewedContent(page, size), "Top reviewed content fetched " +
-                        "successfully")
+                ApiResponse.success(reviewService.getTopReviewedContent(page, size).stream()
+                        .map(reviewMapper::toTopReviewedContentDto)
+                        .toList(), "Top reviewed content fetched successfully")
         );
     }
-
 
     @GetMapping("/users/{username}")
     public ResponseEntity<ApiResponse> getUserReviews(
