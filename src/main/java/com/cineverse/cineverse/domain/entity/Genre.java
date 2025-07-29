@@ -19,7 +19,7 @@ public class Genre {
     private String name;
     @Enumerated(EnumType.STRING)
     private GenreType type;
-    @OneToMany(mappedBy = "genre", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "genre", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private Set<ContentGenre> genres;
 
     public Genre(int tmdbId, String name, GenreType type) {

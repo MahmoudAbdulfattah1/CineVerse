@@ -17,7 +17,7 @@ public class Provider {
     private int tmdbId;
     private String name;
     private String logo;
-    @OneToMany(mappedBy = "provider", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "provider", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private Set<ContentProvider> contents;
 
     public Provider(int tmdbId, String name, String logo) {
