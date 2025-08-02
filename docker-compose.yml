@@ -1,0 +1,35 @@
+services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.11.1
+    container_name: cineverse-elasticsearch
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    ports:
+      - "9200:9200"
+    volumes:
+      - elasticsearch_data:/usr/share/elasticsearch/data
+    networks:
+      - cineverse-network
+
+  cineverse-app:
+    build: .
+    container_name: cineverse-backend
+    ports:
+      - "8080:8080"
+    environment:
+      - ELASTIC_URI=http://elasticsearch:9200
+    depends_on:
+      - elasticsearch
+    networks:
+      - cineverse-network
+    restart: unless-stopped
+
+volumes:
+  elasticsearch_data:
+    driver: local
+
+networks:
+  cineverse-network:
+    driver: bridge

@@ -1,7 +1,8 @@
 package com.cineverse.cineverse.repository;
 
 import com.cineverse.cineverse.domain.entity.Content;
-import com.cineverse.cineverse.domain.entity.Provider;
+import com.cineverse.cineverse.domain.enums.ContentType;
+import org.springframework.data.jpa.repository.EntityGraph;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
@@ -31,4 +32,6 @@ public interface ContentRepository extends JpaRepository<Content, Integer>, Cont
     Optional<Content> findContentById(@Param("id") int id);
 
     boolean existsById(int id);
+    @EntityGraph(attributePaths = {"genres.genre"})
+    List<Content> findByContentTypeIn(List<ContentType> types);
 }

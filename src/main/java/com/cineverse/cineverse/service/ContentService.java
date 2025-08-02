@@ -1,5 +1,6 @@
 package com.cineverse.cineverse.service;
 
+import com.cineverse.cineverse.domain.document.ContentDocument;
 import com.cineverse.cineverse.domain.entity.*;
 import com.cineverse.cineverse.domain.enums.ContentStatus;
 import com.cineverse.cineverse.domain.enums.ContentType;
@@ -26,6 +27,7 @@ public class ContentService {
     private EpisodeRepository episodeRepository;
     private ContentTypeRepository contentTypeRepository;
     private ContentTrailerRepository contentTrailerRepository;
+    private final ContentDocumentRepository documentRepository;
     private YoutubeClient youtubeClient;
 
     public Page<Content> filterContent(List<String> genres, Integer year, Integer rate,
@@ -36,9 +38,13 @@ public class ContentService {
                 pageable);
     }
 
-    public Page<Content> searchContent(String keyword, ContentType type, int page, int size) {
+    public Page<ContentDocument> searchContent(String keyword, int page, int size) {
         Pageable pageable = PageRequest.of(page, size);
-        return contentRepository.searchContent(keyword, type, pageable);
+
+        if (keyword == null || keyword.isBlank()) {
+            return Page.empty(pageable);
+        }
+        return documentRepository.searchByTitle(keyword, pageable);
     }
 
     public Movie getMovieDetails(String movieSlug) {

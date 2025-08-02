@@ -1,6 +1,7 @@
 package com.cineverse.cineverse.mapper;
 
 import com.cineverse.cineverse.configuration.TMDBApiConfiguration;
+import com.cineverse.cineverse.domain.document.ContentDocument;
 import com.cineverse.cineverse.domain.entity.*;
 import com.cineverse.cineverse.dto.content.*;
 import com.cineverse.cineverse.service.ContentService;
@@ -147,6 +148,40 @@ public class ContentMapper {
         return providers.stream()
                 .map(provider -> new ProviderDto(provider.getName(), fullPath(provider.getLogo())))
                 .toList();
+    }
+
+    public ContentDocument toContentDocument(Content content) {
+        String slug = null;
+        if (content instanceof Movie movie) slug = movie.getSlug();
+        else if (content instanceof Series series) slug = series.getSlug();
+
+        return ContentDocument.builder()
+                .id(String.valueOf(content.getId()))
+                .title(content.getTitle())
+                .slug(slug)
+                .overview(content.getOverview())
+                .posterPath(content.getPosterPath())
+                .releaseDate(content.getReleaseDate())
+                .imdbRate(content.getImdbRate())
+                .contentType(content.getContentType().toString())
+                .genres(content.getGenres().stream()
+                        .map(g -> g.getGenre().getName())
+                        .collect(Collectors.toSet()))
+                .build();
+    }
+
+    public ContentMetaDataDto toContentMetaDataDto(ContentDocument contentDocument) {
+        return ContentMetaDataDto.builder()
+                .id(Integer.parseInt(contentDocument.getId()))
+                .title(contentDocument.getTitle())
+                .slug(contentDocument.getSlug())
+                .posterUrl(fullPath(contentDocument.getPosterPath()))
+                .releaseDate(contentDocument.getReleaseDate())
+                .imdbRate(contentDocument.getImdbRate())
+                .overview(contentDocument.getOverview())
+                .type(contentDocument.getContentType())
+                .genres(contentDocument.getGenres())
+                .build();
     }
 
     private String fullPath(String path) {
