@@ -1,6 +1,7 @@
 package com.cineverse.cineverse.controller;
 
 import com.cineverse.cineverse.domain.entity.Content;
+import com.cineverse.cineverse.domain.document.ContentDocument;
 import com.cineverse.cineverse.domain.entity.Movie;
 import com.cineverse.cineverse.domain.entity.Series;
 import com.cineverse.cineverse.domain.enums.ContentStatus;
@@ -50,24 +51,26 @@ public class ContentController {
         );
     }
 
+    @GetMapping("/search")
+    public ResponseEntity<ApiResponse> searchByTitle(
+            @RequestParam String q,
+            @RequestParam(defaultValue = "0") int page,
+            @RequestParam(defaultValue = "12") int size) {
+
+        Page<ContentDocument> results = contentService.searchContent(q, page, size);
+        Page<ContentMetaDataDto> searchResults = results.map(contentMapper::toContentMetaDataDto);
+        return ResponseEntity.ok(ApiResponse.success(
+                searchResults,
+                "Search results fetched successfully"
+        ));
+    }
+
     @GetMapping("/filter/options")
     public ResponseEntity<ApiResponse> filterOptions() {
         List<FilterSection> filterSections = filterService.getFilterOptions();
         return ResponseEntity.ok(
                 ApiResponse.success(filterSections, "Filter options fetched successfully")
         );
-    }
-
-    @GetMapping("/search")
-    public ResponseEntity<ApiResponse> searchByTitle(
-            @RequestParam(required = true) String q,
-            @RequestParam(required = false) ContentType type,
-            @RequestParam(defaultValue = "0") int page,
-            @RequestParam(defaultValue = "12") int size) {
-        Page<ContentMetaDataDto> searchedContent =
-                contentMapper.toContentMetaDataDto(contentService.searchContent(q, type,
-                        page, size));
-        return ResponseEntity.ok(ApiResponse.success(searchedContent, "Search results fetched successfully"));
     }
 
     @GetMapping("/{slug}")
