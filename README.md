@@ -118,7 +118,6 @@ details.
 
 ### 🐳 Docker Setup
 
-
 The easiest way to run the application is with **Docker Compose**, which sets up the API server and the PostgreSQL
 database automatically.
 
@@ -163,10 +162,16 @@ docker-compose up --build
 # Remove containers and volumes
 docker-compose down -v
 ```
+
+---
+
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+---
+
 ## 👥 Authors
+
 - **[Mahmoud Abdelfattah](https://www.linkedin.com/in/mahmoud-a-fattah)** - Backend Developer
 - **[Wael Gamil](https://www.linkedin.com/in/wael-gamil/)** - Frontend Developer
