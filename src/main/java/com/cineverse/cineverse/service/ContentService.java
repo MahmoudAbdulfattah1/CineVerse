@@ -9,6 +9,7 @@ import com.cineverse.cineverse.exception.content.UnsupportedContentTypeException
 import com.cineverse.cineverse.infrastructure.youtube.YoutubeClient;
 import com.cineverse.cineverse.repository.*;
 import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -19,6 +20,7 @@ import java.util.List;
 
 @Service
 @AllArgsConstructor
+@Slf4j
 public class ContentService {
     private ContentRepository contentRepository;
     private MovieRepository movieRepository;
@@ -40,7 +42,8 @@ public class ContentService {
 
     public Page<ContentDocument> searchContent(String keyword, int page, int size) {
         Pageable pageable = PageRequest.of(page, size);
-
+        log.info("Searching for: {}", keyword);
+        log.info("Results found: {}", documentRepository.searchByTitle(keyword, pageable).getContent().size());
         if (keyword == null || keyword.isBlank()) {
             return Page.empty(pageable);
         }
