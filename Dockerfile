@@ -1,4 +1,4 @@
-FROM eclipse-temurin:21-jdk AS build
+FROM cgr.dev/chainguard/eclipse-temurin:17 AS build
 
 WORKDIR /app
 
