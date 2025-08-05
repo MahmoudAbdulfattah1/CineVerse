@@ -16,7 +16,7 @@ COPY src/main/resources/env.properties .
 
 RUN ./gradlew bootJar -x test
 
-FROM eclipse-temurin:21-jre-alpine
+FROM  cgr.dev/chainguard/eclipse-temurin:17
 
 RUN apk add --no-cache wget
 
