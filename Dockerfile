@@ -1,4 +1,4 @@
-FROM cgr.dev/chainguard/eclipse-temurin:17 AS build
+FROM eclipse-temurin:21-jdk AS build
 
 WORKDIR /app
 
@@ -12,18 +12,16 @@ RUN chmod +x gradlew
 RUN ./gradlew dependencies || true
 
 COPY src src
-COPY src/main/resources/env.properties .
 
 RUN ./gradlew bootJar -x test
 
-FROM  cgr.dev/chainguard/eclipse-temurin:17
+FROM eclipse-temurin:21-jre-alpine
 
 RUN apk add --no-cache wget
 
 WORKDIR /app
 
 COPY --from=build /app/build/libs/*-SNAPSHOT.jar app.jar
-COPY --from=build /app/env.properties .
 
 RUN addgroup --system spring && adduser --system --ingroup spring spring
 RUN chown spring:spring app.jar
