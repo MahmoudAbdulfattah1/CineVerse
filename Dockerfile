@@ -12,7 +12,6 @@ RUN chmod +x gradlew
 RUN ./gradlew dependencies || true
 
 COPY src src
-COPY src/main/resources/env.properties .
 
 RUN ./gradlew bootJar -x test
 
@@ -23,7 +22,6 @@ RUN apk add --no-cache wget
 WORKDIR /app
 
 COPY --from=build /app/build/libs/*-SNAPSHOT.jar app.jar
-COPY --from=build /app/env.properties .
 
 RUN addgroup --system spring && adduser --system --ingroup spring spring
 RUN chown spring:spring app.jar

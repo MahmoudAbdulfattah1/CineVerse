@@ -16,7 +16,7 @@ public interface ContentDocumentRepository extends ElasticsearchRepository<Conte
           "should": [
             {
               "multi_match": {
-                "query": "?0",
+                "query": ?0,
                 "fields": ["title^4", "overview"],
                 "type": "best_fields",
                 "fuzziness": "2",
@@ -26,7 +26,7 @@ public interface ContentDocumentRepository extends ElasticsearchRepository<Conte
             },
             {
               "multi_match": {
-                "query": "?0",
+                "query": ?0,
                 "fields": ["title^3", "overview"],
                 "type": "most_fields",
                 "fuzziness": "AUTO"
@@ -35,7 +35,7 @@ public interface ContentDocumentRepository extends ElasticsearchRepository<Conte
             {
               "match": {
                 "title": {
-                  "query": "?0",
+                  "query": ?0,
                   "fuzziness": "2",
                   "boost": 2
                 }
