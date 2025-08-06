@@ -1,7 +1,7 @@
 package com.cineverse.cineverse.mapper;
 
 import com.cineverse.cineverse.domain.entity.User;
-import com.cineverse.cineverse.dto.auth.UserProfileDto;
+import com.cineverse.cineverse.dto.user.UserProfileDto;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 

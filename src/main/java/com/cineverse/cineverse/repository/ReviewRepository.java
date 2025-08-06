@@ -100,4 +100,7 @@ public interface ReviewRepository extends JpaRepository<Review, Integer> {
 
     boolean existsByUserIdAndContentId(int userId, int contentId);
 
+    @Query("SELECT COUNT(r) FROM Review r WHERE r.user.username = :username")
+    Integer countByUsername(@Param("username") String username);
+
 }

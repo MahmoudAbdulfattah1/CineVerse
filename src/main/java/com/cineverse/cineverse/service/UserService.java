@@ -7,7 +7,9 @@ import com.cineverse.cineverse.exception.global.BadRequestException;
 import com.cineverse.cineverse.exception.global.InternalServerErrorException;
 import com.cineverse.cineverse.exception.user.NoFieldsToUpdateException;
 import com.cineverse.cineverse.exception.user.UserNotFoundException;
+import com.cineverse.cineverse.repository.ReviewRepository;
 import com.cineverse.cineverse.repository.UserRepository;
+import com.cineverse.cineverse.repository.WatchlistRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -25,6 +27,8 @@ import java.util.Optional;
 public class UserService {
 
     private final UserRepository userRepository;
+    private final WatchlistRepository watchlistRepository;
+    private final ReviewRepository reviewRepository;
     private final PasswordEncoder passwordEncoder;
     private final CloudinaryService cloudinaryService;
     private static final String PROFILE_PICTURES_FOLDER = "profile-pictures";
@@ -47,6 +51,12 @@ public class UserService {
     public User findByUsernameOrThrow(String username) {
         return userRepository.findByUsername(username)
                 .orElseThrow(() -> new UserNotFoundException("User not found"));
+    }
+
+    public Boolean existsByUsernameOrThrow(String username) {
+        if (!userRepository.existsByUsername(username))
+            throw new UserNotFoundException("User not found");
+        return true;
     }
 
 
@@ -103,6 +113,7 @@ public class UserService {
 
         throw new UserNotAuthenticatedException("User is not authenticated");
     }
+
     public User getCurrentAuthenticatedUserOrNull() {
         try {
             return getCurrentAuthenticatedUser();
@@ -165,5 +176,13 @@ public class UserService {
     public User getById(int userId) {
         return userRepository.findById(userId)
                 .orElseThrow(() -> new UserNotFoundException("User not found"));
+    }
+
+    public int getUserWatchlistCount(String username) {
+        return watchlistRepository.countByUsername(username);
+    }
+
+    public int getUserReviewCount(String username) {
+        return reviewRepository.countByUsername(username);
     }
 }

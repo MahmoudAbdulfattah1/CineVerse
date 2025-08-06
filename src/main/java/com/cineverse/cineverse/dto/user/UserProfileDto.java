@@ -1,4 +1,4 @@
-package com.cineverse.cineverse.dto.auth;
+package com.cineverse.cineverse.dto.user;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
