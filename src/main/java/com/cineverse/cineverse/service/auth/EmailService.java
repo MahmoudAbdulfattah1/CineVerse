@@ -2,6 +2,7 @@ package com.cineverse.cineverse.service.auth;
 
 import jakarta.mail.MessagingException;
 import jakarta.mail.internet.MimeMessage;
+import jakarta.mail.internet.MimeUtility;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.Resource;
@@ -45,18 +46,17 @@ public class EmailService {
             MimeMessage message = mailSender.createMimeMessage();
             MimeMessageHelper helper = new MimeMessageHelper(message, MimeMessageHelper.MULTIPART_MODE_MIXED_RELATED,
                     StandardCharsets.UTF_8.name());
-            helper.setFrom(senderEmail, "🎥 CineVerse Support");
+            helper.setFrom(senderEmail, MimeUtility.encodeText("🎥 CineVerse Support", "UTF-8", "B"));
             helper.setTo(to);
             helper.setSubject(subject);
             helper.setText(htmlContent, true);
 
             mailSender.send(message);
-        } catch (MessagingException e) {
+        } catch (MessagingException | UnsupportedEncodingException e) {
             throw new RuntimeException("Failed to send email: ", e);
-        } catch (UnsupportedEncodingException e) {
-            throw new RuntimeException(e);
         }
     }
+
 
     private String loadTemplate(String path) {
         try {
