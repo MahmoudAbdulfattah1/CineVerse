@@ -22,7 +22,6 @@ public interface ReviewRepository extends JpaRepository<Review, Integer> {
                 SELECT r FROM Review r
                 JOIN FETCH r.user u
                 WHERE r.content.id = :contentId
-                ORDER BY r.createdAt DESC
             """)
     Page<Review> findContentReviews(@Param("contentId") int contentId, Pageable pageable);
 
@@ -95,9 +94,13 @@ public interface ReviewRepository extends JpaRepository<Review, Integer> {
             JOIN r.user u
             JOIN r.content c
             WHERE u.username = :username
+            ORDER BY r.createdAt DESC
             """)
     Page<UserReviewView> findByUsername(@Param("username") String username, Pageable pageable);
 
     boolean existsByUserIdAndContentId(int userId, int contentId);
+
+    @Query("SELECT COUNT(r) FROM Review r WHERE r.user.username = :username")
+    Integer countByUsername(@Param("username") String username);
 
 }

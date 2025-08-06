@@ -52,6 +52,8 @@ public interface WatchlistRepository extends JpaRepository<Watchlist, Integer> {
             """)
     Integer getIdByUserIdAndContentId(@Param("userId") int userId, @Param("contentId") int contentId);
 
+    @Query("SELECT COUNT(w) FROM Watchlist w WHERE w.user.username = :username")
+    Integer countByUsername(@Param("username") String username);
 
 
 }

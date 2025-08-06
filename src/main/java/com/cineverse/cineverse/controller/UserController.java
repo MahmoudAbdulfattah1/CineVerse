@@ -4,7 +4,8 @@ import com.cineverse.cineverse.domain.entity.User;
 import com.cineverse.cineverse.dto.ApiResponse;
 import com.cineverse.cineverse.dto.auth.ChangePasswordRequest;
 import com.cineverse.cineverse.dto.auth.UpdateProfileRequest;
-import com.cineverse.cineverse.dto.auth.UserProfileDto;
+import com.cineverse.cineverse.dto.user.UserProfileDto;
+import com.cineverse.cineverse.dto.user.UserStatsDto;
 import com.cineverse.cineverse.mapper.UserMapper;
 import com.cineverse.cineverse.service.UserService;
 import jakarta.validation.Valid;
@@ -84,6 +85,16 @@ public class UserController {
         User user = userService.getCurrentAuthenticatedUser();
         userService.deleteUser(user);
         return ResponseEntity.ok(ApiResponse.success(null, "User deleted successfully"));
+    }
+
+    @GetMapping("/{username}/stats")
+    public ResponseEntity<ApiResponse> getUserStats(@PathVariable String username) {
+        boolean user = userService.existsByUsernameOrThrow(username);
+        UserStatsDto stats = UserStatsDto.builder()
+                .reviewCount(userService.getUserReviewCount(username))
+                .watchlistCount(userService.getUserWatchlistCount(username))
+                .build();
+        return ResponseEntity.ok(ApiResponse.success(stats, "User stats retrieved successfully"));
     }
 
 

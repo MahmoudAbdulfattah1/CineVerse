@@ -38,6 +38,7 @@ public class SecurityConfiguration {
                         .requestMatchers("/auth/me", "/auth/logout").authenticated()
                         .requestMatchers("/auth/**").permitAll()
                         .requestMatchers(HttpMethod.GET, "/users/profile/**").permitAll()
+                        .requestMatchers(HttpMethod.GET, "/users/*/stats").permitAll()
                         .requestMatchers("/users/**").authenticated()
                         .requestMatchers("/contents/**").permitAll()
                         .requestMatchers("/artists/**").permitAll()

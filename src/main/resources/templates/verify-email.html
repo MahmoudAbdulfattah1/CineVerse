@@ -1,179 +1,124 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Verify Your Email - CineVerse</title>
     <style>
-        /* Reset styles */
-        body, table, td, p, a, li, blockquote {
-            -webkit-text-size-adjust: 100%;
-            -ms-text-size-adjust: 100%;
+        html, body {
+          height: 100%;
+          margin: 0;
+          padding: 0;
+          background-color: #0b0f1a;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
-        table, td {
-            mso-table-lspace: 0pt;
-            mso-table-rspace: 0pt;
-            border: none !important;
+        table {
+          border-spacing: 0;
+          border-collapse: collapse;
         }
 
-        img {
-            -ms-interpolation-mode: bicubic;
+        .outer {
+          width: 100%;
+          height: 100%;
+          min-height: 100vh;
+          padding: 40px 20px;
         }
 
-        /* Main styles */
-        body {
-            margin: 0 !important;
-            padding: 0 !important;
-            background-color: #0b0f1a !important;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
-            color: #ffffff !important;
-        }
-
-        .email-container {
-            max-width: 600px !important;
-            margin: 0 auto !important;
-            background-color: #0b0f1a !important;
-        }
-
-        .main-table {
-            width: 100% !important;
-            max-width: 560px !important;
-            background: linear-gradient(135deg, #151a28 0%, #0b0f1a 100%) !important;
-            border: none !important;
-            border-radius: 16px !important;
-            margin: 40px auto !important;
+        .container {
+          width: 100%;
+          max-width: 560px;
+          background: linear-gradient(135deg, #151a28 0%, #0b0f1a 100%);
+          border: 1px solid rgba(31, 142, 241, 0.2);
+          border-radius: 16px;
+          box-shadow: 0 0 30px rgba(31, 142, 241, 0.2);
+          overflow: hidden;
         }
 
         .content-cell {
-            padding: 32px !important;
-            text-align: center !important;
+          padding: 40px 32px 28px 32px;
+          text-align: center;
         }
 
-        .header-title {
-            font-size: 24px !important;
-            margin: 0 !important;
-            color: #1f8ef1 !important;
-            font-weight: bold !important;
-            letter-spacing: 0.05em !important;
-            padding-bottom: 4px !important;
+        h1 {
+          font-size: 24px;
+          color: #1f8ef1;
+          margin: 0;
+          letter-spacing: 0.05em;
         }
 
         .subtitle {
-            font-size: 15px !important;
-            color: #aab1b7 !important;
-            margin: 0 !important;
-            padding-bottom: 24px !important;
+          font-size: 15px;
+          color: #aab1b7;
+          margin: 12px 0 28px;
         }
 
         .content-text {
-            font-size: 16px !important;
-            line-height: 1.6 !important;
-            color: #d3d7de !important;
-            margin: 0 !important;
-            padding-bottom: 24px !important;
-        }
-
-        .button-container {
-            padding: 12px 0 !important;
+          font-size: 16px;
+          line-height: 1.6;
+          color: #d3d7de;
+          margin: 0 0 28px;
         }
 
         .glow-button {
-            background-color: #1f8ef1 !important;
-            color: #ffffff !important;
-            padding: 14px 28px !important;
-            border-radius: 12px !important;
-            font-weight: bold !important;
-            font-size: 15px !important;
-            text-decoration: none !important;
-            display: inline-block !important;
-            min-width: 200px !important;
-            box-sizing: border-box !important;
-            border: none !important;
-        }
-
-        .disclaimer {
-            font-size: 16px !important;
-            color: #d3d7de !important;
-            margin: 0 !important;
-            padding: 12px 0 !important;
+          background-color: #1f8ef1;
+          color: #ffffff !important;
+          padding: 14px 28px;
+          border-radius: 12px;
+          font-weight: bold;
+          font-size: 15px;
+          text-decoration: none;
+          display: inline-block;
+          min-width: 200px;
+          box-shadow: 0 0 12px rgba(31, 142, 241, 0.6);
         }
 
         .footer {
-            font-size: 13px !important;
-            color: #7f8c8d !important;
-            border-top: 1px solid rgba(255, 255, 255, 0.05) !important;
-            padding-top: 16px !important;
-            margin-top: 16px !important;
+          text-align: center;
+          font-size: 13px;
+          color: #7f8c8d;
+          border-top: 1px solid rgba(255, 255, 255, 0.05);
+          padding: 16px;
         }
 
-        /* Dark mode support */
-        @media (prefers-color-scheme: dark) {
-            .email-container {
-                background-color: #0b0f1a !important;
-            }
-            .main-table {
-                background: linear-gradient(135deg, #151a28 0%, #0b0f1a 100%) !important;
-            }
+        .code-like {
+          font-family: monospace;
+          background-color: rgba(255, 255, 255, 0.05);
+          padding: 4px 8px;
+          border-radius: 6px;
+          display: inline-block;
         }
     </style>
 </head>
 <body>
-<div class="email-container">
-    <table class="main-table" cellpadding="0" cellspacing="0" border="0">
-        <tr>
-            <td class="content-cell">
-                <!-- Header -->
-                <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr>
-                        <td>
-                            <h1 class="header-title">Email Verification</h1>
-                            <p class="subtitle">Welcome aboard, <strong>{{username}}</strong></p>
-                        </td>
-                    </tr>
-                </table>
+<table class="outer" width="100%" height="100%" role="presentation">
+    <tr>
+        <td align="center" valign="middle">
+            <table class="container" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="content-cell">
+                        <h1>CineVerse Access Portal</h1>
+                        <p class="subtitle">Welcome aboard, <strong>{{username}}</strong></p>
 
-                <!-- Content -->
-                <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr>
-                        <td>
-                            <p class="content-text">
-                                Your CineVerse journey begins now. To unlock full access,
-                                please verify your email address by clicking the button below.
-                            </p>
-                        </td>
-                    </tr>
-                </table>
+                        <p class="content-text">
+                            Your CineVerse journey begins now. To unlock full access,<br />
+                            please verify your email address by clicking the button below.
+                        </p>
 
-                <!-- Button -->
-                <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr>
-                        <td class="button-container">
-                            <a href="{{verificationLink}}" class="glow-button">Activate Your Account</a>
-                        </td>
-                    </tr>
-                </table>
+                        <a href="{{verificationLink}}" class="glow-button">Activate Your Account</a>
 
-                <!-- Disclaimer -->
-                <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr>
-                        <td>
-                            <p class="disclaimer">Didn't request this? No worries — you can safely ignore it.</p>
-                        </td>
-                    </tr>
-                </table>
-
-                <!-- Footer -->
-                <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr>
-                        <td class="footer">
-                            ⓒ 2025 CineVerse — All rights reserved
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
-</div>
+                        <p class="content-text" style="margin-top: 28px;">
+                            Didn’t request this? No worries — you can safely ignore it.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="footer">
+                        ⓒ 2025 CineVerse — All rights reserved
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
 </body>
 </html>
