@@ -7,6 +7,8 @@
 ![Elasticsearch](https://img.shields.io/badge/Elasticsearch-005571?logo=elasticsearch&logoColor=white)
 ![Cloudinary](https://img.shields.io/badge/Cloudinary-3448C5?logo=cloudinary&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white)
+![JUnit5](https://img.shields.io/badge/JUnit_5-25A162?logo=junit5&logoColor=white)
+![Mockito](https://img.shields.io/badge/Mockito-5A8DEE?logo=java&logoColor=white)
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?logo=postman&logoColor=white)
 ![Swagger](https://img.shields.io/badge/Swagger-85EA2D?logo=swagger&logoColor=black)
 
@@ -26,6 +28,7 @@ discover, track, and review their favorite movies and TV shows with a beautiful,
     - [⭐ Review System](#-review-system)
     - [🎭 Cast & Crew](#-cast--crew)
     - [🎥 Infrastructure](#-infrastructure)
+    - [🧪 Testing](#-testing)
 - [📖 API Documentation](#-api-documentation)
     - [🚀 Postman](#-postman)
     - [📚 Swagger](#-swagger)
@@ -76,7 +79,6 @@ discover, track, and review their favorite movies and TV shows with a beautiful,
 
 - 👥 **Crew Member Entity**: Comprehensive data model for cast and crew
 - 📊 **Relationship Mapping**: Complex entity relationships handling
-- 🔍 **Search Integration**: Advanced crew member search functionality
 - 🔗 **External APIs**: Integration with TMDb for crew member data
 
 ### 🎥 Infrastructure
@@ -84,6 +86,13 @@ discover, track, and review their favorite movies and TV shows with a beautiful,
 - 🎥 **YouTube API**: Trailer integration service
 - 🖼️ **Image Processing**: Dynamic image URL generation
 - 🐳 **Docker Support**: Containerization for easy deployment
+
+
+### 🧪 Testing
+
+- ✅ **JUnit 5**: Unit tests implemented for service layer logic
+- 🎭 **Mockito**: Mocking dependencies to isolate and test business logic
+- 📈 **Test Coverage**: Ensured core service functionality is thoroughly tested
 
 ---
 
@@ -106,7 +115,7 @@ details.
 
 ## 🗄️ Database Schema
 
-![Schema](https://github.com/user-attachments/assets/52f296ee-c45d-42a1-871c-5a6d7e1e9522)
+![Schema](docs/image/schema.svg)
 
 ---
 
