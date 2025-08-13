@@ -17,9 +17,15 @@ import java.util.Set;
 public class FilterService {
     private GenreRepository genreRepository;
 
+    /**
+     * Builds a list of filter sections to be displayed in the UI, including movie genres,
+     * series genres, content types, languages, sorting options, order, and release status.
+     *
+     * @return a list of {@link FilterSection} objects, each containing a category of filters
+     */
     public List<FilterSection> getFilterOptions() {
         List<FilterSection> sections = new ArrayList<>();
-        Set<String> excludedGenres = Set.of("Music", "Romance","Soap");
+        Set<String> excludedGenres = Set.of("Music", "Romance", "Soap");
         List<Genre> genres = genreRepository.findAll();
         List<FilterOption> movieGenres = genres.stream()
                 .filter(genre ->
@@ -38,7 +44,8 @@ public class FilterService {
                 .map(genre -> new FilterOption(genre.getName(), genre.getName())).toList();
         sections.add(new FilterSection("Series Genres", "genres", seriesGenres, true));
 
-        List<FilterOption> typeOptions = List.of(new FilterOption("Movie", "MOVIE"), new FilterOption("Series", "SERIES"));
+        List<FilterOption> typeOptions = List.of(new FilterOption("Movie", "MOVIE"), new FilterOption("Series",
+                "SERIES"));
 
         sections.add(new FilterSection("Content", "type", typeOptions, false));
         List<FilterOption> languageOptions = List.of(
