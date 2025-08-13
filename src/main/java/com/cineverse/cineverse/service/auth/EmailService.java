@@ -25,6 +25,13 @@ public class EmailService {
     @Value("${spring.mail.username}")
     private String senderEmail;
 
+    /**
+     * Sends an asynchronous verification email to a user with a clickable link to verify their account.
+     *
+     * @param toEmail          the recipient's email address
+     * @param username         the username of the recipient (used for personalization)
+     * @param verificationLink the verification link to be included in the email
+     */
     @Async
     public void sendVerificationEmail(String toEmail, String username, String verificationLink) {
         String html = loadTemplate("classpath:templates/verify-email.html");
@@ -33,6 +40,13 @@ public class EmailService {
         sendHtmlEmail(toEmail, "Verify Your Email", html);
     }
 
+    /**
+     * Sends an asynchronous password reset email to a user with a link to reset their password.
+     *
+     * @param toEmail   the recipient's email address
+     * @param username  the username of the recipient (used for personalization)
+     * @param resetLink the password reset link to be included in the email
+     */
     @Async
     public void sendResetPasswordEmail(String toEmail, String username, String resetLink) {
         String html = loadTemplate("classpath:templates/reset-password.html");
@@ -41,6 +55,14 @@ public class EmailService {
         sendHtmlEmail(toEmail, "Reset Your Password", html);
     }
 
+    /**
+     * Sends an HTML-formatted email to the specified recipient.
+     *
+     * @param to          the recipient's email address
+     * @param subject     the subject of the email
+     * @param htmlContent the HTML body of the email
+     * @throws RuntimeException if the email fails to send
+     */
     private void sendHtmlEmail(String to, String subject, String htmlContent) {
         try {
             MimeMessage message = mailSender.createMimeMessage();
@@ -57,7 +79,13 @@ public class EmailService {
         }
     }
 
-
+    /**
+     * Loads an email template file from the specified path.
+     *
+     * @param path the path to the template file (supports Spring resource paths such as classpath:)
+     * @return the contents of the template file as a String
+     * @throws RuntimeException if the template cannot be loaded
+     */
     private String loadTemplate(String path) {
         try {
             Resource resource = resourceLoader.getResource(path);

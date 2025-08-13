@@ -23,7 +23,21 @@ public class ReviewReactionService {
     private final ReviewRepository reviewRepository;
     private final ReviewReactionRepository reviewReactionRepository;
 
-
+    /**
+     * Adds or updates a user's reaction to a specific review.
+     * <p>
+     * - If the reaction type is UNDO, removes the user's existing reaction.<br>
+     * - If the user hasn't reacted before, adds a new reaction.<br>
+     * - If the user changes their reaction type, updates it.<br>
+     * </p>
+     *
+     * @param reviewId the ID of the review to react to
+     * @param newType  the new reaction type (LIKE, DISLIKE, or UNDO)
+     * @param userId   the ID of the user reacting
+     * @throws ReviewNotFoundException        if the review with given ID does not exist
+     * @throws ReactionNotFoundException      if user tries to undo a reaction that does not exist
+     * @throws ReactionAlreadyExistsException if user tries to add the same reaction twice
+     */
     @Transactional
     public void reactToReview(int reviewId, ReactionType newType, int userId) {
         User user = userService.getById(userId);
