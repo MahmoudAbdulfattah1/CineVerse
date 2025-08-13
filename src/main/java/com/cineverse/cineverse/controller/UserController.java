@@ -7,7 +7,9 @@ import com.cineverse.cineverse.dto.auth.UpdateProfileRequest;
 import com.cineverse.cineverse.dto.user.UserProfileDto;
 import com.cineverse.cineverse.dto.user.UserStatsDto;
 import com.cineverse.cineverse.mapper.UserMapper;
+import com.cineverse.cineverse.service.ReviewService;
 import com.cineverse.cineverse.service.UserService;
+import com.cineverse.cineverse.service.WatchlistService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -23,6 +25,8 @@ import java.io.IOException;
 public class UserController {
 
     private final UserService userService;
+    private final ReviewService reviewService;
+    private final WatchlistService watchlistService;
     private final UserMapper userMapper;
 
     @GetMapping("/profile")
@@ -89,13 +93,11 @@ public class UserController {
 
     @GetMapping("/{username}/stats")
     public ResponseEntity<ApiResponse> getUserStats(@PathVariable String username) {
-        boolean user = userService.existsByUsernameOrThrow(username);
+        userService.existsByUsernameOrThrow(username);
         UserStatsDto stats = UserStatsDto.builder()
-                .reviewCount(userService.getUserReviewCount(username))
-                .watchlistCount(userService.getUserWatchlistCount(username))
+                .reviewCount(reviewService.getUserReviewCount(username))
+                .watchlistCount(watchlistService.getUserWatchlistCount(username))
                 .build();
         return ResponseEntity.ok(ApiResponse.success(stats, "User stats retrieved successfully"));
     }
-
-
 }

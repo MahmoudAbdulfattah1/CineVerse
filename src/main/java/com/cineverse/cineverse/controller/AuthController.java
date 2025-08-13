@@ -68,7 +68,7 @@ public class AuthController {
 
     @GetMapping("/verify")
     public ResponseEntity<ApiResponse> verifyEmail(@RequestParam("token") String token) {
-        String message = authService.verifyToken(token);
+        String message = authService.verifyJwtTokenForRegistration(token);
         return ResponseEntity.ok(ApiResponse.success(null, message));
     }
 
