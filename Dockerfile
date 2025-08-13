@@ -9,13 +9,11 @@ COPY settings.gradle .
 
 RUN chmod +x gradlew
 
-RUN ./gradlew dependencies --no-daemon || true
+RUN ./gradlew dependencies || true
 
 COPY src src
 
-RUN ./gradlew test --no-daemon
-
-RUN ./gradlew bootJar --no-daemon
+RUN ./gradlew bootJar -x test
 
 FROM eclipse-temurin:21-jre-alpine
 
