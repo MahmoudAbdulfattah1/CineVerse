@@ -14,7 +14,7 @@ services:
       - cineverse-network
 
   cineverse-app:
-    build: .
+    image: mahmoud2171/cineverse-backend:latest
     container_name: cineverse-backend
     ports:
       - "8080:8080"
