@@ -3,19 +3,18 @@
 ![Java](https://img.shields.io/badge/Java-ED8B00?logo=openjdk&logoColor=black)
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-%23404d59.svg?logo=spring-boot&logoColor=%2361DAFB)
 ![Hibernate](https://img.shields.io/badge/Hibernate-59666C?logo=hibernate&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff)
+![Nginx](https://img.shields.io/badge/Nginx-009639?logo=nginx&logoColor=white)
 ![Elasticsearch](https://img.shields.io/badge/Elasticsearch-005571?logo=elasticsearch&logoColor=white)
 ![Cloudinary](https://img.shields.io/badge/Cloudinary-3448C5?logo=cloudinary&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white)
 ![JUnit5](https://img.shields.io/badge/JUnit_5-25A162?logo=junit5&logoColor=white)
-![Mockito](https://img.shields.io/badge/Mockito-5A8DEE?logo=java&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?logo=postman&logoColor=white)
 ![Swagger](https://img.shields.io/badge/Swagger-85EA2D?logo=swagger&logoColor=black)
 
 A modern, feature-rich movie and TV series tracking application built with Spring Boot. CineVerse allows users to
 discover, track, and review their favorite movies and TV shows with a beautiful, responsive interface.
 
-🌐 **[Frontend Repository](https://github.com/wael-gamil/cineverse)** | 🚀 **[Live Demo](https://cineverse-xi.vercel.app/)**
+🌐 **[Frontend Repository](https://github.com/wael-gamil/cineverse)** | 🚀 **[Live Demo](https://cineverse.social/)**
 
 ---
 
@@ -86,7 +85,8 @@ discover, track, and review their favorite movies and TV shows with a beautiful,
 - 🎥 **YouTube API**: Trailer integration service
 - 🖼️ **Image Processing**: Dynamic image URL generation
 - 🐳 **Docker Support**: Containerization for easy deployment
-
+- 🌍 **VPS Hosting**: Deployed on Contabo VPS for high availability
+- 🔄 **Nginx Reverse Proxy**: Handling secure routing and traffic management
 
 ### 🧪 Testing
 
@@ -120,7 +120,7 @@ details.
 ---
 
 ## ⚙️ Installation & Getting Started
-
+ 
 ### ⚡ Prerequisites
 
 - ✅ Docker & Docker Compose installed.
